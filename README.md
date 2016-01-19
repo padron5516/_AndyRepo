@@ -1,13 +1,6 @@
 ## <a href="http://tinypic.com?ref=2iuw5ck" target="_blank"><img src="http://i66.tinypic.com/2iuw5ck.png" border="0" alt="Image and video hosting by TinyPic"></a> Andy Repository Public
 ------------
 
-*Ivue appears to be back.  Use theirs.  I was scared of the traffic my guide may have produced.  I'm considering adding it back.
-
-**There is currently a guide but it has a dummy xml for EPG data. I will never, ever, ever ask for money or donations.  I'm just deterring that portion of my repo atm.
-
-***This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C. i rock.
-
-
 
 Repo Main Page (This page) https://github.com/halikus/_AndyRepo
 
@@ -38,6 +31,17 @@ x86 cpu:  http://mirrors.kodi.tv/releases/android/x86/old/kodi-14.2-Helix-x86.ap
 
 
 ***Android - AceStreams and Sopcast can optionally be downloaded via Playstore
+
+
+AceStream-3.0.6-2in1.apk   https://raw.githubusercontent.com/halikus/_AndyRepo/master/_android/AceStream-3.0.6-2in1.apk
+
+
+org.sopcast.android_124.apk   https://raw.githubusercontent.com/halikus/_AndyRepo/master/_android/org.sopcast.android_124.apk
+
+
+
+Windows  https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/
+
 
 
 
@@ -132,4 +136,9 @@ start Kodi.exe -p
 
 
 <a href="http://tinypic.com?ref=2u4igxw" target="_blank"><img src="http://i64.tinypic.com/2u4igxw.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+
+
+***This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C..
+
+
 kodithrowaway@gmail.com
