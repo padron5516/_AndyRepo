@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rssfeeds>
+  <!--RSS feeds. To have multiple feeds, just add a feed to the set. You can also have multiple sets.-->
+  <!--To use different sets in your skin, each must be called from skin with a unique id.-->
+  
+  <set id="1">
+    <!-- RSS feeds from TVADDONS !-->
+    <feed updateinterval="30">http://feeds.feedburner.com/TVADDONS</feed>
+    <!-- RSS feeds News and sports !-->
+    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/main.rss</feed>
+    <feed updateinterval="30">http://sports.yahoo.com/top/rss.xml</feed>    
+
+    <!-- RSS feeds from kodi.com !-->
+    <feed updateinterval="30">http://feeds.xbmc.org/xbmc</feed>
+    <feed updateinterval="30">http://feeds.xbmc.org/updated_xbmc_addons</feed>
+    <!-- WIP RSS feeds from Kickass Torrents .com !-->
+    <feed updateinterval="30">https://kat.cr/movies/?rss=1</feed>
+    <feed updateinterval="30">https://kat.cr/tv/?rss=1</feed>
+  </set>
+  
+   <set id="2">
+    <!-- RSS feeds from skynews.com !-->
+    <!-- World News !-->
+    <feed updateinterval="30">http://www.sky.com/skynews/rss/article/0,,30200-1-100,00.xml</feed>
+    <!-- UK News !-->
+    <feed updateinterval="30">http://www.sky.com/skynews/rss/article/0,,30100-1-100,00.xml</feed>
+    <!-- Sci-Tech !-->
+    <feed updateinterval="30">http://www.sky.com/skynews/rss/article/0,,31500-1-100,00.xml</feed>
+    <!-- Business !-->
+    <feed updateinterval="30">http://www.sky.com/skynews/rss/article/0,,30400-1-100,00.xml</feed>
+    <!-- Offbeat !-->
+    <feed updateinterval="30">http://www.sky.com/skynews/rss/article/0,,91059-1-100,00.xml</feed>
+  </set>
+ 
+  <set id="3">
+     <!-- RSS feeds from cnn.com !-->
+     <!-- Top Stories !-->
+    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_topstories.rss</feed>
+     <!-- World !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_world.rss</feed>
+     <!-- US !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_us.rss</feed>
+     <!-- Politics !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_allpolitics.rss</feed>
+    <!-- Law !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_law.rss</feed>
+    <!-- Technology !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_tech.rss</feed>
+    <!-- Space and Science !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_space.rss</feed>
+    <!-- Health !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_health.rss</feed>
+    <!-- Entertainment !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_showbiz.rss</feed>
+    <!-- Travel !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_travel.rss</feed>
+    <!-- Education !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_education.rss</feed>
+    <!-- Video !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_freevideo.rss</feed>
+    <!-- Offbeat !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_offbeat.rss</feed>
+    <!-- Most Popular !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_mostpopular.rss</feed>
+    <!-- Most Recent !-->
+    <feed updateinternal="30">http://rss.cnn.com/rss/cnn_latest.rss</feed>
+  </set>
+ 
+  <set id="4">
+    <!-- RSS feeds from cbsnews.com !-->
+    <!-- Top Stories !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/main.rss</feed>
+    <!-- US !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/national.rss</feed>
+    <!-- World !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/world.rss</feed>
+    <!-- Public Eye !-->
+    <feed updateinternal="30">http://www.cbsnews.com/rss/public_eye.rss</feed>
+    <!-- Politics !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/politics.rss</feed>
+    <!-- Sci-Tech !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/scitech.rss</feed>
+    <!-- Health Watch !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/health.rss</feed>
+    <!-- Entertainment !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/entertainment.rss</feed>
+    <!-- Business !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/business.rss</feed>
+    <!-- Opinion !-->
+    <feed updateinternal="30">http://www.cbsnews.com/feeds/rss/opinion.rss</feed>
+  </set>
+ 
+ </rssfeeds>
+

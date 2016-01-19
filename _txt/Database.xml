@@ -1,0 +1,324 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>_Downloads</name>
+            <path pathversion="1">X:\DOWNLOADS\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>_Movies</name>
+            <path pathversion="1">D:\HD\</path>
+            <path pathversion="1">E:\VIDEOS\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>_Music Videos</name>
+            <path pathversion="1">E:\MUSIC_VIDEOS\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>_Tv</name>
+            <path pathversion="1">E:\TV\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Downloads</name>
+            <path pathversion="1">smb://SERVER/DOWNLOADS/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Movies</name>
+            <path pathversion="1">smb://SERVER/HD/</path>
+            <path pathversion="1">smb://SERVER/VIDEOS/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Music Videos</name>
+            <path pathversion="1">smb://SERVER/MUSIC_VIDEOS/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Tv</name>
+            <path pathversion="1">smb://SERVER/TV/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Video PC DVD</name>
+            <path pathversion="1">smb://SERVER/DVD/</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Video Addons</name>
+            <path pathversion="1">library://video/addons.xml/</path>
+            <thumbnail pathversion="1">DefaultVideoPlugins.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Video Library</name>
+            <path pathversion="1">videodb://</path>
+            <thumbnail pathversion="1">DefaultMovies.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>UPnP Media Servers (Auto-Discover)</name>
+            <path pathversion="1">upnp://</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Video Playlists</name>
+            <path pathversion="1">special://videoplaylists/</path>
+            <thumbnail pathversion="1">DefaultVideoPlaylists.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z IPTV Prozone</name>
+            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>_Music (Mixed) (HDD)</name>
+            <path pathversion="1">E:\Special_Songs\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>_Music (HDD)</name>
+            <path pathversion="1">E:\Music\</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Music (Mixed)</name>
+            <path pathversion="1">smb://SERVER/Special_Songs/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Music</name>
+            <path pathversion="1">smb://SERVER/Music/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Music Library</name>
+            <path pathversion="1">musicdb://</path>
+            <thumbnail pathversion="1">DefaultMusicAlbums.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Music Playlists</name>
+            <path pathversion="1">special://musicplaylists/</path>
+            <thumbnail pathversion="1">DefaultMusicPlaylists.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>UPnP Media Servers (Auto-Discover)</name>
+            <path pathversion="1">upnp://</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+         <source>
+            <name>z... (No Repos z.._) (Has Repo z._)</name>
+            <path pathversion="1">https://raw.githubusercontent.com/halikus/_AndyRepo/master/</path>
+            <allowsharing>true</allowsharing>
+        </source>         
+        
+         <source>
+            <name>z.._Blackbox</name>
+            <path pathversion="1">http://theblackboxostv.co.uk/kodi/</path>
+            <allowsharing>true</allowsharing>
+        </source>       
+        <source>
+            <name>z.._Justnewtech</name>
+            <path pathversion="1">http://justnewtech.com</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+         <source>
+            <name>z.._Kodiland  WildTV</name>
+            <path pathversion="1">http://kodiland.co/kodi/</path>
+            <allowsharing>true</allowsharing>
+        </source>       
+        <source>
+            <name>z.._MetaBox</name>
+            <path pathversion="1">http://repo.mbox-addon.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
+            <name>z.._Project Cypher</name>
+            <path pathversion="1">http://repo.run/cypher/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z.._Prozone</name>
+            <path pathversion="1">http://prozone.getxbmc.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+                
+        <source>
+            <name>z._Architects.x10host</name>
+            <path pathversion="1">http://architects.x10host.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._bbtsip</name>
+            <path pathversion="1">http://repo.bbtsip.tv/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._DexterTV</name>
+            <path pathversion="1">http://dexteriptv.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Fusion (TVAddons.ag)</name>
+            <path pathversion="1">http://fusion.tvaddons.ag/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Husham Repo</name>
+            <path pathversion="1">http://repo.husham.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Hydra</name>
+            <path pathversion="1">http://128.199.195.246/xbmc/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._i4ATV-</name>
+            <path pathversion="1">http://i4atv.cu.ma/i4a-repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._lihatTV</name>
+            <path pathversion="1">http://lihattv.com/install/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._iwillfolo</name>
+            <path pathversion="1">http://iwillfolo.com/iwf/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._iVue (tecbox.tv)</name>
+            <path pathversion="1">http://tecbox.tv/repo/install/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._KodiMaster</name>
+            <path pathversion="1">http://kodimaster.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Kodi Next Gen Tools-</name>
+            <path pathversion="1">http://kngt.x10host.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._MB Repo</name>
+            <path pathversion="1">http://www.kodisrael.co.il/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Mega-Tron</name>
+            <path pathversion="1">http://transform.mega-tron.tv/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._MetalKettle</name>
+            <path pathversion="1">http://kodi.metalkettle.co/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._ModBro</name>
+            <path pathversion="1">http://lvtvv.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._MontrealAndroidTV-</name>
+            <path pathversion="1">http://upgrades.montrealandroidtv.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Muckys KodiMediaPortal</name>
+            <path pathversion="1">http://muckys.kodimediaportal.ml/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._NJMSoccer</name>
+            <path pathversion="1">http://njmweb.we.bs/NJMSoccer/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Noobs And Nerds</name>
+            <path pathversion="1">http://noobsandnerds.com/portal/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._OperationRoboCop</name>
+            <path pathversion="1">http://repo.shit.football/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._RenegadesTV</name>
+            <path pathversion="1">http://repo.sharktech.co.uk/RenegadesTV/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._4legends.co. RH Project</name>
+            <path pathversion="1">http://4legends.co.uk/Legends/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._streamlive.to</name>
+            <path pathversion="1">http://repo.streamlive.to/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._SuperRepo</name>
+            <path pathversion="1">http://srp.nu/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._TaffyMC</name>
+            <path pathversion="1">http://add.taffymc.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._TeamExPat</name>
+            <path pathversion="1">http://teamexpat.ninja/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._The UFO Repo</name>
+            <path pathversion="1">http://theuforepo.us/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Wolfteam</name>
+            <path pathversion="1">http://repo.yulfiostv.com/wolfteam/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._xfinity (xfinity.xunitytalk.com)</name>
+            <path pathversion="1">http://xfinity.xunitytalk.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </files>
+</sources>
