@@ -30,7 +30,7 @@
 	<extension point="xbmc.addon.metadata">
 	<provides>video</provides>
 		<description lang="en">TV Guide dedicated tv guide for iptv Stalker systems</description>
-		<disclaimer lang="en">iVue Tv Based Guide.  Ivue Guide is forked and based on FTV Guide, Dixie , Ivue , tommy winthers original code, </disclaimer>
+		<disclaimer lang="en">iVue Tv Based Guide of bandoned 6.24 code.  Ivue Guide is forked and based on FTV Guide, Dixie , Ivue , tommy winthers original code, </disclaimer>
 	</extension>
 </addon>
 
@@ -104,6 +104,38 @@ Profile:   \userdata\profiles\ProfileName</description>
 IPTV.  Clear cache if problems arise.
     </description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="Andy.pvr.iptvsimple"
+  version="1.12.9"
+  name="PVR IPTV Simple Client (Windows Secondary)"
+  provider-name="nightik">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="4.1.0"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_windows="pvr.iptvsimple2.dll"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_AU">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_GB">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_NZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_US">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+
+    <description lang="en_AU">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_GB">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_NZ">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+
+    <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+
+    <platform>windows</platform>
   </extension>
 </addon>
 
@@ -697,60 +729,6 @@ provider-name="Andy Jezz_X, Martijn, ronie">
     <language>en</language>
     <description lang="en"></description>
      <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.dexterpvrtool" name=" DEXTER PVR [COLOR yellow]TOOL[/COLOR]" version="1.2.0" provider-name="SchisM">
- <requires>
-	<import addon="script.module.simplejson" version="3.3.0"/>
-	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-	<import addon="script.module.urlresolver"  version="2.1.2"/>
-	<import addon="script.common.plugin.cache" version="2.5.2"/>
-
- </requires>
- <extension point="xbmc.python.pluginsource" library="default.py">
-	<provides>video</provides>
- </extension>
- <extension point="xbmc.addon.metadata">
-	<summary lang="en">Dexter Pro PVR Helper</summary>
-	<description lang="en">Copy your dexter settings to different Profile folders</description>
-	<platform>all</platform>
- </extension>
-</addon>
-
-<addon id="plugin.video.dextertv"
-       name="dexterTV"
-       version="2.0.5"
-       provider-name="dexter's lab">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Live Stream Popular USA/International Networks.</summary>
-    <description>
-[COLOR blueviolet]This addon is an alternative to IPTV stalker.
-[COLOR deepskyblue]Would you kindly? twitchalerts.com/donate/dextertv1111[/COLOR]
-All Credit to WebCoder for new build.
-[COLOR oldlace]Signup @ dexteriptv.com[/COLOR]
-    </description>
-    <platform>all</platform>
   </extension>
 </addon>
 

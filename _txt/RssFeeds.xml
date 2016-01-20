@@ -13,9 +13,6 @@
     <!-- RSS feeds from kodi.com !-->
     <feed updateinterval="30">http://feeds.xbmc.org/xbmc</feed>
     <feed updateinterval="30">http://feeds.xbmc.org/updated_xbmc_addons</feed>
-    <!-- WIP RSS feeds from Kickass Torrents .com !-->
-    <feed updateinterval="30">https://kat.cr/movies/?rss=1</feed>
-    <feed updateinterval="30">https://kat.cr/tv/?rss=1</feed>
   </set>
   
    <set id="2">

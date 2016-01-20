@@ -40,9 +40,7 @@ org.sopcast.android_124.apk   https://raw.githubusercontent.com/halikus/_AndyRep
 
 
 
-Windows  https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/
-
-
+Windows  https://github.com/halikus/_AndyRepo/tree/master/_windows
 
 
 ## Repo Installation
