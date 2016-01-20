@@ -30,7 +30,7 @@
 	<extension point="xbmc.addon.metadata">
 	<provides>video</provides>
 		<description lang="en">TV Guide dedicated tv guide for iptv Stalker systems</description>
-		<disclaimer lang="en">iVue Tv Based Guide of bandoned 6.24 code.  Ivue Guide is forked and based on FTV Guide, Dixie , Ivue , tommy winthers original code, </disclaimer>
+		<disclaimer lang="en">iVue Tv Based Guide.  Ivue Guide is forked and based on FTV Guide, Dixie , Ivue , tommy winthers original code, </disclaimer>
 	</extension>
 </addon>
 
