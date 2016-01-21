@@ -88,10 +88,26 @@ Profile:   \userdata\profiles\ProfileName</description>
   </extension>
 </addon>
 
-<addon id="Andy.plugin.video"
-       name=" Andy IPTV"
-       version="0.01"
-       provider-name="Andy">
+<addon id="Andy.plugin.video" name=" [COLOR yellow]Andy[/COLOR] IPTV" version="0.1" provider-name="Andy">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+    <summary>IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version doesnt have a MAC in EPG addons.ini</summary>
+    <description>
+Andy.plugin.video   Clear cache if problems arise.    IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini
+    </description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
+<addon id="Andy.plugin.video.mac" name=" [COLOR yellow]Andy[/COLOR] IPTV" version="0.1" provider-name="Andy">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -99,9 +115,9 @@ Profile:   \userdata\profiles\ProfileName</description>
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>IPTV addon for Live TV Channels (Needs legit  MAC in settings)</summary>
+    <summary>IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini</summary>
     <description>
-IPTV.  Clear cache if problems arise.
+Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini
     </description>
     <platform>all</platform>
   </extension>
