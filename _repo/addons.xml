@@ -564,6 +564,79 @@ provider-name="Andy Jezz_X, Martijn, ronie">
     </extension>
 </addon>
 
+<addon id="plugin.video.dex"
+       name=" Dexters TV Pro"
+       version="1.0.2"
+       provider-name="Pipcan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  	<import addon="script.module.urlresolver" />
+</requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Thanks For Keeping Dexter TV</summary>
+    <language>en</language>
+    <description lang="en"></description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.dnatv" name="[COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.1.6" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">DNA TV</summary>
+		<description lang="en">IPTV Stalker Clone</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
+<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.1.0" provider-name="Vania Rupeni">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi Live TV - downloaded for free from: http://kodilive.eu</summary>
+    <description lang="en">Kodi Live TV - downloaded for free from:
+http://kodilive.eu</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mdiptv" name="[COLOR red]MD IPTV[/COLOR]" version="2016" provider-name="CHS">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Stalker mod</summary>
+		<description lang="en">Stalker mod</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>casaa68@yahoo.com</forum>
+
+
+	</extension>
+</addon>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2"
@@ -602,6 +675,45 @@ provider-name="Andy Jezz_X, Martijn, ronie">
 		<license>GNU General Public License, v2</license>
 		<language></language>
 		<forum>http://iptvtalk.org/showthread.php?7379-Modified-IPTV-Stalker-(9-0-18)-iVue-compatible</forum>
+
+
+	</extension>
+</addon>
+
+<addon id="plugin.video.StalkerTv"
+       name=" StalkerTv"
+       version="V10"
+       provider-name="KodiLover and KrAz">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>StalkerTv</summary>
+    <description>
+This is my third attempt to make a iptv stalker clone and this is KrAz's second attempt to make a IPTV stalker clone Enjoy. Check out me and KrAz's YouTube Channels Also Big Thanks To KrAz For all The Macs he has Provided to me.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ufo" name="[COLOR lightgreen]UFO[/COLOR]" version="2.3" provider-name="KrAz">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">IPTV mod</summary>
+		<description lang="en">IPTV mod</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>Graceland</forum>
 
 
 	</extension>
@@ -4779,6 +4891,13 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
                 <website>https://superrepo.org/</website>
                 </extension>
                 </addon>
+
+<addon id="xbmc.core" version="0.1.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="0.1"/>
+  <requires>
+    <c-pluff version="0.1"/>
+  </requires>
+</addon>
 
 <addon id="xbmc.python" version="2.24.0" provider-name="Team-Kodi">
   <backwards-compatibility abi="2.1.0"/>
