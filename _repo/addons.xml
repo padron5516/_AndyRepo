@@ -503,6 +503,23 @@ provider-name="Andy Jezz_X, Martijn, ronie">
     </extension>
 </addon>
 
+<addon id="kodi.guilib" version="5.10.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="5.10.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+</addon>
+
+<addon id="kodi.resource" version="1.0.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="resource.language" schema="language.xsd"/>
+  <extension-point id="resource.uisounds" schema="uisounds.xsd"/>
+  <extension-point id="resource.images" schema="images.xsd"/>
+</addon>
+
     <addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.5" provider-name="KodiMaster">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -697,6 +714,26 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
     </description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.stealthfree" name=" IPTV Stealth Free" version="2.0.0" provider-name="iptvstealth.com">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+
+</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">IPTV Stealth Plus</summary>
+		<description lang="en">TO HELP SUPPORT THIS ADDON PLEASE MAKE A DONATION AT WWW.IPTVSTEALTH.COM[CR][CR]This Addon Contains a mixture of codes credits for these codes go to[CR][CR]Esxbr, MetalKettle and Kodimaster[CR][CR]To Support Kodi visit www.kodi.tv</description>
+		    <website>http://www.iptvstealth.com/</website>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+
+	</extension>
 </addon>
 
 <addon id="plugin.video.ufo" name="[COLOR lightgreen]UFO[/COLOR]" version="2.3" provider-name="KrAz">
@@ -4166,6 +4203,20 @@ If you want to use the generic handling, contact me.
    </extension>
 </addon>
 
+<addon id="script.module.pil"
+       name="Python Image Library"
+       version="1.1.7"
+       provider-name="PythonWare">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.module.pyamf"
        name="PyAMF"
        version="0.6.2"
@@ -4892,10 +4943,68 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
                 </extension>
                 </addon>
 
+<addon id="xbmc.addon" version="15.9.901" provider-name="Team XBMC">
+  <backwards-compatibility abi="12.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="metadata" schema="metadata.xsd"/>
+  <extension-point id="repository" schema="repository.xsd"/>
+</addon>
+
+<addon id="xbmc.audioencoder" version="1.0.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="1.0.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+</addon>
+
+<addon id="xbmc.codec" version="1.0.1" provider-name="Team-Kodi">
+  <backwards-compatibility abi="1.0.1"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+</addon>
+
 <addon id="xbmc.core" version="0.1.0" provider-name="Team-Kodi">
   <backwards-compatibility abi="0.1"/>
   <requires>
     <c-pluff version="0.1"/>
+  </requires>
+</addon>
+
+<addon id="xbmc.gui" version="5.10.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="5.10.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="skin" schema="skin.xsd"/>
+</addon>
+
+<addon id="xbmc.json" version="6.32.4" provider-name="Team XBMC">
+  <backwards-compatibility abi="6.0.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+</addon>
+
+<addon id="xbmc.metadata" version="2.1.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="scraper.albums" schema="scraper.xsd"/>
+  <extension-point id="scraper.artists" schema="scraper.xsd"/>
+  <extension-point id="scraper.movies" schema="scraper.xsd"/>
+  <extension-point id="scraper.musicvideos" schema="scraper.xsd"/>
+  <extension-point id="scraper.tvshows" schema="scraper.xsd"/>
+  <extension-point id="scraper.library" schema="scraper.xsd"/>
+</addon>
+
+<addon id="xbmc.pvr" version="4.1.0" provider-name="Team-Kodi">
+  <backwards-compatibility abi="4.1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
   </requires>
 </addon>
 
