@@ -172,6 +172,23 @@ Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV
     </extension>
 </addon>
 
+    <addon id="Andy.repository.android" name="[COLOR yellow]Andy[/COLOR] Android Repository" version="0.0.1" provider-name="Andy">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR yellow]Andy[/COLOR] Android Repository">
+            <info compressed="false">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_Android/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_Android/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_Android/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>[COLOR yellow]Andy[/COLOR] Repository for Android Specific plugins</summary>
+            <description>Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon
   id="Andy.skin.confluence.14"
   version="2.5.12"
@@ -2065,15 +2082,20 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
 	</extension>
 </addon>
 
-<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.6.2" provider-name="MetalKettle">
-	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
-		<info compressed="false">http://offshoregit.com/metalkettle/addons.xml</info>
-		<checksum>http://offshoregit.com/metalkettle/addons.xml.md5</checksum>
-		<datadir zip="true">http://offshoregit.com/metalkettle/zips</datadir>
+<addon id="repository.metalkettle" name="MetalKettle Add-on Repository" version="1.6.3" provider-name="MetalKettle">
+	<extension point="xbmc.addon.repository" name="MetalKettle Add-on Repository">
+		<dir>
+			<info compressed="false">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml</info>
+			<checksum>http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/zips</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/metalkettle/addons.xml</info>
+		<checksum>https://offshoregit.com/metalkettle/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/metalkettle/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install my Addons</summary>
-		<description>Download and install addons from MetalKettle</description>
+		<summary lang="en">Install Add-ons from MetalKettle</summary>
+		<description lang="en">Download and install add-ons from the MetalKettle Repository.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2161,11 +2183,11 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
 	</extension>
 </addon>
 
-<addon id="repo.natko1412" name="natko1412 repo" version="1.0" provider-name="natko1412">
+<addon id="repo.natko1412" name="natko1412 repo" version="2.0.0" provider-name="natko1412">
 <extension point="xbmc.addon.repository" name="Natko's Addon Repository">
-<info compressed="false">https://raw.githubusercontent.com/natko1412/repo.natko1412/master/addons.xml</info>
-<checksum>https://raw.githubusercontent.com/natko1412/repo.natko1412/master/addons.xml.md5</checksum>
-<datadir zip="true">https://github.com/natko1412/repo.natko1412/raw/master/zips</datadir>
+<info compressed="false">https://offshoregit.com/natko1412/addons.xml</info>
+<checksum>https://offshoregit.com/natko1412/addons.xml.md5</checksum>
+<datadir zip="true">https://offshoregit.com/natko1412/zips/</datadir>
 </extension>
 <extension point="xbmc.addon.metadata">
 <summary>Install all of Natko's Addons</summary>
@@ -2368,15 +2390,20 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.rayw1986" name="RayW1986 Repo" version="1.0" provider-name="rayw1986">
+<addon id="repository.rayw1986" name="RayW1986 Repo" version="2.1.0" provider-name="RayW1986">
 	<extension point="xbmc.addon.repository" name="RayW1986 Repository">
-		<info compressed="false">http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml</info>
-		<checksum>http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/RayW1986/repository.rayw1986/master/zips</datadir>
+		<dir>
+			<info compressed="false">http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml</info>
+			<checksum>http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.github.com/RayW1986/repository.rayw1986/master/zips</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/rayw1986/rayw1986-repo/addons.xml</info>
+		<checksum>https://offshoregit.com/rayw1986/rayw1986-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/rayw1986/rayw1986-repo/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>RayW1986's Repository</summary>
-		<description>RayW1986's Repository. Includes the Indy Wrestling Network.</description>
+		<description>Download and install add-ons from RayW1986's Repository.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2740,7 +2767,7 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.TheWiz" name="TheWiz Hebrew Repository" version="2.1.5" provider-name="TheWiz">
+<addon id="repository.TheWiz" name="TheWiz Hebrew Repository" version="2.2.1" provider-name="TheWiz">
     <extension point="xbmc.addon.repository" name="TheWiz Hebrew Repository">
         <info compressed="true">http://repo.thewiz.info/addons.xml</info>
         <checksum>http://repo.thewiz.info/addons.xml.md5</checksum>
