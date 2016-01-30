@@ -29,8 +29,8 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
 	<provides>video</provides>
-		<description lang="en">TV Guide dedicated tv guide for iptv Stalker systems</description>
-		<disclaimer lang="en">iVue Tv Based Guide.  Ivue Guide is forked and based on FTV Guide, Dixie , Ivue , tommy winthers original code, </disclaimer>
+		<description lang="en">TV Guide for use with 3rd party channel addons</description>
+		<disclaimer lang="en">EPGs Subject to change.  Kudos to the original authors.  You may need to clear the cache if you experience problems.  A good custom addons2.ini is in your best interests.</disclaimer>
 	</extension>
 </addon>
 
@@ -78,9 +78,8 @@ Profile:   \userdata\profiles\ProfileName</description>
   <extension point="xbmc.service" library="service.py" start="startup">
   </extension>
   <extension point="xbmc.addon.metadata">
-  	<summary>Andy NEWS</summary>
+  	<summary>Andy NEWS regarding any inportant updates.</summary>
   	<description>Receive Important Notifications. Unsubscribe within Add-on Settings.</description>
-  	<disclaimer>We take no responsibility for any problems this plugin might in any way, form, shape or size cause.</disclaimer>
   	<language>en</language>
   	<platform>all</platform>
   	<source></source>
@@ -98,9 +97,9 @@ Profile:   \userdata\profiles\ProfileName</description>
 	<extension point="xbmc.service" library="server.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-    <summary>IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version doesnt have a MAC in EPG addons.ini</summary>
+    <summary>IPTV addon for Live TV Channels (Needs MAC in settings).</summary>
     <description>
-Andy.plugin.video   Clear cache if problems arise.    IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini
+  This version doesnt have a MAC in EPG addons.ini or the internal program.  You must provide your own in the settings.xml.  Clear cache if problems arise.
     </description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
@@ -115,9 +114,9 @@ Andy.plugin.video   Clear cache if problems arise.    IPTV addon for Live TV Cha
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini</summary>
+    <summary>IPTV addon for Live TV Channels (Needs MAC in settings).  This version has a visible MAC in EPG addons.ini</summary>
     <description>
-Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV Channels (Needs legit  MAC in settings).  This version has a visible MAC in EPG addons.ini
+This version doesnt have a MAC in EPG addons.ini or the internal program.  You must provide your own in the settings.xml.  Clear cache if problems arise.
     </description>
     <platform>all</platform>
   </extension>
@@ -141,10 +140,10 @@ Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV
     <summary lang="en_NZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="en_US">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
 
-    <description lang="en_AU">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
-    <description lang="en_GB">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
-    <description lang="en_NZ">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
-    <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_AU">A secondary IPTV Simple Client so that your settings aren't accidently overwritten, and you can also run the default one combining two xmls and m3us.</description>
+    <description lang="en_GB">A secondary IPTV Simple Client so that your settings aren't accidently overwritten, and you can also run the default one combining two xmls and m3us.</description>
+    <description lang="en_NZ">A secondary IPTV Simple Client so that your settings aren't accidently overwritten, and you can also run the default one combining two xmls and m3us.</description>
+    <description lang="en_US">A secondary IPTV Simple Client so that your settings aren't accidently overwritten, and you can also run the default one combining two xmls and m3us.</description>
 
     <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
     <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
@@ -155,7 +154,7 @@ Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV
   </extension>
 </addon>
 
-    <addon id="Andy.repository" name="[COLOR yellow]Andy[/COLOR] Repository" version="0.0.1" provider-name="Andy">
+    <addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0" provider-name="Andy">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -172,7 +171,7 @@ Andy.plugin.video.mac   Clear cache if problems arise.    IPTV addon for Live TV
     </extension>
 </addon>
 
-    <addon id="Andy.repository.android" name="[COLOR yellow]Andy[/COLOR] Android Repository" version="0.0.1" provider-name="Andy">
+    <addon id="Andy.repository.android" name=" [COLOR yellow]Andy[/COLOR] Android Repository" version="0.0.1" provider-name="Andy">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>

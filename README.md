@@ -4,7 +4,7 @@
 
 Repo Main Page (This page) https://github.com/halikus/_AndyRepo
 
-Repo Zip https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/Andy.repository.Andy/Andy.repository.Andy-0.0.1.zip
+Repo Zip https://raw.githubusercontent.com/halikus/_AndyRepo/master/Andy.repository.zip
 
 Maintenance Program https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/Andy.plugin.program.Maintenance/Andy.plugin.program.Maintenance-0.0.1.zip
 
@@ -62,7 +62,7 @@ System -> Settings -> Add-ons -> Install From Repository -> Select "Andy Reposit
 
 You can install Repositories (source of addons), Addons (the extra applications), preconfigured addon settings (Addon_data), and xmls.  The xml files are the sources of your media files.
 
-
+IPTV Plugins are not installed with the AIO bundles.  You must install seperatly from repo.
 
 
 ## Comman Kodi Paths :
@@ -136,7 +136,9 @@ start Kodi.exe -p
 <a href="http://tinypic.com?ref=2u4igxw" target="_blank"><img src="http://i64.tinypic.com/2u4igxw.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
 
 
-***This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C..
+*This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
+
+
 
 
 kodithrowaway@gmail.com
