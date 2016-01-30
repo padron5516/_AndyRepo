@@ -145,6 +145,11 @@
             <allowsharing>true</allowsharing>
         </source>       
         <source>
+            <name>z.._Gentecwiz</name>
+            <path pathversion="1">http://gen-tec.co/gentecwiz</path>
+            <allowsharing>true</allowsharing>
+        </source>           
+        <source>
             <name>z.._Justnewtech</name>
             <path pathversion="1">http://justnewtech.com</path>
             <allowsharing>true</allowsharing>
@@ -169,7 +174,12 @@
             <path pathversion="1">http://prozone.getxbmc.com/</path>
             <allowsharing>true</allowsharing>
         </source>        
-                
+   
+        <source>
+            <name>z._Ares</name>
+            <path pathversion="1">http://repo.ares-project.com/magic/</path>
+            <allowsharing>true</allowsharing>
+        </source>                
         <source>
             <name>z._Architects.x10host</name>
             <path pathversion="1">http://architects.x10host.com/repo/</path>
@@ -191,6 +201,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._Halow</name>
+            <path pathversion="1">http://halowtv.com/Halow/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
             <name>z._Husham Repo</name>
             <path pathversion="1">http://repo.husham.com/</path>
             <allowsharing>true</allowsharing>
@@ -198,11 +213,6 @@
         <source>
             <name>z._Hydra</name>
             <path pathversion="1">http://128.199.195.246/xbmc/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z._i4ATV-</name>
-            <path pathversion="1">http://i4atv.cu.ma/i4a-repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -217,7 +227,7 @@
         </source>
         <source>
             <name>z._iVue (tecbox.tv)</name>
-            <path pathversion="1">http://tecbox.tv/repo/install/</path>
+            <path pathversion="1">http://ivuetvguide.com/install/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -317,7 +327,7 @@
         </source>
         <source>
             <name>z._xfinity (xfinity.xunitytalk.com)</name>
-            <path pathversion="1">http://xfinity.xunitytalk.com/</path>
+            <path pathversion="1">http://xunitytalk.me/xfinity/</path>
             <allowsharing>true</allowsharing>
         </source>
     </files>
