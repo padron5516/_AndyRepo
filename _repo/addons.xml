@@ -519,23 +519,6 @@ provider-name="Andy Jezz_X, Martijn, ronie">
     </extension>
 </addon>
 
-<addon id="kodi.guilib" version="5.10.0" provider-name="Team-Kodi">
-  <backwards-compatibility abi="5.10.0"/>
-  <requires>
-    <import addon="xbmc.core" version="0.1.0"/>
-  </requires>
-</addon>
-
-<addon id="kodi.resource" version="1.0.0" provider-name="Team-Kodi">
-  <backwards-compatibility abi="1.0"/>
-  <requires>
-    <import addon="xbmc.core" version="0.1.0"/>
-  </requires>
-  <extension-point id="resource.language" schema="language.xsd"/>
-  <extension-point id="resource.uisounds" schema="uisounds.xsd"/>
-  <extension-point id="resource.images" schema="images.xsd"/>
-</addon>
-
     <addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.5" provider-name="KodiMaster">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -635,41 +618,6 @@ provider-name="Andy Jezz_X, Martijn, ronie">
 	</extension>
 </addon>
 
-<addon id="plugin.video.kodilivetv" name="Kodi Live TV" version="1.1.0" provider-name="Vania Rupeni">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Kodi Live TV - downloaded for free from: http://kodilive.eu</summary>
-    <description lang="en">Kodi Live TV - downloaded for free from:
-http://kodilive.eu</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.mdiptv" name="[COLOR red]MD IPTV[/COLOR]" version="2016" provider-name="CHS">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Stalker mod</summary>
-		<description lang="en">Stalker mod</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>casaa68@yahoo.com</forum>
-
-
-	</extension>
-</addon>
-
 <addon
   id="plugin.video.SportsDevil"
   version="2"
@@ -708,65 +656,6 @@ http://kodilive.eu</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
 		<forum>http://iptvtalk.org/showthread.php?7379-Modified-IPTV-Stalker-(9-0-18)-iVue-compatible</forum>
-
-
-	</extension>
-</addon>
-
-<addon id="plugin.video.StalkerTv"
-       name=" StalkerTv"
-       version="V10"
-       provider-name="KodiLover and KrAz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>StalkerTv</summary>
-    <description>
-This is my third attempt to make a iptv stalker clone and this is KrAz's second attempt to make a IPTV stalker clone Enjoy. Check out me and KrAz's YouTube Channels Also Big Thanks To KrAz For all The Macs he has Provided to me.
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.stealthfree" name=" IPTV Stealth Free" version="2.0.0" provider-name="iptvstealth.com">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-
-</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV Stealth Plus</summary>
-		<description lang="en">TO HELP SUPPORT THIS ADDON PLEASE MAKE A DONATION AT WWW.IPTVSTEALTH.COM[CR][CR]This Addon Contains a mixture of codes credits for these codes go to[CR][CR]Esxbr, MetalKettle and Kodimaster[CR][CR]To Support Kodi visit www.kodi.tv</description>
-		    <website>http://www.iptvstealth.com/</website>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-
-	</extension>
-</addon>
-
-<addon id="plugin.video.ufo" name="[COLOR lightgreen]UFO[/COLOR]" version="2.3" provider-name="KrAz">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV mod</summary>
-		<description lang="en">IPTV mod</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>Graceland</forum>
 
 
 	</extension>
@@ -906,6 +795,19 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
 	</extension>
 </addon>
 
+<addon id="repository.AznKodi" name="AznKodi" version="1.0.0" provider-name="AznKodi">
+	<extension point="xbmc.addon.repository" name="VietKodi Addon Repository">
+		<info compressed="false">https://github.com/AznKodi/repository.AznKodi/raw/master/addons.xml</info>
+		<checksum>https://github.com/AznKodi/repository.AznKodi/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/AznKodi/repository.AznKodi/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>XBMC-Kodi Repo</summary>
+		<description>Repo for XBMC-Kodi</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.bbtsip.tv" name="[COLOR yellowgreen]B[/COLOR][COLOR dodgerblue]B[/COLOR]T[COLOR orangered]S[/COLOR] - Repo" version="0.0.7" provider-name="BBTS">
   <requires>
     <import addon="xbmc.addon" version="12.0.0" />
@@ -999,6 +901,19 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
 		<summary>Install Add-ons from Bond's Add-on Repository</summary>
 		<description>Plug-ins for XBMC</description>
 		<disclaimer>There are add-ons that allow viewing popular Russian IPTV providers in the program XBMC</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+	<extension name="Boogie's Kodi Repo" point="xbmc.addon.repository">
+		<info compressed="false">http://boogie.us.to/repository.boogie.dist/addons.xml</info>
+		<checksum>http://boogie.us.to/repository.boogie.dist/addons.xml.md5</checksum>
+		<datadir zip="true">http://boogie.us.to/repository.boogie.dist</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Boogie's Repository for KODI/XBMC</summary>
+		<description>This is the personal repo published by boogiepop</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1658,23 +1573,6 @@ This is my third attempt to make a iptv stalker clone and this is KrAz's second 
 		<description>Download and install addons from husham.com repo</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-    <addon id="repository.i4a-repo" name="i4a-repo" version="9.2.0" provider-name="Inside 4ndroid">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="i4a-repo">
-            <info compressed="false">http://i4atv.cu.ma/_repo/addons.xml</info>
-            <checksum>http://i4atv.cu.ma/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://i4atv.cu.ma/_repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Inside 4ndroid Kodi Addons</summary>
-            <description>Inside 4ndroid Kodi Addons</description>
-            <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="repository.icanuck" name="[COLOR FF005de5]iCanuck's [/COLOR]Kodi Repository" version="3.1.0" provider-name="iCanuck">
@@ -2923,6 +2821,21 @@ Addons Included
     </extension>
 </addon>
 
+<addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.0" provider-name="iCanuck">
+	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repo">
+        <info compressed="false">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/addons.xml</info>
+        <checksum>http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/addons.xml.md5</checksum>
+        <datadir zip="true">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Quasar and Providers</summary>
+		<description>Download and install Quasar and Providers</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	</extension>
+</addon>
+
 <addon id="repository.uscclarkey" name="Uscclarkey" version="1.3" provider-name="Uscclarkey">
 	<extension point="xbmc.addon.repository" name="Uscclarkey">
 		<info compressed="false">http://raw.github.com/uscclarkey/repo/master/addons.xml</info>
@@ -3379,22 +3292,6 @@ Addons Included
 		<platform>all</platform>
 	</extension>
 </addon>
-
-<addon id="script.areswizard" name="[COLOR black].[/COLOR] Ares Wizard" provider-name="AresTeam" version="0.0.24">
- <requires>
- <import addon="script.module.pyxbmct" version="1.1.4"/>
- <import addon="script.module.elementtree" version="1.2.7"/>
- </requires>
- <extension library="default.py" point="xbmc.python.pluginsource">
- <provides>executable</provides>
- </extension>
- <extension point="xbmc.service" library="resources/aresservice.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Ares Wizard - Your one stop for Kodi setup + maintenance</summary>
-    <description lang="en">Ares Wizard</description>
-    <platform>all</platform>
-  </extension>
- </addon>
 
 <addon id="script.globalsearch" name="Global Search" version="6.0.5" provider-name="ronie">
 	<requires>
@@ -5062,16 +4959,16 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
   <extension-point id="context.item" schema="contextitem.xsd"/>
 </addon>
 
-<addon id="xbmc.repo.tecboxtvguide" name="iVue TV Guide Add-on" version="1.0.1" provider-name="DreamHD TECbox">
-	<extension point="xbmc.addon.repository" name="iVue TV Guide Add-ons Repository">
-		<info compressed="false">http://tecbox.tv/repo/teciptvguide/addons.xml</info>
-		<checksum>http://tecbox.tv/repo/teciptvguide/addons.xml.md5</checksum>
-		<datadir zip="true">http://tecbox.tv/repo/teciptvguide/</datadir>
+<addon id="xbmc.repo.ivueguide" name="iVue2 TV Guide Repo" version="0.0.1" provider-name="iVue">
+	<extension point="xbmc.addon.repository" name="iVue2 TV Guide Add-ons Repository">
+		<info compressed="false">https://raw.githubusercontent.com/totaltec2014/ivue2/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/totaltec2014/ivue2/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/totaltec2014/ivue2/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install iVue TV Guide </summary>
-		<description>Download and install for iVue Tv guide addons </description>
-		<disclaimer> Repo for iVue Tv guide addon </disclaimer>
+		<summary>Install iVue2 TV Guide </summary>
+		<description>Download and install for iVue2 Tv guide addons </description>
+		<disclaimer> Repo for iVue2 Tv guide addon </disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
