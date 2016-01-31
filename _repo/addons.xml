@@ -194,9 +194,7 @@ This version doesnt have a MAC in EPG addons.ini or the internal program.  You m
 
     <extension point="xbmc.addon.metadata">
         <summary> [COLOR yellow]Andy[/COLOR] Repository</summary>
-        <description lang="en">Download and install addons, repositories and backups of preconfigured apps and user settings.
-        This is the source of my addons and used for automatic updates.
-        </description>
+        <description lang="en">Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <source>https://github.com/halikus/_AndyRepo</source>
         <forum>http://forum.xbmc.org/</forum>
@@ -941,6 +939,8 @@ provider-name="Andy Jezz_X, Martijn, ronie">
 		<platform>all</platform>
 	</extension>
 </addon>
+
+<addon id="repository.boogie" name="Boogie's Kodi Repo" provider-name="boogiepop" version="0.0.10">
 
 	<extension name="Boogie's Kodi Repo" point="xbmc.addon.repository">
 		<info compressed="false">http://boogie.us.to/repository.boogie.dist/addons.xml</info>
