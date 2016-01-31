@@ -12,7 +12,8 @@ Maintenance Program https://raw.githubusercontent.com/halikus/_AndyRepo/master/_
 Install Kodi http://kodi.tv/download/
 
 *Windows
-16 Beta 5 is what i use.
+
+16 is what i use.
  
 15.2 suggested for maximum compatability.
 15.2 no DX11 - http://mirrors.kodi.tv/releases/win32/kodi-15.2-Isengard.exe
@@ -133,12 +134,6 @@ start Kodi.exe -p
 
 
 
-<a href="http://tinypic.com?ref=2u4igxw" target="_blank"><img src="http://i64.tinypic.com/2u4igxw.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
-
-
 *This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
-
-
-
 
 kodithrowaway@gmail.com
