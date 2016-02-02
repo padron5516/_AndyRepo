@@ -1,12 +1,33 @@
 <advancedsettings>
-  <network>
-    <buffermode>1</buffermode>
-    <cachemembuffersize>314572800</cachemembuffersize>
-    <readbufferfactor>20</readbufferfactor>
-  </network>
-  <pvr>
-    <minvideocachelevel>65</minvideocachelevel>
-    <minaudiocachelevel>65</minaudiocachelevel>
-    <cacheindvdplayer>true</cacheindvdplayer>
-  </pvr>  
+
+<network>
+   <buffermode>1</buffermode>
+   <cachemembuffersize>314572800</cachemembuffersize>
+   <readbufferfactor>20</readbufferfactor>
+</network>
+
+<pvr>
+   <minvideocachelevel>65</minvideocachelevel>
+   <minaudiocachelevel>65</minaudiocachelevel>
+   <cacheindvdplayer>true</cacheindvdplayer>
+</pvr>  
+
+<gui>
+   <nofliptimeout>0</nofliptimeout>
+   <algorithmdirtyregions>3</algorithmdirtyregions> 
+</gui>
+
+<filelists>
+   <allowfiledeletion>true</allowfiledeletion>
+</filelists>
+
+<videoscanner>
+   <ignoreerrors>true</ignoreerrors>  <!-- Set to true to silently ignore errors while scanning videos. This prevents the error dialogue box, so you don't have to keep hitting "yes" to keep scanning.-->
+</videoscanner>
+
+<input>
+   <enablemouse>true</enablemouse>
+   <remoteaskeyboard>true</remoteaskeyboard>
+</input>
+
 </advancedsettings>

@@ -1,0 +1,204 @@
+name="Andy Pre-Configured Backup (Default) (Dropbox)"
+adult=no
+url="https://onedrive.live.com/download?cid=62C0101CC3DF9A5A&resid=62C0101CC3DF9A5A%2120062&authkey=AIWS7cm_KIPHJro"
+img="https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/dropbox/Restore_Full.png"
+fanart="https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/dropbox/fanart.jpg"
+video="None"
+description="Andys Pre-Configured Backup.  This has all the addons, repos and settings already done."
+
+
+name="TVAddons.org"
+adult=no
+url="http://raw.github.com/jianglu88/school-work/master/Term/geneva.zip"
+img="https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/dropbox/TVAddons.jpg"
+fanart="https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/dropbox/TVAddons.jpg"
+video="None"
+description="TVAddons.org pre-configured addon."
+
+
+
+
+
+
+name="ATOS 1.1"
+adult=no
+url="https://archive.org/download/ATOS1_1/ATOS1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/ATOS-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/ATOS-SPLASH.jpg"
+video="None"
+description="ATOS V1.1 - Built with the Arctic Zephyr skin which although now widely used by custom builders is a really fantastic skin. All the goodies are in here so give it a try."
+
+name="INFERNO 1.1"
+adult=no
+url="https://archive.org/download/INFERNO1.1/INFERNO_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/INFERNO-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/Inferno-v1.0.jpg"
+video="None"
+description="INFERNO V1.1 - A build with a firey them to it.  Fixed menus issues that were caused by the recent Genesis 5.0.0 add-on update.  Added the KodiMaster Maintenance add-on and linked to SYSTEM menu.  Removed some add-ons that were not child-friendly"
+
+name="SPARSE 1.0"
+adult=no
+url="https://archive.org/download/SPARSE10/SPARSE_1_0.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/SPARSE-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/SPARSE-SPLASH.jpg"
+video="None"
+description="SPARSE 1.0 - A 'sparce' build with ony the bare essential add-ons. For those of you that just want to watch!"
+
+name="ANDYS BUILD 5.1"
+adult=no
+url="https://archive.org/download/ANDYSBUILD5.1/AB5_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/ANDYS_BUILD_THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/ANDYS-BUILD-SPLASH-2.png"
+video="None"
+description="ANDYS BUILD V5.1 - Fixed menus issues that were caused by the Genesis 5.0.0 add-on update.  Removed some add-ons that I feel were hardly used."
+
+name="SIMPLY AMBER 1.1"
+adult=no
+url="https://archive.org/download/SIMPLYAMBER1_1/SIMPLY_AMBER_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/SIMPLYAMBER_THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/SIMPLYAMBER-SPLASH.jpg"
+video="None"
+description="SIMPLY AMBER V1.0 - Description coming soon !"
+
+
+
+name="ATOS 1.1"
+adult=no
+url="https://archive.org/download/ATOS1_1/ATOS1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/ATOS-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/ATOS-SPLASH.jpg"
+video="None"
+description="ATOS V1.1 - Built with the Arctic Zephyr skin which although now widely used by custom builders is a really fantastic skin. All the goodies are in here so give it a try."
+
+name="INFERNO 1.1"
+adult=no
+url="https://archive.org/download/INFERNO1.1/INFERNO_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/INFERNO-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/Inferno-v1.0.jpg"
+video="None"
+description="INFERNO V1.1 - A build with a firey them to it.  Fixed menus issues that were caused by the recent Genesis 5.0.0 add-on update.  Added the KodiMaster Maintenance add-on and linked to SYSTEM menu.  Removed some add-ons that were not child-friendly"
+
+name="SPARSE 1.0"
+adult=no
+url="https://archive.org/download/SPARSE10/SPARSE_1_0.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/SPARSE-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/SPARSE-SPLASH.jpg"
+video="None"
+description="SPARSE 1.0 - A 'sparce' build with ony the bare essential add-ons. For those of you that just want to watch!"
+
+name="ANDYS BUILD 5.1"
+adult=no
+url="https://archive.org/download/ANDYSBUILD5.1/AB5_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/ANDYS_BUILD_THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/ANDYS-BUILD-SPLASH-2.png"
+video="None"
+description="ANDYS BUILD V5.1 - Fixed menus issues that were caused by the Genesis 5.0.0 add-on update.  Removed some add-ons that I feel were hardly used."
+
+name="SIMPLY AMBER 1.1"
+adult=no
+url="https://archive.org/download/SIMPLYAMBER1_1/SIMPLY_AMBER_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/08/SIMPLYAMBER_THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/08/SIMPLYAMBER-SPLASH.jpg"
+video="None"
+description="SIMPLY AMBER V1.0 - Description coming soon !"
+
+
+
+name="007 SPECTRE BUILD"
+adult=no
+url="https://archive.org/download/007SpectreBuild_201510/007SpectreBuild.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/009-SPECTRE-BUILD-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/007-SPECTRE-BUILD.jpg"
+video="None"
+description="007 SPECTRE BUILD"
+
+name="SIMPSONS BUILD V1"
+adult=no
+url="https://archive.org/download/simpsons_201510/simpsons.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/SIMPSONS-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/Simpsons.jpg"
+video="None"
+description="SIMPSONS BUILD V1"
+
+
+name="KIDZ CLUB 4"
+adult=no
+url="https://archive.org/download/KidzClub_20150923/KidzClub.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/09/kidzclub-thumb.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/09/kidsclub.jpg"
+video="None"
+description="KIDZ CLUB 4 – Here is a nice build for the kids, that makes everything they need easy to find. This build has been contributed to the KodiMaster Wizard by the builder know as MAESTRO. Enjoy."
+
+name="LADY 1.3"
+adult=no
+url="https://archive.org/download/LADY13_201510/LADY_1_3.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/09/Lady-Thumb.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/09/Lady-Wallpaper.jpg"
+video="None"
+description="LADY 1.3 - Built with Aeon Nox skin, this is one focused for you ladies out there.  Don't worry though it can be enjoyed by all the family.  This build has been contributed to the KodiMaster Wizard by the builder know as MAESTRO. Enjoy."
+
+name="JMC BUILD 1.1"
+adult=no
+url="https://archive.org/download/Jmc1.1New02102015/jmc_1_1_new.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/09/JMC-500-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/09/JMC-1.1-1080.jpg"
+video="None"
+description="JMC BUILD V1.1 - Built with CCM Helix skin and jammed packed with addons.  There really are too many for me to list here at themoment.  This build has been contributed to the KodiMaster Wizard by the builder know as JCM. Enjoy."
+
+name="RIGBYS BUILD 1.2"
+adult=no
+url="https://archive.org/download/RigbysBuild12/Rigbys_Build_1_2.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/Rigbys-Build-thumb.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/Rigbys-Build-wall.jpg"
+video="None"
+description="RIGBYS BUILD 1.2"
+
+
+name="KAYKODI 1.1"
+adult=no
+url="https://archive.org/download/kaykodi_1_1/kaykodi_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/09/KAYKODI-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/09/KAYKODI.jpg"
+video="None"
+description="KAYKODI 1.0 - Built with CCM Helix skin, has a simple, clean and familiar feel to the classis Confluence skin.  Just the right amount of add-ons needed to get the job done, while not overwhelming you.  The build has been contributed to the KodiMaster Wizard by the builder known as KAY. Enjoy."
+
+name="YOUR ANDROID TV BUILD 1.0"
+adult=no
+url="https://archive.org/download/YATVB10_201510/YATVB_1_0.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/androidtvbuild.jpg"
+fanart=""
+video="None"
+description="YOUR ANDROID TV BUILD 1.0"
+
+name="JARWOO BUILD 1.0"
+adult=no
+url="https://archive.org/download/JARWOO1_0/JARWOO_1_0.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/JARWOO-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/JARWOO-FANART.jpg"
+video="None"
+description="JARWOO BUILD 1.0"
+
+name="BOABYS BUILD 1.1"
+adult=no
+url="https://archive.org/download/BOABYSBUILD11/BOABYS_BUILD_1_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/BOABYS-BUILD-thumb.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/BOABYS-BUILD.jpg"
+video="None"
+description="BOABYS BUILD 1.1"
+
+
+name="X-RATED 1.0"
+adult=yes
+url="https://archive.org/download/XRATED10/XRATED_1_0.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/09/X-RATED-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/09/X-RATED-SPLASH.jpg"
+video="None"
+description="Nothing but adult content here!"
+
+name="KIZZY'S BUILD 2.1"
+adult=yes
+url="https://archive.org/download/KIZZYS21/KIZZYS_2_1.zip"
+img="http://kodimaster.com/wp-content/uploads/2015/10/KIZZYS-BUILD-THUMB.jpg"
+fanart="http://kodimaster.com/wp-content/uploads/2015/10/KIZZYS-BUILD.jpg"
+video="None"
+description="KIZZY'S BUILD 2.1 - Another beautiful build has been added to the KodiMaster Wizard.  Great IPTV channels and adult content also.  You can find this in the 'Adult' section of the KodiMaster Wizard. Enjoy !!"

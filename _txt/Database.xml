@@ -196,13 +196,23 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._epg.ninja (clairvoyance)</name>
+            <path pathversion="1">http://epg.ninja/clairvoyance/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Filmkodi (Genesis)</name>
+            <path pathversion="1">http://filmkodi.com/repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._Fusion (TVAddons.ag)</name>
             <path pathversion="1">http://fusion.tvaddons.ag/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
             <name>z._Halow</name>
-            <path pathversion="1">http://halowtv.com/Halow/</path>
+            <path pathversion="1">http://repo.halowtv.org/</path>
             <allowsharing>true</allowsharing>
         </source>        
         <source>
@@ -213,11 +223,6 @@
         <source>
             <name>z._Hydra</name>
             <path pathversion="1">http://128.199.195.246/xbmc/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z._lihatTV</name>
-            <path pathversion="1">http://lihattv.com/install/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -233,11 +238,6 @@
         <source>
             <name>z._KodiMaster</name>
             <path pathversion="1">http://kodimaster.com/repo/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z._Kodi Next Gen Tools-</name>
-            <path pathversion="1">http://kngt.x10host.com/repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
