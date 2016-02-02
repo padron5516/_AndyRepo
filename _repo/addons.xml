@@ -214,47 +214,55 @@ Profile:   \userdata\profiles\ProfileName</description>
 
 </addon>
 
-<addon id="Andy.repository.windows" name=" [COLOR yellow]Andy[/COLOR] Windows Repository" version="0.0.1" provider-name="Andy">
-	<requires>
-	  <!--<backwards-compatibility abi="12.0"/>-->
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.repository" name=" [COLOR yellow]Andy[/COLOR] Windows Repository">
-
-		<dir minversion="16.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-		<dir minversion="15.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-		<dir minversion="14.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-	  </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary>[COLOR yellow]Andy[/COLOR] Repository for Windows Specific plugins</summary>
-        <description lang="en">Windows Extras.  Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <source>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/</source>
-        <forum>http://forum.xbmc.org/</forum>
-        <email></email>
-        <website>http://kodi.tv/download/</website>
-        <platform>windx</platform>
+    <addon id="Andy.repository.windows.helix" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Helix 14)" version="0.0.1" provider-name="Andy">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Helix 14)">
+            <info compressed="false">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/14/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>[COLOR yellow]Andy[/COLOR] Repository for Windows Specific plugins</summary>
+            <description>Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
+            <platform>all</platform>
     </extension>
+</addon>
 
+    <addon id="Andy.repository.windows.isengard" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Isengard 15)" version="0.0.1" provider-name="Andy">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Isengard 15)">
+            <info compressed="false">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/15/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>[COLOR yellow]Andy[/COLOR] Repository for Windows Specific plugins</summary>
+            <description>Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="Andy.repository.windows.jarvis" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Jarvis 16)" version="0.0.1" provider-name="Andy">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR yellow]Andy[/COLOR] Windows Repository (Jarvis 16)">
+            <info compressed="false">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_windows/16/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>[COLOR yellow]Andy[/COLOR] Repository for Windows Specific plugins</summary>
+            <description>Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
+            <platform>all</platform>
+    </extension>
 </addon>
 
 <addon
