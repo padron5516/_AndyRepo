@@ -36,7 +36,7 @@
 
 
 <addon id="Andy.plugin.program.Maintenance"
- name="[COLOR yellow]Andy[/COLOR] Maintenance"
+ name=" [COLOR yellow]Andy[/COLOR] Maintenance"
  version="0.0.1"
  provider-name="Andy">
 
@@ -3276,6 +3276,56 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.addon.signals"
+	name="Addon Signals"
+	version="0.0.1"
+	provider-name="Rick Phillips (ruuk)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Inter-addon signalling</summary>
+		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
+</addon>
+
+<addon id="script.module.autoupdate" name="autoupdate" version="2.0.0" provider-name="Blazetamer">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+ <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">AutoUpdate Add-On at launch</summary>
+    <description lang="en">Allows AutoUpdate of Add-on/Repo at time of add-on launch</description>
+    <language></language>
+    <platform>all</platform>
+        <license>GPLv2</license>
+        <forum></forum>
+        <website>http://cliqaddon.com</website>
+        <email>blazetamer@gmail.com</email>
+        <source></source>
+    </extension>
+</addon>
+
+<addon id="script.module.axel.downloader"
+	     name="Axel Downloader"
+	     version="0.2.2"
+	     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.addon.common" version="2.0.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="controlpanel.py"/>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension library="default.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Multi-connection/threaded Downloader</summary>
+    <description lang="en">Download a file using multiple connections to achieve the highest speed.</description>
+  </extension>
+</addon>
+
 <addon id="script.module.beautifulsoup"
        name="BeautifulSoup"
        version="3.2.1"
@@ -3313,6 +3363,46 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.chardet"
+       name="chardet"
+       version="2.2.1"
+       provider-name="Valentin-Costel Hăloiu">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Universal encoding detector</summary>
+    <description>Packed for XBMC from https://github.com/erikrose/chardet</description>
+    <license>LGPL</license>
+    <platform>all</platform>
+    <source>https://github.com/erikrose/chardet/commits/master</source>
+  </extension>
+</addon>
+
+<addon id="script.module.dudehere.routines" name="DudeHere Common Routines" provider-name="DudeHere" version="0.3.42">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Collection of commonly used addon routines</summary>
+        <description lang="en">Collection of commonly used addon routines used by DudeHere.</description>
+        <disclaimer lang="en" />
+        <language />
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forums.tvaddons.ag/dudehere-addons/</forum>
+        <website>http://www.tvaddons.ag/</website>
+        <email />
+        <source />
+    </extension>
+</addon>
+
 <addon id="script.module.elementtree"
        name="Elementtree XML parser"
        version="1.2.8"
@@ -3324,6 +3414,31 @@ Addons Included
              library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.googleapi"
+       name="googleapi"
+       version="1.4.2"
+       provider-name="Google">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.httplib2" version="0.8.0" />
+	<import addon="script.module.uritemplate" version="0.6" />
+	<import addon="script.module.six" version="1.9.0" />
+	<import addon="script.module.oauth2client" version="1.4.7" />
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Google API python classes and dependencies</summary>
+    <description lang="en">A packaged version of all the libraries needed for Google API access via python.</description>
+    <disclaimer lang="en">Source code for the Google API from https://developers.google.com/api-client-library/python/start/installation</disclaimer>
+    <license>Apache 2.0</license>
+    <website>https://developers.google.com/api-client-library/python/start/installation</website>
+    <source>https://github.com/google/google-api-python-client</source>
   </extension>
 </addon>
 
@@ -3344,6 +3459,52 @@ Addons Included
         <source>https://pypi.python.org/pypi/httplib2</source>
         <language></language>
    </extension>
+</addon>
+
+<addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.7" provider-name="Avigdor (xbmc-israel repo)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="repository.xbmc-israel" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</description>
+  </extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.0.8' name='LibTorrent' provider-name='DiMartino, srg70, RussakHH, aisman'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary>LibTorrent</summary>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.19"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
+  </extension>
 </addon>
 
 <addon id="script.module.mechanize"
@@ -3393,6 +3554,34 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.mutagen"
+       name="mutagen"
+       version="1.22.0"
+       provider-name="Joe Wreschnig">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
+    <description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
+M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg
+Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All
+versions of ID3v2 are supported, and all standard ID3v2.4 frames are
+parsed. It can read Xing headers to accurately calculate the bitrate and
+length of MP3s. ID3 and APEv2 tags can be edited regardless of audio
+format. It can also manipulate Ogg streams on an individual packet/page
+level.</description>
+    <disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>http://code.google.com/p/mutagen/</website>
+    <source>https://bitbucket.org/lazka/mutagen/overview</source>
+  </extension>
+</addon>
+
 <addon id="script.module.myconnpy"
        name="MySQL Connector/Python"
        version="1.1.7"
@@ -3409,6 +3598,62 @@ Addons Included
         <website>http://dev.mysql.com/doc/connector-python/en/index.html</website>
         <source>http://dev.mysql.com/downloads/connector/python/</source>
     </extension>
+</addon>
+
+<addon id="script.module.oauth.helper"
+       name="OAuth Helper"
+       version="0.0.7"
+       provider-name="Rick Phillips (ruuk)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Provides simple google device OAuth handling and generic device OAuth via my server</summary>
+    <description lang="en">This module provides simple OAuth handling. The module handles all user interaction.
+
+PicasaWeb example:
+
+helper = OAuthHelper.GoogleOAuthorizer.(
+    addon_id='plugin.image.picasa',
+    client_id='blahblah342980723405.apps.googleusercontent.com',
+    client_secret='2349057829034572',
+    auth_scope='https://picasaweb.google.com/data/'
+)
+
+token = helper.getToken()
+
+If you want to use the generic handling, contact me.
+    </description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/ruuk/script.module.oauth.helper</source>
+  </extension>
+</addon>
+
+<addon id="script.module.oauth2client"
+       name="oauth2client"
+       version="1.4.7"
+       provider-name="Google">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.httplib2" version="0.8.0" />
+	<import addon="script.module.uritemplate" version="0.6" />
+	<import addon="script.module.six" version="1.9.0" />
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Google Oauth2Client libraries</summary>
+    <description lang="en">A packaged version of the libraries needed for Google Oauth2 Client access to their API via python.</description>
+    <disclaimer lang="en">Source code from https://github.com/google/oauth2client</disclaimer>
+    <license>Apache 2.0</license>
+    <website>http://google.github.io/oauth2client/</website>
+    <source>https://github.com/google/oauth2client</source>
+  </extension>
 </addon>
 
 <addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
@@ -3491,6 +3736,17 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.pyxbmctmanager" name="PyXBMCt Manager" provider-name="DudeHere" version="0.0.3">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.pyxbmct" version="1.1.4" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Mulit-page window wrapper for PyXBMCt.</summary>
+    </extension>
+</addon>
+
 <addon id="script.module.requests"
        name="requests"
        version="2.9.1"
@@ -3548,6 +3804,26 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.six"
+       name="six"
+       version="1.9.0"
+       provider-name="gutworth">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python 2 and 3 compatibility utilities.</summary>
+    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/six</source>
+    <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
 <addon id="script.module.t0mm0.common"
 	     name="t0mm0's common stuff"
 	     version="2.1.1.01"
@@ -3561,6 +3837,71 @@ Addons Included
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
   </extension>
+</addon>
+
+<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="1.0.12">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib"  />
+  <extension point="xbmc.addon.metadata">
+        <description lan="en">t1m Library Routines</description>
+        <summary lang="en">t1m Library Routines</summary>
+        <disclaimer lang="en"></disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <platform>all</platform>
+        <email></email>
+        <website></website>
+        <forum>http://forum.kodi.tv/showthread.php?tid=247163</forum>
+        <source>https://github.com/learningit/repository.t1m.v2.addons/tree/master/src/script.module.t1mlib</source>
+        <language></language>
+   </extension>
+</addon>
+
+<addon id="script.module.TheYid.common"
+	     name="TheYid's common stuff"
+	     version="0.1.2"
+	     provider-name="TheYid">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+  </extension>
+</addon>
+
+<addon id='script.module.torrent.ts' version='0.6.0.28a' name='AceStream Client' provider-name='NuisMons'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="tsserv.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary>AceStream Engine support</summary>
+  </extension>
+  <extension library="default.py" point="xbmc.service" />
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.1.3b" provider-name="anteo">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
+    </extension>
 </addon>
 
 <addon id="script.module.universal" name="Universal - An Addons Toolkit" version="2.0.1" provider-name="the-one">
@@ -3581,6 +3922,112 @@ Addons Included
 	<source>https://github.com/the-one-/script.module.universal</source>
 	<email>xs2the1[at]gmail[dot]com</email>
   </extension>
+</addon>
+
+<addon id="script.module.uritemplate"
+       name="uritemplate"
+       version="0.6.0"
+       provider-name="Joe Gregorio">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">URItemplates python module</summary>
+    <description lang="en">A packaged version of the uritemplates python module.</description>
+    <disclaimer lang="en">All source code taken from original repository at source address</disclaimer>
+    <license>Apache 2.0</license>
+    <website>https://github.com/uri-templates/uritemplate-py</website>
+    <source>https://github.com/uri-templates/uritemplate-py</source>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver"
+     name="URLResolver"
+     version="2.10.10"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.xmltodict" name="xmltodict" version="0.9.0" provider-name="martinblech">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language></language>
+        <summary lang="en">Python helper module</summary>
+        <description lang="en">xmltodict is a Python module that makes working with XML feel like you are working with JSON, as in this "spec".[CR]</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <website>https://github.com/martinblech/xmltodict</website>
+        <source>https://github.com/martinblech/xmltodict</source>
+        <forum></forum>
+    </extension>
+</addon>
+
+<addon id="script.module.yaml"
+       name="pyyaml"
+       version="3.11.0"
+       provider-name="Kirill Simonov">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">PyYaml library</summary>
+    <description lang="en">A packaged version of files needed for the pyyamml library.</description>
+    <disclaimer lang="en">Source code taken from original source repo</disclaimer>
+    <license>MIT</license>
+    <website>http://pyyaml.org/</website>
+    <source>http://svn.pyyaml.org/pyyaml/</source>
+  </extension>
+</addon>
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="15.1223.0" provider-name="Rick Phillips (ruuk)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.signals" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en">Module providing access to youtube-dl video stream extraction for over 270 sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200877</forum>
+        <source>http://github.com/ruuk/script.module.youtube.dl</source>
+    </extension>
 </addon>
 
 <addon id="superrepo.kodi.helix.all" name="SuperRepo All [Helix][v7]" version="0.7.04" provider-name="Bart Otten">
