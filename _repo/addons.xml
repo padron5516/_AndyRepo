@@ -90,7 +90,7 @@ Profile:   \userdata\profiles\ProfileName</description>
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.9"
-  name="PVR IPTV Simple Client (Windows Secondary Jarvis)"
+  name="PVR IPTV Simple Client (Windows Secondary)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -121,52 +121,31 @@ Profile:   \userdata\profiles\ProfileName</description>
 
 <addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.0" provider-name="Andy">
 	<requires>
-	  <backwards-compatibility abi="12.0"/>
-		<!--<import addon="xbmc.addon" version="12.0.0"/>-->
+	  <!--<backwards-compatibility abi="12.0"/>-->
+		<import addon="xbmc.addon" version="12.0.0"/>
 		<!--<import addon="Andy.plugin.program.Maintenance" version="0.0.1"/>-->
 	</requires>
 	<extension point="xbmc.addon.repository" name=" [COLOR yellow]Andy[/COLOR] Repository">
 
-		<dir minversion="13.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml</info>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-		<dir minversion="14.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-		<dir minversion="15.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo</datadir>
-			<hashes>true</hashes>
-		</dir>
-
-		<dir minversion="16.0.0">
-			<info compressed="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo</datadir>
-			<hashes>true</hashes>
+			<!--<hashes>true</hashes>-->
 		</dir>
 
 	  </extension>
 
     <extension point="xbmc.addon.metadata">
         <summary> [COLOR yellow]Andy[/COLOR] Repository</summary>
-        <description lang="en">Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.</description>
+        <description lang="en">Download and install addons, repositories and backups of preconfigured apps and user settings.[CR]This is the source of my addons and used for automatic updates.[CR]Feb 2016</description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <source>https://github.com/halikus/_AndyRepo</source>
         <forum>http://forum.xbmc.org/</forum>
         <email></email>
         <website>http://kodi.tv/download/</website>
-        <!--<platform>all</platform>-->
-        <platform>windx osx linux android</platform>
+        <platform>all</platform>
+        <!--<platform>windx osx linux android</platform>-->
     </extension>
 
 </addon>
@@ -273,10 +252,27 @@ Profile:   \userdata\profiles\ProfileName</description>
     </extension>
 </addon>
 
+<addon id="Andy.script.module.parentalcontrol"
+     name="hubparentalcontrol"
+     version="0.0.1"
+     provider-name="Andy">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.metahandler" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Parental Control</summary>
+    <description lang="en">Parental Control because you cant trust your kids to be good.</description>
+  </extension>
+</addon>
+
 <addon
   id="Andy.skin.confluence"
   version="2.8.6"
-  name="Confluence (16 Mod)"
+  name="Confluence (16 Jarvis Andy Mod)"
   provider-name="Jezz_X, Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
@@ -304,10 +300,10 @@ Profile:   \userdata\profiles\ProfileName</description>
   </extension>
 </addon>
 
-<addon id="Andy.skin.re-touched" version="5.1.1" name="re-Touched (Andy Mod 16)" provider-name="Jezz_X, Martijn, ronie">
+<addon id="Andy.skin.re-touched" version="5.1.1" name="re-Touched (16 Jarvis Andy Mod)" provider-name="Jezz_X, Martijn, ronie">
 	<requires>
-		<!--<import addon="xbmc.gui" version="5.10.0"/>-->
-		<import addon="xbmc.gui" version="5.3.0"/>
+		<import addon="xbmc.gui" version="5.10.0"/>
+		<!--<import addon="xbmc.gui" version="5.3.0"/>-->
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1280" height="960" aspect="4:3" folder="16x9"/>
@@ -3329,6 +3325,25 @@ Addons Included
 	</extension>
 </addon>
 
+<addon id="script.keymap"
+       name="Keymap Editor"
+       version="1.0.9"
+       provider-name="takoi">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">An editor for keymap files</summary>
+        <description lang="en">Keymap Editor is a GUI for configuring mappings for remotes, keyboard and other inputs supported by xbmc. Note: existing user defined key mappings will be removed.</description>
+        <platform>all</platform>
+        <language/>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=168767</forum>
+        <source>https://github.com/tamland/xbmc-keymap-editor</source>
+    </extension>
+</addon>
+
 <addon id="script.module.addon.common"
 	     name="Common addon methods"
 	     version="2.0.1"
@@ -3991,6 +4006,26 @@ If you want to use the generic handling, contact me.
     <license>MIT</license>
     <website>http://pyyaml.org/</website>
     <source>http://svn.pyyaml.org/pyyaml/</source>
+  </extension>
+</addon>
+
+<addon id="script.rss.editor"
+       name="RSS Editor"
+       version="2.0.4"
+       provider-name="rwparris2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">A Script for editing XBMC's built in RSS Ticker</summary>
+    <summary lang="hu">RSS forrás szerkesztő</summary>
+    <summary lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</summary>
+    <description lang="en">A Script for editing XBMC's built in RSS Ticker</description>
+    <description lang="hu">A szkript képes szerkeszteni az XBMC beépített RSS forrás készletét</description>
+    <description lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</description>
   </extension>
 </addon>
 

@@ -3,7 +3,7 @@
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.11.5"
-  name="PVR IPTV Simple Client (Android Secondary)"
+  name="PVR IPTV Simple Client (Android Secondary Isengard)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -52,7 +52,7 @@
 
 <addon id="Andy.skin.re-touched"
 version="4.0.7"
-name="re-Touched (Andy Mod 15)"
+name="re-Touched (15 Isengard Andy Mod)"
 provider-name="Andy Jezz_X, Martijn, ronie">
 
 	<requires>

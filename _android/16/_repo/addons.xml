@@ -3,7 +3,7 @@
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.9"
-  name="PVR IPTV Simple Client (Android Secondary)"
+  name="PVR IPTV Simple Client (Android Secondary Jarvis)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -49,7 +49,7 @@
 <addon
   id="Andy.skin.confluence"
   version="2.8.6"
-  name="Confluence (16 Mod)"
+  name="Confluence (16 Jarvis Andy Mod)"
   provider-name="Jezz_X, Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
@@ -77,10 +77,10 @@
   </extension>
 </addon>
 
-<addon id="Andy.skin.re-touched" version="5.1.1" name="re-Touched (Andy Mod 16)" provider-name="Jezz_X, Martijn, ronie">
+<addon id="Andy.skin.re-touched" version="5.1.1" name="re-Touched (16 Jarvis Andy Mod)" provider-name="Jezz_X, Martijn, ronie">
 	<requires>
-		<!--<import addon="xbmc.gui" version="5.10.0"/>-->
-		<import addon="xbmc.gui" version="5.3.0"/>
+		<import addon="xbmc.gui" version="5.10.0"/>
+		<!--<import addon="xbmc.gui" version="5.3.0"/>-->
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1280" height="960" aspect="4:3" folder="16x9"/>

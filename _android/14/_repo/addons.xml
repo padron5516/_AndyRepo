@@ -3,7 +3,7 @@
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.9.12"
-  name="PVR IPTV Simple Client (Android Secondary)"
+  name="PVR IPTV Simple Client (Android Secondary Helix)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -55,7 +55,7 @@
 <addon
   id="Andy.skin.confluence"
   version="2.5.12"
-  name="Confluence (Mod 14)"
+  name="Confluence (14 Helix Andy Mod)"
   provider-name="Jezz_X, Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.3.0"/>
@@ -239,7 +239,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.skin.re-touched" version="3.1.0" name="re-Touched (Andy Mod 14)" provider-name="Andy Jezz_X, Martijn, ronie">
+<addon id="Andy.skin.re-touched" version="3.1.0" name="re-Touched (14 Helix Andy Mod)" provider-name="Andy Jezz_X, Martijn, ronie">
 	<requires>
 		<import addon="xbmc.gui" version="5.3.0"/>
 	</requires>

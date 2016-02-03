@@ -3,7 +3,7 @@
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.9"
-  name="PVR IPTV Simple Client (Windows Secondary)"
+  name="PVR IPTV Simple Client (Windows Secondary Jarvis)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -52,7 +52,7 @@
 <addon
   id="Andy.skin.confluence"
   version="2.8.6"
-  name="Confluence (16 Mod)"
+  name="Confluence (16 Jarvis Andy Mod)"
   provider-name="Jezz_X, Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
@@ -78,41 +78,6 @@
     <disclaimer lang="en_US">Confluence is the default skin for Kodi, removing it may cause issues</disclaimer>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="Andy.skin.re-touched" version="5.1.1" name="re-Touched (Andy Mod 16)" provider-name="Jezz_X, Martijn, ronie">
-	<requires>
-		<!--<import addon="xbmc.gui" version="5.10.0"/>-->
-		<import addon="xbmc.gui" version="5.3.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1280" height="960" aspect="4:3" folder="16x9"/>
-		<res width="1706" height="960" aspect="16:9" default="true" folder="16x9"/>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-
-		<summary lang="en">Touched skin by Jezz_X designed to be used on touch screen devices</summary>
-		<summary lang="en_AU">Touched skin by Jezz_X designed to be used on touch screen devices</summary>
-		<summary lang="en_NZ">Touched skin by Jezz_X designed to be used on touch screen devices</summary>
-		<summary lang="en_US">Touched skin by Jezz_X designed to be used on touch screen devices</summary>
-
-		<description lang="en">Skin designed from the ground up to be used on touch screen devices like the iPad</description>
-		<description lang="en_AU">Skin designed from the ground up to be used on touch screen devices like the iPad</description>
-		<description lang="en_NZ">Skin designed from the ground up to be used on touch screen devices like the iPad</description>
-		<description lang="en_US">Skin designed from the ground up to be used on touch screen devices like the iPad</description>
-
-		<disclaimer lang="en">Do not use this skin unless you have either touch screen or a mouse connected or you may lose navigation</disclaimer>
-		<disclaimer lang="en_AU">Do not use this skin unless you have either touch screen or a mouse connected or you may lose navigation</disclaimer>
-		<disclaimer lang="en_NZ">Do not use this skin unless you have either touch screen or a mouse connected or you may lose navigation</disclaimer>
-		<disclaimer lang="en_US">Do not use this skin unless you have either touch screen or a mouse connected or you may lose navigation</disclaimer>
-
-		<platform>all</platform>
-		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
-		<forum>http://forum.kodi.tv/forumdisplay.php?fid=189</forum>
-		<website></website>
-		<email></email>
-		<source>https://github.com/xbmc/skin.re-touched/</source>
-	</extension>
 </addon>
 
 <addon id="repository.xbmc.org"
