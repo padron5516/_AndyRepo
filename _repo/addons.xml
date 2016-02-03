@@ -36,7 +36,7 @@
 
 
 <addon id="Andy.plugin.program.Maintenance"
- name=" [COLOR yellow]Andy[/COLOR] Maintenance"
+ name="[COLOR yellow]Andy[/COLOR] Maintenance"
  version="0.0.1"
  provider-name="Andy">
 
@@ -400,6 +400,28 @@ Profile:   \userdata\profiles\ProfileName</description>
     </extension>
 </addon>
 
+    <addon id="plugin.program.addoninstaller" version="1.2.5"
+    	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.addon.common" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Addon Browser</summary>
+        <description>Its like an App Store where you'll find Addons for Kodi, and everything is free!</description>
+        <disclaimer>By using this, you take reponsibility for anything that happens.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>http://forums.tvaddons.ag/forums/156-ADDON-INSTALLER</forum>
+        <website>http://addons.tvaddons.ag/</website>
+        <source></source>
+        <email></email>
+    </extension>
+</addon>
+
 <addon id="plugin.video.dex"
        name=" Dexters TV Pro"
        version="1.0.2"
@@ -580,7 +602,7 @@ Profile:   \userdata\profiles\ProfileName</description>
 	</extension>
 </addon>
 
-<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.1" provider-name="SiLVO">
+<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.2" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -1102,6 +1124,23 @@ Profile:   \userdata\profiles\ProfileName</description>
 		<summary></summary>
 		<description>Download and install addons by Mr Entertainment</description>
 		<disclaimer>By using this, you take reponsibility for anything that happens. Some parts of this addon may not be legal in your country - please check with your local laws before installing. I take no responsibility for any problems this plugin might in any way shape or form. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.filmkodi.com" name="Kodi filmkodi.com repository" version="1.1.0" provider-name="Mrknow">
+	<extension point="xbmc.addon.repository" name="Filmkodi.com Kodi Add-on Repository">
+		<info compressed="false">http://filmkodi.com/repository/addons.xml</info>
+		<checksum>http://filmkodi.com/repository/addons.xml.md5</checksum>
+		<datadir zip="false">http://filmkodi.com/repository/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install Add-ons  from filmkodi.com</summary>
+		<summary lang="pl">Zainstaluj wtyczki z filmkodi.com</summary>
+		<description lang="en">Add-ons from filmkodi.com (mrknow.pl) repository.</description>
+		<description lang="pl">Wtyczki z nieoficjalnego, repozytorium polskiego mrknow.pl..</description>
+		<disclaimer lang="en">Repository has non-comercial nature. Created by enthusiasts, acting in good faith.</disclaimer>
+		<disclaimer lang="pl">Zawartość repozytorium ma charakter niekomercyjny, wtyczki tworzone przez pasjonatów, .</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2574,11 +2613,11 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.The_Silencer" name="The_Silencer's KODI Addons" version="1.6" provider-name="The_Silencer">
+<addon id="repository.The_Silencer" name="The_Silencer's KODI Addons" version="1.8" provider-name="The_Silencer">
 	<extension point="xbmc.addon.repository" name="The_Silencer's KODI Addons">
-		<info compressed="false">http://raw.github.com/TheSilencer001/The_Silencer/master/addons.xml</info>
-		<checksum>http://raw.github.com/TheSilencer001/The_Silencer/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/TheSilencer001/The_Silencer/master/zips</datadir>
+		<info compressed="false">https://raw.github.com/TheSilencer001/The_Silencer/master/addons.xml</info>
+		<checksum>https://raw.github.com/TheSilencer001/The_Silencer/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/TheSilencer001/The_Silencer/master/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install The_Silencer's Addons</summary>
@@ -3276,38 +3315,6 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.module.addon.signals"
-	name="Addon Signals"
-	version="0.0.1"
-	provider-name="Rick Phillips (ruuk)">
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Inter-addon signalling</summary>
-		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
-		<source>https://github.com/ruuk/script.module.addon.signals</source>
-	</extension>
-</addon>
-
-<addon id="script.module.autoupdate" name="autoupdate" version="2.0.0" provider-name="Blazetamer">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
- <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-    <summary lang="en">AutoUpdate Add-On at launch</summary>
-    <description lang="en">Allows AutoUpdate of Add-on/Repo at time of add-on launch</description>
-    <language></language>
-    <platform>all</platform>
-        <license>GPLv2</license>
-        <forum></forum>
-        <website>http://cliqaddon.com</website>
-        <email>blazetamer@gmail.com</email>
-        <source></source>
-    </extension>
-</addon>
-
 <addon id="script.module.axel.downloader"
 	     name="Axel Downloader"
 	     version="0.2.2"
@@ -3461,19 +3468,6 @@ Addons Included
    </extension>
 </addon>
 
-<addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.7" provider-name="Avigdor (xbmc-israel repo)">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-	<import addon="repository.xbmc-israel" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</summary>
-    <description lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</description>
-  </extension>
-</addon>
-
 <addon id='script.module.libtorrent' version='1.0.8' name='LibTorrent' provider-name='DiMartino, srg70, RussakHH, aisman'>
   <requires>
     <import addon='xbmc.python' version='2.1.0'/>
@@ -3554,34 +3548,6 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.module.mutagen"
-       name="mutagen"
-       version="1.22.0"
-       provider-name="Joe Wreschnig">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
-    <description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
-M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg
-Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All
-versions of ID3v2 are supported, and all standard ID3v2.4 frames are
-parsed. It can read Xing headers to accurately calculate the bitrate and
-length of MP3s. ID3 and APEv2 tags can be edited regardless of audio
-format. It can also manipulate Ogg streams on an individual packet/page
-level.</description>
-    <disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>http://code.google.com/p/mutagen/</website>
-    <source>https://bitbucket.org/lazka/mutagen/overview</source>
-  </extension>
-</addon>
-
 <addon id="script.module.myconnpy"
        name="MySQL Connector/Python"
        version="1.1.7"
@@ -3654,26 +3620,6 @@ If you want to use the generic handling, contact me.
     <website>http://google.github.io/oauth2client/</website>
     <source>https://github.com/google/oauth2client</source>
   </extension>
-</addon>
-
-<addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Parsedom for xbmc plugins.</summary>
-  </extension>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-        <license>GPLv3</license>
-        <platform>all</platform>
-        <email></email>
-        <website></website>
-        <forum>http://forum.xbmc.org/showthread.php?tid=116498</forum>
-        <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
-        <language></language>
-   </extension>
 </addon>
 
 <addon id="script.module.pydevd" name="pydevd" version="4.4.0" provider-name="Fabio Zadrozny, Paul Backhouse">
