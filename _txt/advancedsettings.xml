@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <advancedsettings>
 <!--http://kodi.wiki/view/Advancedsettings.xml-->
+<!--Full Advancedsettings.xml-->
 
 <playlisttimeout>20</playlisttimeout>
 <packagefoldersize>20</packagefoldersize> <!-- The amount in megabytes of packages saved from previous add-on installs. -->
