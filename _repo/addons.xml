@@ -43,6 +43,18 @@
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" />
+
+    <!-- Maintenance Tool -->
+    <!--<import addon="plugin.video.youtube" />-->
+    <import addon="script.module.metahandler" optional="true" />
+
+    <!-- Wizard -->
+		<import addon="script.module.addon.common" optional="true" />
+		<import addon="script.module.t0mm0.common" optional="true" />
+		<import addon="script.module.urlresolver" optional="true" />
+
+    <!-- Advanced Setting Setter -->
+		<!--<import addon="script.module.xmltodict" version="0.8.6"/>-->
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -419,7 +431,7 @@ Profile:   \userdata\profiles\ProfileName</description>
 </addon>
 
 <addon id="plugin.video.dex"
-       name=" Dexters TV Pro"
+       name="Dexters TV Pro"
        version="1.0.2"
        provider-name="Pipcan">
   <requires>
@@ -437,6 +449,23 @@ Profile:   \userdata\profiles\ProfileName</description>
     <description lang="en"></description>
      <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.dnatv" name=" [COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.2.2" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">DNA TV - IPTV Addon for KODI</summary>
+		<description lang="en">DNA TV brings you unlimited Entertainment. Live TV / PPV / Sports / Kids / Movies / Entertainment all available just one click away.</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
 </addon>
 
 <addon id="plugin.video.p2p-streams"
@@ -1915,20 +1944,20 @@ Profile:   \userdata\profiles\ProfileName</description>
 	</extension>
 </addon>
 
-<addon id="repository.metalkettle" name="MetalKettle Add-on Repository" version="1.6.3" provider-name="MetalKettle">
-	<extension point="xbmc.addon.repository" name="MetalKettle Add-on Repository">
-		<dir>
-			<info compressed="false">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml</info>
-			<checksum>http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml.md5</checksum>
-			<datadir zip="true">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/zips</datadir>
-		</dir>
-		<info compressed="false">https://offshoregit.com/metalkettle/addons.xml</info>
-		<checksum>https://offshoregit.com/metalkettle/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/metalkettle/zips</datadir>
+<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.0" provider-name="MetalKettle">
+	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
+	<dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</dir>
+		<info compressed="false">http://offshoregit.com/metalkettle/addons.xml</info>
+		<checksum>http://offshoregit.com/metalkettle/addons.xml.md5</checksum>
+		<datadir zip="true">http://offshoregit.com/metalkettle/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Install Add-ons from MetalKettle</summary>
-		<description lang="en">Download and install add-ons from the MetalKettle Repository.</description>
+		<summary>Install my Addons</summary>
+		<description>Download and install addons from MetalKettle</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -3233,6 +3262,32 @@ Addons Included
 	</extension>
 </addon>
 
+<addon id="script.advancedsettingsetter"
+       name="Advanced Setting Setter"
+       version="0.0.1"
+       provider-name="KodeKarnage">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xmltodict" version="0.8.6"/>
+    </requires>
+
+<extension point="xbmc.python.script"
+            library="default.py">
+            <provides>program</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Advanced Setting Setter</summary>
+        <description lang="en">This addon allows you to activate and modify a large number of advanced settings in Kodi without having to manually create and populate an advancedsettings.xml file. WARNING: these settings are for advanced users only. Use at your own risk.</description>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+        <email>subliminal.karnage at gmail dot com</email>
+        <forum></forum>
+        <source></source>
+    </extension>
+</addon>
+
 <addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.6">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3325,6 +3380,68 @@ Addons Included
 	</extension>
 </addon>
 
+<addon id="script.image.music.slideshow"
+       name="Music Slideshow"
+       version="1.0.2"
+       provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>image audio</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Plays a slide show of the currently playing artist.</summary>
+    <description>Whilst playing music, this addon will start a slideshow of images related to the current artist. The slideshow can be configured to automatically start when Kodi starts playing music. Images are retrieved from a number of configurable sources. Tip: Pressing "i" during a slideshow will show the music player info.</description>
+	<platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/script.image.music.slideshow</source>
+    <email>seanpoyser at gmail dot com</email>
+  </extension>
+</addon>
+
+<addon id="script.image.resource.select" name="Image Resource Select Addon" version="0.1.0" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Image resource selection addon</summary>
+		<description lang="en">Script for skinners to let users select an image resource addon.</description>
+		<language/>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=239558</forum>
+		<website/>
+		<email/>
+		<source>https://github.com/ronie/script.image.resource.select</source>
+	</extension>
+</addon>
+
+<addon id="script.imdb250.view" name="IMDb Top 250 Viewtype" version="0.0.5" provider-name="bryanb">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.addon"                  version="12.0.0"/>
+	</requires>
+    <extension point="xbmc.python.script"           library="default.py">
+    </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>IMDb Top 250 viewtype loader</summary>
+		<description>Launches an IMDb Top 250 playlist using a custom viewtype.</description>
+		<disclaimer>Use at your own risk.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.keymap"
        name="Keymap Editor"
        version="1.0.9"
@@ -3342,6 +3459,17 @@ Addons Included
         <forum>http://forum.xbmc.org/showthread.php?tid=168767</forum>
         <source>https://github.com/tamland/xbmc-keymap-editor</source>
     </extension>
+</addon>
+
+<addon id="script.module.actionhandler" name="ActionHandler" version="1.0.2" provider-name="Philipp Temminghoff (phil65)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module for Event handling in WindowXMLs</summary>
+		<description lang="en">Helper module to allow mapping Actions, Onfocus and click events via decorators</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/phil65/script.module.actionhandler</source>
+	</extension>
 </addon>
 
 <addon id="script.module.addon.common"
@@ -3365,6 +3493,72 @@ Addons Included
     <email></email>
     <source></source>
   </extension>
+</addon>
+
+<addon id="script.module.addon.signals"
+	name="Addon Signals"
+	version="0.0.1"
+	provider-name="Rick Phillips (ruuk)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Inter-addon signalling</summary>
+		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
+</addon>
+
+<addon id="script.module.amazon.database"
+       name="Amazon Database"
+       version="0.0.2"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.arrow"
+       name="arrow"
+       version="0.6.0"
+       provider-name="crsmithdev, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.dateutil" version="2.4.2"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Arrow: better dates and times for Python</summary>
+    <description>Packed for Kodi from https://github.com/crsmithdev/arrow</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://crsmithdev.com/arrow/</website>
+    <source>https://github.com/Razzeee/script.module.arrow</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.autocompletion" name="AutoCompletion library" version="1.1.0" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Module providing some AutoCompletion functions</summary>
+        <description lang="en">Module providing some AutoCompletion functions</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/script.module.autocompletion</source>
+    </extension>
 </addon>
 
 <addon id="script.module.axel.downloader"
@@ -3422,6 +3616,72 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.buggalo" name="Buggalo Exception Collector" version="1.1.6" provider-name="twinther">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="af">Outomatiese uitsondering versamelaar</summary>
+        <summary lang="be">Automatic exception collector</summary>
+        <summary lang="ca">Recaptador automàtic d'excepcions</summary>
+        <summary lang="da">Automatisk indsamling af fejl</summary>
+        <summary lang="de">Automatische Fehlerberichterstattung</summary>
+        <summary lang="el">Αυτόματος συλλέκτης εξαιρέσεων</summary>
+        <summary lang="en">Automatic exception collector</summary>
+        <summary lang="en_NZ">Automatic exception collector</summary>
+        <summary lang="en_US">Automatic exception collector</summary>
+        <summary lang="es">Capturador automático de excepciones</summary>
+        <summary lang="es_MX">Recogedor de excepcion automatica</summary>
+        <summary lang="fr">Collecteur automatique d'exceptions</summary>
+        <summary lang="fr_CA">Collecteur automatique d'exceptions</summary>
+        <summary lang="gl">Recolector automático de excepcións</summary>
+        <summary lang="he">אוסף חריגות אוטומטי</summary>
+        <summary lang="hu">Automatikus kivételgyűjtő</summary>
+        <summary lang="it">Raccoglitore automatico di eccezioni</summary>
+        <summary lang="lt">Automatinis išimtinių situacijų rinkiklis</summary>
+        <summary lang="nl">Automatische uitzondering verzamelaar</summary>
+        <summary lang="pl">Automatyczny kolekcjoner wyjątków.</summary>
+        <summary lang="pt">Recolector automático de excepções</summary>
+        <summary lang="pt_BR">Coletor exceção automática</summary>
+        <summary lang="sk">Automatický zberateľ výnimiek</summary>
+        <summary lang="sv">Automatisk undantagsfelsinsamlare</summary>
+        <summary lang="zh">异常自动收集器</summary>
+        <description lang="be">This module can collect various information about an exception and the users system such as Kodi and Python versions, etc. and submit it to a url.</description>
+        <description lang="ca">Aquest mòdul por recaptar diferent informació sobre una excepció i dels usuaris del sistema com ara les versions del Kodi i del Python, etc. i enviar-la a una url.</description>
+        <description lang="da">Dette modul kan indsamle forskellige informationer om en fejl og brugerens system såsom Kodi- og Pythonversioner osv. og sende det til en webadresse.</description>
+        <description lang="de">Dieses Modul kann diverse Informationen über einen Programm-Fehler sowie die Umgebung (Kodi- und Python-Versionen) sammeln und zu einer URL senden.</description>
+        <description lang="el">Αυτό το εργαλείο μπορεί να συλλέγει διάφορες πληροφορίες σχετικά με μία εξαίρεση καθώς και τις Kodi και Python εκδόσεις του συστήματος του χρήστη, κτλ., και να τις υποβάλλει σε μία διεύθυνση url.</description>
+        <description lang="en">This module can collect various information about an exception and the users system such as Kodi and Python versions, etc. and submit it to a url.</description>
+        <description lang="en_NZ">This module can collect various information about an exception and the users system such as Kodi and Python versions, etc. and submit it to a url.</description>
+        <description lang="en_US">This module can collect various information about an exception and the users system such as Kodi and Python versions, etc. and submit it to a url.</description>
+        <description lang="es">Este módulo recopila información acerca de una excepción y el sistema de los usuarios (por ejemplo las versiones de Kodi y Python, etc) y la envía a una URL.</description>
+        <description lang="es_MX">Este modulo puede recoger varia informacionacerca de una excepcion y usuarios del sistema como Kodi y versiones Python, etc. y enviarlo a una url.</description>
+        <description lang="fr">Ce module peut collecter différentes informations sur une exception et le système comme les versions d'Kodi et de Python, etc. et les soumettre sur une URL.</description>
+        <description lang="fr_CA">Ce module peut collecter diverses informations sur une exception et sur le système de l'utilisateur telles que les versions de Kodi et de Python, etc. et les envoyer à une URL. </description>
+        <description lang="gl">Este módulo pode recoller diversa información sobre unha excepción e o sistema dos usuarios , como o Kodi e as versións de Python, etc, e envialo a un url.</description>
+        <description lang="he">מודול זה יכול לאסוף מידע מגוון על חריגה ומערכת המשתמש כמו גרסאות Kodi, פייתון וכדו'. ולשלוח זאת לכתובת.</description>
+        <description lang="hu">Ez a modul információkat szolgáltat a kiváltott kivételekről és a felhasználó rendszeréről(, mint pl. az Kodi vagy Phyton verzió) és egy URL-be helyezi.</description>
+        <description lang="it">Questo modulo può raccogliere varie informazioni circa un'eccezione ed il i sistemi degli utenti come le versioni di Kodi e di Pyton, ecc.... ed inviarle ad un url</description>
+        <description lang="lt">Šis modulis gali surinkti įvairią informaciją apie išimtines situacijas vartotojų sistemas, tokias kaip Kodi ir Python versijas ir kt. bei nusiųsti ją į url adresą.</description>
+        <description lang="nl">Deze module kan diverse informatie verzamelen over uitzonderingen en van het systeem van de gebruiker zoals Kodi en Python versie, enz. en deze versturen naar een URL.</description>
+        <description lang="pl">Modół ten potrafi zbierać różne informacje o wyjątkach, użytkownikach systemów takich jak Kodi oraz Python etc, i przesłać je na podany adres url.</description>
+        <description lang="pt">Este módulo pode obter várias informações sobre uma excepção e o sistema de utilizadores, tal como versões do Kodi e Python, etc, e submetê-la para um url.</description>
+        <description lang="pt_BR">Este módulo pode coletar diversas informações sobre uma exceção no sistema dos usuários, tais como o Kodi e versões de Python, etc, e submetê-lo para uma url</description>
+        <description lang="sk">Tento doplnok môže zbierať rôzne informácie o vzniknutých výnimkách, užívateľskom systéme ako je Kodi, o verzii Python a inom a odoslať ich na URL.</description>
+        <description lang="sv">Den här modulen kan samla in diverse information om undantagsfel och användarens system, såsom Kodi och Python-versioner, etc. och skicka in det till en url.</description>
+        <description lang="zh">此组件可以收集一个异常或用户系统相关的多方面信息如Kodi和Python的版本等。并将此信息发送到一个网址</description>
+        <language></language>
+        <platform>all</platform>
+        <license>GPLv2</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=121925</forum>
+        <website>http://tommy.winther.nu</website>
+        <email>tommy@winther.nu</email>
+        <source>https://github.com/twinther/script.module.buggalo</source>
+    </extension>
+</addon>
+
 <addon id="script.module.chardet"
        name="chardet"
        version="2.2.1"
@@ -3437,6 +3697,92 @@ Addons Included
     <license>LGPL</license>
     <platform>all</platform>
     <source>https://github.com/erikrose/chardet/commits/master</source>
+  </extension>
+</addon>
+
+<addon id="script.module.coveapi"
+       name="Cove API"
+       version="0.2.2"
+       provider-name="PBS.org">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">PBS.org Cove-API</summary>
+    <description lang="en">Python-coveapi is the Python client for the PBS COVE API service.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+	<license>PBS API Terms of Service</license>
+    <forum>http://answers.open.pbs.org/questions/</forum>
+	<website>https://projects.pbs.org/confluence/display/coveapi/Welcome</website>
+	<email></email>
+	<source>https://github.com/pbs/python-coveapi</source>
+  </extension>
+</addon>
+
+<addon id="script.module.cssutils"
+       name="cssutils"
+       version="1.0"
+       provider-name="zero">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>A Python package to parse and build CSS Cascading Style Sheets.</summary>
+    <description>A Python package to parse and build CSS Cascading Style Sheets. DOM only, not any rendering facilities!</description>
+    <platform>all</platform>
+    <license>LGPLv3</license>
+    <source>https://pypi.python.org/pypi/cssutils</source>
+    <website>https://pypi.python.org/pypi/cssutils</website>
+  </extension>
+</addon>
+
+<addon id="script.module.dateutil"
+       name="dateutil"
+       version="2.4.2"
+       provider-name="Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.six" version="1.9.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>dateutil - powerful extensions to datetime</summary>
+    <description>Packed for Kodi from https://github.com/dateutil/dateutil</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Revised BSD License</license>
+    <forum></forum>
+    <website>https://dateutil.readthedocs.org/en/latest/</website>
+    <source>https://github.com/Razzeee/script.module.dateutil</source>
+    <email></email>
+  </extension>
+</addon>
+
+<addon id="script.module.dnspython"
+       name="DNS Python"
+	   version="1.12.0"
+	   provider-name="dnspython">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Pure Python DNS module</summary>
+	<description>A Pure Python DNS module</description>
+	<disclaimer lang="en"></disclaimer>
+	<language>en</language>
+    <platform>all</platform>
+	<license>BSD-style license</license>
+	<forum></forum>
+	<website>http://www.dnspython.org/</website>
+	<email></email>
+	<source>https://github.com/rthalley/dnspython</source>
   </extension>
 </addon>
 
@@ -3476,6 +3822,71 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.f4mproxy"
+	     name="f4m proxy"
+	     version="1.0.16"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon id="script.module.feedparser" name="feedparser" version="5.2.1" provider-name="Tristan Fischer (sphere@dersphere.de)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <language></language>
+        <summary lang="en">Python helper module</summary>
+        <description lang="en">feedparser is a Python library that parses feeds in all known formats, including Atom, RSS, and RDF. It runs on Python 2.4 all the way up to 3.2.</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <website>https://code.google.com/p/feedparser/</website>
+        <source>https://code.google.com/p/feedparser/source/browse/</source>
+        <forum></forum>
+    </extension>
+</addon>
+
+<addon id="script.module.free.cable.database"
+       name="Free Cable Database"
+       version="0.0.5"
+       provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.futures"
+       name="futures"
+       version="2.2.0"
+       provider-name="Brian Quinlan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
+  </extension>
+</addon>
+
 <addon id="script.module.googleapi"
        name="googleapi"
        version="1.4.2"
@@ -3501,6 +3912,29 @@ Addons Included
   </extension>
 </addon>
 
+<addon id="script.module.html5lib"
+       name="html5lib-python"
+       version="0.999.0"
+       provider-name="html5lib">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+    <import addon="script.module.six"
+                      version="1.4.1"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Standards-compliant library for parsing and serializing HTML documents and fragments in Python.</summary>
+    <description>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/html5lib/html5lib-python.git</source>
+    <website>https://github.com/html5lib/html5lib-python</website>
+  </extension>
+</addon>
+
 <addon id="script.module.httplib2" name="httplib2" provider-name=" Joe Gregorio" version="0.8.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3518,6 +3952,19 @@ Addons Included
         <source>https://pypi.python.org/pypi/httplib2</source>
         <language></language>
    </extension>
+</addon>
+
+<addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.7" provider-name="Avigdor (xbmc-israel repo)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="repository.xbmc-israel" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</description>
+  </extension>
 </addon>
 
 <addon id='script.module.libtorrent' version='1.0.8' name='LibTorrent' provider-name='DiMartino, srg70, RussakHH, aisman'>
@@ -3550,6 +3997,34 @@ Addons Included
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
     <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
   </extension>
 </addon>
 
@@ -3597,6 +4072,34 @@ Addons Included
     <website></website>
     <email></email>
     <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.mutagen"
+       name="mutagen"
+       version="1.22.0"
+       provider-name="Joe Wreschnig">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
+    <description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
+M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg
+Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All
+versions of ID3v2 are supported, and all standard ID3v2.4 frames are
+parsed. It can read Xing headers to accurately calculate the bitrate and
+length of MP3s. ID3 and APEv2 tags can be edited regardless of audio
+format. It can also manipulate Ogg streams on an individual packet/page
+level.</description>
+    <disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>http://code.google.com/p/mutagen/</website>
+    <source>https://bitbucket.org/lazka/mutagen/overview</source>
   </extension>
 </addon>
 
@@ -3650,6 +4153,26 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
+<addon id="script.module.oauth2" name="oAuth2" provider-name="Joe Stump" version="1.5.211">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.httplib2" version="0.8.0"/>
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+        <summary lang="en">oAuth2 module</summary>
+        <description lang="en">oAuth2 module</description>
+        <disclaimer lang="en">Visit http://pypi.python.org/pypi/oauth2/</disclaimer>
+        <license>MIT</license>
+        <platform>all</platform>
+        <email></email>
+        <website>http://pypi.python.org/pypi/oauth2/</website>
+        <forum></forum>
+        <source>http://pypi.python.org/pypi/oauth2/</source>
+        <language></language>
+   </extension>
+</addon>
+
 <addon id="script.module.oauth2client"
        name="oauth2client"
        version="1.4.7"
@@ -3671,6 +4194,69 @@ If you want to use the generic handling, contact me.
     <license>Apache 2.0</license>
     <website>http://google.github.io/oauth2client/</website>
     <source>https://github.com/google/oauth2client</source>
+  </extension>
+</addon>
+
+<addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Parsedom for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+        <license>GPLv3</license>
+        <platform>all</platform>
+        <email></email>
+        <website></website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=116498</forum>
+        <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
+        <language></language>
+   </extension>
+</addon>
+
+<addon id="script.module.pyamf"
+       name="PyAMF"
+       version="0.6.2"
+       provider-name="Mark Honeychurch (markhoney)">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>PyAMF provides Action Message Format (AMF) support for Python that is compatible with the Adobe Flash Player.</summary>
+    <description>The Adobe Integrated Runtime and Adobe Flash Player use AMF to communicate between an application and a remote server. AMF encodes remote procedure calls (RPC) into a compact binary representation that can be transferred over HTTP/HTTPS or the RTMP/RTMPS protocol. Objects and data values are serialized into this binary format, which increases performance, allowing applications to load data up to 10 times faster than with text-based formats such as XML or SOAP.
+AMF3, the default serialization for ActionScript 3.0, provides various advantages over AMF0, which is used for ActionScript 1.0 and 2.0. AMF3 sends data over the network more efficiently than AMF0. AMF3 supports sending int and uint objects as integers and supports data types that are available only in ActionScript 3.0, such as ByteArray, ArrayCollection, ObjectProxy and IExternalizable.</description>
+    <license>MIT</license>
+    <platform>all</platform>
+	<source>http://www.pyamf.org/</source>
+  </extension>
+</addon>
+
+<addon id="script.module.pycaption"
+       name="pycaption"
+       version="0.5.3"
+       provider-name="zero">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.cssutils" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Python caption reading/writing module</summary>
+    <description lang="en">pycaption is a caption reading/writing module. Use one of the given Readers to read content into a CaptionSet object, and then use one of the Writers to output the CaptionSet into captions of your desired format.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>Apache License, Version 2.0</license>
+	<forum></forum>
+	<website>https://pypi.python.org/pypi/pycaption</website>
+	<email></email>
+	<source>https://github.com/pbs/pycaption</source>
   </extension>
 </addon>
 
@@ -3802,6 +4388,38 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
+<addon id="script.module.simpleYT"
+       name="Simple YouTube Resolver" version="1.0.2"  provider-name="spoyser">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+   <extension point="xbmc.python.module" library="lib" />
+   <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Simple resolver for obtaining YouTube playable URLs from VideoID</summary>
+        <description lang="en">Simple resolver for obtaining YouTube playable URLs from VideoID</description>
+   </extension>
+</addon>
+
+<addon id="script.module.singledispatch"
+       name="singledispatch"
+       version="3.4.0.3"
+       provider-name="Łukasz Langa">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Single-dispatch generic functions</summary>
+    <description>This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/singledispatch#downloads</source>
+    <website>http://docs.python.org/3/library/functools.html#functools.singledispatch</website>
+  </extension>
+</addon>
+
 <addon id="script.module.six"
        name="six"
        version="1.9.0"
@@ -3819,6 +4437,84 @@ If you want to use the generic handling, contact me.
     <license>MIT</license>
     <source>https://pypi.python.org/pypi/six</source>
     <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
+<addon id="script.module.smokdpi.addon"
+       name="smokdpi's Add-on Module"
+       version="2.2.15"
+       provider-name="smokdpi">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.urlresolver"/>
+		<import version="3.2.1" addon="script.module.beautifulsoup"/>
+		<import addon="repository.smokdpi"/>
+        <import addon="repository.tva.common"/>
+		<import addon="script.module.smokdpi.resolvers"/>
+		<import addon="theme.smokdpi.default"/>
+    </requires>
+    <extension point="xbmc.python.module" library="resources/lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Add-on module for smokdpi's add-ons.</summary>
+        <description lang="en">Add-on module for smokdpi's add-ons.[CR][CR][B]Artwork by @konsumer420[/B]</description>
+        <disclaimer lang="en"> </disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.smokdpi.resolvers"
+       name="smokdpi's Resolvers"
+       version="1.4.5"
+       provider-name="smokdpi">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="resources/lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Resolvers for smokdpi's add-ons.</summary>
+        <description lang="en">Resolvers for smokdpi's add-ons.[CR][CR][B]Artwork by @konsumer420[/B]</description>
+        <disclaimer lang="en"> </disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.socksipy"
+       name="SocksiPy"
+       version="2.0.0"
+       provider-name="Mossy">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>A Python SOCKS client module</summary>
+    <description>Provides a socket-like interface that supports connections to any TCP service through the use of a SOCKS4, SOCKS5 or HTTP proxy. For usage see http://code.google.com/p/socksipy-branch/</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.stem"
+       name="stem"
+       version="1.4.1"
+       provider-name="zero">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Python controller library for tor network</summary>
+    <description lang="en">Stem is a Python controller library that allows applications to interact with Tor (https://www.torproject.org/).</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>LGPLv3</license>
+    <forum>https://stem.torproject.org/faq.html</forum>
+    <website>https://stem.torproject.org/</website>
+	<email></email>
+	<source>https://pypi.python.org/pypi/stem</source>
   </extension>
 </addon>
 
@@ -3854,6 +4550,27 @@ If you want to use the generic handling, contact me.
         <source>https://github.com/learningit/repository.t1m.v2.addons/tree/master/src/script.module.t1mlib</source>
         <language></language>
    </extension>
+</addon>
+
+<addon id="script.module.t9.search" name="T9 search dialog" version="1.0.0" provider-name="phil65">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.actionhandler" version="1.0.1"/>
+    <import addon="script.module.autocompletion" version="1.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">T9 search dialog including AutoCompletion (to be used by add-ons)</summary>
+    <description lang="en">T9 search dialog including AutoCompletion (to be used by add-ons)</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+	<forum>-</forum>
+	<source>https://github.com/phil65/script.module.t9.search</source>
+	<email>phil65@kodi.tv</email>
+  </extension>
 </addon>
 
 <addon id="script.module.TheYid.common"
@@ -3900,6 +4617,48 @@ If you want to use the generic handling, contact me.
         <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
         <email>anteo@academ.org</email>
     </extension>
+</addon>
+
+<addon id="script.module.trakt"
+       name="trakt.py"
+       version="2.5.1"
+       provider-name="Fuzeman, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.7.0"/>
+	<import addon="script.module.six" version="1.9.0"/>
+	<import addon="script.module.arrow" version="0.6.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python interface for the trakt.tv API</summary>
+    <description>Packed for Kodi from https://github.com/fuzeman/trakt.py</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/fuzeman/trakt.py</website>
+    <source>https://github.com/Razzeee/script.module.trakt</source>
+    <email></email>
+  </extension>
+</addon>
+
+<addon id="script.module.unidecode" name="unidecode" version="0.4.16" provider-name="Tomaz Solc (Tomaz.solc@tablix.org)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</summary>
+		<description lang="en">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</description>
+		<disclaimer lang="en">Code taken from https://pypi.python.org/pypi/Unidecode</disclaimer>
+		<license>GNU General Public License v.2</license>
+		<website>https://pypi.python.org/pypi/Unidecode</website>
+		<source>https://pypi.python.org/pypi/Unidecode</source>
+	</extension>
 </addon>
 
 <addon id="script.module.universal" name="Universal - An Addons Toolkit" version="2.0.1" provider-name="the-one">
@@ -3960,6 +4719,17 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
+<addon id="script.module.xbmcswift" name="xbmcswift" version="0.2.2" provider-name="Jonathan Beluch (jbel)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <source>https://github.com/jbeluch/xbmcswift</source>
+  </extension>
+</addon>
+
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -4009,6 +4779,51 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="15.1223.0" provider-name="Rick Phillips (ruuk)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.signals" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en">Module providing access to youtube-dl video stream extraction for over 270 sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200877</forum>
+        <source>http://github.com/ruuk/script.module.youtube.dl</source>
+    </extension>
+</addon>
+
+<addon id="script.rawmaintenance"
+       name="Raw Maintenance"
+       version="69.69"
+       provider-name="Foreverska|Gombeek|Raw Media">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Raw Maintinance</summary>
+    <description>
+	Your one stop tool for maintaining your device.
+	For support please visit www.no-issue.ca
+	Thank you to raw-media.ca for sponsoring the development of this add-on.
+    </description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 <addon id="script.rss.editor"
        name="RSS Editor"
        version="2.0.4"
@@ -4027,6 +4842,256 @@ If you want to use the generic handling, contact me.
     <description lang="hu">A szkript képes szerkeszteni az XBMC beépített RSS forrás készletét</description>
     <description lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</description>
   </extension>
+</addon>
+
+<addon id="script.service.checkpreviousepisode" name="XBMC Check Previous Episode" version="0.3.1" provider-name="Lucleonhart">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC check previous episode state</summary>
+    <description lang="en">This scripts checks the previous episode from the one you started to watch and warns you if it is missing from your library or unwatched!</description>
+    <description lang="de">Dieses Script überprüft die vorige Episode der TV Show die gerade gestartet werden soll und warnt falls diese noch nicht gesehen wurde oder nicht vorhanden ist!</description>
+    <platform>all</platform>
+    <language></language>
+
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=151531</forum>
+    <website>http://www.lucleonhart.de</website>
+    <source>git://github.com/Lucleonhart/script.service.checkpreviousepisode.git</source>
+    <email>xbmc at lucleonhart dot de</email>
+  </extension>
+</addon>
+
+<addon id="script.simpleplaylists"
+       name="SimplePlaylists"
+       version="1.1.1"
+       provider-name="AddonScriptorDE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+    <provides>video audio image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+      <summary lang="en">Add local media (video/audio/images) and add-on content to playlists while browsing/watching your media. To use this addon you have to map the following command to a key: "RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)". More Info: forum.xbmc.org</summary>
+      <summary lang="de">Lokale Medien (Videos/Musik/Bilder) und Add-on Inhalte beim Durchsuchen/Abspielen zu Playlisten hinzufügen. Um das Addon nutzen zu können muss folgender Befehl einer Taste zugewiesen werden: "RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)". Mehr Infos: xbmcnerds.com, forum.xbmc.org</summary>
+      <language></language>
+      <description lang="en">Add local media (video/audio/images) and add-on content to playlists while browsing/watching your media. To use this addon you have to map the following command to a key: "RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)". More Info: forum.xbmc.org</description>
+      <description lang="de">Lokale Medien (Videos/Musik/Bilder) und Add-on Inhalte beim Durchsuchen/Abspielen zu Playlisten hinzufügen. Um das Addon nutzen zu können muss folgender Befehl einer Taste zugewiesen werden: "RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)". Mehr Infos: xbmcnerds.com, forum.xbmc.org</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.39" provider-name="marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.13.0"/>
+		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+	</requires>
+
+    <extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
+		<item>
+			<label>32072</label>
+            <description>Display Series level button in next/recent/in progress episodes listings</description>
+			<visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
+		</item>
+	</extension>
+    <extension point="kodi.context.item" library="contextmenu_artwork.py">
+		<item>
+			<label>32143</label>
+            <description>PVR and Music artwork Configuration</description>
+            <visible>[[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)] | [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<website></website>
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+	</extension>
+</addon>
+
+<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.1" provider-name="phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library"          library="default.py" />
+    <extension point="xbmc.python.script"           library="default.py">
+        <provides>executable</provides>
+    </extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Script used by skins to show extended media info.</summary>
+		<description lang="en">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>-</forum>
+		<source>-</source>
+		<email>-</email>
+	</extension>
+</addon>
+
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.5" provider-name="BigNoid,marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.unidecode" version="0.4.14"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description>
+		<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description>
+		<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
+		<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
+		<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description>
+		<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
+		<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description>
+		<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
+		<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
+		<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
+		<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
+		<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
+		<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
+		<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
+		<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
+		<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
+		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
+		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
+		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU General Public License, v2</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/BigNoid/script.skinshortcuts</source>
+	</extension>
+</addon>
+
+<addon id="script.video.F4mProxy"
+	     name="F4mProxy"
+	     version="2.3.4"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon id="script.videolanguage" name="Video Language Script" version="0.1.0" provider-name="`Black|phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Video Language Script</summary>
+		<description lang="en">This script makes it possible to show all audio and subtitle languages of a video file in the video info dialog.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=155693</forum>
+		<source>https://github.com/Black09/script.videolanguage</source>
+		<email>xperience1080 at iCloud dot com</email>
+	</extension>
+</addon>
+
+<addon id="script.xbmc.pandorajson"
+       name="Pandora Json"
+       version="1.3.02"
+       provider-name="spbogie, newatv2user">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Pandora Radio</summary>
+    <description lang="en">Pandora Internet Radio for XBMC.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.xbmc.unpausejumpback" name="Unpause Jumpback" version="2.3.4" provider-name="Memphiz,Lucleonhart,schumi2004,bossanova808">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">XBMC jumpback on unpausing videos</summary>
+    <summary lang="bg">Превърта назад след пауза</summary>
+    <description lang="en">
+        This addon will jumpback the given number of seconds whenever a movie is unpaused - for finding back into the story.
+        You can set the amount of seconds to jump back and the minimum seconds the pause must take to jump back.
+        It also allows to jump back or forward after rwd or fwd a specified amount of seconds.
+    </description>
+    <description lang="bg">
+        Добавката прескача назад автоматично след като прекратите пауза, за да си припомните историята.
+        Може да определите колко време назад да ви връща скока както и след колко време в режим "На пауза" да се активира функцията.
+        Има и възможност за скок напред / назад след превъртане напред или назад за дефиниран период от време.
+    </description>
+    <platform>all</platform>
+    <website></website>
+    <source>https://github.com/Memphiz/script.xbmc.unpausejumpback/</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=134837</forum>
+    <email></email>
+    <language></language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.4">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="xbmc.json" version="6.0.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py"/>
+	<extension library="service.py" point="xbmc.service" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
+		<description lang="en">Plugin for skins to provide library data throughout the skin.</description>
+		<disclaimer lang="en">This plugin is not a standalone plugin, your skin must support it.</disclaimer>
+		<platform>all</platform>
+		<language/>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+		<website>https://github.com/BigNoid/service.library.data.provider</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/service.library.data.provider</source>
+	</extension>
 </addon>
 
 <addon id="superrepo.kodi.helix.all" name="SuperRepo All [Helix][v7]" version="0.7.04" provider-name="Bart Otten">

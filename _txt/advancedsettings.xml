@@ -26,7 +26,7 @@
 <network>
 <!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
 
-  <cachemembuffersize>78643200</cachemembuffersize>         <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+  <!--<cachemembuffersize>78643200</cachemembuffersize>-->         <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
 
   <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
   <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
