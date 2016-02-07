@@ -37,7 +37,7 @@
 
 <addon id="Andy.plugin.program.Maintenance"
  name="[COLOR yellow]Andy[/COLOR] Maintenance"
- version="0.0.1"
+ version="0.9.0"
  provider-name="Andy">
 
   <requires>
@@ -4986,6 +4986,26 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 		<email></email>
 		<source>https://github.com/BigNoid/script.skinshortcuts</source>
 	</extension>
+</addon>
+
+<addon id="script.thumbnailscleaner" name="Thumbnails Cleaner" version="1.1.4" provider-name="Max (m4x1m) Headroom">
+     <requires>
+	  <import addon="xbmc.python" version="2.1.0" />
+	  <import addon="script.module.simplejson" version="2.0.10" />
+     </requires>
+     <extension point="xbmc.python.script" library="default.py">
+	  <provides>executable</provides>
+     </extension>
+     <extension point="xbmc.addon.metadata">
+	  <platform>all</platform>
+	  <forum>http://forum.xbmc.org/showthread.php?tid=158972</forum>
+	  <summary lang="en">Thumbnails Cleaner allows you to clean the thumbnails folder of your XBMC</summary>
+	  <summary lang="it">Thumbnails Cleaner consente di pulire la cartella thumbnails del tuo XBMC</summary>
+	  <description lang="en">Thumbnails Cleaner works for exclusion. The script read the databases and excludes the images found. No image will be deleted. Once completed, the images will be moved to the destination folder you choose. In case of simulation, the images will be copied.</description>
+	  <description lang="it">Thumbnails Cleaner lavora per esclusione. Lo script legge i database ed esclude le immagini trovate. Nessuna immagine sarà cancellata. Una volta completato, le immagini verranno spostate nella cartella di destinazione scelta. In caso di simulazione, le immagini verranno copiate.</description>
+	  <disclaimer lang="en">Thumbnails Cleaner works only with Frodo and later</disclaimer>
+	  <disclaimer lang="it">Thumbnails Cleaner funziona solo con Frodo e successivi</disclaimer>
+     </extension>
 </addon>
 
 <addon id="script.video.F4mProxy"

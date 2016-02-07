@@ -236,6 +236,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._khaozwizard</name>
+            <path pathversion="1">http://khaozwizard.comoj.com/kodi/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
             <name>z._KodiMaster</name>
             <path pathversion="1">http://kodimaster.com/repo/</path>
             <allowsharing>true</allowsharing>
