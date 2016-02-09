@@ -108,9 +108,15 @@ Profile:   \userdata\profiles\ProfileName</description>
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="4.1.0"/>
   </requires>
-  <extension
-    point="xbmc.pvrclient"
-    library_windows="pvr.iptvsimple2.dll"/>
+
+  <extension point="xbmc.pvrclient"
+    library_windows="pvr.iptvsimple2.dll"
+    library_windx="pvr.iptvsimple2.dll"
+    library_android="libpvr.iptvsimple.so"
+    library_linux="pvr.iptvsimple.so"
+    library_osx="pvr.iptvsimple.dylib"
+    library_freebsd="pvr.iptvsimple.so" />
+
   <extension point="xbmc.addon.metadata">
     <summary lang="en_AU">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="en_GB">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -127,7 +133,7 @@ Profile:   \userdata\profiles\ProfileName</description>
     <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
     <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
 
-    <platform>windows</platform>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -451,7 +457,7 @@ Profile:   \userdata\profiles\ProfileName</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.dnatv" name=" [COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.2.2" provider-name="Team DNA">
+<addon id="plugin.video.dnatv" name="[COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.2.3" provider-name="Team DNA">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -466,62 +472,6 @@ Profile:   \userdata\profiles\ProfileName</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
 	</extension>
-</addon>
-
-<addon id="plugin.video.p2p-streams"
-       name="p2p-streams"
-       version="1.2.0b"
-       provider-name="enen92,fightnight">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.pytz" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.mechanize" version="0.2.6"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream</summary>
-    <description lang="en">AceStream and Sopcast in your favourite media center! Watch peer-to-peer streams in Kodi without the need for external players. Project page: https://github.com/enen92/P2P-Streams-Kodi</description>
-    <description lang="pt">AceStream e Sopcast no seu Media-Center de eleição! Assista a streams peer-to-peer no Kodi sem a necessidade de players externos. Página do projecto: https://github.com/enen92/P2P-Streams-Kodi</description>
-    <description lang="nl">Acestream en Sopcast in jouw favoriete media center. Kijk peer-to-peer streams in Kodi zonder de noodzaak voor externe spelers. Project pagina: https://github.com/enen92/P2P-Streams-Kodi/</description>
-    <description lang="it">AceStream e SopCast nel tuo Media Center preferito! Guarda i canali peer-to-peer in Kodi senza la necessità di player esterni. Pagina del progetto: https://github.com/enen92/P2P-Streams-Kodi/</description>
-    <disclaimer lang="en">The authors does not host nor distribute any of the content you may watch using this addon. The authors have no affiliation with any of the content providers. This addon does not track its users.</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste addon. Os autores não têm qualquer afiliação com nenhum dos sites utilizados por este addon. O addon não contem nenhuma ferramenta de tracking.</disclaimer>
-    <disclaimer lang="nl">De auteurs houden of delen niets van de inhoud die u kunt bekijken met behulp van deze addon. De auteurs hebben geen banden met welke leverancier van inhoud dan ook. Deze addon houdt geen gegevens bij van zijn gebruikers.</disclaimer>
-    <disclaimer lang="it">L'autore non detiene o distribuisce alcun contenuto fruibile tramite l'utilizzo di questo addon. L'autore non è affiliato con nessun fornitore dei contenuti. Questo addon non traccia i suoi utenti.</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=201894</forum>
-    <source>https://github.com/enen92/P2P-Streams-Kodi | https://github.com/enen92/P2P-Streams-Kodi--Modules-</source>
-    <website>https://code.google.com/p/p2p-strm/</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.pulsar" name="Pulsar" version="0.7.1" provider-name="steeve, i96751414">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <language>en</language>
-        <website><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></website>
-        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
-        <source><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></source>
-        <language>en</language>
-        <license><![CDATA[Non commercial. See https://github.com/i96751414/plugin.video.pulsar/blob/master/LICENSE]]></license>
-        <summary><![CDATA[Pulsar: Universal streaming]]></summary>
-        <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
-    </extension>
 </addon>
 
 <addon
@@ -582,30 +532,6 @@ Profile:   \userdata\profiles\ProfileName</description>
 		<email>bromix at gmx dot net</email>
 		<source>https://github.com/bromix/plugin.video.youtube</source>
 	</extension>
-</addon>
-
-<addon id="program.plexus"
-       name="Plexus"
-       version="0.1.4"
-       provider-name="enen92, TV ADDONS">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
-    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <forum>http://forums.tvaddons.ag</forum>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="repo.natko1412" name="natko1412 repo" version="2.0.0" provider-name="natko1412">
@@ -2165,6 +2091,35 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
     </extension>
 </addon>
 
+
+<addon id="repository.projectmrnetwork" name="Project MR Network" version="1.0.0" provider-name="Indiecrew, MalayRevolution Network">
+	<extension point="xbmc.addon.repository" name="MR Network Repository">
+		<info compressed="false">https://raw.githubusercontent.com/indiecrew/ProjectMRNetwork/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/indiecrew/ProjectMRNetwork/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/indiecrew/ProjectMRNetwork/master/zip/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">Install Add-ons from MR Network Repository.</summary>
+		<description lang="en">Download and install add-ons from MR Network repository. By using this repository you will be able to take advantage of cutting edge features our contributors constantly develop and update.</description>
+		<disclaimer lang="en">MR Network will not responsible for all add-ons on this repository</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.providers.quasar" name="Quasar Providers Repo" version="1.0.1.1" provider-name="Eleazar Coding-Mancuniancol">
+	<extension point="xbmc.addon.repository" name="Quasi-Stellar-Radio-Source Repo">
+        <info>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml</info>
+        <checksum>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">http://offshoregit.com/pulsarunofficial/raw/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Quasar and its Providers</summary>
+		<description>Download and install Pulsar and Providers</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.providerspulsarunofficial" name="Pulsar [COLOR red]Providers[/COLOR] Unofficial Repo" version="1.0.6" provider-name="Eleazar Coding-Mancuniancol">
 	<extension point="xbmc.addon.repository" name="Pulsar Providers Unofficial Repo">
         <info>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml</info>
@@ -2193,16 +2148,18 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.pulsarunofficial" name="Pulsar [COLOR red]Unofficial [/COLOR]Repo" version="2.0.0" provider-name="mancuniancol,iCanuck">
-	<extension point="xbmc.addon.repository" name="Pulsar Unofficial Repository">
+<addon id="repository.pulsarunofficial" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="3.0.0" provider-name="iCanuck">
+	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repository">
        <info>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml</info>
        <checksum>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml.md5</checksum>
-       <datadir zip="true">http://offshoregit.com/pulsarunofficial/raw/master/</datadir>
+       <datadir zip="true">http://offshoregit.com/pulsarunofficial/raw/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install Pulsar and Providers</summary>
-		<description>Download and install Pulsar and Providers</description>
+		<summary>A Collection of Quasar Providers and Related Addons</summary>
+		<description>Download and install Quasar and Providers</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<website>http://tvaddons.ag/</website>
+		<forum>https://forums.tvaddons.ag/addon-releases/31572-pulsar-providers-unofficial-pulsar-repo.html</forum>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
@@ -2225,6 +2182,8 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
 </addon>
+
+<addon id="repository.quasar" name="Quasar Repository" version="0.9.9" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar Updates</summary></extension></addon>
 
 <addon
   id="repository.queeup"
@@ -2761,6 +2720,20 @@ Addons Included
 	</extension>
 </addon>
 
+<addon id="repository.tutvguia" name="Tu [COLOR red]TVGuia[/COLOR] Repo" version="1.0.1" provider-name="Inter95 Coding-Mancuniancol">
+	<extension point="xbmc.addon.repository" name="Tu TVGuia Repo">
+        <info>http://tutvguia.xyz/addons.xml</info>
+        <checksum>http://tutvguia.xyz/addons.xml.md5</checksum>
+        <datadir zip="true">http://tutvguia.xyz</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repositorio para Tu TVGuia</summary>
+		<description>Repositorio para instalar los proyectos de Tu TV Guia</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.tva.common" name="TVADDONS.ag Libraries Repository" version="1.0.1" provider-name="tvaddons.ag">
     <extension point="xbmc.addon.repository" name="TVADDONS.ag Libraries Repository">
         <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
@@ -2790,16 +2763,18 @@ Addons Included
     </extension>
 </addon>
 
-<addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.0" provider-name="iCanuck">
-	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repo">
-        <info compressed="false">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/addons.xml</info>
-        <checksum>http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/addons.xml.md5</checksum>
-        <datadir zip="true">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo/zips/</datadir>
+<addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo Mirror" version="1.0.1" provider-name="iCanuck">
+	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repository Mirror">
+        <info compressed="false">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo-Mirror/addons.xml</info>
+        <checksum>http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo-Mirror/addons.xml.md5</checksum>
+        <datadir zip="true">http://offshoregit.com/iCanuck/Unofficial-Quasar-Repo-Mirror/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install Quasar and Providers</summary>
+		<summary>A Collection of Quasar Providers and Related Addons</summary>
 		<description>Download and install Quasar and Providers</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<website>http://tvaddons.ag/</website>
+		<forum>https://forums.tvaddons.ag/addon-releases/31572-pulsar-providers-unofficial-pulsar-repo.html</forum>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
