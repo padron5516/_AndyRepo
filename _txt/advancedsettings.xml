@@ -1,11 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<advancedsettings>
 <!--http://kodi.wiki/view/Advancedsettings.xml-->
 <!--Full Advancedsettings.xml-->
+<advancedsettings>
 
 <playlisttimeout>20</playlisttimeout>
 <packagefoldersize>20</packagefoldersize> <!-- The amount in megabytes of packages saved from previous add-on installs. -->
 <!--<loglevel hide="false">1</loglevel>-->
+
+<videoscreen>
+   <!--<fakefullscreen default="true">true</fakefullscreen>-->
+   <!--<monitor default="true">Default</monitor>-->
+   <!--<resolution default="true">16</resolution>-->
+   <screen>2</screen>
+</videoscreen>
+
+<network>
+  <!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
+      <cachemembuffersize>157286400</cachemembuffersize>     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+  <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
+  <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
+  <!--<cachemembuffersize>52428800</cachemembuffersize>-->   <!-- Cache - Using 50MB of RAM for cache (which requires 150MB of free RAM).  -->    
+  <!--<cachemembuffersize>104857600</cachemembuffersize>-->  <!-- Cache - Using 100MB of RAM for cache (which requires 300MB of free RAM).  -->
+  <!--<cachemembuffersize>157286400</cachemembuffersize>-->  <!-- Cache - A safe setting for most devices with 1GB of RAM that should help most users "on the edge". All protocols get cached, cache rate fills up pretty much as fast as possible, and cache size is 150MB, using 400MB of ram total.   -->
+
+  <!--<cachemembuffersize>39321600</cachemembuffersize>-->   <!-- Cache - Using 1gig of RAM for cache -->  
+  <!--<cachemembuffersize>78643200</cachemembuffersize>-->   <!-- Cache - Using 2gig of RAM for cache -->  
+  <!--<cachemembuffersize>157286400</cachemembuffersize>-->  <!-- Cache - Using 4gig of RAM for cache -->  
+  <!--<cachemembuffersize>314572800</cachemembuffersize>-->  <!-- Cache - Using 8gig of RAM for cache -->   
+
+  <readbufferfactor>20</readbufferfactor>  <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. -->
+    <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache -->
+    <!-- By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware. -->
+    <!-- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC. -->
+    <!-- The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth. -->
+    <!-- However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback. -->
+  <curlclienttimeout>20</curlclienttimeout> <!-- Timeout in seconds for libcurl (http/ftp) connections -->
+  <curllowspeedtime>20</curllowspeedtime> <!-- Time in seconds for libcurl to consider a connection lowspeed -->
+  <buffermode>1</buffermode> <!-- Choose what to buffer: -->
+    <!-- 0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default) -->
+    <!-- 1) Buffer all filesystems (including local) -->
+    <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->
+    <!-- 3) No buffer -->
+  <!--<httpproxyusername></httpproxyusername>--> <!-- username for Basic Proxy Authentication -->
+  <!--<httpproxypassword></httpproxypassword>--> <!-- password for Basic Proxy Authentication -->
+</network>
 
 <samba>
   <clienttimeout>10</clienttimeout> <!-- timeout (in seconds) -->
@@ -15,50 +52,13 @@
 <pvr>
   <minvideocachelevel>65</minvideocachelevel>  <!-- Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
   <minaudiocachelevel>65</minaudiocachelevel>  <!-- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
-  <cacheindvdplayer>true</cacheindvdplayer>  <!-- Cache PVR stream in DVDPlayer. -->
+  <!--<cacheindvdplayer>true</cacheindvdplayer>-->  <!-- Cache PVR stream in DVDPlayer. -->
   <!--<timecorrection>0</timecorrection>--> <!-- Correct all times (epg tags, timer tags, recording tags) by this amount of minutes. -->
   <!--<infotoggleinterval>3000</infotoggleinterval>--> <!-- If there is more than one pvr gui info item available, use this toggle delay in milliseconds. -->
   <!--<channeliconsautoscan>true</channeliconsautoscan>-->  <!-- Automatically scan user defined folder for channel icons when loading internal channel groups. -->
   <!--<autoscaniconsuserset>false</autoscaniconsuserset>-->  <!-- Mark channel icons populated by auto scan as "user set". -->
   <!--<numericchannelswitchtimeout>1000</numericchannelswitchtimeout>-->  <!-- Time in ms before the numeric dialog auto closes when confirmchannelswitch is disabled. -->
 </pvr>
-
-<network>
-<!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
-
-  <!--<cachemembuffersize>78643200</cachemembuffersize>-->         <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
-
-  <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
-  <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
-  
-  <!--<cachemembuffersize>52428800</cachemembuffersize>-->   <!-- Cache - Using 50MB of RAM for cache (which requires 150MB of free RAM).  -->    
-  <!--<cachemembuffersize>104857600</cachemembuffersize>-->  <!-- Cache - Using 100MB of RAM for cache (which requires 300MB of free RAM).  -->  
-  <!--<cachemembuffersize>157286400</cachemembuffersize>-->  <!-- Cache - A safe setting for most devices with 1GB of RAM that should help most users "on the edge". All protocols get cached, cache rate fills up pretty much as fast as possible, and cache size is 150MB, using 400MB of ram total.   -->
-
-
-  <!--<cachemembuffersize>39321600</cachemembuffersize>-->   <!-- Cache - Using 1gig of RAM for cache -->  
-  <!--<cachemembuffersize>78643200</cachemembuffersize>-->   <!-- Cache - Using 2gig of RAM for cache -->  
-  <!--<cachemembuffersize>314572800</cachemembuffersize>-->  <!-- Cache - Using 4gig of RAM for cache -->  
-  <!--<cachemembuffersize>78643200</cachemembuffersize>-->   <!-- Cache - Using 8gig of RAM for cache -->   
-
-
-  <readbufferfactor>20</readbufferfactor>
-  <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file.
-This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache
-By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware.
- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC.
-The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth.
- However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback. -->
-  <curlclienttimeout>20</curlclienttimeout> <!-- Timeout in seconds for libcurl (http/ftp) connections -->
-  <curllowspeedtime>20</curllowspeedtime> <!-- Time in seconds for libcurl to consider a connection lowspeed -->
-  <buffermode>1</buffermode> <!-- Choose what to buffer:
-    0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default)
-    1) Buffer all filesystems (including local)
-    2) Only buffer true internet filesystems (streams) (http, etc.)
-    3) No buffer -->
-  <!--<httpproxyusername></httpproxyusername>--> <!-- username for Basic Proxy Authentication -->
-  <!--<httpproxypassword></httpproxypassword>--> <!-- password for Basic Proxy Authentication -->
-</network>
 
 <gui>
    <nofliptimeout>0</nofliptimeout>
@@ -95,9 +95,9 @@ The value of this setting is a multiplier of the default limit. If Kodi is loadi
     <!--<mymovies>--> <!-- Options specific to MyMovies XML file parsing -->
     <!--<categoriestogenres>false</categoriestogenres>--> <!-- Add MyMovies Custom Categories to Genres (boolean, default is false) -->
     <!--</mymovies>-->
-    <!--<dateadded>1</dateadded>-->  <!-- 0 results in using the current datetime when adding a video;
-                                          1 (default) results in prefering to use the files mtime (if it's valid) and only using the file's ctime if the mtime isn't valid;
-                                          2 results in using the newer datetime of the file's mtime and ctime -->
+    <!--<dateadded>1</dateadded>-->  <!-- 0 results in using the current datetime when adding a video -->
+                                     <!-- 1 (default) results in prefering to use the files mtime (if it's valid) and only using the file's ctime if the mtime isn't valid -->
+                                     <!-- 2 results in using the newer datetime of the file's mtime and ctime -->
 </videolibrary>
 
 <video>
@@ -135,7 +135,7 @@ The value of this setting is a multiplier of the default limit. If Kodi is loadi
   <!--<useffmpegvda>false</useffmpegvda>-->  <!-- Experimental hardware video decoding mode for OS X. Option is available for development/testing purposes. -->
   <!--<assfixedworks>false</assfixedworks>-->  <!-- "subtitle position on screen" set to "fixed". True to show at the fixed position set in video calibration. False to show at the bottom of video (default). --> 
   <!--<stagefright>-->  <!-- SPMC has mediacodec options for codec tweaking, though. -1 is default, 0 is never used this codec, 1 is always use this codec, bypassing blacklist -->
-      <!--<useavccodec>-1</useavccodec>-->
+  <!--<useavccodec>-1</useavccodec>-->
       <!--<usehevccodec>-1</usehevccodec>-->  <!-- Added in v15 -->
       <!--<usevc1codec>-1</usevc1codec>-->
       <!--<usevpxcodec>-1</usevpxcodec>-->
@@ -144,13 +144,6 @@ The value of this setting is a multiplier of the default limit. If Kodi is loadi
       <!--<useswrenderer>false</useswrenderer>-->
   <!--</stagefright>--> 
 </video>
-
-<!--<videoscreen>
-   <fakefullscreen default="true">true</fakefullscreen>
-   <monitor default="true">Default</monitor>
-   <resolution default="true">16</resolution>
-   <screen>2</screen>
-</videoscreen>-->
 
 <audio>
   <!--<headroom>0</headroom>-->  <!-- Amount of headroom Kodi should use above the maximum volume level, in decibels.  Defaults to 0, valid values 0, 6, 12. -->

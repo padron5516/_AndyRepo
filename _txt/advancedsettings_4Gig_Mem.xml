@@ -1,11 +1,19 @@
 <advancedsettings>
 <!--4 Gig Memory Advancedsettings.xml-->
+<playlisttimeout>20</playlisttimeout>
 
 <network>
    <buffermode>1</buffermode>
-   <cachemembuffersize>314572800</cachemembuffersize>
+   <cachemembuffersize>157286400</cachemembuffersize>
    <readbufferfactor>20</readbufferfactor>
+   <curlclienttimeout>20</curlclienttimeout>
+   <curllowspeedtime>20</curllowspeedtime>
 </network>
+  
+<samba>
+   <clienttimeout>10</clienttimeout>
+   <statfiles>false</statfiles>
+</samba>
 
 <pvr>
    <minvideocachelevel>65</minvideocachelevel>

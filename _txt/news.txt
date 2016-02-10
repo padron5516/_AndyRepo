@@ -1,5 +1,6 @@
 1
 |||
-Get the most out of Kodi by visiting our Blog for updates regularly:
-[B][COLOR white]https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/news.txt[/COLOR][/B]
+This is the newest version of my repository Feb 2016.
+It is a constant WIP.
 
+https://github.com/halikus/_AndyRepo
