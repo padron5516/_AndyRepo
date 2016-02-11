@@ -10,12 +10,12 @@
    <!--<fakefullscreen default="true">true</fakefullscreen>-->
    <!--<monitor default="true">Default</monitor>-->
    <!--<resolution default="true">16</resolution>-->
-   <screen>2</screen>
+   <!--<screen>2</screen>-->
 </videoscreen>
 
 <network>
   <!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
-      <cachemembuffersize>157286400</cachemembuffersize>     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+  <!--<cachemembuffersize>314572800</cachemembuffersize>-->  <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
   <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
   <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
   <!--<cachemembuffersize>52428800</cachemembuffersize>-->   <!-- Cache - Using 50MB of RAM for cache (which requires 150MB of free RAM).  -->    
@@ -27,7 +27,7 @@
   <!--<cachemembuffersize>157286400</cachemembuffersize>-->  <!-- Cache - Using 4gig of RAM for cache -->  
   <!--<cachemembuffersize>314572800</cachemembuffersize>-->  <!-- Cache - Using 8gig of RAM for cache -->   
 
-  <readbufferfactor>20</readbufferfactor>  <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. -->
+  <readbufferfactor>10</readbufferfactor>  <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. -->
     <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache -->
     <!-- By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware. -->
     <!-- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC. -->
@@ -35,7 +35,7 @@
     <!-- However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback. -->
   <curlclienttimeout>20</curlclienttimeout> <!-- Timeout in seconds for libcurl (http/ftp) connections -->
   <curllowspeedtime>20</curllowspeedtime> <!-- Time in seconds for libcurl to consider a connection lowspeed -->
-  <buffermode>1</buffermode> <!-- Choose what to buffer: -->
+  <buffermode>2</buffermode> <!-- Choose what to buffer: -->
     <!-- 0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default) -->
     <!-- 1) Buffer all filesystems (including local) -->
     <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->

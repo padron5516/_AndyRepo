@@ -4,7 +4,6 @@
     </programs>
     <video>
         <default pathversion="1"></default>
-
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -37,7 +36,6 @@
     </video>
     <music>
         <default pathversion="1"></default>
-
         <source>
             <name>Music Library</name>
             <path pathversion="1">musicdb://</path>
@@ -76,7 +74,12 @@
             <name>z.._Gentecwiz</name>
             <path pathversion="1">http://gen-tec.co/gentecwiz</path>
             <allowsharing>true</allowsharing>
-        </source>           
+        </source>         
+        <source>
+            <name>z.._Jafaer-tv</name>
+            <path pathversion="1">http://repo.jafaer-tv.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>          
         <source>
             <name>z.._Justnewtech</name>
             <path pathversion="1">http://justnewtech.com</path>

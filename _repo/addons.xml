@@ -43,12 +43,20 @@
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" />
-<!--<import addon="plugin.video.youtube" />
-    <import addon="script.module.metahandler" optional="true" />
-		<import addon="script.module.addon.common" optional="true" />
-		<import addon="script.module.t0mm0.common" optional="true" />
-		<import addon="script.module.urlresolver" optional="true" />
-		<import addon="script.module.xmltodict" optional="true" />-->
+
+    <!-- Maintenance Tool -->
+    <!--<import addon="plugin.video.youtube" />-->
+    <!--<import addon="script.module.metahandler" optional="true" />-->
+    <!--<import addon="script.module.metahandler" />-->
+
+    <!-- Wizard -->
+		<!--<import addon="script.module.addon.common" optional="true" />-->
+		<!--<import addon="script.module.t0mm0.common" optional="true" />-->
+		<!--<import addon="script.module.urlresolver" optional="true" />-->
+
+    <!-- Advanced Setting Setter -->
+		<!--<import addon="script.module.xmltodict" version="0.8.6"/>-->
+		<!--<import addon="script.module.xmltodict" optional="true" />-->
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -93,6 +101,23 @@ Profile:   \userdata\profiles\ProfileName</description>
   </extension>
 </addon>
 
+<addon id="Andy.plugin.video" name=" [COLOR yellow]Andy[/COLOR] IPTV" version="1.0.0" provider-name="Andy">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Shameless DNA TV 2.2.3 Mod</summary>
+		<description lang="en">DNA TV brings you unlimited Entertainment. Live TV / PPV / Sports / Kids / Movies / Entertainment all available just one click away.</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.9"
@@ -135,7 +160,6 @@ Profile:   \userdata\profiles\ProfileName</description>
 	<requires>
 	  <!--<backwards-compatibility abi="12.0"/>-->
 		<import addon="xbmc.addon" version="12.0.0"/>
-		<!--<import addon="Andy.plugin.program.Maintenance" version="0.0.1"/>-->
 	</requires>
 	<extension point="xbmc.addon.repository" name=" [COLOR yellow]Andy[/COLOR] Repository">
 

@@ -148,7 +148,12 @@
             <name>z.._Gentecwiz</name>
             <path pathversion="1">http://gen-tec.co/gentecwiz</path>
             <allowsharing>true</allowsharing>
-        </source>           
+        </source>         
+        <source>
+            <name>z.._Jafaer-tv</name>
+            <path pathversion="1">http://repo.jafaer-tv.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>          
         <source>
             <name>z.._Justnewtech</name>
             <path pathversion="1">http://justnewtech.com</path>

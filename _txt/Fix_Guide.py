@@ -16,7 +16,7 @@ addon5='plugin.video.i4atv'
 addon6='plugin.video.dnatv'
 addon7='plugin.video.stealthfree'
 addon8='Andy.plugin.video'
-addon9='Andy.plugin.video.mac'
+addon9='-'
 addon10='-'
 
 TVGuide1="Andy.plugin.program.Guide"
