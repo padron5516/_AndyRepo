@@ -18,7 +18,7 @@
 <pvr>
    <minvideocachelevel>65</minvideocachelevel>
    <minaudiocachelevel>65</minaudiocachelevel>
-   <cacheindvdplayer>true</cacheindvdplayer>
+   <!--<cacheindvdplayer>true</cacheindvdplayer>-->
 </pvr> 
 
 <gui>
@@ -35,8 +35,8 @@
 </videoscanner>
 
 <input>
-   <enablemouse>true</enablemouse>
-   <remoteaskeyboard>true</remoteaskeyboard>
+   <!--<enablemouse>true</enablemouse>-->
+   <!--<remoteaskeyboard>true</remoteaskeyboard>-->
 </input>
 
 </advancedsettings>

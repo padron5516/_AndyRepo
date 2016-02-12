@@ -6,6 +6,13 @@
 <packagefoldersize>20</packagefoldersize> <!-- The amount in megabytes of packages saved from previous add-on installs. -->
 <!--<loglevel hide="false">1</loglevel>-->
 
+<pathsubstitution>
+	<!--<substitute>
+    <from>special://masterprofile/Thumbnails/</from>
+		<to>smb://Kodi_Database/userdata/Thumbnails</to>
+	</substitute>-->
+</pathsubstitution>	
+
 <videoscreen>
    <!--<fakefullscreen default="true">true</fakefullscreen>-->
    <!--<monitor default="true">Default</monitor>-->
@@ -15,7 +22,7 @@
 
 <network>
   <!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
-  <!--<cachemembuffersize>314572800</cachemembuffersize>-->  <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+      <cachemembuffersize>157286400</cachemembuffersize>     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
   <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
   <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
   <!--<cachemembuffersize>52428800</cachemembuffersize>-->   <!-- Cache - Using 50MB of RAM for cache (which requires 150MB of free RAM).  -->    
@@ -74,9 +81,37 @@
 </videoscanner>
 
 <input>
-   <enablemouse>true</enablemouse>
-   <remoteaskeyboard>true</remoteaskeyboard>
+   <!--<enablemouse>true</enablemouse>-->
+   <!--<remoteaskeyboard>true</remoteaskeyboard>-->
 </input>
+
+<!--
+<videodatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>administrator</user>
+    <pass>lol</pass>
+</videodatabase> 
+-->
+<!--
+<musicdatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>administrator</user>
+    <pass>lol</pass>
+</musicdatabase> 
+-->
+<!--
+<photodatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>administrator</user>
+    <pass>lol</pass>
+</photodatabase> 
+-->
 
 <videolibrary>
     <actorthumbs>false</actorthumbs>

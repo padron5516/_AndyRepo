@@ -1,9 +1,7 @@
 <sources>
-    <programs>
-        <default pathversion="1"></default>
-    </programs>
     <video>
         <default pathversion="1"></default>
+   
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -19,6 +17,7 @@
         <source>
             <name>UPnP Media Servers (Auto-Discover)</name>
             <path pathversion="1">upnp://</path>
+            <thumbnail pathversion="1">Settings.network.upnp.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -27,15 +26,121 @@
             <thumbnail pathversion="1">DefaultVideoPlaylists.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
+        <!-- option to Use PC DVD Drive --> 
+        <!--  
         <source>
-            <name>z IPTV Prozone</name>
+            <name>Video PC DVD</name>
+            <path pathversion="1">smb://SERVER/DVD/</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- option to force the DVD drive to read the disk as iso9660 file systems -->
+        <!--
+        <source>
+            <name>ISO</name>
+            <path>iso9660://</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- option to force the DVD drive to read the disk as UDF file systems -->
+        <!--
+        <source>
+            <name>UDF</name>
+            <path>UDF://</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>        
+        -->
+        <!-- UPNP MythTV Example -->
+        <!--
+        <source>
+            <name>MythTV AV Media Server</name>
+            <path pathversion="1">upnp://acbfd8de-406c-4d44-8f4f-769bb12c0a6b/Music/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- Addon Example -->
+        <!--
+        <source>
+            <name>plugin.video.F.T.V Movies</name>
+            <path pathversion="1">special://profile/addon_data/plugin.video.F.T.V/movies/</path>
+            <allowsharing>true</allowsharing>
+            <thumbnail pathversion="1">DefaultVideoPlugins.png</thumbnail>
+        </source>
+        --> 
+        <!-- M3U WWW Playlist Example -->
+        <!--
+        <source>
+            <name>IPTV Prozone</name>
             <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
             <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
+        -->
+        <!-- UDP Stream from VLC Example -->
+        <!--
+        <source>
+            <name>UDP Stream from VLC</name>
+            <path pathversion="1">udp://192.168.1.2:1234</path>
+            <thumbnail pathversion="1">Settings.network.upnp.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
     </video>
     <music>
         <default pathversion="1"></default>
+        
+        <source>
+            <name>Rotten Tomatoes Podcast</name>
+            <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <!-- option to Use PC DVD Drive --> 
+        <!--  
+        <source>
+            <name>Video PC DVD</name>
+            <path pathversion="1">smb://SERVER/DVD/</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- option to force the DVD drive to read the disk as iso9660 file systems -->
+        <!--
+        <source>
+            <name>ISO</name>
+            <path>iso9660://</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- option to force the DVD drive to read the disk as UDF file systems -->
+        <!--
+        <source>
+            <name>UDF</name>
+            <path>UDF://</path>
+            <thumbnail pathversion="1">DefaultDVDRom.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>        
+        -->
+        <!-- UDP Stream from VLC Example -->
+        <!--
+        <source>
+            <name>UDP Stream from VLC</name>
+            <path pathversion="1">udp://192.168.1.2:1234</path>
+            <thumbnail pathversion="1">Settings.network.upnp.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
+        <!-- UPNP MythTV Example -->
+        <!--
+        <source>
+            <name>MythTV AV Media Server</name>
+            <path pathversion="1">upnp://acbfd8de-406c-4d44-8f4f-769bb12c0a6b/Music/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        -->
         <source>
             <name>Music Library</name>
             <path pathversion="1">musicdb://</path>
@@ -51,17 +156,244 @@
         <source>
             <name>UPnP Media Servers (Auto-Discover)</name>
             <path pathversion="1">upnp://</path>
+            <thumbnail pathversion="1">Settings.network.upnp.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
     </music>
+    
     <pictures>
         <default pathversion="1"></default>
+        
+        <!-- RSS Feeds show up in Pictures -->
+                
+        <!-- RSS Torrents -->        
+        <source>
+            <name>RSS Torrents - rarbg Xvid</name>
+            <path pathversion="1">http://rarbg.to/rssdd.php?categories=14</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Torrents - rarbg TV</name>
+            <path pathversion="1">http://rarbg.to/rssdd.php?categories=18</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Torrents - rarbg x264</name>
+            <path pathversion="1">http://rarbg.to/rssdd.php?categories=17</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Torrents - Torrentfreak</name>
+            <path pathversion="1">http://feeds.feedburner.com/Torrentfreak</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Torrents - mininova</name>
+            <path pathversion="1">http://www.mininova.org/rss.xml</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Torrents - cztorrent</name>
+            <path pathversion="1">http://tracker.cztorrent.net/rss/torrents/?rss=1</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
+        <!-- RSS CNN -->        
+        <source>
+            <name>RSS CNN - Latest</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_latest.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - Top Stories</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_topstories.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - Popular</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_mostpopular.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - World</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_world.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - U.S.</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_us.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - Showbiz</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_showbiz.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CNN - Politics</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_allpolitics.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
+            <name>RSS CNN - Tech</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_tech.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
+            <name>RSS CNN - Space</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_space.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>       
+        <source>
+            <name>RSS CNN - Offbeat</name>
+            <path pathversion="1">http://rss.cnn.com/rss/cnn_offbeat.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>       
+
+        <!-- RSS Yahoo -->        
+        <source>
+            <name>RSS Yahoo - Sports</name>
+            <path pathversion="1">http://sports.yahoo.com/top/rss.xml</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
+        <!-- RSS CBS -->        
+        <source>
+            <name>RSS CBS - Main</name>
+            <path pathversion="1">http://www.cbsnews.com/feeds/rss/main.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CBS - National</name>
+            <path pathversion="1">http://www.cbsnews.com/feeds/rss/national.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
+            <name>RSS CBS - World</name>
+            <path pathversion="1">http://www.cbsnews.com/feeds/rss/world.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS CBS - Entertainment</name>
+            <path pathversion="1">http://www.cbsnews.com/feeds/rss/entertainment.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+        <source>
+            <name>RSS CBS - Tech</name>
+            <path pathversion="1">http://www.cbsnews.com/feeds/rss/scitech.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>       
+        
+        <!-- RSS NPR -->        
+        <source>
+            <name>RSS NPR - Arts</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1008</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS NPR - Digital Culture</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1049</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        
+        <!-- RSS Reuters -->
+        <source>
+            <name>RSS Reuters - Environment</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/environment</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Oddly Enough News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/oddlyEnoughNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Sports News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/sportsNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Top Business</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/businessNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Technology News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/technologyNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Top News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/topNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
+        <!-- RSS Kodi News -->
+        <source>
+            <name>RSS Kodi - Top News</name>
+            <path pathversion="1">http://feeds.xbmc.org/xbmc</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - Latest Addons</name>
+            <path pathversion="1">http://feeds.xbmc.org/latest_xbmc_addons</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - Updated Addons</name>
+            <path pathversion="1">http://feeds.xbmc.org/updated_xbmc_addons</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - TVADDONS</name>
+            <path pathversion="1">http://feeds.feedburner.com/TVADDONS</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - chrisbwizard</name>
+            <path pathversion="1">http://chrisbwizard.pcriot.com/Chrisb.rss</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - webrss News</name>
+            <path pathversion="1">http://www.webrss.com/createfeed.php?feedid=46621</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - rapidfeeds News</name>
+            <path pathversion="1">http://feeds.rapidfeeds.com/78092/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Kodi - AnimalKodi News</name>
+            <path pathversion="1">http://www.repeatserver.com/Users/AnimalKodi/news.xml</path>
+            <allowsharing>true</allowsharing>
+        </source>
+   
+        <!-- RSS Sports -->
+        <source>
+            <name>RSS Sports - NFL</name>
+            <path pathversion="1">rss://xbmc-rocks.com/nfl.rss/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Sports - NFL Standings</name>
+            <path pathversion="1">rss://xbmc-rocks.com/NFLstandings.rss/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
+        <source>
+            <name>Time Of Day</name>
+            <path pathversion="1">rss://pla1.net/time.rss/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </pictures>
+    
     <files>
         <default pathversion="1"></default>
          <source>
             <name>z... (No Repos z.._) (Has Repo z._)</name>
-            <path pathversion="1">https://raw.githubusercontent.com/halikus/_AndyRepo/master/</path>
+            <path pathversion="1">https://github.com/halikus/_AndyRepo/tree/master/_repo/</path>
             <allowsharing>true</allowsharing>
         </source>         
         
@@ -271,5 +603,18 @@
             <path pathversion="1">http://xunitytalk.me/xfinity/</path>
             <allowsharing>true</allowsharing>
         </source>
+        <source>
+            <name>Home</name>
+            <path pathversion="1">special://</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Profile</name>
+            <path pathversion="1">special://profile/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </files>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
 </sources>
