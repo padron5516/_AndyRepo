@@ -3756,6 +3756,155 @@ Addons Included
     </extension>
 </addon>
 
+<addon id="script.artistslideshow" name="Artist Slideshow" version="1.8.7" provider-name="pkscout,ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.addon" version="14.0.0"/>
+		<import addon="script.module.requests" version="2.3.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ar">حمل المزيد من الصور والمعلومات عن الفنان الذى يُغنِى حالياً</summary>
+		<summary lang="be">Download images and additional info of the currently playing artist</summary>
+		<summary lang="bg">Сваля изображения и допълнителна инф. за изпълнителя на текущата песен</summary>
+		<summary lang="ca">Descàrrega imatges i informació addicional de l'artista que s'està reproduint</summary>
+		<summary lang="da">Download billeder og ekstra info om kunstneren, der spiller i øjeblikket</summary>
+		<summary lang="de">Downloade Bilder und zusätzliche Informationen des aktuellen abspielenden Künstlers.</summary>
+		<summary lang="el">Κατεβάστε εικόνες και επιπλέον πληροφορίες του τρέχοντος καλλιτέχνη</summary>
+		<summary lang="en">Download images and additional info of the currently playing artist</summary>
+		<summary lang="en_NZ">Download images and additional info of the currently playing artist</summary>
+		<summary lang="en_US">Download images and additional info of the currently playing artist</summary>
+		<summary lang="es">Descarga imágenes e información adicional del artista que esté sonando</summary>
+		<summary lang="es_AR">Bajá imágenes e información adicional sobre el artista </summary>
+		<summary lang="fr">Télécharger les images et les informations additionnelles de l'artiste en cours de lecture</summary>
+		<summary lang="fr_CA">Télécharger des images et des infos additionnelles sur l'artiste écouté</summary>
+		<summary lang="gl">Descarga imaxes e info. adicional do artista que está a soar</summary>
+		<summary lang="he">הורד תמונות ומידע נוסף על האמן המושמע כעת</summary>
+		<summary lang="hr">Preuzimite slike i dodatne informacije o trenutno reproduciranom izvođaču</summary>
+		<summary lang="hu">Képeket és kiegészítő információkat tölt le a jelenleg játszott előadóról</summary>
+		<summary lang="it">Scarica immagini ed informazioni addizionali dell'artista attualmente in esecuzione</summary>
+		<summary lang="ja">現在再生中のアーティストの画像と追加情報をダウンロードする</summary>
+		<summary lang="ko">현재 재생중인 아티스트의 이미지와 추가 정보 다운로드</summary>
+		<summary lang="nl">Downloaden van afbeeldingen en extra informatie van te horen artiest</summary>
+		<summary lang="no">Last ned bilder og ytterligere informasjon om artisten som spilles av</summary>
+		<summary lang="pl">Pobieraj obrazy i dodatkowe informacje o aktualnie odtwarzanym wykonawcy</summary>
+		<summary lang="pt">Transferir imagens e info adicional do artista em reprodução agora</summary>
+		<summary lang="pt_BR">Transferência de imagens e informações adicionais de artistas que estejam sendo reproduzidos</summary>
+		<summary lang="ru">Загрузить фото и дополнительную информацию об воспроизводимом исполнителе</summary>
+		<summary lang="sk">Stiahnuť obrázky a dodatočné informácie o práve hrajúcich interpretoch</summary>
+		<summary lang="sl">Naložite slike in dodatne informacije, za trenutno predvajanega izvajalca</summary>
+		<summary lang="sv">Ladda ner bilder samt ytterligare information om den spelade artisten</summary>
+		<summary lang="zh">下载当前播放艺人的图片和附加信息</summary>
+		<description lang="ar">ملحق يساعدك على تَنِزِيل صور ومعلومات إضافيه عن الفنان الذى تستمع اليه حالياً من موقع fanart.tv و theaudiodb.com و htbackdrops.org. كما يمكنك جعل جلد واجهتك الحالى يستخدم كل ما سبق ﻹنشاء عروض شرائح للفنان الذى تستمع إليه</description>
+		<description lang="bg">Добавката сваля картинки и допълнителна информация от www.fanart.tv, www.theaudiodb.com и www.htbackdrops.org за изпълнителя който звучи в момента. Картинките, заедно с фанарт изображенията на изпълнителя, може да се ползват от облика, за създаването на слайдшоу за изпълнителя, който звучи в момента.</description>
+		<description lang="ca">Complement per descarregar imatges i informació addicional de fanart.tv, theaudiodb.com i htbackdrops.org de l'artista que s'està reproduint. Les imatges, juntament amb les imatges locals d'artistes, i la informació, pot ser utilitzada per la pell per crear una presentació de diapositives per a l'artista que s'està escoltant.</description>
+		<description lang="de">Addon um Bilder und zusätzliche Informationen von fanart.tv, theaudiodb.com und htbackdrops.org zum aktuell gespielten Künstler herunterzuladen. Diese Bilder können zusammen mit den lokalen Künstlerbildern und Infos vom Skin genutzt werden, um eine Slideshow für den aktuell angehörten Künstler zu erstellen.</description>
+		<description lang="el">Πρόσθετο για τη λήψη εικόνων και επιπλέον πληροφοριών από το fanart.tv, το theaudiodb.com, και το htbackdrops.com για τον τρέχοντα καλλιτέχνη. Οι εικόνες, μαζί με τοπικές εικόνες του καλλιτέχνη καθώς και πληροφορίες, μπορούν να χρησιμοποιηθούν από το κέλυφος για τη δημιουργία παρουσιάσεων διαφανειών του καλλιτέχνη η μουσική του οποίου ακούγεται.</description>
+		<description lang="en">Addon to download images and additional information from fanart.tv, theaudiodb.com, and htbackdrops.org of the currently playing artist. The images, along with local artists' images, and info can be used by the skin to create a slideshow for the artist being listened to.</description>
+		<description lang="en_NZ">Addon to download images and additional information from fanart.tv, theaudiodb.com, and htbackdrops.org of the currently playing artist. The images, along with local artists' images, and info can be used by the skin to create a slideshow for the artist being listened to.</description>
+		<description lang="en_US">Addon to download images and additional information from fanart.tv, theaudiodb.com, and htbackdrops.org of the currently playing artist. The images, along with local artists' images, and info can be used by the skin to create a slideshow for the artist being listened to.</description>
+		<description lang="es">Addon para descargar imágenes e información adicional de fanart.tv, theaudiodb.com y htbackdrops.org del artista que se está reproduciendo. Las imágenes, junto con imágenes de artistas locales, y la información puede ser utilizada por la piel para crear una presentación de diapositivas para el artista que se está escuchando.</description>
+		<description lang="fr_CA">Addiciel pour télécharger des images et des informations additionnelles sur fanart.tv, theaudiodb.com et htbackdrops.org de l'artiste en cours d'écoute. Les images, ainsi que les images locales de l'artiste, et les infos peuvent être utilisées par l'habillage pour créer un diaporama pour l'artiste en cours d'écoute.</description>
+		<description lang="gl">Complemento para descargar imaxes e información adicional de fanart.tv e theaudiodb.com do artista que está a soar. Estas imaxes, xunto cas do artista gardadas en local e a información pódeas usar o tema para crear unha presentación. </description>
+		<description lang="he">הרחבה להורדת תמונות ומידע נוסף על האמן המושמע כעת מ-fanart.tv, theaudiodb.com ו-htbackdrops.org. התמונות, בנוסף לתמונות אמנים מקומיות והמידע על אמן יכולים לשמש את המעטפת ליצירת מצגת עבור האמן המושמע כעת.</description>
+		<description lang="hr">Dodatak za preuzimanje slika i dodatnih informacije trenutno reproduciranog izvođača s fanart.tv, theaudiodb.com i theaudiodb.com. Slike, zajedno s lokalnim slikama izvođača i informacijama mogu se koristiti s presvlakom za stvaranje slikovne prezentacije izvođača koji se sluša.</description>
+		<description lang="hu">A Kiegészítő letölt képeket és infromációkat a fanart.tv, theaudiodb.com, és htbackdrops.org oldalakról az éppen hallgatott előadóhoz. A képek a helyben tárolt képekkel együtt felhasználhatóak a Felszín által diavetítéshez.</description>
+		<description lang="it">Addon per scaricare immagini ed informazioni aggiuntive da Last.FM, theaudiodb.com e htbackdrops sull'artista attualmente in esecuzione. Le immagini possono essere usate dallo skin, insieme a quelle locali, per creare una presentazione  per l'artista che si sta ascoltando.</description>
+		<description lang="ko">현재 재생중인 아티스트의 이미지와 추가정보를 fanart.tv 와 theaudiodb.com 에서 다운로드합니다. 다운로드한 이미지와 정보는 로컬 이미지와 함께 현재 재생중인 음악의 아티스트 슬라이드쇼에 사용할 수 있습니다.</description>
+		<description lang="nl">Add-on om afbeeldingen en bijkomende informatie van Fanart.tv, theaudiodb.com en htbackdrops.org van de te horen artiest binnen te halen. de afbeeldingen, net als de lokaal aanwezige artiest-afbeeldingen en -info kunnen gebruikt worden door de skin om een diashow te tonen van de artiest di nu beluisterd wordt.</description>
+		<description lang="no">Tillegg for å laste ned bilder og ytterligere informasjon fra fanart.tv, theaudiodb.com og htbackdrops.org for artisten som spilles av for øyeblikket. Bildene, sammen med lokale artistbilder og info, kan bli brukt av skallet til å lage en lysbildefremvisning for artisten som blir lyttet til for øyeblikket.</description>
+		<description lang="pl">Wtyczka pobiera obrazy i dodatkowe informacje z fanart.tv, theaudiodb.com oraz htbackdrops.org o aktualnie odtwarzanym wykonawcy. Obrazami wraz z informacjami o wykonawcach, mogą być wykorzystywane przez skórę do tworzenia pokazu slajdów dla artysty, którego aktualnie słuchasz.</description>
+		<description lang="pt">Um add-on para transferir imagens e informação adicional do artista em reprodução no momento, a partir de fanart.tv, theaudiodb.com, e htbackdrops.org. As imagens e a informação, assim como as imagens locais dos artistas, podem ser usadas pelo tema para criar uma apresentação de slides do artista em escuta no momento.</description>
+		<description lang="pt_BR">Addon para download de imagens e informações adicionais do artista que está sendo reproduzido provido por fanart.tv, theaudiodb e htbackdrops.org.  Tais dados e imagens serão usados pelas skins para criarem um slideshow dos artistas quando estivermos escutando-os.</description>
+		<description lang="ru">Дополнение для загрузки изображений и дополнительной информации о воспроизводимом исполнителе с ресурсов fanart.tv, theaudiodb.com and htbackdrops.org. Загруженные изображения и доп. информация, наравне с локальными, могут быть использованы для создания слайд-шоу во время прослушивания композиций.</description>
+		<description lang="sl">Dodatek za prenos slik in dodatnih informacij  iz fanart.tv, theaudiodb.com, in htbackdrops.org za trenutno predvajanega izvajalca. Slike, skupaj z lokalnimi slikami izvajalcev ter informacije, se lahko uporabljajo s preobleko za ustvarjanje diaprojekcije slik izvajalca, ki ga trenutno poslušate.</description>
+		<description lang="sv">Tillägg för att ladda ner bilder och tilläggsinformation från fanart.tv, theaudiodb.com och htbackdrops.org om artisten som spelas för tillfället. Bilderna, tillsammans med lokala artistbilder och information, kan användas av skinnet för att skapa ett bildspel av artisten man lyssnar på.</description>
+		<description lang="zh">从fanart.tv、theaudiodb.com和htbackdrops.org下载当前播放艺人的图片和附加信息的插件。这此图片可以和本地艺人图片及信息一起，被皮肤用来创建正收听的艺人的幻灯片。</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.xbmc.org/showthread.php?t=124880</forum>
+		<website>http://wiki.xbmc.org/index.php?title=Add-on:Artist_Slideshow</website>
+		<email>artistslideshow.xbmc@gmail.com</email>
+		<source>https://github.com/pkscout/script.artistslideshow</source>
+	</extension>
+</addon>
+
+<addon id="script.artworkorganizer" name="Artwork Organizer" version="3.0.5" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="be">Copies your fanart and thumbs into a separate directories</summary>
+		<summary lang="bg">Копира фен-арт изображенията и миниатюрите в отделни директории.</summary>
+		<summary lang="ca">Copia el fanart i les miniatures en directoris separats</summary>
+		<summary lang="de">Kopiert deine FanArts und Vorschaubilder in ein separates Verzeichnis</summary>
+		<summary lang="el">Αντιγράφει τα fanart και τις μικρογραφίες σε ξεχωριστούς φακέλους</summary>
+		<summary lang="en">Copies your fanart and thumbs into a separate directories</summary>
+		<summary lang="en_US">Copies your fanart and thumbs into a separate directories</summary>
+		<summary lang="es">Copia tu Fanart y Miniaturas en carpetas independientes</summary>
+		<summary lang="fr">Copie les fanarts et miniatures dans des dossiers distincts</summary>
+		<summary lang="fr_CA">Copie vos fanarts et imagettes dans des répertoires distincts</summary>
+		<summary lang="gl">Copia o teu fanart e miniaturas en cartafoles separados</summary>
+		<summary lang="he">העתקת פאנארט ותמונות הממוזערות אל תיקיות נפרדות</summary>
+		<summary lang="hr">Kopira vaše slike omota i minijature u odvojene direktorije</summary>
+		<summary lang="hu">A fanartok és bélyegképek külön könyvtárba másolása</summary>
+		<summary lang="id">Menyalin fanart dan gambar kecil Anda ke direktori terpisah</summary>
+		<summary lang="it">Copia fanart ed copertine in una cartella separata</summary>
+		<summary lang="ko">팬아트와 썸네일을 별도의 디렉토리에 복사합니다</summary>
+		<summary lang="lt">Kopijuoti FanArt ir miniatiūras į atskirus katalogus</summary>
+		<summary lang="nl">kopieert je fanart en afbeeldingsminiaturen in aparte mappen</summary>
+		<summary lang="no">Kopierer din fanart og miniatyrbilder til separate mapper</summary>
+		<summary lang="pl">Kopiuje fototapety oraz miniatury do osobnych folderów</summary>
+		<summary lang="pt">Copia a sua fanart e miniaturas para pastas separadas</summary>
+		<summary lang="pt_BR">Copia suas fanarts e miniaturas para pastas separadas</summary>
+		<summary lang="sv">Kopierar din fanart och miniatyrer till separata kataloger</summary>
+		<summary lang="tr">Fanart ve küçük resimlerinizi ayrı dizinlere kopyalar</summary>
+		<summary lang="zh">复制同人画和缩略图到单独目录</summary>
+		<description lang="be">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
+		<description lang="bg">Добавката може да се ползва за копиране на фен-арт изображенията и миниатюрите от филми, ТВ сериали, изпълнители и албуми в отделни директории.</description>
+		<description lang="ca">El script pot ser utilitzat per copiar el fanart i les imatges en miniatura de les teves pel·lícules, series, artistes i àlbums en directoris separats.</description>
+		<description lang="de">Dieses Script kann benutzt werden, um deine Film-, TV-Sendungs-, Artist- und Album-FanArt und -Vorschaubilder in separate Verzeichnisse zu kopieren.</description>
+		<description lang="el">Το script μπορεί να χρησιμοποιηθεί για να αντιγράψετε τα fanart και τις μικρογραφίες των ταινιών, των σειρών, των καλλιτεχνών και των άλμπουμ σας σε ξεχωριστούς φακέλους</description>
+		<description lang="en">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
+		<description lang="en_NZ">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
+		<description lang="en_US">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
+		<description lang="es">Este script te permite copiar tu fanart y miniaturas de películas, programas de tv e intérpretes en carpetas independientes.</description>
+		<description lang="fr">Ce script peut être utilisé pour copier les fanart et miniatures de films, séries TV, artistes et albums dans des dossiers distincts.</description>
+		<description lang="fr_CA">Ce script peut être utilisé pour copier les fanarts et imagettes de vos films, séries télé, artistes et albums dans des répertoires distincts.</description>
+		<description lang="gl">Este script pode usarse para copiar o fanart e as miniaturas do teu filme, serie, artista ou álbum en cartafoles separados.</description>
+		<description lang="he">סקריפט זה יכול לשמש להעתקת פאנארט ותמונות ממוזערות של סרט, סדרה, אמן ואלבום אל תיקיות נפרדות.</description>
+		<description lang="hr">Ova skripta se može koristiti za kopiranje vaših filmskih, TV serijskih, izvođača, albumskih slika omota i minijatura u odvojene direktorije.</description>
+		<description lang="hu">Ez a szkript arra alkalmas hogy átmásolja a filmek, sorozatok, előadók és album fanartokat és bélyegképeket külön könyvtárakba.</description>
+		<description lang="id">Script ini dapat digunakan untuk menyalin fanart dan gambar kecil film, acara tv, artis dan album ke direktori terpisah.</description>
+		<description lang="it">Questo script può essere usato per copiare le fanart e le copertine di film, serie tv, artisti ed album in una cartella separata.</description>
+		<description lang="ko">이 스크립트로 영화, TV 쇼, 아티스트, 앨범의 팬아트와 썸네일을 별도의 디렉토리에 복사할 수 있습니다.</description>
+		<description lang="lt">Šis scenarijus gali būti naudojamas, norint nukopijuoti filmų, tv laidų, atlikėjų ir albumų fanart ir miniatiūras į atskirus katalogus.</description>
+		<description lang="nl">Dit script kan worden gebruikt om je film, tvshow, artiest en album fanart en afbeeldingsminiaturen in aparte mappen te kopieren</description>
+		<description lang="no">Dette skriptet kan brukes til å kopiere din filmer, tv-serier, artister og album -fanart og miniatyrbilder inn i separate mapper.</description>
+		<description lang="pl">Ten skrypt może zostać użyty do kopiowania fototapet oraz miniatury filmów, seriali, wykonawców oraz albumów do osobnych folderów.</description>
+		<description lang="pt">Este script pode ser usado para copiar para pastas separadas as suas fanart e miniaturas de filmes, séries tv, artistas e álbums.</description>
+		<description lang="pt_BR">Este script pode ser usado para copiar suas miniaturas e fanarts de filmes, séries, artistas e álbuns em pastas separadas.</description>
+		<description lang="sv">Detta skript kan användas för att kopiera dina film, tv-serier, artist och album fanart samt miniatyrer till separata mappar.</description>
+		<description lang="tr">Bu betik film, tv programı, sanatçı ve albüm fanart ve küçük resimlerinizi ayrı dizinlere kopyalamak için kullanılabilir.</description>
+		<description lang="zh">此脚本可用于复制你的电影、剧集、艺人和专辑的同人画和缩略图到一个单独目录。</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=109304</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/ronie/script.artworkorganizer</source>
+	</extension>
+</addon>
+
 <addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.6">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3846,6 +3995,42 @@ Addons Included
 		<email></email>
 		<source>https://github.com/ronie/script.globalsearch/</source>
 	</extension>
+</addon>
+
+<addon id="script.icechannel.extn.common" version="0.2.0" name="iSTREAM - Common" provider-name="iSTREAM">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension library="default.py" point="xbmc.service" />
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">iSTREAM - Common</summary>
+		<description lang="en">iSTREAM - Common</description>
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
+</addon>
+
+<addon id="script.icechannel.extn.xunity.tv.common" version="0.0.5" name="Xunity TV - Common" provider-name="xunity.tv">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension library="default.py" point="xbmc.service" />
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">Xunity TV - Common</summary>
+		<description lang="en">Xunity TV - Common</description>
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
 </addon>
 
 <addon id="script.image.music.slideshow"
@@ -4029,6 +4214,24 @@ Addons Included
     </extension>
 </addon>
 
+<addon id="script.module.autoupdate" name="autoupdate" version="2.0.0" provider-name="Blazetamer">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+ <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">AutoUpdate Add-On at launch</summary>
+    <description lang="en">Allows AutoUpdate of Add-on/Repo at time of add-on launch</description>
+    <language></language>
+    <platform>all</platform>
+        <license>GPLv2</license>
+        <forum></forum>
+        <website>http://cliqaddon.com</website>
+        <email>blazetamer@gmail.com</email>
+        <source></source>
+    </extension>
+</addon>
+
 <addon id="script.module.axel.downloader"
 	     name="Axel Downloader"
 	     version="0.2.2"
@@ -4081,6 +4284,16 @@ Addons Included
     <license>BSD</license>
     <platform>all</platform>
     <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+
+<addon id="script.module.brightcove" name="Brightcove" provider-name="Jonathan Beluch (jbel)" version="1.1.1">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -4188,6 +4401,20 @@ Addons Included
 	<website>https://projects.pbs.org/confluence/display/coveapi/Welcome</website>
 	<email></email>
 	<source>https://github.com/pbs/python-coveapi</source>
+  </extension>
+</addon>
+
+<addon id="script.module.cryptopy"
+       name="CryptoPy"
+       version="1.2.6"
+       provider-name="cryptopy.sourceforge.net">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -4420,6 +4647,23 @@ Addons Included
         <source>https://pypi.python.org/pypi/httplib2</source>
         <language></language>
    </extension>
+</addon>
+
+<addon id="script.module.hubparentalcontrol"
+     name="hubparentalcontrol"
+     version="1.0.0"
+     provider-name="Kinkin">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.metahandler" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Parental Control from XBMCHUB</summary>
+    <description lang="en">Parental Control from XBMCHUB</description>
+  </extension>
 </addon>
 
 <addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.7" provider-name="Avigdor (xbmc-israel repo)">
@@ -4853,6 +5097,26 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <license>MIT License, Academic Free License v. 2.1</license>
     <website>https://pypi.python.org/pypi/simplejson/</website>
     <source>https://pypi.python.org/pypi/simplejson/</source>
+  </extension>
+</addon>
+
+<addon id="script.module.simpleplugin"
+   name="SimplePlugin"
+   version="1.6.2"
+   provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">SimplePlugin micro-framework</summary>
+    <description lang="en">SimplePlugin micro-framework that simplifies Kodi content plugin programming.</description>
+    <license>GNU GPL v.3</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=237532</forum>
+    <website>http://romanvm.github.io/script.module.simpleplugin</website>
+    <email>romanvm@yandex.ua</email>
+    <source>https://github.com/romanvm/script.module.simpleplugin</source>
   </extension>
 </addon>
 
