@@ -9,27 +9,9 @@ Repo Zip https://raw.githubusercontent.com/halikus/_AndyRepo/master/Andy.reposit
 Maintenance Program https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/Andy.plugin.program.Maintenance/Andy.plugin.program.Maintenance-1.0.1.zip
 
 
-Install Kodi http://kodi.tv/download/
-
-*Windows
-
-16 is what i use.
- 
-15.2 suggested for maximum compatability.
-15.2 no DX11 - http://mirrors.kodi.tv/releases/win32/kodi-15.2-Isengard.exe
-
-
-*Android - 15.2 suggested for maximum compatability.  Needs Jailbreak and 4.12 rom
-
-15.2 ARM  http://mirrors.kodi.tv/releases/android/arm/kodi-15.2-Isengard-armeabi-v7a.apk
-
-
-**Android - 14.2 suggested for 4.11 rom and less or no Jailbreak
+Install http://kodi.tv/download/
 
 ARM cpu (Most):  http://mirrors.kodi.tv/releases/android/arm/old/kodi-14.2-Helix-armeabi-v7a.apk
-
-x86 cpu:  http://mirrors.kodi.tv/releases/android/x86/old/kodi-14.2-Helix-x86.apk
-
 
 ***Android - AceStreams and Sopcast can optionally be downloaded via Playstore
 
@@ -57,16 +39,13 @@ Once the repository ZIP file is installed, you can install the individual add-on
 System -> Settings -> Add-ons -> Install From Repository -> Select "Andy Repository" -> Program Add-Ons --> "Andy Maintenance Tool" --> Install
 
 
-<a href="http://tinypic.com?ref=16c53cm" target="_blank"><img src="http://i63.tinypic.com/16c53cm.png" border="0" alt="Image and video hosting by TinyPic"></a>
-
-
-
 You can install Repositories (source of addons), Addons (the extra applications), preconfigured addon settings (Addon_data), and xmls.  The xml files are the sources of your media files.
+
 
 IPTV Plugins are not installed with the AIO bundles.  You must install seperatly from repo.
 
 
-## Comman Kodi Paths :
+## Comman Paths :
 
 Addons (Core app, no settings):  \addons
 
@@ -110,9 +89,9 @@ OpenELEC /storage/.kodi/userdata/
 
 
 
-## Portable Kodi CMD
+## Portable CMD
 
-(Make a cmd file in Kodi directory located anywhere)
+(Make a cmd file in main directory located anywhere)
 
 
 
