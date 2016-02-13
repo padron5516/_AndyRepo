@@ -37,7 +37,7 @@
 
 <addon id="Andy.plugin.program.Maintenance"
  name="[COLOR yellow]Andy[/COLOR] Maintenance"
- version="1.0.0"
+ version="1.0.1"
  provider-name="Andy">
 
   <requires>
