@@ -9,13 +9,13 @@ mainurl_epg  = 'https://raw.githubusercontent.com/halikus/_AndyRepo/master/_txt/
 url_EPG_ADDONINI = mainurl_epg+'addons.ini'
 
 addon1='plugin.video.stalker'
-addon2='plugin.video.stalkerTv'
+addon2='plugin.video.dnatv'
 addon3='Andy.plugin.ufo'
-addon4='plugin.video.Wild TV-Stalker'
-addon5='plugin.video.i4atv'
-addon6='plugin.video.dnatv'
-addon7='plugin.video.stealthfree'
-addon8='Andy.plugin.video'
+addon4='Andy.plugin.video'
+addon5='-'
+addon6='-'
+addon7='-'
+addon8=''
 addon9='-'
 addon10='-'
 
@@ -50,10 +50,6 @@ def TVGuide():
         
     #Clean_KODI_thumbnails()
     Clean_KODI_thumbnails_prompt()
-
-
-
-
 
 
 ################################
@@ -93,12 +89,24 @@ def addon_data_TVGuide_cache_file_delete(addon):
     lib11=os.path.join(path, 'http_mw1_iptv66_tv')
     lib12=os.path.join(path, 'http_mw1_iptv66_tv-genres')
     lib13=os.path.join(path, 'http_portal_iptvprivateserver_tv')
-    lib14=os.path.join(path, 'http_portal_iptvprivateserver_tv-genres')   
+    lib14=os.path.join(path, 'http_portal_iptvprivateserver_tv-genres')
+    lib15=os.path.join(path, 'http_iptv66_stalkerclone_network')
+    lib16=os.path.join(path, 'http_iptv66_stalkerclone_network-genres')
+    lib17=os.path.join(path, 'http_nfps_stalkerclone_network')
+    lib18=os.path.join(path, 'http_nfps_stalkerclone_network-genres') 
+    lib19=os.path.join(path, 'http_nfps_stalkerclone_network.1')
+    lib110=os.path.join(path, 'http_nfps_stalkerclone_network-genres.1')
     try:
        os.remove(lib11)
        os.remove(lib12)
        os.remove(lib13)
        os.remove(lib14)
+       os.remove(lib15)
+       os.remove(lib16)
+       os.remove(lib17)
+       os.remove(lib18)
+       os.remove(lib19)
+       os.remove(lib110)
     except:
        pass
 
