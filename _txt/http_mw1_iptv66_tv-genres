@@ -1,6 +1,6 @@
 { "version" : "1", "time" : "999999999999999999999999999999999999999999999999999999999999999999999999999999", "genres" : {  
 "*" : {"alias":"All", "title":"All Channels"}, 
-"55" : {"alias":"USA", "title":"USA Channels"}
+"55" : {"alias":"USA", "title":"USA Channels"},
 "16" : {"alias":"PPV", "title":"UK Channels"},
 "2" : {"alias":"entertainments", "title":"Family Entertainment Channels"}, 
 "43" : {"alias":"entertainments", "title":"Documentary & Science Channels"},
@@ -11,5 +11,5 @@
 "64" : {"alias":"amx", "title":"## TEST Channels ##"}, 
 "45" : {"alias":"PPV", "title":"Kids Movies On Demand"},
 "48" : {"alias":"PPV", "title":"Movies On Demand"},
-"105" : {"alias":"PPV", "title":"Spanish Channels"},
+"105" : {"alias":"PPV", "title":"Spanish Channels"}
 }}
