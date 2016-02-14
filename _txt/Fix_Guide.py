@@ -31,12 +31,14 @@ TVGuide9="-"
 TVGuide10="-"
 
 
-mode='Fix_TVGuide'
+mode='Maintenance_Guide_TVGuide'
+mode='Guide_TVGuide'
+
 
 ################################
-###    Fix TVGuide Main      ### 
+###    Fix Maintenance Main      ### 
 ################################
-def TVGuide():
+def Maintenance_Guide_TVGuide():
  
     Wipe_Cache()
     
@@ -50,6 +52,34 @@ def TVGuide():
         
     #Clean_KODI_thumbnails()
     Clean_KODI_thumbnails_prompt()
+
+
+
+################################
+###    Fix TVGuide Main      ### 
+################################
+def Guide_TVGuide():
+ 
+    Wipe_Cache()
+    
+    Delete_Packages()
+   
+    #TVGuide_Delete_addon_data_cache_file()
+    TVGuide_Delete_addon_data_cache_file_prompt()
+                 
+    #TVGuide_Delete_userdata_files()
+    #TVGuide_Delete_userdata_files_prompt()
+        
+    #Clean_KODI_thumbnails()
+    #Clean_KODI_thumbnails_prompt()
+
+
+
+
+
+
+
+
 
 
 ################################
@@ -366,4 +396,5 @@ def _pbhook(numblocks, blocksize, filesize, url=None,dp=None):
         dp.close()        
 
 
-if mode=='Fix_TVGuide' : TVGuide()
+if mode=='Guide_TVGuide' : Guide_TVGuide()
+if mode=='Maintenance_Guide_TVGuide' : Maintenance_Guide_TVGuide()
