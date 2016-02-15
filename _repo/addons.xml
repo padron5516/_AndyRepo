@@ -20,7 +20,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.2" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.6" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -37,7 +37,7 @@
 
 <addon id="Andy.plugin.program.Maintenance"
  name="[COLOR yellow]Andy[/COLOR] Maintenance"
- version="1.0.1"
+ version="1.0.2"
  provider-name="Andy">
 
   <requires>
@@ -101,7 +101,7 @@ Profile:   \userdata\profiles\ProfileName</description>
   </extension>
 </addon>
 
-<addon id="Andy.plugin.video" name="[COLOR yellow]Andy[/COLOR] IPTV" version="1.0.0" provider-name="Andy">
+<addon id="Andy.plugin.video" name="[COLOR yellow]Andy[/COLOR] IPTV" version="1.0.1" provider-name="Andy">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -118,7 +118,7 @@ Profile:   \userdata\profiles\ProfileName</description>
 	</extension>
 </addon>
 
-<addon id="Andy.plugin.video.repo" name="[COLOR yellow]Andy[/COLOR] IPTV (Repo)" version="1.0.0" provider-name="Andy">
+<addon id="Andy.plugin.video.repo" name="[COLOR yellow]Andy[/COLOR] IPTV (Repo)" version="1.0.1" provider-name="Andy">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -324,7 +324,7 @@ Profile:   \userdata\profiles\ProfileName</description>
 
 <addon
   id="Andy.skin.confluence"
-  version="2.8.6"
+  version="2.8.7"
   name="Confluence (16 Mod)"
   provider-name="Jezz_X, Team Kodi">
   <requires>
