@@ -1,7 +1,24 @@
 <sources>
     <video>
         <default pathversion="1"></default>
-   
+
+        <!-- Local m3u file Paths -->
+        <source>
+            <!-- Personal SMB Video Paths for Premade Database -->
+            <name>TV IPTV (Local)</name>
+            <path pathversion="1">special://profile/addon_data/Andy.pvr.iptvsimple/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <!-- Remote m3u file Paths -->
+        <source>
+            <!-- Personal SMB Video Paths for Premade Database -->
+            <name>TV IPTV (www)</name>
+            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -26,7 +43,7 @@
             <thumbnail pathversion="1">DefaultVideoPlaylists.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
-        <!-- option to Use PC DVD Drive --> 
+        <!-- option to Use PC DVD Drive -->
         <!--  
         <source>
             <name>Video PC DVD</name>
@@ -69,7 +86,7 @@
             <allowsharing>true</allowsharing>
             <thumbnail pathversion="1">DefaultVideoPlugins.png</thumbnail>
         </source>
-        --> 
+        -->
         <!-- M3U WWW Playlist Example -->
         <!--
         <source>
@@ -91,13 +108,31 @@
     </video>
     <music>
         <default pathversion="1"></default>
-        
+
+ 
+        <!-- Local m3u file Paths -->
+        <source>
+            <!-- Personal SMB Music Paths for Premade Database -->
+            <name>TV IPTV (Local)</name>
+            <path pathversion="1">special://profile/addon_data/Andy.pvr.iptvsimple/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <!-- Remote m3u file Paths -->
+        <source>
+            <!-- Personal SMB Music Paths for Premade Database -->
+            <name>TV IPTV (www)</name>
+            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+
         <source>
             <name>Rotten Tomatoes Podcast</name>
             <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
             <allowsharing>true</allowsharing>
         </source>
-        <!-- option to Use PC DVD Drive --> 
+        <!-- option to Use PC DVD Drive -->
         <!--  
         <source>
             <name>Video PC DVD</name>
@@ -160,13 +195,13 @@
             <allowsharing>true</allowsharing>
         </source>
     </music>
-    
+
     <pictures>
         <default pathversion="1"></default>
-        
+
         <!-- RSS Feeds show up in Pictures -->
-                
-        <!-- RSS Torrents -->        
+
+        <!--  
         <source>
             <name>RSS Torrents - rarbg Xvid</name>
             <path pathversion="1">http://rarbg.to/rssdd.php?categories=14</path>
@@ -197,8 +232,7 @@
             <path pathversion="1">http://tracker.cztorrent.net/rss/torrents/?rss=1</path>
             <allowsharing>true</allowsharing>
         </source>
-
-        <!-- RSS CNN -->        
+      
         <source>
             <name>RSS CNN - Latest</name>
             <path pathversion="1">http://rss.cnn.com/rss/cnn_latest.rss</path>
@@ -249,15 +283,13 @@
             <path pathversion="1">http://rss.cnn.com/rss/cnn_offbeat.rss</path>
             <allowsharing>true</allowsharing>
         </source>       
-
-        <!-- RSS Yahoo -->        
+    
         <source>
             <name>RSS Yahoo - Sports</name>
-            <path pathversion="1">http://sports.yahoo.com/top/rss.xml</path>
+            <path pathversion="1">http://sports.yahoo.com/top/</path>
             <allowsharing>true</allowsharing>
         </source>
-
-        <!-- RSS CBS -->        
+      
         <source>
             <name>RSS CBS - Main</name>
             <path pathversion="1">http://www.cbsnews.com/feeds/rss/main.rss</path>
@@ -283,52 +315,7 @@
             <path pathversion="1">http://www.cbsnews.com/feeds/rss/scitech.rss</path>
             <allowsharing>true</allowsharing>
         </source>       
-        
-        <!-- RSS NPR -->        
-        <source>
-            <name>RSS NPR - Arts</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1008</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS NPR - Digital Culture</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1049</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        
-        <!-- RSS Reuters -->
-        <source>
-            <name>RSS Reuters - Environment</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/environment</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS Reuters - Oddly Enough News</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/oddlyEnoughNews</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS Reuters - Sports News</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/sportsNews</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS Reuters - Top Business</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/businessNews</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS Reuters - Technology News</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/technologyNews</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>RSS Reuters - Top News</name>
-            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/topNews</path>
-            <allowsharing>true</allowsharing>
-        </source>
 
-        <!-- RSS Kodi News -->
         <source>
             <name>RSS Kodi - Top News</name>
             <path pathversion="1">http://feeds.xbmc.org/xbmc</path>
@@ -369,7 +356,52 @@
             <path pathversion="1">http://www.repeatserver.com/Users/AnimalKodi/news.xml</path>
             <allowsharing>true</allowsharing>
         </source>
-   
+        -->
+
+        <!-- RSS NPR -->
+        <source>
+            <name>RSS NPR - Arts</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1008</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS NPR - Digital Culture</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://www.npr.org/rss/rss.php?id=1049</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
+        <!-- RSS Reuters -->
+        <source>
+            <name>RSS Reuters - Environment</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/environment</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Oddly Enough News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/oddlyEnoughNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Sports News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/sportsNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Top Business</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/businessNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Technology News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/technologyNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>RSS Reuters - Top News</name>
+            <path pathversion="1">rss://xbmc-rocks.com/go/?invert=yes&amp;destroy=yes&amp;destroy=yes&amp;q=http://feeds.reuters.com/reuters/topNews</path>
+            <allowsharing>true</allowsharing>
+        </source>
+
         <!-- RSS Sports -->
         <source>
             <name>RSS Sports - NFL</name>
@@ -388,45 +420,45 @@
             <allowsharing>true</allowsharing>
         </source>
     </pictures>
-    
+
     <files>
         <default pathversion="1"></default>
-         <source>
+        <source>
             <name>z... (No Repos z.._) (Has Repo z._)</name>
             <path pathversion="1">https://github.com/halikus/_AndyRepo/tree/master/_repo/</path>
             <allowsharing>true</allowsharing>
-        </source>         
-        
-         <source>
+        </source>
+
+        <source>
             <name>z.._Blackbox</name>
             <path pathversion="1">http://theblackboxostv.co.uk/kodi/</path>
             <allowsharing>true</allowsharing>
-        </source>       
+        </source>
         <source>
             <name>z.._Gentecwiz</name>
             <path pathversion="1">http://gen-tec.co/gentecwiz</path>
             <allowsharing>true</allowsharing>
-        </source>         
+        </source>
         <source>
             <name>z.._Jafaer-tv</name>
             <path pathversion="1">http://repo.jafaer-tv.com/</path>
             <allowsharing>true</allowsharing>
-        </source>          
+        </source>
         <source>
             <name>z.._Justnewtech</name>
             <path pathversion="1">http://justnewtech.com</path>
             <allowsharing>true</allowsharing>
-        </source>        
-         <source>
-            <name>z.._Kodiland  WildTV</name>
+        </source>
+        <source>
+            <name>z.._Kodiland WildTV</name>
             <path pathversion="1">http://kodiland.co/kodi/</path>
             <allowsharing>true</allowsharing>
-        </source>       
+        </source>
         <source>
             <name>z.._MetaBox</name>
             <path pathversion="1">http://repo.mbox-addon.com/</path>
             <allowsharing>true</allowsharing>
-        </source>        
+        </source>
         <source>
             <name>z.._Project Cypher</name>
             <path pathversion="1">http://repo.run/cypher/</path>
@@ -436,13 +468,13 @@
             <name>z.._Prozone</name>
             <path pathversion="1">http://prozone.getxbmc.com/</path>
             <allowsharing>true</allowsharing>
-        </source>        
-   
+        </source>
+
         <source>
             <name>z._Ares</name>
             <path pathversion="1">http://repo.ares-project.com/magic/</path>
             <allowsharing>true</allowsharing>
-        </source>                
+        </source>
         <source>
             <name>z._Architects.x10host</name>
             <path pathversion="1">http://architects.x10host.com/repo/</path>
@@ -477,7 +509,7 @@
             <name>z._Halow</name>
             <path pathversion="1">http://repo.halowtv.org/</path>
             <allowsharing>true</allowsharing>
-        </source>        
+        </source>
         <source>
             <name>z._Husham Repo</name>
             <path pathversion="1">http://repo.husham.com/</path>
@@ -502,7 +534,7 @@
             <name>z._khaozwizard</name>
             <path pathversion="1">http://khaozwizard.comoj.com/kodi/</path>
             <allowsharing>true</allowsharing>
-        </source>        
+        </source>
         <source>
             <name>z._KodiMaster</name>
             <path pathversion="1">http://kodimaster.com/repo/</path>
