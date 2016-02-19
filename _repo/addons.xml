@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.6" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.7" provider-name="Andy">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.simplejson" version="2.0.10" />
@@ -1608,6 +1608,23 @@ License: GPLv2</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.dnatv" name="[COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.2.3" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">DNA TV - IPTV Addon for KODI</summary>
+		<description lang="en">DNA TV brings you unlimited Entertainment. Live TV / PPV / Sports / Kids / Movies / Entertainment all available just one click away.</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
+</addon>
+
 <addon id="plugin.video.f4mTester" version="2.2.3" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1625,9 +1642,9 @@ License: GPLv2</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2"
+  version="2016.02.01"
   name="SportsDevil"
-  provider-name="MaxMustermann">
+  provider-name="SportsDevil">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.requests" />
@@ -1642,6 +1659,27 @@ License: GPLv2</description>
     <summary>Play videos of different sports streaming sites</summary>
     <description>Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.StalkerTv"
+       name="[COLOR orange]StalkerTv[/COLOR]"
+       version="13.0"
+       provider-name="KodiLover and KrAz(Help from Chris Xbmc-King)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>StalkerTv</summary>
+    <description>
+This is my third attempt to make a iptv stalker clone and this is KrAz's second attempt to make a IPTV stalker clone Enjoy. Check out me and KrAz's YouTube Channels Also Big Thanks To KrAz For all The Macs he has Provided to me.
+Also Big thanks to Chris Xbmc-King for The Macs He Helped Me Find. So thanks To Everybody who helped me Keep Going.
+StalkerTv is Back in Business BABY.ENJOY!!!!
+    </description>
     <platform>all</platform>
   </extension>
 </addon>
