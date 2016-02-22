@@ -1,41 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <rssfeeds>
-  <!--RSS feeds. To have multiple feeds, just add a feed to the set. You can also have multiple sets.-->
-  <!--To use different sets in your skin, each must be called from skin with a unique id.-->
-  <set id="1" rtl="false">
-    <feed updateinterval="30">http://feeds.xbmc.org/xbmc</feed>
-    <feed updateinterval="30">http://feeds.xbmc.org/latest_xbmc_addons</feed>
-    <feed updateinterval="30">http://feeds.xbmc.org/updated_xbmc_addons</feed>
-    <feed updateinterval="30">http://feeds.feedburner.com/TVADDONS</feed>
-    <feed updateinterval="30">http://chrisbwizard.pcriot.com/Chrisb.rss</feed>
-    <feed updateinterval="30">http://www.webrss.com/createfeed.php?feedid=46621</feed>
-    <feed updateinterval="30">http://feeds.rapidfeeds.com/78092/</feed>
-    <feed updateinterval="30">http://www.repeatserver.com/Users/AnimalKodi/news.xml</feed>
-  </set>
-  <set id="2" rtl="false">
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_latest.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_topstories.rss</feed>
-    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/main.rss</feed>
-    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/national.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_mostpopular.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_world.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_us.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_showbiz.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_allpolitics.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_tech.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_space.rss</feed>
-    <feed updateinterval="30">http://rss.cnn.com/rss/cnn_offbeat.rss</feed>
-    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/world.rss</feed>
-    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/entertainment.rss</feed>
-    <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/scitech.rss</feed>
-    <feed updateinterval="30">http://sports.yahoo.com/top/rss.xml</feed>
-  </set>
-  <set id="3" rtl="false">
-    <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=14</feed>
-    <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=18</feed>
-    <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=17</feed>
-    <feed updateinterval="30">http://feeds.feedburner.com/Torrentfreak</feed>
-    <feed updateinterval="30">http://www.mininova.org/rss.xml</feed>
-    <feed updateinterval="30">http://tracker.cztorrent.net/rss/torrents/?rss=1</feed>
-  </set>
+    <!--RSS feeds. To have multiple feeds, just add a feed to the set. You can also have multiple sets.-->
+    <!--To use different sets in your skin, each must be called from skin with a unique id.-->
+    <set id="1" rtl="false">
+        <feed updateinterval="30">http://feeds.kodi.tv/xbmc</feed>
+        <feed updateinterval="30">http://feeds.kodi.tv/latest_xbmc_addons</feed>
+        <feed updateinterval="30">http://feeds.kodi.tv/updated_xbmc_addons</feed>
+        <feed updateinterval="30">http://feeds.feedburner.com/TVADDONS</feed>
+        <feed updateinterval="30">http://chrisbwizard.pcriot.com/Chrisb.rss</feed>
+        <feed updateinterval="30">http://www.webrss.com/createfeed.php?feedid=46621</feed>
+        <feed updateinterval="30">http://feeds.rapidfeeds.com/78092/</feed>
+        <feed updateinterval="30">http://www.repeatserver.com/Users/AnimalKodi/news.xml</feed>
+    </set>
+    <set id="2" rtl="false">
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_latest.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_topstories.rss</feed>
+        <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/main.rss</feed>
+        <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/national.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_mostpopular.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_world.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_us.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_showbiz.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_allpolitics.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_tech.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_space.rss</feed>
+        <feed updateinterval="30">http://rss.cnn.com/rss/cnn_offbeat.rss</feed>
+        <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/world.rss</feed>
+        <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/entertainment.rss</feed>
+        <feed updateinterval="30">http://www.cbsnews.com/feeds/rss/scitech.rss</feed>
+        <feed updateinterval="30">http://sports.yahoo.com/top/rss.xml</feed>
+    </set>
+    <set id="3" rtl="false">
+        <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=14</feed>
+        <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=18</feed>
+        <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=17</feed>
+        <feed updateinterval="30">http://feeds.feedburner.com/Torrentfreak</feed>
+    </set>
 </rssfeeds>

@@ -2,23 +2,6 @@
     <video>
         <default pathversion="1"></default>
 
-        <!-- Local m3u file Paths -->
-        <source>
-            <!-- Personal SMB Video Paths for Premade Database -->
-            <name>TV IPTV (Local)</name>
-            <path pathversion="1">special://profile/addon_data/Andy.pvr.iptvsimple/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <!-- Remote m3u file Paths -->
-        <source>
-            <!-- Personal SMB Video Paths for Premade Database -->
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -108,24 +91,6 @@
     </video>
     <music>
         <default pathversion="1"></default>
-
- 
-        <!-- Local m3u file Paths -->
-        <source>
-            <!-- Personal SMB Music Paths for Premade Database -->
-            <name>TV IPTV (Local)</name>
-            <path pathversion="1">special://profile/addon_data/Andy.pvr.iptvsimple/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <!-- Remote m3u file Paths -->
-        <source>
-            <!-- Personal SMB Music Paths for Premade Database -->
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
 
         <source>
             <name>Rotten Tomatoes Podcast</name>
@@ -425,7 +390,7 @@
         <default pathversion="1"></default>
         <source>
             <name>z... (No Repos z.._) (Has Repo z._)</name>
-            <path pathversion="1">https://github.com/halikus/_AndyRepo/tree/master/_repo/</path>
+            <path pathversion="1">https://github.com/</path>
             <allowsharing>true</allowsharing>
         </source>
 
@@ -539,7 +504,12 @@
             <name>z._KodiMaster</name>
             <path pathversion="1">http://kodimaster.com/repo/</path>
             <allowsharing>true</allowsharing>
-        </source>
+        </source>     
+        <source>
+            <name>z._kodilover</name>
+            <path pathversion="1">http://kodilover.net16.net/Repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
         <source>
             <name>z._MB Repo</name>
             <path pathversion="1">http://www.kodisrael.co.il/repo/</path>

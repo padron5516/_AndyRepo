@@ -1,6 +1,19 @@
 ## <a href="http://tinypic.com?ref=2iuw5ck" target="_blank"><img src="http://i66.tinypic.com/2iuw5ck.png" border="0" alt="Image and video hosting by TinyPic"></a> Andy Repository Public
 ------------
 
+http://forum.kodi.tv/showthread.php?tid=259387
+
+I stand with Kodi.  This repo is free and in no way associated with official Kodi devs.  These are 3rd party repositories and modules for 3rd party resources.
+
+This repo is a constant WIP by a simple hobbyist that is learning python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
+
+Youtube videos and pre-loaded box sellers are killing Kodi.  Don't support click hungry, non quality controlled profiteers.
+
+kodithrowaway@gmail.com
+
+
+
+
 
 Repo Main Page (This page) https://github.com/halikus/_AndyRepo
 
@@ -42,7 +55,6 @@ System -> Settings -> Add-ons -> Install From Repository -> Select "Andy Reposit
 You can install Repositories (source of addons), Addons (the extra applications), preconfigured addon settings (Addon_data), and xmls.  The xml files are the sources of your media files.
 
 
-IPTV Plugins are not installed with the AIO bundles.  You must install seperatly from repo.
 
 
 ## Comman Paths :
@@ -110,9 +122,3 @@ TASKKILL /im XBMC.exe /f
 tskill XBMC.exe
 
 start Kodi.exe -p
-
-
-
-*This repo is a constant WIP by a simple hobbyist that knows python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
-
-kodithrowaway@gmail.com
