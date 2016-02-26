@@ -69,26 +69,6 @@
 
 </addon>
 
-<addon id="Andy.plugin.program.Notifications" version="0.0.1" name="[COLOR yellow]Andy[/COLOR] Notifications" provider-name="Andy">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.addon.common" optional="true" />
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup">
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Andy NEWS regarding any inportant updates.</summary>
-        <description>Receive Important Notifications. Unsubscribe within Add-on Settings.</description>
-        <language>en</language>
-        <platform>all</platform>
-        <source></source>
-        <email></email>
-    </extension>
-</addon>
-
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.10"
@@ -1234,6 +1214,23 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
 	</extension>
 </addon>
 
+    <addon id="repository.i4a-repo" name="i4a-repo" version="0.0.0.1" provider-name="Inside 4ndroid">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="i4a-repo">
+            <info compressed="false">http://i4atv.cu.ma/_repo/addons.xml</info>
+            <checksum>http://i4atv.cu.ma/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://i4atv.cu.ma/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Inside 4ndroid Kodi Addons</summary>
+            <description>Inside 4ndroid Kodi Addons</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.icanuck" name="[COLOR FF005de5]iCanuck's [/COLOR]Kodi Repository" version="3.1.0" provider-name="iCanuck">
 	<extension point="xbmc.addon.repository" name="iCanuck's Kodi Repository">
        <info>http://offshoregit.com/iCanuck/iCanuck-Repo/raw/master/addons.xml</info>
@@ -1263,11 +1260,16 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
     </extension>
 </addon>
 
-<addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="1.1" provider-name="iSTREAM">
+<addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="10.1" provider-name="iSTREAM">
 	<extension point="xbmc.addon.repository" name="iSTREAM">
-		<info compressed="false">http://istreamrepo.me/istream/repo/addons.xml</info>
-		<checksum>http://istreamrepo.me/istream/repo/addons.xml.md5</checksum>
-		<datadir zip="true">http://istreamrepo.me/istream/repo/zips</datadir>
+	<dir>
+		<info compressed="false">http://istream-xbmc-repo.googlecode.com/svn/repo/addons.xml</info>
+		<checksum>http://istream-xbmc-repo.googlecode.com/svn/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://istream-xbmc-repo.googlecode.com/svn/repo/zips</datadir>
+	</dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>iSTREAM XBMC Addons and Extensions</summary>
@@ -1316,7 +1318,7 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
     </extension>
 </addon>
 
-<addon id="repository.kodilover" name="[COLOR orange]KodiLover[/COLOR] Repository" version="1.0.3" provider-name="KodiLover">
+<addon id="repository.kodilover" name="[COLOR orange]KodiLover[/COLOR] Repository" version="1.0.4" provider-name="KodiLover">
 	<extension point="xbmc.addon.repository" name="KodiLover Repo">
 		<info compressed="false">http://kodilover.net16.net/Plugins/addons.xml</info>
 		<checksum>http://kodilover.net16.net/Plugins/addons.xml.md5</checksum>
@@ -1324,7 +1326,7 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>KodiLover Repo</summary>
-		<description>Install Kodi Addons By Me and Other Kodi Developers around the world. All Credits Go To Simple Kodi For His How To Make a Kodi Repo Video.</description>
+		<description>Install Kodi Addons By Me and Other Kodi Developers around the world. All Credits Go To Simple Kodi For His How To Make a Kodi Repo Video. Come to my YouTube Channel for Videos about the addons in this repo.</description>
 		<disclaimer>This Repo does not have all the addons made by me. If You want one thats Updated all the time go find that persons repo.</disclaimer>
 		<platform>all</platform>
 	</extension>
@@ -1409,13 +1411,13 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
         </requires>
         <extension point="xbmc.addon.repository" name=".[COLOR blue]L[/COLOR][COLOR white]egends[/COLOR]-repo">
             <info compressed="false">http://4legends.co.uk/Legends/addons.xml</info>
-            <checksum>https://archive.org/download/addons.xml_201512/addons.xml.md5</checksum>
+            <checksum>http://4legends.co.uk/Legends/addons.xml.md5</checksum>
             <datadir zip="true">http://4legends.co.uk/Legends/</datadir>
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>We Fly High and NEVER Fall....</summary>
-            <description>The Legends Repo is made by 4 Ghosts all Add-ons are welcome BUT you must be the maker and NO clones we will help take your Add-on main dtream along side the Devs Mark Money and BlackDragon, To add your Add-on Email (Legends.Repo@gmail.com) Whith your Add-on we will check it out and add it if it makes the cut :)</description>
+            <description>Only The Best</description>
             <platform>all</platform>
     </extension>
 </addon>
@@ -1431,6 +1433,19 @@ StalkerTv is Back in Business BABY.ENJOY!!!!
         <description></description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.Lwsrepo" name="Lwsrepo" version="2.0" provider-name="LwS">
+	<extension point="xbmc.addon.repository" name="LwS-Repo">
+		<info compressed="false">https://archive.org/download/LwSRepo/Plugins/addons.xml</info>
+		<checksum>https://archive.org/download/LwSRepo/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">https://archive.org/download/LwSRepo/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>LwS Build Repo</summary>
+		<description>LwS Build Repo</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.mdrepo" name="Mucky Ducks Repo" version="1.0.2" provider-name="Mucky Duck">
@@ -1722,6 +1737,19 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.5" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+		<info compressed="false">https://raw.github.com/Shani-08/ShaniXBMCWork/master/addons.xml</info>
+		<checksum>https://raw.github.com/Shani-08/ShaniXBMCWork/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/Shani-08/ShaniXBMCWork/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.smoothstreams" name="SmoothStreams.tv" version="1.0.2" provider-name="smoothstreams">
 	<extension point="xbmc.addon.repository" name="SmoothStreams Addons">
 		<info compressed="false">http://smoothstreams.tv/players/xbmc/repo/addons.xml</info>
@@ -1822,11 +1850,16 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.TheWiz" name="TheWiz Media Repository" version="2.3.1.1" provider-name="TheWiz">
+<addon id="repository.TheWiz" name="TheWiz Media Repository" version="2.3.2" provider-name="TheWiz">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="TheWiz Hebrew Repository">
+		<dir minversion="15.0.0">
+			<info>http://repo.thewiz.info/addons.xml</info>
+			<checksum>http://repo.thewiz.info/addons.xml.md5</checksum>
+			<datadir zip="true">http://repo.thewiz.info/</datadir>
+		</dir>
 		<dir minversion="15.9.0">
 			<info>http://repo.thewiz.info/addons.xml.gz</info>
 			<checksum>http://repo.thewiz.info/addons.xml.gz.md5</checksum>
@@ -1911,6 +1944,19 @@ Addons Included
 	<extension point="xbmc.addon.metadata">
 		<summary>Install TLBB specific Addons</summary>
 		<description>Download and install official TLBB addons.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.totalinstaller" version="1.0.2" name=" [COLOR lime][B]T[/B][/COLOR][COLOR white]otal[/COLOR][COLOR lime][B]R[/B][/COLOR][COLOR white]evolution[/COLOR]" provider-name="totalxbmc.tv">
+	<extension point="xbmc.addon.repository" name="Total Installer Repo">
+		<info compressed="false">https://github.com/totalxbmc/totalinstaller/raw/master/zips/addons.xml</info>
+		<checksum>https://github.com/totalxbmc/totalinstaller/raw/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/totalxbmc/totalinstaller/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Total Installer</summary>
+		<description>[COLOR blue]Join the Revolution[/COLOR] @ [COLOR lime][B]www.totalxbmc.tv[/B][/COLOR][CR][CR]Total Revolution is the home of Total Installer and the project is designed to get the great XBMC/Kodi community together as one. Have your say on what goes on and help design your very own skin.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2971,6 +3017,51 @@ level.</description>
     <description lang="en">A Script for editing XBMC's built in RSS Ticker</description>
     <description lang="hu">A szkript képes szerkeszteni az XBMC beépített RSS forrás készletét</description>
     <description lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</description>
+  </extension>
+</addon>
+
+<addon id="script.suitability" name="Suitability" version="1.0.1" provider-name="robwebset">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	</requires>
+  	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.service" library="service.py" start="login">
+		<provides>executable</provides>
+	</extension>
+	<extension point="kodi.context.item" library="default.py">
+		<item>
+			<label>32001</label>
+			<visible>IsEmpty(Window(videos).Property("SuitabilityHideContextMenu")) + Container.Content(movies)</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Check if a movie is family friendly</summary>
+		<description lang="en">Supplies details for how suitable a movie is for children.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=255113</forum>
+		<source>https://github.com/robwebset/script.suitability</source>
+	</extension>
+</addon>
+
+<addon id="script.video.F4mProxy"
+	     name="F4mProxy"
+	     version="2.3.4"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
 </addon>
 
