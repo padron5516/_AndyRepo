@@ -35,8 +35,6 @@
     <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=18</feed>
     <feed updateinterval="30">http://rarbg.to/rssdd.php?categories=17</feed>
     <feed updateinterval="30">http://feeds.feedburner.com/Torrentfreak</feed>
-    <feed updateinterval="30">http://www.boxofficemojo.com/data/rss.php?file=charts.xml</feed>
-    <feed updateinterval="30">http://www.boxofficemojo.com/data/rss.php?file=topstories.xml</feed>
     <feed updateinterval="30">http://www.movies.com/rss-feeds/new-on-dvd-rss</feed>
   </set>
 </rssfeeds>
