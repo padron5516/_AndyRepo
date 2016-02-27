@@ -22,8 +22,7 @@
 
 <network>
   <!--http://kodi.wiki/view/HOW-TO:Modify_the_video_cache-->
-  <!--<cachemembuffersize>157286400</cachemembuffersize>-->     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
-
+      <cachemembuffersize>157286400</cachemembuffersize>     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
   <!--<cachemembuffersize>0</cachemembuffersize>-->          <!-- Cache - Zero Cache Setting using local hard drive for cache-->
   <!--<cachemembuffersize>20971520</cachemembuffersize>-->   <!-- Cache - Default Cache Setting -->
   <!--<cachemembuffersize>52428800</cachemembuffersize>-->   <!-- Cache - Using 50MB of RAM for cache (which requires 150MB of free RAM).  -->    
@@ -41,8 +40,8 @@
     <!-- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC. -->
     <!-- The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth. -->
     <!-- However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback. -->
-  <curlclienttimeout>20</curlclienttimeout> <!-- Timeout in seconds for libcurl (http/ftp) connections -->
-  <curllowspeedtime>20</curllowspeedtime> <!-- Time in seconds for libcurl to consider a connection lowspeed -->
+  <curlclienttimeout>200</curlclienttimeout> <!-- Timeout in seconds for libcurl (http/ftp) connections -->
+  <curllowspeedtime>300</curllowspeedtime> <!-- Time in seconds for libcurl to consider a connection lowspeed -->
   <buffermode>2</buffermode> <!-- Choose what to buffer: -->
     <!-- 0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default) -->
     <!-- 1) Buffer all filesystems (including local) -->
@@ -53,13 +52,13 @@
 </network>
 
 <samba>
-  <clienttimeout>10</clienttimeout> <!-- timeout (in seconds) -->
+  <clienttimeout>15</clienttimeout> <!-- timeout (in seconds) -->
   <statfiles>false</statfiles> <!-- Set to false to disable smb stat() on files to speed up listings of large directories (over slow links) -->
 </samba>
 
 <pvr>
-  <minvideocachelevel>65</minvideocachelevel>  <!-- Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
-  <minaudiocachelevel>65</minaudiocachelevel>  <!-- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
+  <minvideocachelevel>60</minvideocachelevel>  <!-- Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
+  <minaudiocachelevel>60</minaudiocachelevel>  <!-- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
   <!--<cacheindvdplayer>true</cacheindvdplayer>-->  <!-- Cache PVR stream in DVDPlayer. -->
   <!--<timecorrection>0</timecorrection>--> <!-- Correct all times (epg tags, timer tags, recording tags) by this amount of minutes. -->
   <!--<infotoggleinterval>3000</infotoggleinterval>--> <!-- If there is more than one pvr gui info item available, use this toggle delay in milliseconds. -->

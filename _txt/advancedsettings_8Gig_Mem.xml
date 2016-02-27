@@ -5,9 +5,9 @@
 <network>
    <buffermode>1</buffermode>
    <cachemembuffersize>314572800</cachemembuffersize>
-   <readbufferfactor>20</readbufferfactor>
-   <curlclienttimeout>20</curlclienttimeout>
-   <curllowspeedtime>20</curllowspeedtime>
+   <readbufferfactor>10</readbufferfactor>
+   <curlclienttimeout>200</curlclienttimeout>
+   <curllowspeedtime>300</curllowspeedtime>
 </network>
   
 <samba>
@@ -16,8 +16,8 @@
 </samba>
   
 <pvr>
-   <minvideocachelevel>65</minvideocachelevel>
-   <minaudiocachelevel>65</minaudiocachelevel>
+   <minvideocachelevel>60</minvideocachelevel>
+   <minaudiocachelevel>60</minaudiocachelevel>
    <!--<cacheindvdplayer>true</cacheindvdplayer>-->
 </pvr>  
 
