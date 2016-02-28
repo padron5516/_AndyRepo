@@ -6,12 +6,6 @@
         <default pathversion="1"></default>
 
         <source>
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://kodilover.net16.net/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
             <thumbnail pathversion="1">DefaultVideoPlugins.png</thumbnail>
@@ -38,12 +32,7 @@
     </video>
     <music>
         <default pathversion="1"></default>
-         <source>
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
+
         <source>
             <name>Rotten Tomatoes Podcast</name>
             <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
@@ -146,16 +135,6 @@
         <source>
             <name>z.._Justnewtech</name>
             <path pathversion="1">http://justnewtech.com</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z.._MetaBox</name>
-            <path pathversion="1">http://repo.mbox-addon.com/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z.._Project Cypher</name>
-            <path pathversion="1">http://repo.run/cypher/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

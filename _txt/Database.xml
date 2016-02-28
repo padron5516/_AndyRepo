@@ -228,16 +228,6 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>z.._MetaBox</name>
-            <path pathversion="1">http://repo.mbox-addon.com/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z.._Project Cypher</name>
-            <path pathversion="1">http://repo.run/cypher/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
             <name>z._Ares</name>
             <path pathversion="1">http://repo.ares-project.com/magic/</path>
             <allowsharing>true</allowsharing>
