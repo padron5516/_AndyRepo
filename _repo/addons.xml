@@ -34,7 +34,7 @@
 </addon>
 
 
-<addon id="Andy.plugin.program.Maintenance" name="[COLOR yellow]Andy[/COLOR] Maintenance" version="1.0.3" provider-name="Andy">
+<addon id="Andy.plugin.program.Maintenance" name="[COLOR yellow]Andy[/COLOR] Maintenance" version="1.0.4" provider-name="Andy">
 
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -127,7 +127,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.3" provider-name="Andy">
+<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.4" provider-name="Andy">
     <requires>
         <!--<backwards-compatibility abi="12.0"/>-->
         <import addon="xbmc.addon" version="12.0.0" />

@@ -19,7 +19,7 @@ Repo Main Page (This page) https://github.com/halikus/_AndyRepo
 
 Repo Zip https://raw.githubusercontent.com/halikus/_AndyRepo/master/Andy.repository.zip
 
-Maintenance Program https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/Andy.plugin.program.Maintenance/Andy.plugin.program.Maintenance-1.0.2.zip
+Maintenance Program https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/Andy.plugin.program.Maintenance/Andy.plugin.program.Maintenance-1.0.4.zip
 
 
 Install http://kodi.tv/download/
