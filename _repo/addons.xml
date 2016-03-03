@@ -624,6 +624,39 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.lockedtv" name="Stream Supreme" version="3.0.1" provider-name="Stream Supreme">
+ <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.module.urlresolver" version="0.0.1"/>
+   <import addon="plugin.video.footballreplays" version="0.0.1"/>
+   <import addon="script.module.requests" version="0.0.1"/>
+ </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Supreme</summary>
+    <description lang="en">Stream Supreme</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ntv" name="NTV.mx" version="3.4.6" provider-name="Mikey1234">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NTV.mx</summary>
+    <description lang="en">Stream all of your favourites sports,movies and live tv from NTV.mx</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+</addon>
+
 <addon id="plugin.video.Operation_RobocopUltimate"
        name="Operation Robocop Ultimate"
        version="2.1"
@@ -655,6 +688,22 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.sportsaccess" name="SportsAccess" version="1.2.0" provider-name="SportsAccess">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="1.1.0"/>
+		<import addon="script.common.plugin.cache" version="0.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsAccess Sports</summary>
+    <description lang="en">Get all your Live sports here</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2016.02.01"
@@ -676,6 +725,37 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.the_gizmo_iptv" name="Gizmo TV" version="0.0.5" provider-name="Gizmo TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Gizmo TV</summary>
+    <description lang="en">Gizmo TV</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.usemytv" name="USE MY TV" version="0.0.2" provider-name="r3b00t">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="plugin.video.footballreplays" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">usemytv</summary>
+    <description lang="en">Stream all of your favourites sports,movies and tv from usemytv.com</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
 <addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.2.8">
@@ -714,6 +794,22 @@
     <description lang="en">[COLOR red]The Force of Streams![/COLOR]</description>
      <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.wliptv" name="WLIPTV" version="1.0.5" provider-name="Uscclarkey, Mikey1234">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">WLIPTV</summary>
+    <description lang="en">NTV.mx have new servers for some countries so this is an edited version of ntv to work with new accounts. Stream all of your favourites sports, movies and tv from wliptv.
+For more info and instructions on how to use this add-on please visit the WLIPTV section of our website [COLOR blue]www.streamboxlive.wordpress.com[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
 <addon id="plugin.video.xtream-codes" name="Xtream-Codes IPTV" version="2.0" provider-name="MikkM">
@@ -1099,6 +1195,19 @@
 		<summary>Repo for CanadaOnDemand</summary>
 		<description>This repository is for testing and alpha versions of andrepl's plugins.</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.communityrepo" name="The Community Repository" version="1.7" provider-name="The @KodiCommunity Team">
+	<extension point="xbmc.addon.repository" name="The Community Repository">
+		<info compressed="false">http://cloud.appnettv.com/Kodienthusiast/privateuse/RepoPlugins/addons.xml</info>
+		<checksum>http://cloud.appnettv.com/Kodienthusiast/privateuse/RepoPlugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://cloud.appnettv.com/Kodienthusiast/privateuse/RepoPlugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>@Kodicommunity Repository</summary>
+		<description>", we bring you "The Community Repository" for all things from the @kodicommunity team currently hold skins and community wizards" massive thanks to appnetv for hosting the repo and also a special thanks to these guys @nathancrumpler1 (crumplestein) @kodicommunity @xeditz @dickothegeordie @hmemar #itonlygetsbetter @kodienthusiasts @nathancrumpler1 @kodicommunity</description>
 		<platform>all</platform>
 	</extension>
 </addon>
