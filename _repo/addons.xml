@@ -524,6 +524,55 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.2" provider-name="podgod">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="script.module.simple.downloader" version="0.9.4"/>
+	<import addon="script.module.beautifulsoup4"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.httplib2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.youtube"/>
+	<import addon="script.module.urlresolver" optional="true"/>
+	<import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Live Canadian TV channels</summary>
+    <description>Live Canadian TV channels all in one place. General disclaimer: These are just random feeds found on the net. Like all things internet, links go up and down. Also, some channels do not broadcast 24/7. I take no responsibility for the content or reliability of the feeds. Enjoy while you can. [B]Filmon.TV[/B] addon from kinkin required for CTV channels.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.castaway" name="Castaway" version="0.1.1" provider-name="natko1412">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+		<import addon="script.module.mechanize"  />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+		<import addon="script.module.pyxbmct" version="1.1.4"/>
+		<import addon="script.module.youtube.dl" version="15.318.0"/>
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a castaway.</summary>
+		<description lang="en">Visit TVADDONS.ag for support.
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.dex"
        name="Dexters TV Pro"
        version="1.0.2"
@@ -545,21 +594,65 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dnatv" name="[COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.2.5" provider-name="Team DNA">
+<addon id="plugin.video.f4mTester" version="2.2.4" name="f4mTester" provider-name="Shani">
     <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">DNA TV - IPTV Addon for KODI</summary>
-		<description lang="en">DNA TV brings you unlimited Entertainment. Live TV / PPV / Sports / Kids / Movies / Entertainment all available just one click away.&#xA;&#xA;If you enjoy DNA TV, please support us with your donations at http://dnahost.xyz/donation/</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-	</extension>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.2.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.iptvsubs" name="Iptvsubs" version="1.0" provider-name="MikkM">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="init.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Iptvsubs</summary>
+	<description lang="en_gb">Your info here!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Operation_RobocopUltimate"
+       name="Operation Robocop Ultimate"
+       version="2.1"
+       provider-name="OperationRobocop Dev Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"> Operation Robocop Add-on</summary>
+    <description lang="en">Find us at our Facebook Group https://www.facebook.com/groups/1551875625033019/</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon
@@ -585,24 +678,91 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.StalkerTv"
-       name="[COLOR orange]StalkerTv[/COLOR]"
-       version="13.0"
-       provider-name="KodiLover and KrAz(Help from Chris Xbmc-King)">
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.2.8">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Watch Major American Television Networks Live for Free!</summary>
+        <description>Watch Major American Television Networks Live! Entirely Legal and Free! You can also record content with a paid DVR account or by using DVR referral points. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
+        <platform>all</platform>
+        <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
+        <website>http://watch.ustvnow.com/</website>
+    </extension>
+</addon>
+
+<addon id="plugin.video.VADER"
+       name="Vader-Streams"
+       version="1.0.0"
+       provider-name="Vader,SkyWalker">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
+	<import addon="script.module.requests" />
+	<import addon="script.module.mechanize" />
+  	<import addon="script.module.urlresolver" />
+</requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>StalkerTv</summary>
-    <description>
-This is my third attempt to make a iptv stalker clone and this is KrAz's second attempt to make a IPTV stalker clone Enjoy. Check out me and KrAz's YouTube Channels Also Big Thanks To KrAz For all The Macs he has Provided to me.
-Also Big thanks to Chris Xbmc-King for The Macs He Helped Me Find. So thanks To Everybody who helped me Keep Going.
-StalkerTv is Back in Business BABY.ENJOY!!!!
-    </description>
+    <summary lang="en"></summary>
+    <language>en</language>
+    <description lang="en">[COLOR red]The Force of Streams![/COLOR]</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.xtream-codes" name="Xtream-Codes IPTV" version="2.0" provider-name="MikkM">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="init.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Xtream-Codes IPTV</summary>
+    <website>http://www.xtream-codes.com/</website>
+    <description lang="en">IPTV Addon for Xteam-Codes iptv panel</description>
+    <forum>http://www.xtream-codes.com/forum</forum>
+    <email>mikkm@mikkm.ul.ee</email>
+    <disclaimer lang="en">You may use and share this addon however you like, you may NOT edit this addon in any way without conesnt of developer. Skype:MikkM</disclaimer>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ZemTV-shani"
+       name="ZemTV.com"
+       version="4.5.7"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ZemTV.tv Kodi Client. Visit TVADDONS.ag for support</summary>
+    <description>Watch ZemTV.com on your XBMC. This plugin fetches the video sources from ZemTV.com and play on XBMC compatible plateforms</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
+    <platform>all</platform>
+
+
   </extension>
 </addon>
 
