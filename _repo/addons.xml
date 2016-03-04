@@ -1217,6 +1217,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.catoal" name="Catoal repository" version="1.0.0" provider-name="Catoal">
+	<extension point="xbmc.addon.repository" name="Catoal Repository">
+		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
+		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Catoal Addon</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.communityrepo" name="The Community Repository" version="1.7" provider-name="The @KodiCommunity Team">
 	<extension point="xbmc.addon.repository" name="The Community Repository">
 		<info compressed="false">http://cloud.appnettv.com/Kodienthusiast/privateuse/RepoPlugins/addons.xml</info>
@@ -1540,6 +1554,23 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+    <addon id="repository.i4a-repo" name="i4a-repo" version="9.2.0" provider-name="Inside 4ndroid">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="i4a-repo">
+            <info compressed="false">http://i4atv.cu.ma/_repo/addons.xml</info>
+            <checksum>http://i4atv.cu.ma/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://i4atv.cu.ma/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Inside 4ndroid Kodi Addons</summary>
+            <description>Inside 4ndroid Kodi Addons</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.icanuck" name="[COLOR FF005de5]iCanuck's [/COLOR]Kodi Repository" version="3.1.0" provider-name="iCanuck">
 	<extension point="xbmc.addon.repository" name="iCanuck's Kodi Repository">
        <info>http://offshoregit.com/iCanuck/iCanuck-Repo/raw/master/addons.xml</info>
@@ -1692,6 +1723,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description>download and install add-ons from repository-kodinerds addon-repository.</description>
 		<description lang="de">Downloade und installiere Add-ons vom repository-kodinerds Add-on-Repository.</description>
 		<disclaimer>kodinerds.net hat die Add-ons nicht selber erstellt und haftet nicht für deren Inhalt.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.kraakie" name="kraakie repo" version="0.0.1" provider-name="kraakie">
+	<extension point="xbmc.addon.repository" name="kraakie repo">
+		<info compressed="false">http://raw.github.com/kraakie/AwesomeStreams/master/addons.xml</info>
+		<checksum>http://raw.github.com/kraakie/AwesomeStreams/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/kraakie/AwesomeStreams/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Official kraakie repository</summary>
+		<description>This repository contains addons with live IPTV streams.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2059,11 +2104,18 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.shani" name="Shanis Addon Repository" version="2.5" provider-name="Shani">
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.8" provider-name="Shani">
 	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
-		<info compressed="false">https://raw.github.com/Shani-08/ShaniXBMCWork/master/addons.xml</info>
-		<checksum>https://raw.github.com/Shani-08/ShaniXBMCWork/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/Shani-08/ShaniXBMCWork/master/zips</datadir>
+    <dir>
+            <info compressed="false">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml</info>
+            <checksum>https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/zips</datadir>
+    </dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Addons related to XBMC for Zemtv etc</summary>
