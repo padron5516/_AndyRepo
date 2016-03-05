@@ -69,26 +69,6 @@
 
 </addon>
 
-<addon id="Andy.plugin.video.dex"
-       name="Dexters TV Pro (EPG HD)"
-       version="1.0.2"
-       provider-name="Pipcan">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  	<import addon="script.module.urlresolver" />
-</requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Thanks For Keeping Dexter TV</summary>
-    <language>en</language>
-    <description lang="en">This isnt supposed to load.  Its to have the SD and HD channels from Dexter in my TV Guide</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
 <addon
   id="Andy.pvr.iptvsimple"
   version="1.12.10"
@@ -604,6 +584,26 @@
     <summary lang="en">Thanks For Keeping Dexter TV</summary>
     <language>en</language>
     <description lang="en"></description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.dexHD"
+       name="Dexters TV Pro HD (For EPG Dont Open)"
+       version="1.0.2"
+       provider-name="Pipcan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  	<import addon="script.module.urlresolver" />
+</requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Thanks For Keeping Dexter TV</summary>
+    <language>en</language>
+    <description lang="en">This isnt supposed to load.  Its to have the SD and HD channels from Dexter in my TV Guide</description>
      <platform>all</platform>
   </extension>
 </addon>
@@ -1552,23 +1552,6 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description>Download and install addons from husham.com repo</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-    <addon id="repository.i4a-repo" name="i4a-repo" version="9.2.0" provider-name="Inside 4ndroid">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="i4a-repo">
-            <info compressed="false">http://i4atv.cu.ma/_repo/addons.xml</info>
-            <checksum>http://i4atv.cu.ma/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://i4atv.cu.ma/_repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Inside 4ndroid Kodi Addons</summary>
-            <description>Inside 4ndroid Kodi Addons</description>
-            <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="repository.icanuck" name="[COLOR FF005de5]iCanuck's [/COLOR]Kodi Repository" version="3.1.0" provider-name="iCanuck">
