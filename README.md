@@ -1,16 +1,9 @@
 ## <a href="http://tinypic.com?ref=2iuw5ck" target="_blank"><img src="http://i66.tinypic.com/2iuw5ck.png" border="0" alt="Image and video hosting by TinyPic"></a> Andy Repository Public
 ------------
 
-http://forum.kodi.tv/showthread.php?tid=259387
-
-I stand with Kodi.  This repo is free and in no way associated with official Kodi devs.  These are 3rd party repositories and modules for 3rd party resources.
-
-This repo is a constant WIP by a simple hobbyist that is learning python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
+This repo is free and in no way associated with official Kodi devs.  These are 3rd party repositories and modules for 3rd party resources.  This repo is a constant WIP by a simple hobbyist that is learning python.  Modded\original work is tagged "Andy.".  Mostly acts as my backup and as a P.O.C.
 
 Youtube videos and pre-loaded box sellers are killing Kodi.  Don't support click hungry, non quality controlled profiteers.
-
-kodithrowaway@gmail.com
-
 
 
 
@@ -57,7 +50,9 @@ You can install Repositories (source of addons), Addons (the extra applications)
 
 
 
-## Comman Paths :
+kodithrowaway@gmail.com
+
+## Common Paths :
 
 Addons (Core app, no settings):  \addons
 

@@ -720,7 +720,7 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2016.02.01"
+  version="2016.03.06"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
@@ -1096,6 +1096,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	<extension point="xbmc.addon.metadata">
 		<summary>AresProject.</summary>
 		<description>Ares-Project Addons Source. Visit Us At http://ares-project.com/community/</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.awesome" name="Awesome repo" version="0.0.1" provider-name="Awesome">
+	<extension point="xbmc.addon.repository" name="Awesome repo">
+		<info compressed="false">http://raw.github.com/AwesomeStreams/AwesomeStreams/master/addons.xml</info>
+		<checksum>http://raw.github.com/AwesomeStreams/AwesomeStreams/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/AwesomeStreams/AwesomeStreams/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Official Awesome repository</summary>
+		<description>This repository contains addons with live IPTV streams.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1583,12 +1597,12 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
     </extension>
 </addon>
 
-<addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="10.1" provider-name="iSTREAM">
+<addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="10.2" provider-name="iSTREAM">
 	<extension point="xbmc.addon.repository" name="iSTREAM">
 	<dir>
-		<info compressed="false">http://istream-xbmc-repo.googlecode.com/svn/repo/addons.xml</info>
-		<checksum>http://istream-xbmc-repo.googlecode.com/svn/repo/addons.xml.md5</checksum>
-		<datadir zip="true">http://istream-xbmc-repo.googlecode.com/svn/repo/zips</datadir>
+		<info compressed="false">http://istreamrepo.me/istream/repo/addons.xml</info>
+		<checksum>http://istreamrepo.me/istream/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://istreamrepo.me/istream/repo/zips</datadir>
 	</dir>
 		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
 		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
@@ -2207,12 +2221,12 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.TheWiz" name="TheWiz Media Repository" version="2.3.2" provider-name="TheWiz">
+<addon id="repository.TheWiz" name="TheWiz Media Repository" version="2.3.3" provider-name="TheWiz">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="TheWiz Hebrew Repository">
-		<dir minversion="15.0.0">
+		<dir minversion="12.0.0">
 			<info>http://repo.thewiz.info/addons.xml</info>
 			<checksum>http://repo.thewiz.info/addons.xml.md5</checksum>
 			<datadir zip="true">http://repo.thewiz.info/</datadir>
@@ -3377,7 +3391,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.suitability" name="Suitability" version="1.0.1" provider-name="robwebset">
+<addon id="script.suitability" name="Suitability" version="1.1.0" provider-name="robwebset">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -3389,12 +3403,12 @@ level.</description>
 	<extension point="kodi.context.item" library="default.py">
 		<item>
 			<label>32001</label>
-			<visible>IsEmpty(Window(videos).Property("SuitabilityHideContextMenu")) + Container.Content(movies)</visible>
+			<visible>IsEmpty(Window(videos).Property("SuitabilityHideContextMenu")) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 		</item>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Check if a movie is family friendly</summary>
-		<description lang="en">Supplies details for how suitable a movie is for children.</description>
+		<summary lang="en">Check if a movie or TV show is family friendly</summary>
+		<description lang="en">Supplies details for how suitable a movie or TV show is for children.</description>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
