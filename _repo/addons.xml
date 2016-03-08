@@ -792,25 +792,18 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.VADER"
-       name="Vader-Streams"
-       version="1.0.0"
-       provider-name="Vader,SkyWalker">
+<addon id="plugin.video.VADER" name="Vader-Streams" version="1.0" provider-name="Obi-Wan Kenobi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-	<import addon="script.module.mechanize" />
-  	<import addon="script.module.urlresolver" />
-</requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
+	<import addon="script.module.addon.common"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="init.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <language>en</language>
-    <description lang="en">[COLOR red]The Force of Streams![/COLOR]</description>
-     <platform>all</platform>
+    <summary lang="en">Vader-Streams</summary>
+	<description lang="en_gb">[COLOR red]The Force of Streams![/COLOR]</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -3046,8 +3039,8 @@ Addons Included
 </addon>
 
 <addon id="script.module.liveresolver"
-     name="[COLOR violet](Script)[/COLOR]LiveResolver"
-     version="0.1.22"
+     name="LiveResolver"
+     version="0.1.25"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
