@@ -567,30 +567,24 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dex"
-       name="Dexters TV Pro"
-       version="1.0.5"
-       provider-name="Pipcan">
+<addon id="plugin.video.dex" name="DexterPro IPTV" version="2.0" provider-name="Pipcan,MikkM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  	<import addon="script.module.urlresolver" />
-</requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="init.py">
+        <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Thanks For Keeping Dexter TV</summary>
-    <language>en</language>
-    <description lang="en"></description>
-     <platform>all</platform>
+    <summary lang="en">DEXTERPRO IPTV</summary>
+    <description lang="en">IPTV Addon for DexterPro</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
 <addon id="plugin.video.dexHD"
-       name="Dexters TV Pro HD (For EPG Dont Open)"
-       version="1.0.2"
+       name="DexterPro IPTV (HD For EPG Dont Open)"
+       version="2.0"
        provider-name="Pipcan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -606,6 +600,27 @@
     <description lang="en">This isnt supposed to load.  Its to have the SD and HD channels from Dexter in my TV Guide</description>
      <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.dnatv" name="[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO[/COLOR][/I][/B]" version="3.0.0" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.urlresolver"  version="2.1.2"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.t0mm0.common" version="2.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.5.2"/>
+        <import addon="script.module.metahandler" version="2.5.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">DNA TV - IPTV Addon</summary>
+		<description lang="en">DNA TV brings you unlimited Entertainment. Live TV / PPV / Sports / Kids / Movies / Entertainment all available just one click away.&#xA;&#xA;If you enjoy DNA TV, please support us with your donations at http://dnahost.xyz/donation/</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+	</extension>
 </addon>
 
 <addon id="plugin.video.f4mTester" version="2.2.4" name="f4mTester" provider-name="Shani">
@@ -634,6 +649,21 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Iptvsubs</summary>
 	<description lang="en_gb">Your info here!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.livemix" name="Live Mix" version="1.0.2" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
