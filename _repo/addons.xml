@@ -771,6 +771,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.stalker" name="IPTV Stalker Papiao" version="10.0.0" provider-name="dara">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">IPTV Stalker Papiao</summary>
+		<description lang="en">IPTV Stalker for Papiao servers, based on original code by esxbr </description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://iptvtalk.org/</forum>
+
+
+	</extension>
+</addon>
+
 <addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.5.6" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2472,6 +2492,19 @@ Addons Included
 	</extension>
 </addon>
 
+<addon id="repository.wookie" name="Team Wookie Addon Repository" version="1.0.0" provider-name="Team Wookie">
+	<extension point="xbmc.addon.repository" name="Team Wookie Addon Repository">
+		<info compressed="false">http://raw.github.com/metalkettle/Team-Wookie/master/addons.xml</info>
+		<checksum>http://raw.github.com/metalkettle/Team-Wookie/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/metalkettle/Team-Wookie/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.xbmc-israel" name=".[COLOR blue]XBMC Israeli [/COLOR][COLOR white] Streaming Sites[/COLOR]" version="1.0.4" provider-name="cubicle-vdo">
     <extension point="xbmc.addon.repository" name="XBMC Israeli streaming repo for streaming sites">
         <info compressed="false">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml</info>
@@ -2825,6 +2858,37 @@ Addons Included
 		<summary>Themes for the Exodus Addon</summary>
 		<description>Themes for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="4.5.3" provider-name="phil65 (Philipp Temminghoff)">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.autocompletion" version="1.0.0"/>
+		<import addon="script.module.actionhandler" version="1.0.1"/>
+		<import addon="script.module.t9.search" version="1.0.0"/>
+		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+		<import addon="script.module.pil" version="1.1.7"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">ExtendedInfo Script</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<source>https://github.com/phil65/script.extendedinfo</source>
+		<email>phil65@kodi.tv</email>
 	</extension>
 </addon>
 
