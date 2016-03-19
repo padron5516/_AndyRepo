@@ -6,8 +6,6 @@
    <buffermode>2</buffermode>
    <cachemembuffersize>39321600</cachemembuffersize>
    <readbufferfactor>10</readbufferfactor>
-   <curlclienttimeout>200</curlclienttimeout>
-   <curllowspeedtime>300</curllowspeedtime>
 </network>
   
 <samba>

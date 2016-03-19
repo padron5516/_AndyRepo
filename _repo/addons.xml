@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.8" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -28,7 +28,10 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <provides>video</provides>
-        <description lang="en">TV Guide for use with 3rd party channel addons</description>
+        <description lang="en">TV Guide for use with 3rd party channel addons
+
+
+        </description>
         <disclaimer lang="en">EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
     </extension>
 </addon>
@@ -107,7 +110,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.4" provider-name="Andy">
+<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.5" provider-name="Andy">
     <requires>
         <!--<backwards-compatibility abi="12.0"/>-->
         <import addon="xbmc.addon" version="12.0.0" />
@@ -701,37 +704,6 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.Operation_RobocopUltimate"
-       name="Operation Robocop Ultimate"
-       version="2.1"
-       provider-name="OperationRobocop Dev Team">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"> Operation Robocop Add-on</summary>
-    <description lang="en">Find us at our Facebook Group https://www.facebook.com/groups/1551875625033019/</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.sportsaccess" name="SportsAccess" version="1.2.0" provider-name="SportsAccess">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -826,7 +798,7 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.2.8">
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.3.1">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
     </requires>
@@ -854,6 +826,27 @@
     <summary lang="en">Vader-Streams</summary>
 	<description lang="en_gb">[COLOR red]The Force of Streams![/COLOR]</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.VidTime"
+       name="VidTime"
+       version="1.1.7"
+       provider-name="VinManJSV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.9.0"/>
+	<import addon="script.module.urlresolver" version="2.10.11"/>
+	<import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+			library="starter.py">
+			<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Play TV and Movies </summary>
+    <description lang="en">A simple TV and Movie addon that gives a great quality stream.[CR]Register for Free.   [B]www.streamlord.com[/B]</description>
+	<platform>all</platform>
   </extension>
 </addon>
 
@@ -894,7 +887,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.5.7"
+       version="4.6.6"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1937,6 +1930,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 <description>Download and install addons by natko1412. For support visit XBMC thread on forum.hr</description>
 <platform>all</platform>
 </extension>
+</addon>
+
+    <addon id="repository.NJMSoccer" name="NJM Soccer Repo" version="0.1.0" provider-name="BaDg3R">
+        <extension point="xbmc.addon.repository" name="NJM Soccer Repo">
+            <info compressed="false">http://repo.badgersftv.com/repo/addons.xml</info>
+            <checksum>http://repo.badgersftv.com/repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://repo.badgersftv.com/repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Best Sporting Streams by NJM</summary>
+            <description>All the Best addons for sporting streams by NJM Soccer</description>
+            <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="1.3" provider-name="noobsandnerds">
