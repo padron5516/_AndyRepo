@@ -781,6 +781,20 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
+<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.0" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.usemytv" name="USE MY TV" version="0.0.2" provider-name="r3b00t">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1281,6 +1295,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
+	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
+		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Coldkeys Repo</summary>
+		<description>Download and install addons from the Coldkeys Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.communityrepo" name="The Community Repository" version="1.7" provider-name="The @KodiCommunity Team">
 	<extension point="xbmc.addon.repository" name="The Community Repository">
 		<info compressed="false">http://cloud.appnettv.com/Kodienthusiast/privateuse/RepoPlugins/addons.xml</info>
@@ -1303,6 +1330,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	<extension point="xbmc.addon.metadata">
 		<summary>Install [COLOR blue]Coolwave[/COLOR]'s Addons</summary>
 		<description>Download and install addons from Coolwave</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.d0f21" name="d0f21's XBMC Addons" version="1.0.0" provider-name="d0f21">
+	<extension point="xbmc.addon.repository" name="Chris' XBMC Addon Repository">
+		<info >https://raw.githubusercontent.com/louca1221/d0f21-Repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/louca1221/d0f21-Repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/louca1221/d0f21-Repository/raw/master/repo</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install d0f21's' Addons</summary>
+		<description lang="en">Download and install addons by d0f21</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2096,12 +2136,30 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
-<addon id="repository.RenegadesTV" name="RenegadesTV Add-on repository" version="1.1.1" provider-name="RenegadesTV">
+<addon id="repository.rayw1986" name="RayW1986 Repo" version="2.1.0" provider-name="RayW1986">
+	<extension point="xbmc.addon.repository" name="RayW1986 Repository">
+		<dir>
+			<info compressed="false">http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml</info>
+			<checksum>http://raw.github.com/RayW1986/repository.rayw1986/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.github.com/RayW1986/repository.rayw1986/master/zips</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/rayw1986/rayw1986-repo/addons.xml</info>
+		<checksum>https://offshoregit.com/rayw1986/rayw1986-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/rayw1986/rayw1986-repo/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>RayW1986's Repository</summary>
+		<description>Download and install add-ons from RayW1986's Repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.RenegadesTV" name="RenegadesTV Add-on repository" version="1.2" provider-name="RenegadesTV">
 	<extension point="xbmc.addon.repository" name="RenegadesTV Add-on repository">
 		<dir>
-			<info compressed="false">http://renegadestv.uk/addons.xml</info>
-			<checksum>http://renegadestv.uk/addons.xml.md5</checksum>
-			<datadir zip="true">http://renegadestv.uk/</datadir>
+			<info compressed="false">http://renegadestv.uk/updateautorepo/addons.xml</info>
+			<checksum>http://renegadestv.uk/updateautorepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://renegadestv.uk/updateautorepo/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -2434,13 +2492,13 @@ Addons Included
 </addon>
 
 <addon id="repository.VinManJSV" name="VinmanJSV REPO" version="1.1" provider-name="Vinman_sv">
-	<extension point="xbmc.addon.repository" name="VinmanJSV REPO">
-        <info compressed="false">http://raw.github.com/VinmanJSV/OPENJAVA/master/addons.xml</info>
-        <checksum>http://raw.github.com/VinmanJSV/OPENJAVA/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/VinmanJSV/OPENJAVA/raw/master/zips</datadir>
+	<extension point="xbmc.addon.repository" name="VinManJSV REPO">
+        <info compressed="false">https://offshoregit.com/VinManJSV/repo/raw/master/addons.xml</info>
+        <checksum>https://offshoregit.com/VinManJSV/repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/VinManJSV/repo/raw/master/zips</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary></summary>
+        <summary>Install VinManJSV Addons</summary>
         <description></description>
         <platform>all</platform>
     </extension>
@@ -3438,20 +3496,18 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver"
-     name="URLResolver"
-     version="2.10.12"
-     provider-name="Eldorado">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-  </extension>
+<addon id="script.module.urlresolver" name="URLResolver" version="2.10.14" provider-name="Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video
+			plugins requiring multi video hosts.</description>
+	</extension>
 </addon>
 
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.0">
