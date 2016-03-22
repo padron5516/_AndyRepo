@@ -83,7 +83,7 @@ def CleanCache_Prompt():
 ###    Delete Cache          ###
 ################################
 def Wipe_Cache():
-    xbmc_cache_path = os.path.join(xbmc.translatePath('special://home'), 'cache')
+    xbmc_cache_path = xbmc.translatePath(os.path.join('special://home', 'cache'))
     if os.path.exists(xbmc_cache_path)==True:    
         for root, dirs, files in os.walk(xbmc_cache_path):
             file_count = 0
@@ -107,7 +107,7 @@ def Wipe_Cache():
 ###    Delete Packages       ###
 ################################
 def Delete_Packages():
-    packages_cache_path = xbmc.translatePath(os.path.join('special://home/addons/packages', ''))
+    packages_cache_path = xbmc.translatePath(os.path.join('special://home/userdata', 'Thumbnails'))
     for root, dirs, files in os.walk(packages_cache_path):
         file_count = 0
         file_count += len(files)
@@ -211,7 +211,7 @@ def Destroy_File(path,file):
 ###    Function to remove textures13.db and thumbnails folder
 ################################         
 def Remove_Textures():
-    textures   =  xbmc.translatePath('special://home/userdata/Database/Textures13.db')
+    textures = xbmc.translatePath(os.path.join('special://home/userdata/Database', 'Textures13.db'))
     try:
         dbcon = database.connect(textures)
         dbcur = dbcon.cursor()

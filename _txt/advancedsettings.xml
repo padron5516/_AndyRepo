@@ -60,8 +60,8 @@
 </samba>
 
 <pvr>
-  <minvideocachelevel>50</minvideocachelevel>  <!-- Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
-  <minaudiocachelevel>50</minaudiocachelevel>  <!-- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
+  <minvideocachelevel>60</minvideocachelevel>  <!-- Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
+  <minaudiocachelevel>60</minaudiocachelevel>  <!-- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
   <!--<cacheindvdplayer>true</cacheindvdplayer>-->  <!-- Cache PVR stream in DVDPlayer. -->
   <!--<timecorrection>0</timecorrection>--> <!-- Correct all times (epg tags, timer tags, recording tags) by this amount of minutes. -->
   <!--<infotoggleinterval>3000</infotoggleinterval>--> <!-- If there is more than one pvr gui info item available, use this toggle delay in milliseconds. -->

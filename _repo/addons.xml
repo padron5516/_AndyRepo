@@ -689,7 +689,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.ntv" name="NTV.mx" version="3.4.6" provider-name="Mikey1234">
+<addon id="plugin.video.ntv" name="NTV.mx" version="3.4.8" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -698,7 +698,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">NTV.mx</summary>
-    <description lang="en">Stream all of your favourites sports,movies and live tv from NTV.mx</description>
+    <description lang="en">Actually 3.4.4 to override TVAddons malarky.  Stream all of your favourites sports,movies and tv from NTV.mx</description>
     <platform>all</platform>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login" />
@@ -722,7 +722,7 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2016.03.06"
+  version="2"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
