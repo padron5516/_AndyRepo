@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.1" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.2" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -110,7 +110,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.5" provider-name="Andy">
+<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.6" provider-name="Andy">
     <requires>
         <!--<backwards-compatibility abi="12.0"/>-->
         <import addon="xbmc.addon" version="12.0.0" />
@@ -530,17 +530,14 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.castaway" name="Castaway" version="0.1.1" provider-name="natko1412">
+<addon id="plugin.video.castaway" name="Castaway" version="0.1.3" provider-name="natko1412">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
 		<import addon="script.module.requests"  />
-		<import addon="script.module.mechanize"  />
     	<import addon="script.module.addon.common" />
 		<import addon="script.module.urlresolver" />
 		<import addon="script.module.liveresolver"  />
-		<import addon="script.module.pyxbmct" version="1.1.4"/>
-		<import addon="script.module.youtube.dl" version="15.318.0"/>
 
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -570,10 +567,13 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dex" name="DexterPro IPTV" version="2.0" provider-name="Pipcan,MikkM">
+<addon id="plugin.video.dex" name="DexterPro IPTV" version="2.30" provider-name="Pipcan,MikkM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+	<import addon="script.skin.helper.service" />
+    <import addon="script.module.urlresolver" version="0.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="init.py">
         <provides>video executable</provides>
@@ -582,26 +582,6 @@
     <summary lang="en">DEXTERPRO IPTV</summary>
     <description lang="en">IPTV Addon for DexterPro</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.dexHD"
-       name="DexterPro IPTV (HD For EPG Dont Open)"
-       version="2.0"
-       provider-name="Pipcan">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  	<import addon="script.module.urlresolver" />
-</requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Thanks For Keeping Dexter TV</summary>
-    <language>en</language>
-    <description lang="en">This isnt supposed to load.  Its to have the SD and HD channels from Dexter in my TV Guide</description>
-     <platform>all</platform>
   </extension>
 </addon>
 
@@ -698,10 +678,30 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">NTV.mx</summary>
-    <description lang="en">Actually 3.4.4 to override TVAddons malarky.  Stream all of your favourites sports,movies and tv from NTV.mx</description>
+    <description lang="en">Stream all of your favourites sports,movies and live tv from NTV.mx</description>
     <platform>all</platform>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login" />
+</addon>
+
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.1" provider-name="Blazetamer">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="2.10.11"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Phoenix</summary>
+		<description lang="en">Discover Great Streaming Playlists, Please visit www.tvaddons.ag for help and support!</description>
+		<platform>all</platform>
+		<forum>http://forums.tvaddons.ag/forums/220-PHOENIX-LIVE-STREAMS</forum>
+		<website>http://www.tvaddons.ag/</website>
+	</extension>
 </addon>
 
 <addon id="plugin.video.sportsaccess" name="SportsAccess" version="1.2.0" provider-name="SportsAccess">
@@ -736,7 +736,7 @@
    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Play videos of different sports streaming sites</summary>
+    <summary>3/22/2106 Play videos of different sports streaming sites</summary>
     <description>Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
@@ -781,7 +781,7 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.0" provider-name="MetalKettle">
+<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.1" provider-name="MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -790,7 +790,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en"></summary>
-    <description lang="en"></description>
+    <description lang="en">This is version 2.0.0 renamed because of Renegades repo.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -845,7 +845,7 @@
 
 <addon id="plugin.video.VidTime"
        name="VidTime"
-       version="1.1.7"
+       version="1.1.8"
        provider-name="VinManJSV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
