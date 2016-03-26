@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.2" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.3" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -684,7 +684,7 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.1" provider-name="Blazetamer">
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.2" provider-name="Blazetamer">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -901,7 +901,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.6.6"
+       version="4.7.1"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1495,15 +1495,15 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="repository.epg.ninja" name="epg.ninja add-ons" version="1.0.0" provider-name="psycon">
+<addon id="repository.iptvsubs" name="IPTVSubs add-ons" version="1.0.0" provider-name="psycon">
 	<extension point="xbmc.addon.repository" name="epg.ninja Add-on Repository">
-		<info compressed="false">http://epg.ninja/repo/addons.xml</info>
-		<checksum>http://epg.ninja/repo/addons.xml.md5</checksum>
-                <datadir zip="true">http://epg.ninja/repo</datadir>
+		<info compressed="false">http://iptvsubs.is/repo/addons.xml</info>
+		<checksum>http://iptvsubs.is/repo/addons.xml.md5</checksum>
+                <datadir zip="true">http://iptvsubs.is/repo</datadir>
                 </extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install Add-ons from epg.ninja</summary>
-		<description>Download and install add-ons from epg.ninja addon repository.[CR][CR]By using this Repository you will be able to take advantage of our cutting edge features.</description>
+		<summary>Install Add-ons from iptvsubs.is</summary>
+		<description>Download and install add-ons from iptvsubs.is addon repository.[CR][CR]By using this Repository you will be able to take advantage of our cutting edge features.</description>
 		<disclaimer>psycon</disclaimer>
 		<platform>all</platform>
 	</extension>
@@ -1913,6 +1913,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description></description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.meta" name="MetaTeam Repository" version="1.0.0" provider-name="MetaTeam">
+        <extension point="xbmc.addon.repository" name="MetaTeam Repository">
+                <info compressed="false">http://raw.github.com/metate/meta4kodi/master/addons.xml</info>
+                <checksum>http://raw.github.com/metate/meta4kodi/master/addons.xml.md5</checksum>
+                <datadir zip="true">http://raw.github.com/metate/meta4kodi/master/zip</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>MetaTeam Repository</summary>
+                <description>Addons by MetaTeam.</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
 </addon>
 
 <addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.1" provider-name="MetalKettle">
