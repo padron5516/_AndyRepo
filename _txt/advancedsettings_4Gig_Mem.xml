@@ -15,12 +15,11 @@
 <!--<alwaysontop>yes</alwaysontop>-->
   
 <network>
-    <autodetectpingtime>30</autodetectpingtime>                            <!-- Length in seconds between pinging the network to detect new devices -->
-    <curlclienttimeout>20</curlclienttimeout>                              <!-- Timeout in seconds for libcurl (http/ftp) connections -->
-    <curllowspeedtime>20</curllowspeedtime>                                <!-- Time in seconds for libcurl to consider a connection lowspeed -->
-    
-                                                                           <!-- "o" while playing movie.  http://kodi.wiki/view/HOW-TO:Modify_the_video_cache  https://www.flightpedia.org/convert/20-megabytes-to-bytes.html -->
-    <cachemembuffersize>314572800</cachemembuffersize>                     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+                                                                           <!-- "o" while playing movie to see cache.  http://kodi.wiki/view/HOW-TO:Modify_the_video_cache  https://www.flightpedia.org/convert/20-megabytes-to-bytes.html -->
+    <cachemembuffersize>209715200</cachemembuffersize>                     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+    <!--<cachemembuffersize>104857600</cachemembuffersize> -->             <!-- Safe              (300MB  of free RAM) for cache. -->
+    <!--<cachemembuffersize>209715200</cachemembuffersize> -->             <!-- Medium end Device (600MB  of free RAM) for cache. -->
+    <!--<cachemembuffersize>367001600</cachemembuffersize> -->             <!-- High end Device   (1050MB of free RAM) for cache. -->
                                                                            <!-- Cache - 0         - Zero Cache Setting using local hard drive for cache.  Kills HDD.-->
                                                                            <!-- Cache - 20971520  - Default Setting.    (60MB   of free RAM. 20971520 is the default in bytes (Bytes b), which is 20 MB (megabytes mb), which requires 60MB of free RAM) -->
                                                                            <!-- Cache - 31457280  - Using 30MB of RAM   (90MB   of free RAM) for cache. --> 
@@ -47,7 +46,7 @@
                                                                            <!-- Cache - 943718400 - Using 900MB of RAM  (2700MB of free RAM) for cache. -->                                                                             
                                                                            <!-- Cache - 1048576000 -Using 1000MB of RAM (3000MB of free RAM) for cache. -->  
                                                                                                                                                       
-    <readbufferfactor>2.5</readbufferfactor>                                <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
+    <readbufferfactor>2.5</readbufferfactor>                               <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
     <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache -->
     <!-- By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware. -->
     <!-- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC. -->
@@ -59,8 +58,11 @@
     <!-- 1) Default - Buffer all filesystems (including local) -->
     <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->
     <!-- 3) No buffer -->
-    <!--<httpproxyusername></httpproxyusername>-->                          <!-- username for Basic Proxy Authentication -->
-    <!--<httpproxypassword></httpproxypassword>-->                          <!-- password for Basic Proxy Authentication -->
+    <autodetectpingtime>30</autodetectpingtime>                            <!-- Length in seconds between pinging the network to detect new devices -->
+    <curlclienttimeout>20</curlclienttimeout>                              <!-- Timeout in seconds for libcurl (http/ftp) connections -->
+    <curllowspeedtime>20</curllowspeedtime>                                <!-- Time in seconds for libcurl to consider a connection lowspeed -->
+    <!--<httpproxyusername></httpproxyusername>-->                         <!-- username for Basic Proxy Authentication -->
+    <!--<httpproxypassword></httpproxypassword>-->                         <!-- password for Basic Proxy Authentication -->
 </network>
 
 
