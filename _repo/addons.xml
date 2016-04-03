@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.5" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.6" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -28,10 +28,7 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <provides>video</provides>
-        <description lang="en">TV Guide for use with 3rd party channel addons
-
-
-        </description>
+        <description lang="en">TV Guide for use with 3rd party channel addons</description>
         <disclaimer lang="en">EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
     </extension>
 </addon>
@@ -72,10 +69,29 @@
 
 </addon>
 
+<addon id="Andy.plugin.video.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide Player" version="2.0" provider-name="Andy">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="init.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR yellow]Andy[/COLOR] TV Guide Player</summary>
+    <website>http://</website>
+    <description lang="en">Simple program to run straight IPTV links and have them buffer in cache</description>
+    <forum>http://</forum>
+    <email></email>
+    <disclaimer lang="en">There is no reason to edit this file.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="Andy.pvr.iptvsimple"
-  version="1.12.10"
-  name="PVR IPTV Simple Client (Windows Secondary)"
+  version="2.12.10"
+  name="PVR IPTV Simple Client (Multiple)"
   provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
@@ -83,12 +99,12 @@
   </requires>
 
   <extension point="xbmc.pvrclient"
-    library_windows="pvr.iptvsimpl2.dll"
-    library_windx="pvr.iptvsimpl2.dll"
-    library_android="libpvr.iptvsimpl2.so"
-    library_linux="pvr.iptvsimpl2.so"
-    library_osx="pvr.iptvsimpl2.dylib"
-    library_freebsd="pvr.iptvsimpl2.so" />
+    library_windows="pvr.iptvsimple.dll"
+    library_windx="pvr.iptvsimple.dll"
+    library_android="libpvr.iptvsimple.so"
+    library_linux="pvr.iptvsimple.so"
+    library_osx="pvr.iptvsimple.dylib"
+    library_freebsd="pvr.iptvsimple.so" />
 
   <extension point="xbmc.addon.metadata">
     <summary lang="en_AU">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -388,25 +404,6 @@
 	</extension>
 </addon>
 
-<addon id="context.findstreams.contextmenu" name="FindStreams - Find Legal Streams" version="0.3.9" provider-name="Leuthil">
-  <requires>
-    <import addon="xbmc.python" version="2.20.0"/>
-  </requires>
-    <extension point="kodi.context.item" library="addon.py">
-      <item>
-        <label>Find Streams</label>
-        <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,episode)</visible>
-      </item>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Finds legal streams for movies/shows.</summary>
-    <description lang="en">Adds a context menu item for your movies/shows to find legal streams.</description>
-    <platform>all</platform>
-    <forum>http://forum.kodi.tv/showthread.php?tid=261045</forum>
-    <source>https://github.com/Leuthil/FindStreams/</source>
-  </extension>
-</addon>
-
     <addon id="hellyrepo.kodi" name="HellyRepo" version="0.2.1" provider-name="Ivo Helwegen">
         <extension point="xbmc.addon.repository" name="HellyRepo">
             <dir minversion="15.0.0">
@@ -490,55 +487,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.iarl" name="Internet Archive ROM Launcher" version="1.4.3" provider-name="Zach Morris">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="plugin.video.youtube" version="5.1.9"/>
-    <import addon="script.module.xbmcswift2" version="2.4.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video game</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary>Internet Archive ROM Launcher</summary>
-    <description>IARL will download ROMs from the Internet Archive and launch them with Kodi</description>
-  </extension>
-</addon>
-
-<addon id="plugin.video.AwesomeStreams"
-       name="AwesomeStreams"
-       version="1.0.21"
-       provider-name="AwesomeStreams">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.1.1"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="1.9.5"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="5.1.12"/>
-    <import addon="script.module.urlresolver" version="1.0.0"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.5"/>
-    <import addon="script.module.metahandler" version="2.9.0"/>
-    <import addon="script.module.liveresolver" />
-
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Awesome Streams voor XBMC / KODI!</summary>
-    <description lang="en">Addon With Sport/Livestreams from all over the world</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.2" provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -617,16 +565,15 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dnatv" name="[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO[/COLOR][/I][/B]" version="3.0.0" provider-name="Team DNA">
+<addon id="plugin.video.dnatv" name="[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO Beta[/COLOR][/I][/B]" version="3.5.1" provider-name="Team DNA">
     <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" version="2.0.0" />
+		<import addon="script.module.t0mm0.common" version="2.0.0"/>
 		<import addon="script.module.urlresolver"  version="2.1.2"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.t0mm0.common" version="2.0.0"/>
-        <import addon="script.common.plugin.cache" version="2.5.2"/>
-        <import addon="script.module.metahandler" version="2.5.1"/>
+		<import addon="script.module.metahandler" version="2.5.1"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
+	<extension point="xbmc.python.pluginsource" library="init.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -640,7 +587,7 @@
 
 <addon
   id="plugin.video.dragon.sports"
-  version="4.6.0.4"
+  version="4.6.0.9"
   name="Dragon Streams"
   provider-name="Unknown">
   <requires>
@@ -655,21 +602,6 @@
   <extension point="xbmc.addon.metadata">
     <summary>Play a variety of quality streams on your DragonBox</summary>
     <description>** No streams are hosted by DragonBox, Dragon Streams or any affiliates of those mentioned.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.evolutioniptv" name="Evolution-IPTV" version="1.0" provider-name="MikkM">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="init.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Evolution-IPTV</summary>
-	<description lang="en_gb">Your info here!</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -827,7 +759,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2"
+  version="9999.2016.3.22"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
@@ -842,7 +774,7 @@ http://www.hometheater.co.il</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>3/22/2106 Play videos of different sports streaming sites</summary>
-    <description>Play videos of different sports streaming sites</description>
+    <description>Stop renaming shit unless you rename the plugins asshole devs.  Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
@@ -868,29 +800,6 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.streamlive.to"
-       name="[COLOR white]Stream[COLOR lime][/COLOR]Live[/COLOR].[COLOR lime]to[/COLOR]"
-       version="1.2.2"
-       provider-name="[COLOR tan]StreamLive.to[/COLOR] Team">
-  <requires>
-  	<import addon="xbmc.python" version="2.1.0"/>
-  	<import addon="script.module.addon.common" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="liLiveTo.py">
-  	<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  	<summary>StreamLive.to</summary>
-  	<description>You need a Premium account to watch. To log in, right click on this add-on, choose "Add-on settings" > "Account" > "Enable Account" and enter Username and Password</description>
-  	<disclaimer>By using this add-on, you  agree that it is permitted in your country.</disclaimer>
-  	<language>en</language>
-  	<platform>all</platform>
-    <forum>http://forum.streamlive.to</forum>
-    <website>http://www.streamlive.to</website>
-    <source>https://www.streamlive.to</source>
-  </extension>
-</addon>
-
 <addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.5.6" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -907,22 +816,6 @@ http://www.hometheater.co.il</description>
     <platform>all</platform>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login" />
-</addon>
-
-<addon id="plugin.video.tvtime.tva" name="TV Time" provider-name="mhancoc7" version="0.1.9">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Watch Major American Television Networks Live for Free!</summary>
-        <description>Watch all the best American cable television channels live and in high quality, completely unrestricted and free of charge! Please feel free to visit www.tvaddons.ag for support and assistance.</description>
-        <platform>all</platform>
-        <forum>https://forums.tvaddons.ag/tv-time-for-kodi/</forum>
-        <website>http://www.tvaddons.ag/</website>
-    </extension>
 </addon>
 
 <addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.1" provider-name="MetalKettle">
@@ -989,7 +882,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.VidTime"
        name="VidTime"
-       version="1.1.9c"
+       version="1.1.9f"
        provider-name="VinManJSV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1045,7 +938,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.7.1"
+       version="4.7.5"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1535,14 +1428,14 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="repository.dnarepo" name="[COLOR lightblue]dna[/COLOR] [COLOR lightwhite]Repository[/COLOR]" version="0.0.4" provider-name="dna">
-	<extension point="xbmc.addon.repository" name="dna Repository">
-		<info compressed="false">http://raw.github.com/macblizzard/dnarepo/master/addons.xml</info>
-		<checksum>http://raw.github.com/macblizzard/dnarepo/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/macblizzard/dnarepo/master</datadir>
+<addon id="repository.dnaREPO-v2" name="[COLOR lightblue]dna[/COLOR][COLOR lightwhite]REPO-v2[/COLOR]" version="2.0.0" provider-name="Team DNA">
+	<extension point="xbmc.addon.repository" name="dnaREPO-v2">
+		<info compressed="false">https://raw.githubusercontent.com/macblizzard/dnaREPO-v2/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/macblizzard/dnaREPO-v2/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/macblizzard/dnaREPO-v2/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>dna Repository</summary>
+		<summary>dnaREPO-v2</summary>
 		<description>Download and install add-ons from dna repository.</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>

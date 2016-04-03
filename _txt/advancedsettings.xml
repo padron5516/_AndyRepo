@@ -1,6 +1,5 @@
-<advancedsettings>
-<!--http://kodi.wiki/view/Advancedsettings.xml-->
-<!--Full Advancedsettings.xml-->
+<!-- http://kodi.wiki/view/Advancedsettings.xml-->
+<!-- Full Advancedsettings.xml-->
 <!-- Android 	Android/data/org.xbmc.kodi/files/.kodi/userdata/ -->
 <!-- iOS 	    /private/var/mobile/Library/Preferences/Kodi/userdata/ -->
 <!-- Linux 	    ~/.kodi/userdata/ -->
@@ -8,18 +7,16 @@
 <!-- OpenELEC 	/storage/.kodi/userdata/ -->
 <!-- Windows 	Start - type %APPDATA%\kodi\userdata -->
 
-<playlisttimeout>10</playlisttimeout>
-<packagefoldersize>200</packagefoldersize>                                <!-- The amount in megabytes of packages saved from previous add-on installs. -->
-<splash>false</splash>
-<!--<loglevel hide="false">1</loglevel>-->
-<!--<alwaysontop>yes</alwaysontop>-->
-  
+<advancedsettings>
+
 <network>
                                                                            <!-- "o" while playing movie to see cache.  http://kodi.wiki/view/HOW-TO:Modify_the_video_cache  https://www.flightpedia.org/convert/20-megabytes-to-bytes.html -->
-    <cachemembuffersize>104857600</cachemembuffersize>                     <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+        <cachemembuffersize>157286400</cachemembuffersize>                 <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+    <!--<cachemembuffersize>39321600</cachemembuffersize> -->              <!-- 1 gig machine     (120MB  of free RAM) for cache. -->
+    <!--<cachemembuffersize>78643200</cachemembuffersize> -->              <!-- 2 gig machine     (240MB  of free RAM) for cache. -->
     <!--<cachemembuffersize>104857600</cachemembuffersize> -->             <!-- Safe              (300MB  of free RAM) for cache. -->
     <!--<cachemembuffersize>209715200</cachemembuffersize> -->             <!-- Medium end Device (600MB  of free RAM) for cache. -->
-    <!--<cachemembuffersize>367001600</cachemembuffersize> -->             <!-- High end Device   (1050MB of free RAM) for cache. -->
+    <!--<cachemembuffersize>314572800</cachemembuffersize> -->             <!-- High end Device   (900MB  of free RAM) for cache. -->
                                                                            <!-- Cache - 0         - Zero Cache Setting using local hard drive for cache.  Kills HDD.-->
                                                                            <!-- Cache - 20971520  - Default Setting.    (60MB   of free RAM. 20971520 is the default in bytes (Bytes b), which is 20 MB (megabytes mb), which requires 60MB of free RAM) -->
                                                                            <!-- Cache - 31457280  - Using 30MB of RAM   (90MB   of free RAM) for cache. --> 
@@ -46,30 +43,32 @@
                                                                            <!-- Cache - 943718400 - Using 900MB of RAM  (2700MB of free RAM) for cache. -->                                                                             
                                                                            <!-- Cache - 1048576000 -Using 1000MB of RAM (3000MB of free RAM) for cache. -->  
                                                                                                                                                       
-    <readbufferfactor>2.5</readbufferfactor>                               <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
-    <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache -->
-    <!-- By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware. -->
-    <!-- For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC. -->
-    <!-- The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth. -->
-    <!-- However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback. -->
+    <readbufferfactor>10</readbufferfactor>                                <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
+                                                                           <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache
+                                                                           By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware.
+                                                                           For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC.
+                                                                           The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth.
+                                                                           However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash. Just know that it might cause Kodi to attempt to use all available bandwidth on your HTPC during playback.--> 
 
-    <buffermode>1</buffermode>                                              <!-- Choose what to buffer: -->
-    <!-- 0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default) -->
-    <!-- 1) Default - Buffer all filesystems (including local) -->
-    <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->
-    <!-- 3) No buffer -->
-    <autodetectpingtime>30</autodetectpingtime>                            <!-- Length in seconds between pinging the network to detect new devices -->
-    <curlclienttimeout>20</curlclienttimeout>                              <!-- Timeout in seconds for libcurl (http/ftp) connections -->
-    <curllowspeedtime>20</curllowspeedtime>                                <!-- Time in seconds for libcurl to consider a connection lowspeed -->
-    <!--<httpproxyusername></httpproxyusername>-->                         <!-- username for Basic Proxy Authentication -->
-    <!--<httpproxypassword></httpproxypassword>-->                         <!-- password for Basic Proxy Authentication -->
+    <buffermode>1</buffermode>                                            <!-- Choose what to buffer: -->
+                                                                          <!-- 0) Buffer all internet filesystems (like "2" but additionally also ftp, webdav, etc.) (default) -->
+                                                                          <!-- 1) Default - Buffer all filesystems (including local) -->
+                                                                          <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->
+                                                                          <!-- 3) No buffer -->
+    <!--<curlclienttimeout>10</curlclienttimeout>-->                      <!-- CAN SLOW CHANNEL CHANGE - Timeout in seconds for libcurl (http/ftp) connections -->
+    <!--<curllowspeedtime>10</curllowspeedtime>-->                        <!-- CAN SLOW CHANNEL CHANGE - Time in seconds for libcurl to consider a connection lowspeed -->
+    <!--<curlretries>2</curlretries>--> 					              <!-- Number of times the http client retries. Default 2, minimum 0, maximum 10 -->
+    <!--<autodetectpingtime>30</autodetectpingtime>-->                    <!-- Length in seconds between pinging the network to detect new devices -->
+    <!--<disableipv6>true</disableipv6>-->				                  <!-- Disables ipv6. Default false -->
+    <!--<httpproxyusername></httpproxyusername>-->                        <!-- username for Basic Proxy Authentication -->
+    <!--<httpproxypassword></httpproxypassword>-->                        <!-- password for Basic Proxy Authentication -->
 </network>
 
 
 <pvr>
     <minvideocachelevel>65</minvideocachelevel>                             <!-- 5 - Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
     <minaudiocachelevel>65</minaudiocachelevel>                             <!-- 10- Cache up to this level in the audio buffer before resuming playback if the buffers run dry. -->
-    <!--<cacheindvdplayer>true</cacheindvdplayer>-->                        <!-- true - Cache PVR stream in DVDPlayer. -->
+    <cacheindvdplayer>true</cacheindvdplayer>                               <!-- true - Cache PVR stream in DVDPlayer. -->
     <!--<timecorrection>0</timecorrection>-->                               <!-- Correct all times (epg tags, timer tags, recording tags) by this amount of minutes. -->
     <!--<infotoggleinterval>3000</infotoggleinterval>-->                    <!-- If there is more than one pvr gui info item available, use this toggle delay in milliseconds. -->
     <!--<channeliconsautoscan>true</channeliconsautoscan>-->                <!-- Automatically scan user defined folder for channel icons when loading internal channel groups. -->
@@ -77,17 +76,29 @@
     <!--<numericchannelswitchtimeout>1000</numericchannelswitchtimeout>-->  <!-- Time in ms before the numeric dialog auto closes when confirmchannelswitch is disabled. -->
 </pvr>
 
+<!--<skiploopfilter>8</skiploopfilter>-->                                 <!-- The amount of the loop filter to skip on h264 decoding. This can help the performance of slower machines when decoding h264 content. Values, in decreasing CPU usage (and decreasing quality)-->
+                                                                          <!--  -16 None-->
+                                                                          <!--  0 Skip only empty frames (default)-->
+                                                                          <!--  8 Skip non-reference frames (default on ATV)-->
+                                                                          <!--  16 Skip bi-dir frames-->
+                                                                          <!--  32 Skip all non-key frames-->
+                                                                          <!--  48 Skip all frames -->
+<!--<enablenetworkmanager>1</enablenetworkmanager>-->
+<playlisttimeout>10</playlisttimeout>
+<packagefoldersize>200</packagefoldersize>                                <!-- The amount in megabytes of packages saved from previous add-on installs. -->
+<splash>false</splash>
+<!--<loglevel hide="false">1</loglevel>-->
+<!--<alwaysontop>yes</alwaysontop>-->
+
 
 <sorttokens>
   <token>the</token>
 </sorttokens>
 
-
 <samba>
    <clienttimeout>10</clienttimeout>                                        <!-- timeout (in seconds) -->
    <statfiles>false</statfiles>                                             <!-- Set to false to disable smb stat() on files to speed up listings of large directories (over slow links) -->
 </samba>
-
 
 <videoextensions>
   <add>.ex1|.ex2</add>
@@ -98,7 +109,6 @@
   <add>.ex1|.ex2</add>
   <!--<remove>.ex3|.ex4</remove>-->
 </musicextensions>
-
 
 <!--
 <hosts>
@@ -166,7 +176,6 @@
 </photodatabase> 
 -->
 
-
 <video>
   <cleanstrings>
    <regexp>[ _\,\.\(\)\[\]\-](ac3|dts|custom|dc|divx|divx5|dsr|dsrip|dutch|dvd|dvdrip|dvdscr|dvdscreener|screener|dvdivx|cam|fragment|fs|hdtv|hdrip|hdtvrip|internal|limited|multisubs|ntsc|ogg|ogm|pal|pdtv|proper|repack|rerip|retail|cd[1-9]|r3|r5|bd5|se|svcd|swedish|german|read.nfo|nfofix|unrated|ws|telesync|ts|telecine|tc|brrip|bdrip|480p|480i|576p|576i|720p|720i|1080p|1080i|hrhd|hrhdtv|hddvd|bluray|x264|h264|xvid|xvidvd|xxx|www.www|\[.*\])([ _\,\.\(\)\[\]\-]|$)</regexp>
@@ -216,7 +225,6 @@
   <!--</excludefromlisting>-->
 </video>
 
-
 <audio>
   <!--<headroom>0</headroom>-->                                   <!-- Amount of headroom Kodi should use above the maximum volume level, in decibels.  Defaults to 0, valid values 0, 6, 12. -->
   <!--<defaultplayer>paplayer</defaultplayer>-->                  <!-- Default audio player: paplayer or dvdplayer -->
@@ -233,7 +241,6 @@
   <!--</excludefromlisting>-->
 </audio>
 
-
 <epg>
   <!--<lingertime>1440</lingertime>-->                                        <!-- keep X minutes of past epg data (default: 24h) -->
   <!--<updatecheckinterval>300</updatecheckinterval>-->                       <!-- check if tables need to be updated every X minutes -->
@@ -244,7 +251,6 @@
   <!--<displayupdatepopup>true</displayupdatepopup>-->                        <!-- display a progress popup while updating EPG data from clients -->
   <!--<displayincrementalupdatepopup>false</displayincrementalupdatepopup>--> <!-- also display a progress popup while doing incremental EPG updates -->
 </epg>
-
 
 <videolibrary>
     <actorthumbs>false</actorthumbs>
@@ -273,12 +279,27 @@
     <!--<hideallitems>true</hideallitems>-->                                 <!-- removes the "*All" items from the music library -->  <!-- This will be replaced in v15 with a GUI option. -->
     <!--<allitemsonbottom>true</allitemsonbottom>-->                         <!-- sorts the "*All" items at the bottom of the list when in Ascending order -->
     <!--<backgroundupdate>true</backgroundupdate>-->                         <!-- set to hide the music scanner dialog from the gui -->
-    <!--<recentlyaddeditems>35</recentlyaddeditems>-->                       <!-- number of recently added items. Defaults to 25 -->
+    <recentlyaddeditems>35</recentlyaddeditems>                              <!-- number of recently added items. Defaults to 25 -->
     <!--<albumssortbyartistthenyear>true</albumssortbyartistthenyear>-->     <!-- at an albums listing, when you sort by artist, secondary sort will be year. -->
     <!--<albumformat>%B - %Y</albumformat>-->                                <!-- album label template, default is "%B" -->
     <!--<albumformatright>%A</albumformatright>-->                           <!-- album label template for right column, default is "%A" -->
     <!--<prioritiseapetags>true</prioritiseapetags>-->                       <!-- prioritise APEv2 tags over ID3v1/2 tags, default is false. -->
     <!--<itemseparator>/ </itemseparator>-->                                 <!-- separator used for multiple artists/genres in tags. Note, this is *space* *slash* *space* -->
 </musiclibrary>
+
+<!--
+http://iptvtalk.org/archive/index.php/t-3320.html
+
+buffermode - This setting tells Kodi what to buffer in the cache. It's like putting a note on a container that says "only put juice in this container because the kids drink out of it and if you put alcohol in it they'll get drunk", or a note on a door saying "Office, no children allowed" to keep kids from disturbing your work. Setting it to 1 forces Kodi to buffer both internet data and any other data from your LAN (local area network). The reason for buffering both internet and other local network data is in case you have other people or programs working on your network. As an example; Often when I am testing Kodi I am also working on my other system rendering very large video files, audio files, transferring them back and forth from my work system to my rendering drives and such. My work systems are connected to the same network as Kodi so I need to make sure both the Kodi system and work systems have the resources they need to work efficiently together on the network.
+
+cachemembuffersize - This setting will do two things. It will tell Kodi what to use for your cache and how much can be used. You can set it to 0, which mean unlimited and will force Kodi to use you hard drive as the place to put your cache. Or you can set a specific number, which will tell Kodi to use your system memory. Setting it to 0 is like saying OK, I rented space in a large office building with other offices in it, but because it's so large several companies can have offices in it with little problems. However, this particular office building uses partial walls or cubicals to separate the offices. So when people are going back and forth between different offices or in and out of the building there are many others doing the same. This also leaves less privacy as you can hear others talking in other offices spaces and vice versa. While you may have more space you have to contend with the others using the space and this can slow down the traffic and efficiency.
+When you set a specific number for your cache it's like renting an office space that is self contained with actual walls and it's own entrance to speed up entering and leaving and keep down noise from other offices. The number you set specifies how large your cache office will be. You need to determine what the best size will be in order to be efficient to store your office equipment and still have room for free flow of traffic, or in this case data.
+I set this to 157286400 which is the amount of system memory to use in bytes. It is equal to 150 MB (megabytes), which means Kodi will store 150 MB of video data in the cache. As I mentioned in the original post those with higher amounts of RAM/memory can set this higher if they wish, but 150 MB should be enough to be efficient on most systems. What this does is stores a certain amount of the video in the memory in case there are disconnection issues or speed issues with streaming the video. With part of the video already stored in your memory if there is a disruption to the stream your system will continue to play the part of the video that is stored in the memory and you won't notice and disruption. Then when the streams disruption is cleared up your cache will continue to pull in the rest of the video and continue to do this so you notice little to not disruption.
+Now, the thing is, this isn't just a one way path. It pulls and pushes at the same time. So you want and equal amount of pull and push to keep things smooth. So you have 75 MB of pull and 75 MB of push. Also, the Kodi documentation says it actually uses 3 times this amount of memory for streaming. But when I ran system monitors and benchmarking on the three different systems I have it set up on I found out that it actually only uses about 1.5 times this amount and at time a maximum of 2 times the amount. So even with only 1GB of memory you still have plenty left for other resources.
+
+readbufferfactor - This is how fast Kodi will fill your cache/container from the source, the source is your internet connection. Think of your internet connection as a container that holds water, and it has several spouts on it that direct water into various containers. The various containers on your system would be anything that uses your internet connection such as, open web browsers, other people or applications using your connection. There is a valve on this main source container that regulates where the water goes and how fast the water goes in each direction. Now say your source container/internet connection contains 20 gallons/Mbps. Now, there are more factors to how this works. One is the data/video you are using the internet connection to pull in, another is how full your buffer is and how fast it is pushing out. So in these examples we have 150 Megabytes of storage in the cache (75 in 75 out). If you are pulling in a video in at 20 Mbps (Megabits per second) you are pulling in 150 MB (Megabytes) per minute, that's about 20 minutes of video depending on the quality. However, remember you are actually only pulling in 75 MB because the other 75 is going out/playing, so you are pulling in about 10 or 12 minutes of video. So once you pull in the 75 MB your internet connection isn't being used until it need to refill your cache. So while you may be maxing your connection at times it doesn't max out constantly and allows for other applications/people to use the connection.
+
+curllowspeedtime - This is how long Kodi will wait before it realizes a connection is too slow to operate efficiently or a connection is lost and abort it/kick out from the stream and back into Kodi or the EPG. 300 is the number of seconds which equals five minutes. The reason for waiting five minutes is because of the above settings in the readbufferfactor. You have 10 or 12 minutes of video stored in your cache, so if there is a disruption to the stream the curllowspeedtime will wait for five minutes for the disruption to be rectified before aborting the video. If the disruption is rectified before the 10 or 12 minutes of video in your cache empties out there won't be an abort and you won't be kicked out of the video.
+-->
 
 </advancedsettings>
