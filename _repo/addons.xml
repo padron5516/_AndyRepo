@@ -28,7 +28,10 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <provides>video</provides>
-        <description lang="en">TV Guide for use with 3rd party channel addons</description>
+        <description lang="en">TV Guide for use with 3rd party channel addons
+
+
+        </description>
         <disclaimer lang="en">EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
     </extension>
 </addon>
@@ -126,7 +129,7 @@
   </extension>
 </addon>
 
-<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.7" provider-name="Andy">
+<addon id="Andy.repository" name=" [COLOR yellow]Andy[/COLOR] Repository" version="1.0.8" provider-name="Andy">
     <requires>
         <!--<backwards-compatibility abi="12.0"/>-->
         <import addon="xbmc.addon" version="12.0.0" />
