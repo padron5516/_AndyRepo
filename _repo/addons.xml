@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Forceclose" version="0.0.1" name="Force Close Kodi" provider-name="Andy">
-
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="ForceClose.py">
-        <provides>executable</provides>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Force Close Kodi</summary>
-        <description lang="en">Force Close Kodi so that it immediatly closes. This is alot quicker than unloading all processes. If you wish to save skin settings in 16 you must close Kodi the normal way.</description>
-        <platform>all</platform>
-        <forum></forum>
-        <website>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/</website>
-    </extension>
-</addon>
-
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.6" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.7" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -70,25 +51,6 @@
         <website>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/</website>
     </extension>
 
-</addon>
-
-<addon id="Andy.plugin.video.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide Player" version="2.0" provider-name="Andy">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="init.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR yellow]Andy[/COLOR] TV Guide Player</summary>
-    <website>http://</website>
-    <description lang="en">Simple program to run straight IPTV links and have them buffer in cache</description>
-    <forum>http://</forum>
-    <email></email>
-    <disclaimer lang="en">There is no reason to edit this file.</disclaimer>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon
@@ -490,6 +452,25 @@
     </extension>
 </addon>
 
+<addon id="plugin.program.Forceclose" version="0.0.1" name="Force Close Kodi" provider-name="Andy">
+
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="ForceClose.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Force Close Kodi</summary>
+        <description lang="en">Force Close Kodi so that it immediatly closes. This is alot quicker than unloading all processes. If you wish to save skin settings in 16 you must close Kodi the normal way.</description>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/</website>
+    </extension>
+</addon>
+
 <addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.2" provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -762,7 +743,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="9999.2016.3.22"
+  version="20163220000000000"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
