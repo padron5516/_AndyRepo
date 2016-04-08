@@ -37,91 +37,6 @@
 		<display-name>11 PBS</display-name>
 		<display-name>11</display-name>
 	</channel>
-	<programme start="20160407233500 -0400" stop="20160408003700 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">Jimmy Kimmel Live</title>
-		<sub-title lang="en">Ted Cruz; Mike Epps; St. Lucia</sub-title>
-		<desc lang="en">Candidate for the Republican nomination Ted Cruz; actor Mike Epps; St. Lucia performs.</desc>
-		<date>20160330</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Talk</category>
-		<category lang="en">Series</category>
-		<episode-num system="common">S14E102</episode-num>
-		<episode-num system="dd_progid">EP00545579.2542</episode-num>
-		<episode-num system="xmltv_ns">13.101.</episode-num>
-		<previously-shown start="20160330000000" />
-	</programme>
-	<programme start="20160408003700 -0400" stop="20160408010700 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">Nightline</title>
-		<date>20160407</date>
-		<category lang="en">News</category>
-		<category lang="en">Talk</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184465_b_h3_ac/nightline.jpg" />
-		<episode-num system="dd_progid">EP00003138.4602</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408010700 -0400" stop="20160408013700 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">Inside Edition</title>
-		<sub-title lang="en">Kid TV</sub-title>
-		<desc lang="en">TV shows in which children&apos;s talents are showcased.</desc>
-		<date>20160407</date>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184110_b_h3_aa/inside-edition.jpg" />
-		<episode-num system="common">S28E149</episode-num>
-		<episode-num system="dd_progid">EP00019190.5867</episode-num>
-		<episode-num system="xmltv_ns">27.148.</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408013700 -0400" stop="20160408020700 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">The Insider</title>
-		<desc lang="en">Kerry Washington (``Scandal&apos;&apos;); Brandi Glanville (``The Real Housewives of Beverly Hills&apos;&apos;); the finale of ``American Idol.&apos;&apos;</desc>
-		<date>20160407</date>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185176_b_h3_ae/the-insider.jpg" />
-		<episode-num system="common">S12E178</episode-num>
-		<episode-num system="dd_progid">EP00672449.3331</episode-num>
-		<episode-num system="xmltv_ns">11.177.</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408020700 -0400" stop="20160408040200 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">ABC World News Now</title>
-		<desc lang="en">Global news.</desc>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184051_b_h3_ac/abc-world-news-now.jpg" />
-		<episode-num system="dd_progid">SH00019116.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408040200 -0400" stop="20160408043000 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">America This Morning</title>
-		<desc lang="en">Breaking news.</desc>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185950_b_h3_ac/america-this-morning.jpg" />
-		<episode-num system="dd_progid">SH00877699.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408043000 -0400" stop="20160408050000 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">ABC27 News Daybreak at 4:30a</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH01329985.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408050000 -0400" stop="20160408060000 -0400" channel="I11534.labs.zap2it.com">
-		<title lang="en">ABC27 News Daybreak at 5:00</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00801300.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
 	<programme start="20160408060000 -0400" stop="20160408070000 -0400" channel="I11534.labs.zap2it.com">
 		<title lang="en">ABC27 News Daybreak at 6:00A</title>
 		<category lang="en">News</category>
@@ -3249,71 +3164,67 @@
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160407235000 -0400" stop="20160408005200 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">The Late Show With Stephen Colbert</title>
-		<sub-title lang="en">Mindy Kaling; Tituss Burgess; Ken Burns</sub-title>
-		<desc lang="en">Actress Mindy Kaling; actor Tituss Burgess; filmmaker Ken Burns.</desc>
-		<date>20160407</date>
-		<category lang="en">Talk</category>
+	<programme start="20160417233000 -0400" stop="20160418000000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">ABC27 Nightside: Extra Edition</title>
+		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p10703384_b_h3_ac/the-late-show-with-stephen-colbert.jpg" />
-		<episode-num system="common">S01E122</episode-num>
-		<episode-num system="dd_progid">EP01906276.0122</episode-num>
-		<episode-num system="xmltv_ns">0.121.</episode-num>
-		<new />
+		<episode-num system="dd_progid">SH01330001.0000</episode-num>
+		<previously-shown start="20101003000000" />
 	</programme>
-	<programme start="20160408005200 -0400" stop="20160408015200 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">The Late Late Show With James Corden</title>
-		<sub-title lang="en">Gerard Butler; Will Forte; M. Ward</sub-title>
-		<desc lang="en">Actor Gerard Butler; actor Will Forte; M. Ward performs.</desc>
-		<date>20160303</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Talk</category>
+	<programme start="20160418000000 -0400" stop="20160418010000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">Scandal</title>
+		<sub-title lang="en">Defiance</sub-title>
+		<desc lang="en">The team manages a billionaire who seems to have lost his sanity; Olivia and the White House staff prepare to celebrate the president&apos;s 50th birthday; while investigating Cytron, James discovers something that could change the country&apos;s fate.</desc>
+		<date>20121129</date>
+		<category lang="en">Drama</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p11060317_b_h3_ab/the-late-late-show-with-james-corden.jpg" />
-		<episode-num system="common">S01E163</episode-num>
-		<episode-num system="dd_progid">EP01995293.0165</episode-num>
-		<episode-num system="xmltv_ns">0.162.</episode-num>
-		<previously-shown start="20160303000000" />
+		<icon src="http://images.zap2it.com/assets/p8679006_b_h3_ag/scandal.jpg" />
+		<episode-num system="common">S02E07</episode-num>
+		<episode-num system="dd_progid">EP01419535.0014</episode-num>
+		<episode-num system="xmltv_ns">1.6.</episode-num>
+		<previously-shown start="20121129000000" />
 	</programme>
-	<programme start="20160408015200 -0400" stop="20160408022200 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">Extra</title>
-		<desc lang="en">Media power players take on the presidential race; Reese Witherspoon.</desc>
-		<date>20160407</date>
+	<programme start="20160418010000 -0400" stop="20160418013000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">Tai Chi Master!</title>
+		<desc lang="en">Discover the Beachbody breakthrough behind Tai Cheng, that teaches you to master the 18 fundamental moves of Tai Chi in just 90 days!</desc>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184109_b_h3_ac/extra.jpg" />
-		<episode-num system="common">S22E184</episode-num>
-		<episode-num system="dd_progid">EP00115264.6855</episode-num>
-		<episode-num system="xmltv_ns">21.183.</episode-num>
+		<episode-num system="dd_progid">SH02310670.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418013000 -0400" stop="20160418020000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418020000 -0400" stop="20160418040000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">ABC World News Now</title>
+		<desc lang="en">Global news.</desc>
+		<category lang="en">News</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p184051_b_h3_ac/abc-world-news-now.jpg" />
+		<episode-num system="dd_progid">SH00019116.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408022200 -0400" stop="20160408043000 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">CBS Overnight News</title>
-		<desc lang="en">Stories focused on the day&apos;s events, newsmakers and breaking news.</desc>
+	<programme start="20160418040000 -0400" stop="20160418043000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">America This Morning</title>
+		<desc lang="en">Breaking news.</desc>
 		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p12135609_b_h3_aa/cbs-overnight-news.jpg" />
-		<episode-num system="dd_progid">SH02269178.0000</episode-num>
+		<icon src="http://images.zap2it.com/assets/p185950_b_h3_ac/america-this-morning.jpg" />
+		<episode-num system="dd_progid">SH00877699.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408043000 -0400" stop="20160408050000 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">CBS Morning News</title>
-		<desc lang="en">News reports on current events.</desc>
+	<programme start="20160418043000 -0400" stop="20160418050000 -0400" channel="I11534.labs.zap2it.com">
+		<title lang="en">ABC27 News Daybreak at 4:30a</title>
 		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185953_b_h3_ab/cbs-morning-news.jpg" />
-		<episode-num system="dd_progid">SH00019131.0000</episode-num>
+		<episode-num system="dd_progid">SH01329985.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408050000 -0400" stop="20160408060000 -0400" channel="I11523.labs.zap2it.com">
-		<title lang="en">CBS 21 Morning News</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH01408797.0000</episode-num>
-		<previously-shown start="20110428000000" />
 	</programme>
 	<programme start="20160408060000 -0400" stop="20160408070000 -0400" channel="I11523.labs.zap2it.com">
 		<title lang="en">CBS 21 Morning News</title>
@@ -6315,107 +6226,64 @@
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160407233500 -0400" stop="20160408003800 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">The Tonight Show Starring Jimmy Fallon</title>
-		<sub-title lang="en">Russell Crowe; Jonathan Groff; The Lumineers; Sugarhill Gang</sub-title>
-		<desc lang="en">Actor Russell Crowe; actor Jonathan Groff; The Lumineers perform; The Sugarhill Gang sits in with The Roots.</desc>
-		<date>20160407</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Talk</category>
+	<programme start="20160417233500 -0400" stop="20160418000500 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">Full Measure With Sharyl Attkisson</title>
+		<desc lang="en">The investigative journalist pursues untouchable subjects through fearless reporting.</desc>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p9898935_b_h3_aa/the-tonight-show-starring-jimmy-fallon.jpg" />
-		<episode-num system="common">S03E118</episode-num>
-		<episode-num system="dd_progid">EP01721107.0553</episode-num>
-		<episode-num system="xmltv_ns">2.117.</episode-num>
-		<new />
-		<subtitles type="teletext" />
+		<icon src="http://images.zap2it.com/assets/p12066058_b_h3_aa/full-measure-with-sharyl-attkisson.jpg" />
+		<episode-num system="dd_progid">SH02253392.0000</episode-num>
+		<previously-shown start="20151004000000" />
 	</programme>
-	<programme start="20160408003800 -0400" stop="20160408013900 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">Late Night With Seth Meyers</title>
-		<sub-title lang="en">Bernie Sanders; Savion Glover; Brandi Carlile; Brann Dailor</sub-title>
-		<desc lang="en">Candidate for the Democratic nomination Bernie Sanders; dancer Savion Glover; Brandi Carlile performs; Brann Dailor sits in with the 8G Band.</desc>
-		<date>20160407</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Talk</category>
+	<programme start="20160418000500 -0400" stop="20160418010500 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">The Good Wife</title>
+		<sub-title lang="en">Long Way Home</sub-title>
+		<desc lang="en">Alicia helps Colin Sweeney when a sexual misconduct claim affects his efforts to win back control of his company; Peter asks Cary to enforce office policies.</desc>
+		<date>20120311</date>
+		<category lang="en">Drama</category>
 		<category lang="en">Series</category>
-		<episode-num system="common">S03E93</episode-num>
-		<episode-num system="dd_progid">EP01842300.0367</episode-num>
-		<episode-num system="xmltv_ns">2.92.</episode-num>
-		<new />
-		<subtitles type="teletext" />
+		<icon src="http://images.zap2it.com/assets/p3561536_b_h3_ad/the-good-wife.jpg" />
+		<episode-num system="common">S03E17</episode-num>
+		<episode-num system="dd_progid">EP01158384.0065</episode-num>
+		<episode-num system="xmltv_ns">2.16.</episode-num>
+		<previously-shown start="20120311000000" />
 	</programme>
-	<programme start="20160408013900 -0400" stop="20160408020800 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">Last Call With Carson Daly</title>
-		<sub-title lang="en">Anthony Anderson; Dream Junkies; Steve Kornacki</sub-title>
-		<desc lang="en">Actor Anthony Anderson; Dream Junkies perform; political commentator Steve Kornacki.</desc>
-		<date>20160407</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Talk</category>
+	<programme start="20160418010500 -0400" stop="20160418020500 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">Blue Bloods</title>
+		<sub-title lang="en">Inside Jobs</sub-title>
+		<desc lang="en">Danny investigates when a man covered in rat bites is thrown from a moving vehicle; Frank deals with a bigoted radio host who will be working in New York.</desc>
+		<date>20130201</date>
+		<category lang="en">Crimedrama</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184954_b_h3_ac/last-call-with-carson-daly.jpg" />
-		<episode-num system="common">S15E76</episode-num>
-		<episode-num system="dd_progid">EP00484723.1747</episode-num>
-		<episode-num system="xmltv_ns">14.75.</episode-num>
-		<new />
-		<subtitles type="teletext" />
+		<icon src="http://images.zap2it.com/assets/p8130493_b_h3_ac/blue-bloods.jpg" />
+		<episode-num system="common">S03E13</episode-num>
+		<episode-num system="dd_progid">EP01280105.0057</episode-num>
+		<episode-num system="xmltv_ns">2.12.</episode-num>
+		<previously-shown start="20130201000000" />
 	</programme>
-	<programme start="20160408020800 -0400" stop="20160408030800 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">The Meredith Vieira Show</title>
-		<sub-title lang="en">What&apos;s Hot Now!, RHOA Star NeNe Leakes, Moms Changing the World</sub-title>
-		<desc lang="en">Lance Bass discusses pop culture and trending news; NeNe Leakes (``The Real Housewives of Atlanta&apos;&apos;); a group of moms changes a high-crime neighborhood for the better and unites the community torn apart by violence.</desc>
-		<date>20150911</date>
-		<category lang="en">Talk</category>
+	<programme start="20160418020500 -0400" stop="20160418023500 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p10919440_b_h3_ab/the-meredith-vieira-show.jpg" />
-		<episode-num system="common">S02E05</episode-num>
-		<episode-num system="dd_progid">EP01959758.0185</episode-num>
-		<episode-num system="xmltv_ns">1.4.</episode-num>
-		<previously-shown start="20150911000000" />
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
 	</programme>
-	<programme start="20160408030800 -0400" stop="20160408040000 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">Steve Harvey</title>
-		<sub-title lang="en">Steve Takes On Trending Topics in The Way I See It! Dueling Moms Try to Co-Parent a Blended Family. Steve Helps a 20-Year-Old Woman</sub-title>
-		<desc lang="en">Steve gives his comedic take on the headlines; a mother, father and stepmother learn better methods of co-parenting; a young woman with a single mother gets a crash course in dating; a police officer who saved a baby&apos;s life.</desc>
-		<date>20160324</date>
-		<category lang="en">Talk</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p9037504_b_h3_ab/steve-harvey.jpg" />
-		<episode-num system="common">S04E120</episode-num>
-		<episode-num system="dd_progid">EP01522335.0675</episode-num>
-		<episode-num system="xmltv_ns">3.119.</episode-num>
-		<previously-shown start="20160324000000" />
-	</programme>
-	<programme start="20160408040000 -0400" stop="20160408043000 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">Early Today</title>
-		<desc lang="en">The latest world and national news, and reports on the day&apos;s upcoming events.</desc>
+	<programme start="20160418023500 -0400" stop="20160418043000 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">CBS Overnight News</title>
+		<desc lang="en">Stories focused on the day&apos;s events, newsmakers and breaking news.</desc>
 		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185301_b_h3_ac/early-today.jpg" />
-		<episode-num system="dd_progid">SH00324829.0000</episode-num>
+		<icon src="http://images.zap2it.com/assets/p12135609_b_h3_aa/cbs-overnight-news.jpg" />
+		<episode-num system="dd_progid">SH02269178.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408043000 -0400" stop="20160408050000 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">News 8 Today at 4:30</title>
+	<programme start="20160418043000 -0400" stop="20160418050000 -0400" channel="I11523.labs.zap2it.com">
+		<title lang="en">CBS Morning News</title>
+		<desc lang="en">News reports on current events.</desc>
 		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH01317480.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408050000 -0400" stop="20160408053000 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">News 8 Today at 5:00am</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00511164.0000</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408053000 -0400" stop="20160408060000 -0400" channel="I11458.labs.zap2it.com">
-		<title lang="en">News 8 Today at 5:30am</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00328160.0000</episode-num>
+		<icon src="http://images.zap2it.com/assets/p185953_b_h3_ab/cbs-morning-news.jpg" />
+		<episode-num system="dd_progid">SH00019131.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
@@ -9499,119 +9367,91 @@
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408000000 -0400" stop="20160408003000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Seinfeld</title>
-		<sub-title lang="en">The Glasses</sub-title>
-		<desc lang="en">George and Elaine go to an optician after George loses his glasses at his health club; Elaine fears she has rabies after being bitten by a dog.</desc>
-		<date>19930930</date>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p183875_b_h3_ab/seinfeld.jpg" />
-		<episode-num system="common">S05E03</episode-num>
-		<episode-num system="dd_progid">EP00016916.0079</episode-num>
-		<episode-num system="xmltv_ns">4.2.</episode-num>
-		<previously-shown start="19930930000000" />
-	</programme>
-	<programme start="20160408003000 -0400" stop="20160408010000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Seinfeld</title>
-		<sub-title lang="en">The Betrayal</sub-title>
-		<desc lang="en">Elaine, Jerry and George go to India for the wedding of Elaine&apos;s friend (Brenda Strong); Kramer&apos;s death threat.</desc>
-		<date>19971120</date>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p183875_b_h3_ab/seinfeld.jpg" />
-		<episode-num system="common">S09E08</episode-num>
-		<episode-num system="dd_progid">EP00016916.0187</episode-num>
-		<episode-num system="xmltv_ns">8.7.</episode-num>
-		<previously-shown start="19971120000000" />
-	</programme>
-	<programme start="20160408010000 -0400" stop="20160408013000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Celebrity Name Game</title>
-		<date>20141014</date>
+	<programme start="20160417233500 -0400" stop="20160418000500 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Monopoly Millionaires&apos; Club</title>
+		<date>20160109</date>
 		<category lang="en">Gameshow</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p10911965_b_h3_aa/celebrity-name-game.jpg" />
-		<episode-num system="common">S01E33</episode-num>
-		<episode-num system="dd_progid">EP01958126.0042</episode-num>
-		<episode-num system="xmltv_ns">0.32.</episode-num>
-		<previously-shown start="20141014000000" />
+		<episode-num system="common">S02E12</episode-num>
+		<episode-num system="dd_progid">EP02062066.0024</episode-num>
+		<episode-num system="xmltv_ns">1.11.</episode-num>
+		<previously-shown start="20160109000000" />
 	</programme>
-	<programme start="20160408013000 -0400" stop="20160408020000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Dish Nation</title>
-		<desc lang="en">The latest on Nicki Minaj, ``Empire,&apos;&apos; Khlo&amp;eacute; Kardashian, the new GAP ad, Kevin Federline, Selena Gomez, and Kelly Rowland.</desc>
-		<date>20160407</date>
-		<category lang="en">News</category>
+	<programme start="20160418000500 -0400" stop="20160418003000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Intelligence for Your Life</title>
+		<date>20160416</date>
+		<category lang="en">Health</category>
+		<category lang="en">Selfimprovement</category>
 		<category lang="en">Talk</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p8715038_b_h3_ae/dish-nation.jpg" />
-		<episode-num system="common">S04E154</episode-num>
-		<episode-num system="dd_progid">EP01428473.0965</episode-num>
-		<episode-num system="xmltv_ns">3.153.</episode-num>
+		<icon src="http://images.zap2it.com/assets/p10046131_b_h3_ab/intelligence-for-your-life.jpg" />
+		<episode-num system="common">S02E195</episode-num>
+		<episode-num system="dd_progid">EP01756968.0453</episode-num>
+		<episode-num system="xmltv_ns">1.194.</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408020000 -0400" stop="20160408023000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">The Middle</title>
-		<sub-title lang="en">The Bee</sub-title>
-		<desc lang="en">Mike helps Brick train for a regional spelling bee; Sue&apos;s birthday is forgotten.</desc>
-		<date>20100303</date>
-		<category lang="en">Sitcom</category>
+	<programme start="20160418003000 -0400" stop="20160418010000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Arthritis Pain?</title>
+		<desc lang="en">Frustrated by aching joints and stiffness holding you back from things you love? America&apos;s Joint Doctor shows how to regain your joint flexibility and comfort. Results in just 2 weeks! Over 8 million sold!</desc>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p3560344_b_h3_aa/the-middle.jpg" />
-		<episode-num system="common">S01E16</episode-num>
-		<episode-num system="dd_progid">EP01158119.0017</episode-num>
-		<episode-num system="xmltv_ns">0.15.</episode-num>
-		<previously-shown start="20100303000000" />
+		<episode-num system="dd_progid">SH02399494.0000</episode-num>
+		<previously-shown />
 	</programme>
-	<programme start="20160408023000 -0400" stop="20160408030000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Just for Laughs Gags</title>
-		<sub-title lang="en">Nothing to Sneeze At</sub-title>
-		<desc lang="en">``German Shepherd Chauffeur&apos;&apos;; ``Gross-Out Granny&apos;&apos;; ``Life&apos;s a Hitch.&apos;&apos;</desc>
-		<date>20150903</date>
-		<category lang="en">Comedy</category>
-		<category lang="en">Reality</category>
+	<programme start="20160418010000 -0400" stop="20160418020000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Access Hollywood</title>
+		<date>20160416</date>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p12008947_b_h3_aa/just-for-laughs-gags.jpg" />
-		<episode-num system="common">S01E07</episode-num>
-		<episode-num system="dd_progid">EP02241396.0009</episode-num>
-		<episode-num system="xmltv_ns">0.6.</episode-num>
-		<previously-shown start="20150903000000" />
-	</programme>
-	<programme start="20160408030000 -0400" stop="20160408033000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Cops Reloaded</title>
-		<desc lang="en">Officers respond to a shots fired call but when they arrive the male runs and is eventually caught; a nervous driver is asked to step out of his car and answer questions but he won&apos;t talk.</desc>
-		<date>20131002</date>
-		<category lang="en">Crime</category>
-		<category lang="en">Reality</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p9839777_b_h3_aa/cops-reloaded.jpg" />
-		<episode-num system="dd_progid">EP01710962.0171</episode-num>
-		<previously-shown start="20131002000000" />
-	</programme>
-	<programme start="20160408033000 -0400" stop="20160408040000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Cops Reloaded</title>
-		<desc lang="en">A bicyclist is apprehended for a concealed shotgun; two college students are caught attempting to steal an ornamental flamingo on the Las Vegas strip; a car thief claims to be unaware that the vehicle he is driving was stolen.</desc>
-		<date>20141007</date>
-		<category lang="en">Crime</category>
-		<category lang="en">Reality</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p9839777_b_h3_aa/cops-reloaded.jpg" />
-		<episode-num system="dd_progid">EP01710962.0198</episode-num>
-		<previously-shown start="20141007000000" />
-	</programme>
-	<programme start="20160408040000 -0400" stop="20160408050000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Fox 43 Morning News at 4:00am</title>
-		<category lang="en">News</category>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH01692915.0000</episode-num>
+		<icon src="http://images.zap2it.com/assets/p184468_b_h3_ah/access-hollywood.jpg" />
+		<episode-num system="common">S20E192</episode-num>
+		<episode-num system="dd_progid">EP00188707.5567</episode-num>
+		<episode-num system="xmltv_ns">19.191.</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408050000 -0400" stop="20160408060000 -0400" channel="I11782.labs.zap2it.com">
-		<title lang="en">Fox 43 Morning News at 5:00am</title>
+	<programme start="20160418020000 -0400" stop="20160418025800 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Dateline NBC</title>
+		<desc lang="en">Investigative journalism.</desc>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p184061_b_h3_ac/dateline-nbc.jpg" />
+		<episode-num system="dd_progid">SH00019155.0000</episode-num>
+		<previously-shown start="19920331000000" />
+	</programme>
+	<programme start="20160418025800 -0400" stop="20160418040000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Meet the Press</title>
+		<date>20160417</date>
+		<category lang="en">News</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Publicaffairs</category>
+		<category lang="en">Talk</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p184068_b_h3_ae/meet-the-press.jpg" />
+		<episode-num system="dd_progid">EP00002866.1260</episode-num>
+		<previously-shown start="20160417000000" />
+	</programme>
+	<programme start="20160418040000 -0400" stop="20160418043000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">Early Today</title>
+		<desc lang="en">The latest world and national news, and reports on the day&apos;s upcoming events.</desc>
 		<category lang="en">News</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH01089146.0000</episode-num>
+		<icon src="http://images.zap2it.com/assets/p185301_b_h3_ac/early-today.jpg" />
+		<episode-num system="dd_progid">SH00324829.0000</episode-num>
+		<new />
+		<subtitles type="teletext" />
+	</programme>
+	<programme start="20160418043000 -0400" stop="20160418050000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">News 8 Today at 4:30</title>
+		<category lang="en">News</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH01317480.0000</episode-num>
+		<new />
+		<subtitles type="teletext" />
+	</programme>
+	<programme start="20160418050000 -0400" stop="20160418053000 -0400" channel="I11458.labs.zap2it.com">
+		<title lang="en">News 8 Today at 5:00am</title>
+		<category lang="en">News</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00511164.0000</episode-num>
 		<new />
 		<subtitles type="teletext" />
 	</programme>
@@ -13279,61 +13119,85 @@
 		<new />
 		<subtitles type="teletext" />
 	</programme>
-	<programme start="20160408000000 -0400" stop="20160408020000 -0400" channel="I11663.labs.zap2it.com">
-		<title lang="en">An Eye for an Eye</title>
-		<sub-title lang="en">Movie (1981)</sub-title>
-		<desc lang="en">A San Francisco policeman quits the force to avenge his partner&apos;s murder by Asian drug dealers.</desc>
-		<credits>
-			<actor>Chuck Norris</actor>
-			<actor>Christopher Lee</actor>
-			<actor>Richard Roundtree</actor>
-			<actor>Matt Clark</actor>
-			<actor>Mako</actor>
-		</credits>
-		<date>1981</date>
-		<category lang="en">Movie</category>
-		<category lang="en">Adventure</category>
-		<icon src="http://images.zap2it.com/assets/p578_p_v5_aa/an-eye-for-an-eye.jpg" />
-		<episode-num system="dd_progid">MV00000903.0000</episode-num>
-		<star-rating>
-			<value>2.5/4</value>
-		</star-rating>
+	<programme start="20160417233000 -0400" stop="20160418003000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">Elementary</title>
+		<sub-title lang="en">Hemlock</sub-title>
+		<desc lang="en">Holmes and Watson are faced with a very large suspect pool when a debt collector is murdered; Andrew wants Watson to meet his father.</desc>
+		<date>20150205</date>
+		<category lang="en">Crimedrama</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p9260095_b_h3_ae/elementary.jpg" />
+		<episode-num system="common">S03E13</episode-num>
+		<episode-num system="dd_progid">EP01568604.0062</episode-num>
+		<episode-num system="xmltv_ns">2.12.</episode-num>
+		<previously-shown start="20150205000000" />
 	</programme>
-	<programme start="20160408020000 -0400" stop="20160408040000 -0400" channel="I11663.labs.zap2it.com">
-		<title lang="en">Forty Guns</title>
-		<sub-title lang="en">Movie (1957)</sub-title>
-		<desc lang="en">An Arizona rancher rules with her cowboy army until a U.S. marshal and his brothers come to town.</desc>
-		<credits>
-			<actor>Barbara Stanwyck</actor>
-			<actor>Barry Sullivan</actor>
-			<actor>Dean Jagger</actor>
-			<actor>John Ericson</actor>
-			<actor>Gene Barry</actor>
-		</credits>
-		<date>1957</date>
-		<category lang="en">Movie</category>
-		<episode-num system="dd_progid">MV00006763.0000</episode-num>
-		<star-rating>
-			<value>2.5/4</value>
-		</star-rating>
+	<programme start="20160418003000 -0400" stop="20160418013000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">Person of Interest</title>
+		<sub-title lang="en">Provenance</sub-title>
+		<desc lang="en">Reese comes back to New York; surprising events lead to the team planning a heist that could send them all to jail.</desc>
+		<date>20140204</date>
+		<category lang="en">Crimedrama</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p8680539_b_h3_ap/person-of-interest.jpg" />
+		<episode-num system="common">S03E14</episode-num>
+		<episode-num system="dd_progid">EP01419847.0059</episode-num>
+		<episode-num system="xmltv_ns">2.13.</episode-num>
+		<previously-shown start="20140204000000" />
 	</programme>
-	<programme start="20160408040000 -0400" stop="20160408060000 -0400" channel="I11663.labs.zap2it.com">
-		<title lang="en">Santa Fe Passage</title>
-		<sub-title lang="en">Movie (1955)</sub-title>
-		<desc lang="en">A scout guides a couple&apos;s wagon train of guns and ammo through Indian country.</desc>
-		<credits>
-			<actor>John Payne</actor>
-			<actor>Faith Domergue</actor>
-			<actor>Rod Cameron</actor>
-			<actor>Slim Pickens</actor>
-			<actor>Irene Tedrow</actor>
-		</credits>
-		<date>1955</date>
-		<category lang="en">Movie</category>
-		<episode-num system="dd_progid">MV00001818.0000</episode-num>
-		<star-rating>
-			<value>2.5/4</value>
-		</star-rating>
+	<programme start="20160418013000 -0400" stop="20160418020000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">The Middle</title>
+		<sub-title lang="en">Hecking Order</sub-title>
+		<desc lang="en">Axl plays a trick on Sue, who is now in high school with him; after learning his son has been allowed to skip gym class, Mike meets with Brick&apos;s new fourth grade teacher (Chord Overstreet).</desc>
+		<date>20110928</date>
+		<category lang="en">Sitcom</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p3560344_b_h3_aa/the-middle.jpg" />
+		<episode-num system="common">S03E03</episode-num>
+		<episode-num system="dd_progid">EP01158119.0053</episode-num>
+		<episode-num system="xmltv_ns">2.2.</episode-num>
+		<previously-shown start="20110928000000" />
+	</programme>
+	<programme start="20160418020000 -0400" stop="20160418023000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">The Middle</title>
+		<sub-title lang="en">Major Changes</sub-title>
+		<desc lang="en">After being humiliated and disgusted by a family member&apos;s behavior, Frankie announces changes need to be made, then promptly escapes to her mother&apos;s house.</desc>
+		<date>20111005</date>
+		<category lang="en">Sitcom</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p3560344_b_h3_aa/the-middle.jpg" />
+		<episode-num system="common">S03E04</episode-num>
+		<episode-num system="dd_progid">EP01158119.0054</episode-num>
+		<episode-num system="xmltv_ns">2.3.</episode-num>
+		<previously-shown start="20111005000000" />
+	</programme>
+	<programme start="20160418023000 -0400" stop="20160418030000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418030000 -0400" stop="20160418040000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">Elementary</title>
+		<sub-title lang="en">When Your Number&apos;s Up</sub-title>
+		<desc lang="en">A killer leaves an envelope of cash on his victims; Holmes makes a gesture toward Watson as she deals with a personal crisis.</desc>
+		<date>20150219</date>
+		<category lang="en">Crimedrama</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p9260095_b_h3_ae/elementary.jpg" />
+		<episode-num system="common">S03E15</episode-num>
+		<episode-num system="dd_progid">EP01568604.0064</episode-num>
+		<episode-num system="xmltv_ns">2.14.</episode-num>
+		<previously-shown start="20150219000000" />
+	</programme>
+	<programme start="20160418040000 -0400" stop="20160418050000 -0400" channel="I11782.labs.zap2it.com">
+		<title lang="en">Fox 43 Morning News at 4:00am</title>
+		<category lang="en">News</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH01692915.0000</episode-num>
+		<new />
+		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160408060000 -0400" stop="20160408070000 -0400" channel="I11663.labs.zap2it.com">
 		<title lang="en">Laramie</title>
@@ -16074,131 +15938,64 @@
 		<episode-num system="xmltv_ns">3.1.</episode-num>
 		<previously-shown start="19950930000000" />
 	</programme>
-	<programme start="20160408000000 -0400" stop="20160408003000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">King of the Hill</title>
-		<sub-title lang="en">Girl You&apos;ll Be a Giant Soon</sub-title>
-		<desc lang="en">Hank and Luanne organize a grilling protest when they find out that only charcoal grillers can enter the Texas State Grill-Off; Peggy tries to visit the site of a famous murder.</desc>
-		<date>20040425</date>
-		<category lang="en">Animated</category>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184316_b_h3_ac/king-of-the-hill.jpg" />
-		<episode-num system="common">S08E18</episode-num>
-		<episode-num system="dd_progid">EP00207002.0173</episode-num>
-		<episode-num system="xmltv_ns">7.17.</episode-num>
-		<previously-shown start="20040425000000" />
+	<programme start="20160417220000 -0400" stop="20160418000000 -0400" channel="I11663.labs.zap2it.com">
+		<title lang="en">Into the Sun</title>
+		<sub-title lang="en">Movie (2005)</sub-title>
+		<desc lang="en">A former CIA agent uncovers a deadly plot while searching for the men responsible for an assassination and a kidnapping.</desc>
+		<credits>
+			<actor>Steven Seagal</actor>
+			<actor>Matthew Davis</actor>
+			<actor>Takao Osawa</actor>
+			<actor>William Atherton</actor>
+			<actor>Munehisa Fujita</actor>
+		</credits>
+		<date>2005</date>
+		<category lang="en">Movie</category>
+		<category lang="en">Action</category>
+		<category lang="en">Suspense</category>
+		<icon src="http://images.zap2it.com/assets/p35838_d_v5_aa/into-the-sun.jpg" />
+		<episode-num system="dd_progid">MV00157426.0000</episode-num>
+		<star-rating>
+			<value>2.5/4</value>
+		</star-rating>
 	</programme>
-	<programme start="20160408003000 -0400" stop="20160408010000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">King of the Hill</title>
-		<sub-title lang="en">Luanne Gets Lucky</sub-title>
-		<desc lang="en">Luanne accepts an invitation to attend Arlen High School&apos;s senior prom after Lucky (Tom Petty) ditches her.</desc>
-		<date>20070325</date>
-		<category lang="en">Animated</category>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184316_b_h3_ac/king-of-the-hill.jpg" />
-		<episode-num system="common">S11E04</episode-num>
-		<episode-num system="dd_progid">EP00207002.0212</episode-num>
-		<episode-num system="xmltv_ns">10.3.</episode-num>
-		<previously-shown start="20070325000000" />
+	<programme start="20160418000000 -0400" stop="20160418030000 -0400" channel="I11663.labs.zap2it.com">
+		<title lang="en">Major Dundee</title>
+		<sub-title lang="en">Movie (1965)</sub-title>
+		<desc lang="en">A Union major chases Indians to Mexico with a condemned Confederate captain and a cavalry of prisoners.</desc>
+		<credits>
+			<actor>Charlton Heston</actor>
+			<actor>Richard Harris</actor>
+			<actor>Jim Hutton</actor>
+			<actor>James Coburn</actor>
+			<actor>Michael Anderson Jr.</actor>
+		</credits>
+		<date>1965</date>
+		<category lang="en">Movie</category>
+		<icon src="http://images.zap2it.com/assets/p36002_p_v5_aa/major-dundee.jpg" />
+		<episode-num system="dd_progid">MV00158961.0000</episode-num>
+		<star-rating>
+			<value>3/4</value>
+		</star-rating>
 	</programme>
-	<programme start="20160408010000 -0400" stop="20160408013000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">American Dad</title>
-		<sub-title lang="en">American Dream Factory</sub-title>
-		<desc lang="en">When Stan starts making festive teddy bears, he resorts to using illegal aliens as cheap labor to fill orders.</desc>
-		<date>20070128</date>
-		<category lang="en">Animated</category>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185040_b_h3_ai/american-dad.jpg" />
-		<episode-num system="common">S02E11</episode-num>
-		<episode-num system="dd_progid">EP00716445.0034</episode-num>
-		<episode-num system="xmltv_ns">1.10.</episode-num>
-		<previously-shown start="20070128000000" />
-	</programme>
-	<programme start="20160408013000 -0400" stop="20160408020000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">American Dad</title>
-		<sub-title lang="en">Stan Goes on the Pill</sub-title>
-		<desc lang="en">Stan is turned into a woman when he takes an experimental drug after Francine accuses him of never listening to her stories.</desc>
-		<date>20140330</date>
-		<category lang="en">Animated</category>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185040_b_h3_ai/american-dad.jpg" />
-		<episode-num system="common">S09E14</episode-num>
-		<episode-num system="dd_progid">EP00716445.0175</episode-num>
-		<episode-num system="xmltv_ns">8.13.</episode-num>
-		<previously-shown start="20140330000000" />
-	</programme>
-	<programme start="20160408020000 -0400" stop="20160408023000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">The Cleveland Show</title>
-		<sub-title lang="en">All You Can Eat</sub-title>
-		<desc lang="en">Cleveland Jr. gets the confidence to approach a girl after Roberta gives him a makeover; another fan of Cleveland&apos;s favorite snack food threatens to become the new ultimate expert on the treat.</desc>
-		<date>20120520</date>
-		<category lang="en">Animated</category>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p186605_b_h3_ac/the-cleveland-show.jpg" />
-		<episode-num system="common">S03E22</episode-num>
-		<episode-num system="dd_progid">EP01059110.0064</episode-num>
-		<episode-num system="xmltv_ns">2.21.</episode-num>
-		<previously-shown start="20120520000000" />
-	</programme>
-	<programme start="20160408023000 -0400" stop="20160408030000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">ES.TV</title>
-		<desc lang="en">Chris Hemsworth; Juliet Stevenson; Wesley Snipes; the cast of ``The Transporter: Refueled&apos;&apos;; Jennifer Aniston; Meghan Trainor.</desc>
-		<date>20151217</date>
-		<category lang="en">Talk</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p7847532_b_h3_aa/estv.jpg" />
-		<episode-num system="dd_progid">EP01188455.0838</episode-num>
-		<previously-shown start="20151217000000" />
-	</programme>
-	<programme start="20160408030000 -0400" stop="20160408040000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">Judge Mathis</title>
-		<desc lang="en">A woman says her sister got drunk at a club and assaulted her.</desc>
-		<date>20160407</date>
-		<category lang="en">Reality</category>
-		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185493_b_h3_aa/judge-mathis.jpg" />
-		<episode-num system="common">S17E115</episode-num>
-		<episode-num system="dd_progid">EP00324230.3065</episode-num>
-		<episode-num system="xmltv_ns">16.114.</episode-num>
-		<new />
-		<subtitles type="teletext" />
-	</programme>
-	<programme start="20160408040000 -0400" stop="20160408043000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">The King of Queens</title>
-		<sub-title lang="en">Acting Out</sub-title>
-		<desc lang="en">Carrie wants to put Arthur in a retirement home after he starts a fire in the basement, but Doug makes a discovery that makes him want to change her mind.</desc>
-		<date>20060522</date>
-		<category lang="en">Sitcom</category>
-		<category lang="en">Series</category>
-		<episode-num system="common">S08E23</episode-num>
-		<episode-num system="dd_progid">EP00277610.0201</episode-num>
-		<episode-num system="xmltv_ns">7.22.</episode-num>
-		<previously-shown start="20060522000000" />
-	</programme>
-	<programme start="20160408043000 -0400" stop="20160408050000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">Paid Programming</title>
-		<desc lang="en">Paid programming.</desc>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00000001.0000</episode-num>
-		<previously-shown />
-	</programme>
-	<programme start="20160408050000 -0400" stop="20160408053000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">Paid Programming</title>
-		<desc lang="en">Paid programming.</desc>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00000001.0000</episode-num>
-		<previously-shown />
-	</programme>
-	<programme start="20160408053000 -0400" stop="20160408060000 -0400" channel="I58402.labs.zap2it.com">
-		<title lang="en">Paid Programming</title>
-		<desc lang="en">Paid programming.</desc>
-		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00000001.0000</episode-num>
-		<previously-shown />
+	<programme start="20160418030000 -0400" stop="20160418043000 -0400" channel="I11663.labs.zap2it.com">
+		<title lang="en">The Golden Stallion</title>
+		<sub-title lang="en">Movie (1949)</sub-title>
+		<desc lang="en">A singing cowboy takes the blame after his horse kills a diamond smuggler to protect a mare.</desc>
+		<credits>
+			<actor>Roy Rogers</actor>
+			<actor>Dale Evans</actor>
+			<actor>Estelita Rodriguez</actor>
+			<actor>Pat Brady</actor>
+			<actor>Douglas Evans</actor>
+		</credits>
+		<date>1949</date>
+		<category lang="en">Movie</category>
+		<icon src="http://images.zap2it.com/assets/p129_p_v5_aa/the-golden-stallion.jpg" />
+		<episode-num system="dd_progid">MV00000177.0000</episode-num>
+		<star-rating>
+			<value>1.5/4</value>
+		</star-rating>
 	</programme>
 	<programme start="20160408060000 -0400" stop="20160408063000 -0400" channel="I58402.labs.zap2it.com">
 		<title lang="en">TMZ</title>
@@ -20651,72 +20448,117 @@
 		<episode-num system="xmltv_ns">4.12.</episode-num>
 		<previously-shown start="20140401000000" />
 	</programme>
-	<programme start="20160408000000 -0400" stop="20160408003000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">BBC World News</title>
-		<desc lang="en">International issues.</desc>
-		<category lang="en">News</category>
+	<programme start="20160417233000 -0400" stop="20160418000000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Friends</title>
+		<sub-title lang="en">The One With Rachel&apos;s Big Kiss</sub-title>
+		<desc lang="en">Rachel encounters a sorority sister (Winona Ryder) with whom she shared an embarrassing and passionate moment.</desc>
+		<date>20010426</date>
+		<category lang="en">Sitcom</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH00315789.0000</episode-num>
-		<previously-shown start="19910311000000" />
+		<icon src="http://images.zap2it.com/assets/p183931_b_h3_ac/friends.jpg" />
+		<episode-num system="common">S07E20</episode-num>
+		<episode-num system="dd_progid">EP00115127.0181</episode-num>
+		<episode-num system="xmltv_ns">6.19.</episode-num>
+		<previously-shown start="20010426000000" />
 	</programme>
-	<programme start="20160408003000 -0400" stop="20160408010000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">Tavis Smiley</title>
-		<desc lang="en">Journalist Marvin Kalb; poet Reginald Dwayne Betts.</desc>
-		<date>20160406</date>
-		<category lang="en">Talk</category>
+	<programme start="20160418000000 -0400" stop="20160418003000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Bob&apos;s Burgers</title>
+		<sub-title lang="en">The Equestranauts</sub-title>
+		<desc lang="en">Tina attends a convention based on an animated show about ponies and finds that many of the fans are middle-aged men; when Tina is tricked out of her rare pony toy, Bob goes under cover to get it back.</desc>
+		<date>20140413</date>
+		<category lang="en">Animated</category>
+		<category lang="en">Sitcom</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p186096_b_h3_aa/tavis-smiley.jpg" />
-		<episode-num system="common">S13E78</episode-num>
-		<episode-num system="dd_progid">EP00622869.3130</episode-num>
-		<episode-num system="xmltv_ns">12.77.</episode-num>
-		<previously-shown start="20160406000000" />
+		<icon src="http://images.zap2it.com/assets/p8127591_b_h3_ag/bobs-burgers.jpg" />
+		<episode-num system="common">S04E17</episode-num>
+		<episode-num system="dd_progid">EP01279298.0066</episode-num>
+		<episode-num system="xmltv_ns">3.16.</episode-num>
+		<previously-shown start="20140413000000" />
 	</programme>
-	<programme start="20160408010000 -0400" stop="20160408020000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">The This Old House Hour</title>
-		<sub-title lang="en">This Old House: Erik Installs the Perimeter Drain; Ask This Old House: Tom Restores a Wood Floor</sub-title>
-		<desc lang="en">Installing the perimeter drain; new foundation; restoring a wood floor; transforming a yard into a garden getaway.</desc>
-		<date>20160407</date>
-		<category lang="en">Homeimprovement</category>
+	<programme start="20160418003000 -0400" stop="20160418010000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Bob&apos;s Burgers</title>
+		<sub-title lang="en">The Equestranauts</sub-title>
+		<desc lang="en">Tina attends a convention based on an animated show about ponies and finds that many of the fans are middle-aged men; when Tina is tricked out of her rare pony toy, Bob goes under cover to get it back.</desc>
+		<date>20140413</date>
+		<category lang="en">Animated</category>
+		<category lang="en">Sitcom</category>
 		<category lang="en">Series</category>
-		<episode-num system="common">S14E19</episode-num>
-		<episode-num system="dd_progid">EP00767410.0293</episode-num>
-		<episode-num system="xmltv_ns">13.18.</episode-num>
-		<previously-shown start="20160407000000" />
+		<icon src="http://images.zap2it.com/assets/p8127591_b_h3_ag/bobs-burgers.jpg" />
+		<episode-num system="common">S04E17</episode-num>
+		<episode-num system="dd_progid">EP01279298.0066</episode-num>
+		<episode-num system="xmltv_ns">3.16.</episode-num>
+		<previously-shown start="20140413000000" />
 	</programme>
-	<programme start="20160408020000 -0400" stop="20160408030000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">10 Homes That Changed America</title>
-		<desc lang="en">Geoffrey Baer tours places that changed the way Americans live, work and play, including grand estates, pueblos of Taos, N.M., and tenements of 19th-century New York.</desc>
-		<category lang="en">Documentary</category>
+	<programme start="20160418010000 -0400" stop="20160418013000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Raising Hope</title>
+		<sub-title lang="en">Hot Dish</sub-title>
+		<desc lang="en">When Jimmy says Sabrina&apos;s casserole is better than his mom&apos;s, Virginia enters them both in a cooking competition; Burt invites his mother to participate in the contest.</desc>
+		<date>20140117</date>
+		<category lang="en">Sitcom</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">SH02365740.0000</episode-num>
-		<previously-shown start="20160405000000" />
+		<icon src="http://images.zap2it.com/assets/p8127259_b_h3_ae/raising-hope.jpg" />
+		<episode-num system="common">S04E12</episode-num>
+		<episode-num system="dd_progid">EP01279218.0091</episode-num>
+		<episode-num system="xmltv_ns">3.11.</episode-num>
+		<previously-shown start="20140117000000" />
 	</programme>
-	<programme start="20160408030000 -0400" stop="20160408040000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">Nature</title>
-		<sub-title lang="en">Saving Otter 501</sub-title>
-		<desc lang="en">The Monterey Bay Aquarium attempts to save its 501st stranded orphan otter.</desc>
-		<date>20131016</date>
-		<category lang="en">Nature</category>
+	<programme start="20160418013000 -0400" stop="20160418020000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">The Office</title>
+		<sub-title lang="en">Night Out</sub-title>
+		<desc lang="en">Michael and Dwight decide to surprise Ryan in New York; Scranton staffers must work on a Saturday for Ryan&apos;s Web site project.</desc>
+		<date>20080424</date>
+		<category lang="en">Sitcom</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p185481_b_h3_aa/nature.jpg" />
-		<episode-num system="common">S32E01</episode-num>
-		<episode-num system="dd_progid">EP00003054.0460</episode-num>
-		<episode-num system="xmltv_ns">31.0.</episode-num>
-		<previously-shown start="20131016000000" />
+		<icon src="http://images.zap2it.com/assets/p185008_b_h3_ai/the-office.jpg" />
+		<episode-num system="common">S04E15</episode-num>
+		<episode-num system="dd_progid">EP00726133.0076</episode-num>
+		<episode-num system="xmltv_ns">3.14.</episode-num>
+		<previously-shown start="20080424000000" />
 	</programme>
-	<programme start="20160408040000 -0400" stop="20160408060000 -0400" channel="I11786.labs.zap2it.com">
-		<title lang="en">NOVA</title>
-		<sub-title lang="en">Vikings Unearthed</sub-title>
-		<desc lang="en">Dr. Sarah Parcak uncovers new details about the expeditions and settlements of the Vikings.</desc>
-		<date>20160406</date>
-		<category lang="en">Nature</category>
-		<category lang="en">Science</category>
+	<programme start="20160418020000 -0400" stop="20160418030000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Access Hollywood</title>
+		<date>20160416</date>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p184159_b_h3_aa/nova.jpg" />
-		<episode-num system="common">S43E09</episode-num>
-		<episode-num system="dd_progid">EP00003163.0870</episode-num>
-		<episode-num system="xmltv_ns">42.8.</episode-num>
-		<previously-shown start="20160406000000" />
+		<icon src="http://images.zap2it.com/assets/p184468_b_h3_ah/access-hollywood.jpg" />
+		<episode-num system="common">S20E192</episode-num>
+		<episode-num system="dd_progid">EP00188707.5567</episode-num>
+		<episode-num system="xmltv_ns">19.191.</episode-num>
+		<previously-shown start="20160416000000" />
+	</programme>
+	<programme start="20160418030000 -0400" stop="20160418033000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418033000 -0400" stop="20160418040000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418040000 -0400" stop="20160418043000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418043000 -0400" stop="20160418050000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
+	</programme>
+	<programme start="20160418050000 -0400" stop="20160418053000 -0400" channel="I58402.labs.zap2it.com">
+		<title lang="en">Paid Programming</title>
+		<desc lang="en">Paid programming.</desc>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH00000001.0000</episode-num>
+		<previously-shown />
 	</programme>
 	<programme start="20160408060000 -0400" stop="20160408063000 -0400" channel="I11786.labs.zap2it.com">
 		<title lang="en">Arthur</title>
@@ -25363,5 +25205,82 @@
 		<episode-num system="xmltv_ns">8.12.</episode-num>
 		<new />
 		<subtitles type="teletext" />
+	</programme>
+	<programme start="20160417230000 -0400" stop="20160418000000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">Jeremiah</title>
+		<desc lang="en">U.S. Navy Cmdr. Jeremiah Denton, held prisoner by the North Vietnamese for eight years, returns home and serves his country again as a U.S. senator.</desc>
+		<category lang="en">Documentary</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH02289147.0000</episode-num>
+		<previously-shown start="20151110000000" />
+	</programme>
+	<programme start="20160418000000 -0400" stop="20160418003000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">MotorWeek</title>
+		<sub-title lang="en">&apos;16 Acura NSX</sub-title>
+		<desc lang="en">The Acura NSX; Mercedes-AMG C63 S Sedan.</desc>
+		<date>20160415</date>
+		<category lang="en">Howto</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p186093_b_h3_aa/motorweek.jpg" />
+		<episode-num system="common">S35E32</episode-num>
+		<episode-num system="dd_progid">EP00002960.1416</episode-num>
+		<episode-num system="xmltv_ns">34.31.</episode-num>
+		<previously-shown start="20160415000000" />
+	</programme>
+	<programme start="20160418003000 -0400" stop="20160418010000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">Charlie Rose -- The Week</title>
+		<date>20160415</date>
+		<category lang="en">Publicaffairs</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p10007006_b_h3_ad/charlie-rose-the-week.jpg" />
+		<episode-num system="common">S03E40</episode-num>
+		<episode-num system="dd_progid">EP01747685.0145</episode-num>
+		<episode-num system="xmltv_ns">2.39.</episode-num>
+		<previously-shown start="20160415000000" />
+	</programme>
+	<programme start="20160418010000 -0400" stop="20160418020000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">Masterpiece Mystery!</title>
+		<sub-title lang="en">Grantchester Season 2</sub-title>
+		<desc lang="en">Sidney performs an exorcism after an apparent suicide; Gary goes on trial; Leonard makes a bet; Margaret makes a move; Amanda confronts a lost love.</desc>
+		<date>20160417</date>
+		<category lang="en">Mystery</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p262629_b_h3_aa/masterpiece-mystery.jpg" />
+		<episode-num system="common">S07E33</episode-num>
+		<episode-num system="dd_progid">EP01088331.0126</episode-num>
+		<episode-num system="xmltv_ns">6.32.</episode-num>
+		<previously-shown start="20160417000000" />
+	</programme>
+	<programme start="20160418020000 -0400" stop="20160418030000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">Masterpiece Classic</title>
+		<sub-title lang="en">Mr. Selfridge Season 4</sub-title>
+		<desc lang="en">Grove and Josie start over; Harry finds trouble with a mob boss and press lord.</desc>
+		<date>20160417</date>
+		<category lang="en">Drama</category>
+		<category lang="en">Series</category>
+		<icon src="http://images.zap2it.com/assets/p194955_b_h3_aa/masterpiece-classic.jpg" />
+		<episode-num system="common">S09E13</episode-num>
+		<episode-num system="dd_progid">EP01088332.0175</episode-num>
+		<episode-num system="xmltv_ns">8.12.</episode-num>
+		<previously-shown start="20160417000000" />
+	</programme>
+	<programme start="20160418030000 -0400" stop="20160418043000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">Jazz</title>
+		<sub-title lang="en">Swing: Pure Pleasure (1935-1937)</sub-title>
+		<desc lang="en">Big-band swing dominates; Benny Goodman integrates his bands; the Savoy Ballroom attracts dancers, both black and white; Billie Holiday.</desc>
+		<date>20010117</date>
+		<category lang="en">Documentary</category>
+		<category lang="en">Music</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">EP00411222.0005</episode-num>
+		<previously-shown start="20010117000000" />
+	</programme>
+	<programme start="20160418043000 -0400" stop="20160418050000 -0400" channel="I11786.labs.zap2it.com">
+		<title lang="en">PBS Previews -- The Best of Drama</title>
+		<desc lang="en">A preview of PBS dramas scheduled for the spring and summer of 2016, including ``Churchill&apos;s Secret,&apos;&apos; ``The Tunnel&apos;&apos; and ``Dancing on the Edge,&apos;&apos; as well as a new ``Vicious&apos;&apos; special.</desc>
+		<category lang="en">Drama</category>
+		<category lang="en">Series</category>
+		<episode-num system="dd_progid">SH02402835.0000</episode-num>
+		<previously-shown start="20160415000000" />
 	</programme>
 </tv>
