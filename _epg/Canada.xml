@@ -54784,15 +54784,14 @@
 		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160415190000 -0400" stop="20160415193000 -0400" channel="I90122.labs.zap2it.com">
-		<title lang="en">Open Gym</title>
-		<desc lang="en">The journey of the Toronto Raptors and other NBA stars through the season both on and off the court.</desc>
+		<title lang="en">That&apos;s Hockey! Playoff Edition</title>
+		<desc lang="en">News, updates, features and interviews from the NHL.</desc>
 		<category lang="en">Sports</category>
-		<category lang="en">Basketball</category>
+		<category lang="en">Hockey</category>
 		<category lang="en">Sportsnonevent</category>
 		<category lang="en">Series</category>
-		<icon src="http://images.zap2it.com/assets/p9555498_b_h3_ab/open-gym.jpg" />
-		<episode-num system="dd_progid">SH01637631.0000</episode-num>
-		<previously-shown start="20121030000000" />
+		<episode-num system="dd_progid">SH01900800.0000</episode-num>
+		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160415193000 -0400" stop="20160415200000 -0400" channel="I90122.labs.zap2it.com">
 		<title lang="en">Open Gym</title>
@@ -57159,26 +57158,25 @@
 		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160415190000 -0400" stop="20160415193000 -0400" channel="I90124.labs.zap2it.com">
-		<title lang="en">SC Top 10 Presents</title>
-		<sub-title lang="en">Top 50 CFL Plays of 2015</sub-title>
-		<desc lang="en">The top 50 plays in the Canadian Football League for the 2015 season.</desc>
-		<date>20151128</date>
+		<title lang="en">That&apos;s Hockey! Playoff Edition</title>
+		<desc lang="en">News, updates, features and interviews from the NHL.</desc>
 		<category lang="en">Sports</category>
+		<category lang="en">Hockey</category>
 		<category lang="en">Sportsnonevent</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">EP01746431.0074</episode-num>
-		<previously-shown start="20151128000000" />
+		<episode-num system="dd_progid">SH01900800.0000</episode-num>
+		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160415193000 -0400" stop="20160415200000 -0400" channel="I90124.labs.zap2it.com">
-		<title lang="en">SC Top 10 Presents</title>
-		<sub-title lang="en">World Championship Hockey Moments</sub-title>
-		<desc lang="en">A look back at the most memorable moments from the World Hockey Championship.</desc>
-		<date>20130730</date>
+		<title lang="en">Rugby 7&apos;s Highlights</title>
+		<sub-title lang="en">2016: Hong Kong</sub-title>
+		<date>20160415</date>
 		<category lang="en">Sports</category>
 		<category lang="en">Sportsnonevent</category>
 		<category lang="en">Series</category>
-		<episode-num system="dd_progid">EP01746431.0031</episode-num>
-		<previously-shown start="20130730000000" />
+		<episode-num system="dd_progid">EP02164941.0010</episode-num>
+		<new />
+		<subtitles type="teletext" />
 	</programme>
 	<programme start="20160415200000 -0400" stop="20160415223000 -0400" channel="I90124.labs.zap2it.com">
 		<title lang="en">Hockey</title>
