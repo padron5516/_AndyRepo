@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.7" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.8" provider-name="Andy">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
@@ -9,10 +9,7 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <provides>video</provides>
-        <description lang="en">TV Guide for use with 3rd party channel addons
-
-
-        </description>
+        <description lang="en">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
         <disclaimer lang="en">EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
     </extension>
 </addon>
