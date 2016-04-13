@@ -366,6 +366,29 @@
 	</extension>
 </addon>
 
+<addon id="context.meta" name="Meta Context Menu" version="1.0.2" provider-name="MetaTeam">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="plugin.video.meta"/>
+  </requires>
+
+  <extension point="kodi.context.item" library="context_playable.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31002]</label>
+        <visible>[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>
+      </item>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>Library context menu item by Meta</summary>
+    <description>Adds select stream entry to library movies and episodes</description>
+  </extension>
+</addon>
+
     <addon id="hellyrepo.kodi" name="HellyRepo" version="0.2.1" provider-name="Ivo Helwegen">
         <extension point="xbmc.addon.repository" name="HellyRepo">
             <dir minversion="15.0.0">
@@ -468,7 +491,39 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.2" provider-name="podgod">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.51" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio executable image</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+  </extension>
+
+  <extension point="kodi.context.item" library="capture.py">
+      <item>
+        <label>30002</label>
+        <visible>!IsEmpty(Window(10000).Property(SF_STD_CONTEXTMENU_ENABLED))</visible>
+      </item>
+    </extension>
+</addon>
+
+<addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.3" provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
 	<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -487,7 +542,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>Live Canadian TV channels</summary>
-    <description>Live Canadian TV channels all in one place. General disclaimer: These are just random feeds found on the net. Like all things internet, links go up and down. Also, some channels do not broadcast 24/7. I take no responsibility for the content or reliability of the feeds. Enjoy while you can. [B]Filmon.TV[/B] addon from kinkin required for CTV channels.</description>
+    <description>Live Canadian TV channels all in one place. General disclaimer: These are just random feeds found on the net. Like all things internet, links go up and down. Also, some channels do not broadcast 24/7. I take no responsibility for the content or reliability of the feeds. Enjoy while you can. [B]Filmon.TV[/B] addon from kinkin required for CTV channels. F4M Tester addon from Shani rrequired for some channels</description>
   </extension>
 </addon>
 
@@ -647,6 +702,49 @@
     <summary lang="en">Stream Supreme</summary>
     <description lang="en">Stream Supreme</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.meta" name="Meta" version="1.1.4" provider-name="MetaTeam">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.futures" version="2.2.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="[login|startup]">
+  </extension>
+
+  <extension point="kodi.context.item" library="context_playable.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31002]</label>
+        <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="kodi.context.item" library="context_tvshow.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31022]</label>
+        <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>TMDB and TVDB media listing</summary>
+    <description>Browse TMDB and TVDB media</description>
+    <supportedcontent>
+      <content>movies</content>
+      <content>tvshows</content>
+      <content>episodes</content>
+    </supportedcontent>
   </extension>
 </addon>
 
@@ -3649,15 +3747,66 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.suitability" name="Suitability" version="1.1.0" provider-name="robwebset">
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.78" provider-name="marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.13.0"/>
+		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+	</requires>
+
+    <extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py" />
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="kodi.context.item" library="resources\lib\ContextMenu_serieslevel.py">
+		<item>
+			<label>32072</label>
+            <description>Display Series level button in next/recent/in progress episodes listings</description>
+			<visible>!IsEmpty(Window(Home).Property(SkinHelper.enablecontextmenu_series)) + Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
+		</item>
+	</extension>
+    <extension point="kodi.context.item" library="resources\lib\ContextMenu_pvr.py">
+		<item>
+			<label>32120</label>
+            <description>PVR artwork Configuration</description>
+            <visible>!IsEmpty(Window(Home).Property(SkinHelper.enablecontextmenu_pvr)) + [Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)</visible>
+		</item>
+	</extension>
+    <extension point="kodi.context.item" library="resources\lib\ContextMenu_music.py">
+		<item>
+			<label>32122</label>
+            <description>Music artwork Configuration</description>
+            <visible>!IsEmpty(Window(Home).Property(SkinHelper.enablecontextmenu_music)) + [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
+		</item>
+	</extension>
+    <extension point="kodi.context.item" library="resources\lib\ContextMenu_animatedart.py">
+		<item>
+			<label>32175</label>
+            <description>Animated artwork Configuration</description>
+            <visible>!IsEmpty(Window(Home).Property(SkinHelper.enablecontextmenu_animatedart)) + [Container.Content(movies) + Skin.HasSetting(SkinHelper.EnableAnimatedPosters) + !IsEmpty(ListItem.IMDBNumber)]</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<website></website>
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+	</extension>
+</addon>
+
+<addon id="script.suitability" name="Suitability" version="1.1.1" provider-name="robwebset">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
 	</requires>
-  	<extension point="xbmc.python.script" library="default.py" />
-	<extension point="xbmc.service" library="service.py" start="login">
-		<provides>executable</provides>
-	</extension>
+  	<extension point="xbmc.python.script" library="default.py"/>
+	<extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="kodi.context.item" library="default.py">
 		<item>
 			<label>32001</label>
