@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.0" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.1" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -11,8 +11,8 @@
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
 
-		<summary lang="en">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
-		<summary lang="en_US">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG.    Iptvsubs and DexterTV credentials will be automatically added to addons.ini</summary>
+		<summary lang="en_US">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG.  Iptvsubs and DexterTV credentials will be automatically added to addons.ini</summary>
 
 		<description lang="en">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
 		<description lang="en_US">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
