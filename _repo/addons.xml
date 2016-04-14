@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="0.0.9.8.1" provider-name="Andy">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.0" provider-name="Andy,rayw1986, bluezed">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
-	<extension point="xbmc.python.script" library="addon.py"/>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-    <extension point="xbmc.addon.metadata">
-        <provides>video</provides>
-        <description lang="en">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
-        <disclaimer lang="en">EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
     </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+
+		<summary lang="en">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en_US">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+
+		<description lang="en">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
+		<description lang="en_US">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
+
+		<disclaimer lang="en">Based upon FTV Guide as a base.  EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum>https://forums.tvaddons.ag/ftv-guide-for-kodi</forum>
+		<source>https://github.com/bluezed/FTV-Guide-Repo</source>
+        <website></website>
+		<email></email>
+	</extension>
 </addon>
 
 
