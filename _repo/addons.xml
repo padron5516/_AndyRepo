@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.1" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.2" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -597,20 +597,30 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dex" name="DexterPro IPTV" version="2.30" provider-name="Pipcan,MikkM">
+<addon id="plugin.video.dex" name="DexterPro IPTV" version="3.01" provider-name="Pipcan,MikkM,enen92">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
+	<import addon="script.matchcenter" />
+	<import addon="script.dexnews" />
 	<import addon="script.module.requests" />
 	<import addon="script.skin.helper.service" />
     <import addon="script.module.urlresolver" version="0.0.1"/>
-  </requires>
+	<import addon="script.module.thesportsdb" version="1.0.1"/>
+	<import addon="script.module.pytz" version="2014.2"/>
+	<import addon="script.module.twitter" version="1.17.1"/>
+       </requires>
   <extension point="xbmc.python.pluginsource" library="init.py">
-        <provides>video executable</provides>
+ 	<extension point="xbmc.python.script" library="main.py" />
+       <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">DEXTERPRO IPTV</summary>
-    <description lang="en">IPTV Addon for DexterPro</description>
+    <summary lang="en">Xtream-Codes IPTV</summary>
+    <website>http://www.xtream-codes.com/</website>
+    <description lang="en">IPTV Addon for Xteam-Codes iptv panel</description>
+    <forum>http://www.xtream-codes.com/forum</forum>
+    <email>mikkm@mikkm.ul.ee</email>
+    <disclaimer lang="en">You may use and share this addon however you like, you may NOT edit this addon in any way without conesnt of developer. Skype:MikkM</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
@@ -777,11 +787,11 @@
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.2" provider-name="Blazetamer">
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.3" provider-name="tvaddons.ag">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="2.10.11"/>
+		<import addon="script.module.urlresolver" version="3.0.0"/>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
 		<import addon="plugin.video.youtube" optional="true" />
 	</requires>
@@ -852,7 +862,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="20163220000000000"
+  version="20163220000000000000000000000"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
@@ -1267,7 +1277,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="repository.aresproject" name="AresProject" version="0.0.1" provider-name="Ares Team">
+<addon id="repository.aresproject" name="AresProject" version="0.0.3" provider-name="Ares Team">
 	<extension point="xbmc.addon.repository" name="Simple Kodi">
 		<info compressed="false">http://repo.ares-project.com/plugins/addons.xml</info>
 		<checksum>http://repo.ares-project.com/plugins/addons.xml.md5</checksum>
@@ -1275,7 +1285,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>AresProject.</summary>
-		<description>Ares-Project Addons Source. Visit Us At http://ares-project.com/community/</description>
+		<description>Ares-Project Addons Source. Visit Us At https://ares-forum.com</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1397,6 +1407,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.bulldogstreams" name="Bulldog Streams Repository" version="1.1" provider-name="Bulldog Streams Dev Team">
+	<extension point="xbmc.addon.repository" name="Bulldog Streams Repository">
+		<info compressed="false">http://www.bulldogstreams.football/addon/addons.xml</info>
+		<checksum>http://www.bulldogstreams.football/addon/addons.xml.md5</checksum>
+		<datadir zip="true">http://www.bulldogstreams.football/addon/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Bulldog Streams</summary>
+		<description>Home of Bulldog Streams</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.CanadaOnDemand" name="CanadaOnDemand Repo" version="1.1.0" provider-name="andre">
 	<extension point="xbmc.addon.repository" name="CanadaOnDemand Repo">
 		<info compressed="false">https://raw.github.com/irfancharania/canada.on.demand.repo/master/addons.xml</info>
@@ -1464,6 +1487,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.Cosmixrepo" name="Cosmix Repo" version="1.0" provider-name="Cosmix">
+	<extension point="xbmc.addon.repository" name="Cosmixrepo">
+		<info compressed="false">http://cosmix.net23.net/repo/Plugins/addons.xml</info>
+		<checksum>http://cosmix.net23.net/repo/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://cosmix.net23.net/repo/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Cosmix Repo</summary>
+		<description>Cosmix Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.d0f21" name="d0f21's XBMC Addons" version="1.0.0" provider-name="d0f21">
 	<extension point="xbmc.addon.repository" name="Chris' XBMC Addon Repository">
 		<info >https://raw.githubusercontent.com/louca1221/d0f21-Repository/master/addons.xml</info>
@@ -1517,6 +1553,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	<extension point="xbmc.addon.metadata">
 		<summary>Install My Addons</summary>
 		<description>Download and install addons from DixieDean... For updates and information visit www.on-tapp.tv</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.dnarepo" name="[COLOR lightblue]dna[/COLOR] [COLOR lightwhite]Repository[/COLOR]" version="0.0.4" provider-name="dna">
+	<extension point="xbmc.addon.repository" name="dna Repository">
+		<info compressed="false">http://raw.github.com/macblizzard/dnarepo/master/addons.xml</info>
+		<checksum>http://raw.github.com/macblizzard/dnarepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/macblizzard/dnarepo/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>dna Repository</summary>
+		<description>Download and install add-ons from dna repository.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1670,6 +1720,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description lang="pl">Wtyczki z nieoficjalnego, repozytorium polskiego mrknow.pl..</description>
 		<disclaimer lang="en">Repository has non-comercial nature. Created by enthusiasts, acting in good faith.</disclaimer>
 		<disclaimer lang="pl">Zawartość repozytorium ma charakter niekomercyjny, wtyczki tworzone przez pasjonatów, .</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.FTV-Guide-Repo" name="FTV Guide Repo" version="1.1" provider-name="rayw1986, bluezed">
+	<extension point="xbmc.addon.repository" name="FTV Guide Repository">
+		<info compressed="false">http://raw.github.com/bluezed/FTV-Guide-Repo/master/addons.xml</info>
+		<checksum>http://raw.github.com/bluezed/FTV-Guide-Repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/bluezed/FTV-Guide-Repo/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>FTV Guide Repository</summary>
+		<description>Download and install the FTV Guide addon. For OFFICIAL Support Visit TVADDONS.AG</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2575,11 +2638,11 @@ Addons Included
     </extension>
 </addon>
 
-<addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.3" provider-name="iCanuck">
+<addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.4" provider-name="iCanuck">
 	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repository">
-		<info>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml</info>
-		<checksum>http://offshoregit.com/pulsarunofficial/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://offshoregit.com/pulsarunofficial/raw/master/</datadir>
+		<info>https://offshoregit.com/pulsarunofficial/Unofficial-Quasar-Repo/addons.xml</info>
+		<checksum>https://offshoregit.com/pulsarunofficial/Unofficial-Quasar-Repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/pulsarunofficial/Unofficial-Quasar-Repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>A Collection of Quasar Providers and Related Addons</summary>
@@ -3030,6 +3093,26 @@ Addons Included
   <extension library="lib" point="xbmc.python.module" />
 </addon>
 
+<addon id="script.dexnews" name="Dexter News" version="1.0.0" provider-name="enen92">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.thesportsdb" version="1.0.1"/>
+		<import addon="script.module.pytz" version="2014.2"/>
+		<import addon="script.module.twitter" version="1.17.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<website>http://www.thesportsdb.com/</website>
+		<source>https://github.com/enen92/script.matchcenter</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=238039</forum>
+		<summary lang="en">Extended football match information</summary>
+		<summary lang="pt">Informação extra para encontros de futebol</summary>
+		<description lang="en">This addon brings a window that can be mapped to a remote key to show livescores for the current live football games, access match information (goals, cards, subs, lineups) or follow what others are saying about the match in twitter.[CR][CR]Powered by: http://www.thesportsdb.com</description>
+		<description lang="pt">Este addon apresenta uma janela (que pode ser mapeada a um botão do comando) para apresentar os resultados ao vivo dos jogos de futebol, aceder a informação relaccionada com o jogo em questão (golos, cartões, substituições, equipa titular) ou aquilo que os outros estão a dizer acerca do jogo no twitter. [CR][CR]Suportado por: http://www.thesportsdb.com</description>
+    </extension>
+</addon>
+
 <addon id="script.exodus.artwork" version="1.0.0" name="Exodus Artwork" provider-name="l*m*d*">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -3173,6 +3256,26 @@ Addons Included
     </extension>
 </addon>
 
+<addon id="script.matchcenter" name="Match center" version="1.0.0" provider-name="enen92">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.thesportsdb" version="1.0.1"/>
+		<import addon="script.module.pytz" version="2014.2"/>
+		<import addon="script.module.twitter" version="1.17.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<website>http://www.thesportsdb.com/</website>
+		<source>https://github.com/enen92/script.matchcenter</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=238039</forum>
+		<summary lang="en">Extended football match information</summary>
+		<summary lang="pt">Informação extra para encontros de futebol</summary>
+		<description lang="en">This addon brings a window that can be mapped to a remote key to show livescores for the current live football games, access match information (goals, cards, subs, lineups) or follow what others are saying about the match in twitter.[CR][CR]Powered by: http://www.thesportsdb.com</description>
+		<description lang="pt">Este addon apresenta uma janela (que pode ser mapeada a um botão do comando) para apresentar os resultados ao vivo dos jogos de futebol, aceder a informação relaccionada com o jogo em questão (golos, cartões, substituições, equipa titular) ou aquilo que os outros estão a dizer acerca do jogo no twitter. [CR][CR]Suportado por: http://www.thesportsdb.com</description>
+    </extension>
+</addon>
+
 <addon id="script.module.addon.common"
 	     name="Common addon methods"
 	     version="2.0.1"
@@ -3266,20 +3369,19 @@ Addons Included
 
 <addon id="script.module.beautifulsoup4"
        name="BeautifulSoup4"
-       version="4.3.2"
-       provider-name="Leonard Richardson (leonardr@segfault.org)">
+       version="4.4.1.1"
+       provider-name="Leonard Richardson">
   <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
+    <import addon="xbmc.python" version="2.7.0"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
-    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
-    <license>BSD</license>
+    <summary>Beautiful Soup Screen-scraping library</summary>
+    <description>Beautiful Soup sits atop an HTML or XML parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree.</description>
     <platform>all</platform>
-    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+    <license>MIT</license>
+    <website>http://www.crummy.com/software/BeautifulSoup/bs4/</website>
   </extension>
 </addon>
 
@@ -3294,6 +3396,25 @@ Addons Included
              library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.futures"
+       name="futures"
+       version="2.2.0"
+       provider-name="Brian Quinlan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
   </extension>
 </addon>
 
@@ -3662,6 +3783,22 @@ level.</description>
    </extension>
 </addon>
 
+<addon id="script.module.thesportsdb" name="The Sports DB" version="1.0.1" provider-name="enen92,Zag">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>http://www.thecocktaildb.com/</website>
+	<source>https://github.com/enen92/script.module.thesportsdb</source>
+	<forum>http://forum.kodi.tv/showthread.php?tid=258129</forum>
+    <summary lang="en">Python module for thesportsdb.com</summary>
+    <description lang="en">A collection of python methods to wrap the thesportsdb.com API calls</description>
+  </extension>
+</addon>
+
 <addon id="script.module.TheYid.common"
 	     name="TheYid's common stuff"
 	     version="0.1.2"
@@ -3674,6 +3811,22 @@ level.</description>
     <platform>all</platform>
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.twitter" name="Twitter" version="1.17.1" provider-name="Mike Verdone">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">An API and command-line toolset for Twitter (twitter.com)</summary>
+    <description lang="en">An API and command-line toolset for Twitter (twitter.com)</description>
+    <source>https://pypi.python.org/pypi/twitter/1.17.1</source>
+    <website>http://mike.verdone.ca/twitter/</website>
+    <platform>all</platform>
+    <licence>MIT License</licence>
   </extension>
 </addon>
 
@@ -3698,17 +3851,17 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="2.10.15" provider-name="Eldorado">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-  </extension>
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.1" provider-name="Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+	</extension>
 </addon>
 
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.0">
@@ -3761,7 +3914,7 @@ level.</description>
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.78" provider-name="marcelveldt">
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.81" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
