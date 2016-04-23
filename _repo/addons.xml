@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.2" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.3" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -844,6 +844,30 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.04.20.1" provider-name="mrknow" >
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" />
+		<import addon="plugin.video.youtube" optional="true" />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mrknow fork of ...</summary>
+		<description lang="en">Mrknow fork of ..., support https://github.com/mrknow/filmkodi/issues.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
+		</disclaimer>
+		<forum>https://github.com/mrknow/filmkodi/issues</forum>
+		<source>http://filmkodi.com/repository/</source>
+		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.sportsaccess" name="SportsAccess" version="1.2.0" provider-name="SportsAccess">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -862,13 +886,14 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="20163220000000000000000000000"
+  version="9999999999999999999999999999999999999.4.18.2016"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.requests" />
-   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
+   <import addon="script.module.livestreamer" />
+   <import addon="script.module.pydevd" optional="true"/>
   </requires>
   <extension
     point="xbmc.python.pluginsource"
@@ -876,8 +901,8 @@ http://www.hometheater.co.il</description>
    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>3/22/2106 Play videos of different sports streaming sites</summary>
-    <description>Stop renaming shit unless you rename the plugins asshole devs.  Play videos of different sports streaming sites</description>
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
@@ -966,21 +991,6 @@ http://www.hometheater.co.il</description>
         <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
         <website>http://watch.ustvnow.com/</website>
     </extension>
-</addon>
-
-<addon id="plugin.video.VADER" name="Vader-Streams" version="1.0" provider-name="Obi-Wan Kenobi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="init.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Vader-Streams</summary>
-	<description lang="en_gb">[COLOR red]The Force of Streams![/COLOR]</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.VidTime"
