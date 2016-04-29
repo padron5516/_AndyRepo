@@ -560,14 +560,16 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.castaway" name="Castaway" version="0.1.3" provider-name="natko1412">
+<addon id="plugin.video.castaway" name="Castaway" version="0.1.7.1" provider-name="natko1412">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
 		<import addon="script.module.requests"  />
+		<import addon="script.module.mechanize"  />
     	<import addon="script.module.addon.common" />
 		<import addon="script.module.urlresolver" />
 		<import addon="script.module.liveresolver"  />
+
 
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -581,6 +583,40 @@
 
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.video.ccloudtv"
+       name="cCloud TV"
+       version="1.4.7"
+       provider-name="podgod, Coder Alpha">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>All the best from cCloud TV</summary>
+    <description>cCloud is an open source cloud based social IPTV service. It is built by the community for the community, where streaming is just a click away. Just click, play and stream. Yes, it's that simple. Just go to http://ccloudtv.org  and enjoy:) Please report any channels that are down here http://www.tiny.cc/reportchs Users can now check servers status which can be found at http://ccloudtv.org/status
+    </description>
+	<license>http://www.gnu.org/licenses/</license>
+    <forum>http://ccloudtv.org/forum</forum>
+    <website>http://ccloudtv.org</website>
+    <website>http://facebook.com/ccloudapp</website>
+    <website>http://twitter.com/ccloudapp</website>
+    <email></email>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.channelup" name="Channel Up Tv" version="0.0.3" provider-name="r3b00t">
@@ -643,27 +679,6 @@
 		<license>GNU General Public License, v2</license>
 		<language></language>
 	</extension>
-</addon>
-
-<addon
-  id="plugin.video.dragon.sports"
-  version="4.6.0.9"
-  name="Dragon Streams"
-  provider-name="Unknown">
-  <requires>
-   <import addon="xbmc.python" version="2.1.0"/>
-   <import addon="script.common.plugin.cache" version="0.9.1"/>
-  </requires>
-  <extension
-    point="xbmc.python.pluginsource"
-    library="default.py">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Play a variety of quality streams on your DragonBox</summary>
-    <description>** No streams are hosted by DragonBox, Dragon Streams or any affiliates of those mentioned.</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.f4mTester" version="2.2.4" name="f4mTester" provider-name="Shani">
@@ -824,11 +839,27 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.prosport" name="Pro Sport" version="0.47" provider-name="gerikss, podgod, iCanuck">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+     <import addon="script.module.requests" version="2.9.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Live HD sport streams from reddit</summary>
+    <description>Live HD sport streams from reddit</description>
+    <platform>all</platform>
+    <language>en</language>
+  </extension>
+</addon>
+
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.27" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.38" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.urlresolver" version="3.0.0"/>
         <import addon="script.module.myconnpy" version="1.1.6" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -841,30 +872,6 @@ http://www.hometheater.co.il</description>
         <platform>all</platform>
         <website>http://tvaddons.ag/</website>
 		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
-	</extension>
-</addon>
-
-<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.04.20.1" provider-name="mrknow" >
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.requests" version="1.0.0" />
-		<import addon="script.module.metahandler" />
-		<import addon="plugin.video.youtube" optional="true" />
-
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Mrknow fork of ...</summary>
-		<description lang="en">Mrknow fork of ..., support https://github.com/mrknow/filmkodi/issues.</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
-		</disclaimer>
-		<forum>https://github.com/mrknow/filmkodi/issues</forum>
-		<source>http://filmkodi.com/repository/</source>
-		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
-		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -928,22 +935,24 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.5.6" provider-name="Mikey1234">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.9" provider-name="MetalKettle">
   <requires>
+    <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.footballreplays" version="0.0.1"/>
-    <import addon="script.module.urlresolver" version="0.0.1"/>
-    <import addon="script.module.requests" version="0.0.1"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Streamtvbox Streams</summary>
-    <description lang="en">Stream all of your favourites live sports,movies and tv from StreamTVBox Streams</description>
+    <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
+    <description lang="en">Free Playlists courtesy of @uk_turk</description>
     <platform>all</platform>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
 <addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.1" provider-name="MetalKettle">
@@ -995,7 +1004,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.VidTime"
        name="VidTime"
-       version="1.2.2"
+       version="1.2.4"
        provider-name="VinManJSV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1051,7 +1060,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.7.5"
+       version="4.7.8"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1859,6 +1868,21 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
+</addon>
+
+<addon id="repository.iptvxtra" name="IPTVxtra KODI Add-ons" version="2.2" provider-name="IPTVxtra">
+    <extension point="xbmc.addon.repository"
+        name="IPTVxtra XBMC Add-ons">
+        <info compressed="false">http://srv1.iptvxtra.com/addons/addons.xml</info>
+        <checksum>http://srv1.iptvxtra.com/addons/addons.md5</checksum>
+        <datadir zip="true">http://srv1.iptvxtra.com/addons/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install XBMC add-ons from the IPTVxtra repository</summary>
+        <description>Install XBMC add-ons from IPTVxtra repository</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="10.2" provider-name="iSTREAM">
@@ -3978,7 +4002,7 @@ level.</description>
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.81" provider-name="marcelveldt">
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.88" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
