@@ -4,7 +4,24 @@
     </programs>
     <video>
         <default pathversion="1"></default>
-
+        <source>
+            <name>Tv</name>
+            <path pathversion="1">smb://SERVER/TV/</path>
+            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>TV IPTV (Local)</name>
+            <path pathversion="1">special://profile/addon_data/Andy.plugin.program.Guide/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>TV IPTV (www)</name>
+            <path pathversion="1">http://kodilover.net16.net/</path>
+            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
+            <allowsharing>true</allowsharing>
+        </source>
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -32,7 +49,6 @@
     </video>
     <music>
         <default pathversion="1"></default>
-
         <source>
             <name>Rotten Tomatoes Podcast</name>
             <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
@@ -118,8 +134,18 @@
     <files>
         <default pathversion="1"></default>
         <source>
+            <name>/storage/emulated/0/</name>
+            <path pathversion="1">/storage/emulated/0/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z... (No Repos z.._) (Has Repo z._)</name>
             <path pathversion="1">https://github.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z.._cypher</name>
+            <path pathversion="1">http://repo.run/cypherrepo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -138,6 +164,26 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z.._pulsemediahub (3 Amigos)</name>
+            <path pathversion="1">http://pulsemediahub.x10host.com</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z.._Vader</name>
+            <path pathversion="1">http://offshoregit.com/Vader/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Adrian Sports</name>
+            <path pathversion="1">http://projectadrianv1.net16.net/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Ak47</name>
+            <path pathversion="1">http://repo.run/a47b</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._Ares</name>
             <path pathversion="1">http://repo.ares-project.com/magic/</path>
             <allowsharing>true</allowsharing>
@@ -150,6 +196,11 @@
         <source>
             <name>z._bbtsip</name>
             <path pathversion="1">http://repo.bbtsip.tv/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Bulldog (OperationRoboCop)</name>
+            <path pathversion="1">http://www.bulldogstreams.football/addon/zips/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -250,11 +301,6 @@
         <source>
             <name>z._Noobs And Nerds</name>
             <path pathversion="1">http://noobsandnerds.com/portal/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>z._OperationRoboCop</name>
-            <path pathversion="1">http://repo.shit.football/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

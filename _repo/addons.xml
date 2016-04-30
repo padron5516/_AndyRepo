@@ -539,8 +539,8 @@
 
 
 <addon id="plugin.video.adriansports"
-       name="ADRIAN SPORTS"
-       version="1.0.4"
+       name=".ADRIAN SPORTS."
+       version="1.0.6"
        provider-name="Project Adrian">
 
   <requires>
@@ -570,6 +570,38 @@
   	<website></website>
   	<email></email>
   	<source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.AK-47"
+       name="[COLOR red]AK[/COLOR] [COLOR yellow]-[/COLOR] [COLOR turquoise]47[/COLOR]"
+       version="1.0.3"
+       provider-name="[COLOR red][B]COLD[/B][/COLOR][COLOR turquoise][B]FIRE[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+	<import addon="script.common.plugin.cache" version="2.5.2"/>
+	<import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+        <summary>[COLOR cyan][B]Best of the best from fabio_kapone and Billy_Hope[/B][/COLOR]</summary>
+        <description lang="en">[B]Enjoy watching:
+		[COLOR red]Movies[/COLOR], [COLOR yellow]TV-Shovs[/COLOR], [COLOR turquoise]Documentaries[/COLOR], [COLOR limegreen]Toons[/COLOR] and ofcourse [COLOR red]Live TV[/COLOR][/B]
+		[COLOR pink][B]PS: Live TV links may up and down, as they are free. Don't check the teeth of a gifted hourse![/B][/COLOR]</description>
+        <platform>all</platform>
   </extension>
 </addon>
 
@@ -669,7 +701,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dex" name="DexterPro IPTV" version="3.01" provider-name="Pipcan,MikkM,enen92">
+<addon id="plugin.video.dex" name="DexterPro IPTV" version="3.03" provider-name="Pipcan,MikkM,enen92">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
@@ -681,18 +713,18 @@
 	<import addon="script.module.thesportsdb" version="1.0.1"/>
 	<import addon="script.module.pytz" version="2014.2"/>
 	<import addon="script.module.twitter" version="1.17.1"/>
+	<import addon="script.extendedinfo" version="4.7.4"/>
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="script.module.simplejson" version="3.3.0"/>
        </requires>
   <extension point="xbmc.python.pluginsource" library="init.py">
  	<extension point="xbmc.python.script" library="main.py" />
        <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Xtream-Codes IPTV</summary>
-    <website>http://www.xtream-codes.com/</website>
-    <description lang="en">IPTV Addon for Xteam-Codes iptv panel</description>
-    <forum>http://www.xtream-codes.com/forum</forum>
-    <email>mikkm@mikkm.ul.ee</email>
-    <disclaimer lang="en">You may use and share this addon however you like, you may NOT edit this addon in any way without conesnt of developer. Skype:MikkM</disclaimer>
+    <summary lang="en">Dexter Pro</summary>
+    <description lang="en">Live TV, Sports, VOD.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -823,6 +855,37 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.NJMSoccer"
+       name="NJM-Soccer"
+       version="3.0.6"
+       provider-name="Ares Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"> Join us at http://ares-project.com/community/</summary>
+    <description lang="en">Special Thank you to Hakamac for his code, and to Ares Team,Shadow Crew and Mettle Kettle for their support.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ntv" name="NTV.mx" version="3.4.8" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -871,6 +934,36 @@
 http://www.hometheater.co.il</summary>
     <description lang="en">Playlist Loader - downloaded for free from:
 http://www.hometheater.co.il</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ProjectCypher"
+       name="Project Cypher"
+       version="2.0.2"
+       provider-name="Cypher">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Live SD and HD TV channels</summary>
+    <description>General disclaimer: Project Cypher takes no responsibility for the content or reliability of the feeds. Project Cypher [B]Does Not[/B] host any of the feeds or Streams. Most of the Code from this addon was taken from many other addons but used under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1278,6 +1371,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description lang="he">אבקסיס ריפו, מספק לכם את מיטב ההרחבות הטובות מעולם הקודי, הכל מעודכן וזמין על בבסיס קבוע</description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.adriansports" name="ADRIAN SPORTS REPO" version="1.0.1" provider-name="PROJECT ADRIAN">
+<extension point="xbmc.addon.repository" name="Project Adrian Repository V1">
+<info compressed="false">http://projectadrianv1.net16.net/repo/addons.xml</info>
+<checksum>http://projectadrianv1.net16.net/repo/addons.xml.md5</checksum>
+<datadir zip="true">http://projectadrianv1.net16.net/zips/</datadir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Install Addons From Project Adrian</summary>
+<description lang="en">Project Adrian Repository.</description>
+<disclaimer lang="en">Repository has non-comercial nature.</disclaimer>
+<platform>all</platform>
+</extension>
 </addon>
 
 <addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.2" provider-name="SiLVO">
