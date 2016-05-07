@@ -540,14 +540,13 @@
 
 <addon id="plugin.video.adriansports"
        name=".ADRIAN SPORTS."
-       version="1.0.6"
+       version="1.0.9"
        provider-name="Project Adrian">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <!--<import addon="service.xbmc.adriansports" version="1.0.1"/>-->
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
@@ -575,7 +574,7 @@
 
 <addon id="plugin.video.AK-47"
        name="[COLOR red]AK[/COLOR] [COLOR yellow]-[/COLOR] [COLOR turquoise]47[/COLOR]"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="[COLOR red][B]COLD[/B][/COLOR][COLOR turquoise][B]FIRE[/B][/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -701,31 +700,25 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dex" name="DexterPro IPTV" version="3.03" provider-name="Pipcan,MikkM,enen92">
+<addon id="plugin.video.dex" name="DexterPro IPTV" version="6.00" provider-name="Pipcan,MikkM">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="xbmc.python" version="2.13.0"/>
 	<import addon="script.module.addon.common" />
-	<import addon="script.matchcenter" />
-	<import addon="script.dexnews" />
-	<import addon="script.module.requests" />
+	<import addon="script.module.requests" version="2.3.0"/>
 	<import addon="script.skin.helper.service" />
-    <import addon="script.module.urlresolver" version="0.0.1"/>
-	<import addon="script.module.thesportsdb" version="1.0.1"/>
-	<import addon="script.module.pytz" version="2014.2"/>
-	<import addon="script.module.twitter" version="1.17.1"/>
-	<import addon="script.extendedinfo" version="4.7.4"/>
-	<import addon="script.module.beautifulsoup" version="3.2.1"/>
-	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
-	<import addon="script.module.simplejson" version="3.3.0"/>
-       </requires>
-  <extension point="xbmc.python.pluginsource" library="init.py">
+	<import addon="script.module.urlresolver"/>
+	<import addon="script.extendedinfo"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+   </requires>
+	<extension point="xbmc.python.pluginsource" library="init.py">
  	<extension point="xbmc.python.script" library="main.py" />
-       <provides>video executable</provides>
+   <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Dexter Pro</summary>
-    <description lang="en">Live TV, Sports, VOD.</description>
-    <platform>all</platform>
+<summary lang="en">Dexter Pro</summary>
+<description lang="en">Live TV, Sports, VOD.</description>
+<platform>all</platform>
   </extension>
 </addon>
 
@@ -968,7 +961,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.prosport" name="Pro Sport" version="0.47" provider-name="gerikss, podgod, iCanuck">
+<addon id="plugin.video.prosport" name="Pro Sport" version="0.48" provider-name="gerikss, podgod, iCanuck">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
      <import addon="script.module.requests" version="2.9.1" />
@@ -1022,14 +1015,16 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2016.04.20"
+  version="2"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
    <import addon="script.module.requests" />
    <import addon="script.module.livestreamer" />
-   <import addon="script.module.pydevd" optional="true"/>
+   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
   </requires>
   <extension
     point="xbmc.python.pluginsource"
@@ -1133,7 +1128,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.VidTime"
        name="VidTime"
-       version="1.2.4"
+       version="1.2.7"
        provider-name="VinManJSV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2426,6 +2421,29 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	</extension>
+</addon>
+
+<addon id="repository.q"
+		name="[COLOR FF8ABEE2]Q[/COLOR]'s Repository"
+		version="0.0.1"
+		provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<extension point="xbmc.addon.repository"
+		name="[COLOR FF8ABEE2]Q[/COLOR]'s Add-on Repository">
+		<dir>
+			<info compressed="false">https://github.com/OpenELEQ/repository.q/raw/master/openeleq-addons.xml</info>
+			<checksum>https://github.com/OpenELEQ/repository.q/raw/master/openeleq-addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/OpenELEQ/repository.q/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[COLOR FF8ABEE2]Q[/COLOR]'s Add-on Repository</summary>
+		<summary lang="nl">[COLOR FF8ABEE2]Q[/COLOR]'s Addon Depot</summary>
+		<description lang="en">This is my repository. I can and will do whatever I want with it. Some stuff in here can and will overwrite allready installed addons. If you do not want that, do not install this repo!</description>
+		<description lang="nl">Dit is mijn depot. Ik kan hiermee doen en laten wat ik wil. Sommige dingen in dit depot kunnen en zullen reeds geinstalleerde addons overschrijven. Als je dat niet wil, installeer dit depot dan niet!</description>
+		<disclaimer lang="en">[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] did not make all the add-ons in this repository and is in no way responsible for their content.</disclaimer>
+		<disclaimer lang="nl">[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] heeft niet alle add-ons in dit depot gemaakt en is ook op geen enkele manier verantwoordelijk voor hun inhoud.</disclaimer>
+		<platform>all</platform>
 	</extension>
 </addon>
 
