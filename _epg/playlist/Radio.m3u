@@ -1,0 +1,38 @@
+#EXTM3U
+
+#EXTINF:-1,102.1 The Edge
+http://live.leanstream.co/CFNYFM-MP3
+
+#EXTINF:-1,Classic Rock Q107
+http://live.leanstream.co/CILQFM
+
+#EXTINF:-1,97.7 HTZ
+http://5843.live.streamtheworld.com/CHTZFMAAC_SC
+
+#EXTINF:-1,CHFI 98.1
+http://tor981.akacast.akamaistream.net/7/550/80872/v1/rogers.akacast.akamaistream.net/tor981
+
+#EXTINF:-1,CFTR 680News
+http://tor680.akacast.akamaistream.net/7/941/86884/v1/rogers.akacast.akamaistream.net/tor680
+
+#EXTINF:-1, Flow 93.5 FM
+http://3313.live.streamtheworld.com/CFXJFMAAC_SC
+
+#EXTINF:-1, Virgin Radio 99.9
+http://ckfm-aac.akacast.akamaistream.net/7/811/102120/v1/astral.akacast.akamaistream.net/ckfm-aac
+
+#EXTINF:-1,Z103.5
+http://ice8.securenetsystems.net/CIDC
+
+#EXTINF:-1,Rock 95.7 FM
+http://cfjb.streamon.fm:8000/CFJB-48k.aac
+
+#EXTINF:-1,Jazz 91 FM
+http://streamerepsilon.jazz.fm:8000
+
+#EXTINF:-1,The FAN 590
+http://tor590.akacast.akamaistream.net/7/850/80874/v1/rogers.akacast.akamaistream.net/tor590
+
+#EXTINF:-1,CBC
+http://5903.live.streamtheworld.com:80/CBC_R1_CGY_H_SC
+
