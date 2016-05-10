@@ -1,0 +1,27 @@
+{
+ "name"         : "Exodus Search Title Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.exodus",
+ "priority"     : 1000,
+ "id"           : "provider.openeleq.exodus.search.title.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=movieSearch&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=tvSearch&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

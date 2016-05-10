@@ -1,0 +1,21 @@
+{
+ "name"         : "Hallmark Direct Play (Official)",
+ "plugin"       : "plugin.video.hallmark",
+ "priority"     : 500,
+ "id"           : "provider.official.hallmark.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.hallmark/?mode=GM&url=http%3a%2f%2fwww.hallmarkchanneleverywhere.com%2fMovies%3fNodeID%3d28",
+    "steps"     : [
+     "{title}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [],
+ "live"         : []
+}

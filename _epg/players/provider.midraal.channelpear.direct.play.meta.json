@@ -1,0 +1,22 @@
+{
+ "name"         : "Channel Pear Direct Play (Midraal)",
+ "plugin"       : "plugin.video.channelpear",
+ "priority"     : 900,
+ "id"           : "provider.midraal.channelpear.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.channelpear/",
+    "steps"     : [
+     ".*All Channels.*",
+     "{basename}.*{extension}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ]
+}

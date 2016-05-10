@@ -1,0 +1,31 @@
+{
+ "name"         : "Break Videos Search Name Play (Official)",
+ "plugin"       : "plugin.video.break_com",
+ "priority"     : 1000,
+ "id"           : "provider.official.break_com.search.name.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.break_com/search/query/?q={name}",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.break_com/search/query/?q={clearname}",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,27 @@
+{
+ "name"         : "EIM Trailers TMDb Play (OpenELEQ)",
+ "plugin"       : "script.extendedinfo",
+ "priority"     : 600,
+ "id"           : "provider.openeleq.eim.trailers.tmdb.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://script.extendedinfo/?info=playtrailer&id={tmdb}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://script.extendedinfo/?info=playtvtrailer&id={tmdb}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

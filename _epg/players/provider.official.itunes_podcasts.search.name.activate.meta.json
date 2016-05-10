@@ -1,0 +1,31 @@
+{
+ "name"         : "iTunes Podcasts Search Activate (Official)",
+ "plugin"       : "plugin.video.itunes_podcasts",
+ "priority"     : 1000,
+ "id"           : "provider.official.itunes_podcasts.search.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itunes_podcasts/.*/podcasts/search/{title}/",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itunes_podcasts/.*/podcasts/search/{clearname}/",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

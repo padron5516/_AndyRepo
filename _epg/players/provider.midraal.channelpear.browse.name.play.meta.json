@@ -1,0 +1,22 @@
+{
+ "name"         : "Channel Pear Browse Name Play (Midraal)",
+ "plugin"       : "plugin.video.channelpear",
+ "priority"     : 800,
+ "id"           : "provider.midraal.channelpear.browse.name.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.channelpear/",
+    "steps"     : [
+     ".*All Channels.*",
+     "{name}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "name"         : "SALTS Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.salts",
+ "priority"     : 900,
+ "id"           : "provider.midraal.salts.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=Movies&query={title}",
+    "steps"     : [
+     "{title}.*({year}).*",
+     ".*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=TV&query={clearname}",
+    "steps"     : [
+     "{clearname}.*({year}).*",
+     "Season {season}",
+     "{season}x{episode}$$.*",
+     ".*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

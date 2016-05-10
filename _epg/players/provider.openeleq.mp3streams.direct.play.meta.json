@@ -1,0 +1,23 @@
+{
+ "name"         : "MP3 Streams Search Play (OpenELEQ)",
+ "plugin"       : "plugin.audio.mp3streams",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.mp3streams.search.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.mp3streams/?mode=26&name={clearartist}+{cleartrack}&url=url",
+    "steps"     : [
+     ".*{clearartist}.*{cleartrack}.*{album}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "music_video"  : [],
+ "live"         : []
+}

@@ -1,0 +1,36 @@
+{
+ "name"         : "Amazon VOD Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.amazon-test",
+ "priority"     : 900,
+ "id"           : "provider.midraal.amazon.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.amazon-test/",
+    "steps"     : [
+     "Search",
+     "@keyboard: {title}",
+     "(?:{title}($$.*)+|{title|replace(&colon;, -)}($$.*)+)"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.amazon-test/",
+    "steps"     : [
+     "Search",
+     "@keyboard: {clearname}",
+     "{clearname} .*- Season {season}",
+     "{episode} -.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,34 @@
+{
+ "name"         : "iPlayer WWW Direct Play (Official)",
+ "plugin"       : "plugin.video.iplayerwww",
+ "priority"     : 500,
+ "id"           : "provider.official.iplayerwww.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.iplayerwww/",
+    "steps"     : [
+     ".*Programme List A-Z",
+     "{clearname[0]}|{clearname[4]}",
+     "{showname}.*",     
+     ".*(?:Series {season}: *{episode}$$|Episode.*$${episode}$$).*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : [
+ [
+  {
+   "link": "plugin://plugin.video.iplayerwww",
+   "steps": [
+    ".*Watch Live",
+    "{name}($$.*)?"
+    ]
+   }
+  ]
+ ]
+}

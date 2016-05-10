@@ -1,0 +1,22 @@
+{
+ "name"         : "Cooking Channel Direct Play (Official)",
+ "plugin"       : "plugin.video.cook",
+ "priority"     : 500,
+ "id"           : "provider.official.cook.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.cook/",
+    "steps"     : [
+     "{clearname}.*",
+     ".*{title}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

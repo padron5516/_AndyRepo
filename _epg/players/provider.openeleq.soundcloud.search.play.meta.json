@@ -1,0 +1,23 @@
+{
+ "name"         : "SoundCloud Search Play (OpenELEQ)",
+ "plugin"       : "plugin.audio.soundcloud",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.soundcloud.search.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.soundcloud/search/query/?q={cleartrack}",
+    "steps"     : [
+     ".*{clearartist}.*{cleartrack}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music_video"  : [],
+ "live"         : []
+}

@@ -1,0 +1,27 @@
+{
+ "name"         : "The Royal We Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.theroyalwe",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.theroyalwe.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.theroyalwe/?imdb_id={imdb}&mode=get_movie_sources&title={title}&tmdb_id={tmdb}&year={year}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.theroyalwe/?display={episode}.%20{title}&episode={episode}&imdb_id={imdb}&mode=get_episode_sources&season={season}&showtitle={showname}&tmdb_id={tmdb}&trakt_id={trakt}&year={year}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,30 @@
+{
+ "name"         : "uktvnow Direct Play (Andy)",
+ "plugin"       : "plugin.video.uktvnow",
+ "priority"     : 900,
+ "id"           : "provider.uktvnow.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.uktvnow/",
+    "steps"     : [
+     ".*All Channels.*",
+     ".*{basename}$$*({extension}|{extension|number_to_text()}).*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.uktvnow/",
+    "steps"     : [
+     ".*All Channels.*",
+     ".*{basename}$$*{extension|text_to_number()}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ]
+}

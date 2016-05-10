@@ -1,0 +1,31 @@
+{
+ "name"         : "Clipfish Search Title Play (Official)",
+ "plugin"       : "plugin.video.clipfish.de",
+ "priority"     : 1000,
+ "id"           : "provider.official.clipfish.search.title.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.clipfish.de/kodion/search/query/?q={title}",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.clipfish.de/kodion/search/query/?q={title}",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

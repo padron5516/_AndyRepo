@@ -1,0 +1,15 @@
+{
+    "name": "WCBS Programs",
+    "plugin": "plugin.video.wral",
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.wral",
+				"steps": [
+                    "{clearname}.*",
+					"{season}x{episode}"
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,27 @@
+{
+ "name"         : "Specto Search Title Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.specto",
+ "priority"     : 1000,
+ "id"           : "provider.openeleq.specto.search.title.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.specto/?action=movieSearch&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.specto/?action=tvSearch&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

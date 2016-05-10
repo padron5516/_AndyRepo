@@ -1,0 +1,15 @@
+{
+    "name": "Cooking Channel",
+    "plugin": "plugin.video.cook",
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.cook",
+                "steps": [
+                    "{clearname}.*",
+                   ".*{title}"                 
+                ]
+            }
+        ]
+    ]
+}

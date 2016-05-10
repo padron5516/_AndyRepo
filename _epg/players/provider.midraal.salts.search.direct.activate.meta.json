@@ -1,0 +1,33 @@
+{
+ "name"         : "SALTS Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.video.salts",
+ "priority"     : 900,
+ "id"           : "provider.midraal.salts.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=Movies&query={title}",
+    "steps"     : [
+     "{title}.*({year}).*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=TV&query={clearname}",
+    "steps"     : [
+     "{clearname}.*({year}).*",
+     "Season {season}",
+     "{season}x{episode}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

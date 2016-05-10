@@ -1,0 +1,70 @@
+{
+ "name"         : "Discovery Channels Direct Play (Official)",
+ "plugin"       : "plugin.video.discovery-channels",
+ "priority"     : 500,
+ "id"           : "provider.official.discovery-channels.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "{network_clear|replace(AHC,American Heroes}.*",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "Discovery Channel",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "Animal Planet",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "Discovery Science",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "Investigation Discovery",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "American Heroes",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.discovery-channels/",
+    "steps"     : [
+     "TLC",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

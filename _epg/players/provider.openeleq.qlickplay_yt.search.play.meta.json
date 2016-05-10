@@ -1,0 +1,53 @@
+{
+ "name"         : "QlickPlay YouTube Search Play (OpenELEQ)",
+ "plugin"       : "script.qlickplay",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.qlickplay_yt.search.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://script.qlickplay/?info=youtubesearch&id={cleartitle}+{year}",
+    "steps"     : [
+     ".*{cleartitle}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://script.qlickplay/?info=youtubesearch&id={clearname}+{season}x{episode}",
+    "steps"     : [
+     ".*{clearname}.*{season}x{episode}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://script.qlickplay/?info=youtubesearch&id={artist}+{track}",
+    "steps"     : [
+     ".*{artist}.*{track}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "music_video"  : [
+  [
+   {
+    "link"      : "plugin://script.qlickplay/?info=youtubesearch&id={artist}+{track}",
+    "steps"     : [
+     ".*{artist}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

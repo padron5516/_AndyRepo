@@ -1,0 +1,24 @@
+{
+ "name"         : "MixCloud Search Play (OpenELEQ)",
+ "plugin"       : "plugin.audio.mixcloud",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.mixcloud.search.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.mixcloud/?mode=30",
+    "steps"     : [
+     "keyboard:{cleartrack_+}",
+     ".*{artist}.*{track}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music_video"  : [],
+ "live"         : []
+}

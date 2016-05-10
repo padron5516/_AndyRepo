@@ -1,0 +1,25 @@
+{
+ "name"         : "7TV Search Activate (Official)",
+ "plugin"       : "plugin.video.7tv",
+ "priority"     : 1000,
+ "id"           : "provider.official.7tv.search.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.7tv/search/query/?q={title}",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.7tv/search/query/?q={clearname}",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

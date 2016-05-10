@@ -1,0 +1,35 @@
+{
+ "name"         : "Velocity Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.velocity",
+ "priority"     : 900,
+ "id"           : "provider.midraal.velocity.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.velocity/?mode=trakt_search_movies&url={title}",
+    "steps"     : [
+     ".*{title}.*({year}).*",
+     ".*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.velocity/?mode=trakt_search_shows&url={clearname}",
+    "steps"     : [
+     ".*{clearname}.*({year}).*",
+     "Season {season}",
+     "S{season}E{episode}$$.*",
+     ".*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

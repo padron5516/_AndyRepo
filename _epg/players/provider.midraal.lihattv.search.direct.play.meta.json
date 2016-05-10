@@ -1,0 +1,23 @@
+{
+ "name"         : "LIHATTV Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.lihattv",
+ "priority"     : 900,
+ "id"           : "provider.midraal.lihattv.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.lihattv/",
+    "steps"     : [
+     "search",
+     "@keyboard:{name}",
+     "($$.*$$)*TV($$.*$$)*.*{basename}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ]
+}

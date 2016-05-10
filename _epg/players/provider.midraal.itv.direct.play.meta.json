@@ -1,0 +1,21 @@
+{
+ "name"         : "ITV Direct Play (Midraal)",
+ "plugin"       : "plugin.video.itv",
+ "priority"     : 900,
+ "id"           : "provider.midraal.itv.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itv/",
+    "steps"     : [
+     "{name}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ]
+}

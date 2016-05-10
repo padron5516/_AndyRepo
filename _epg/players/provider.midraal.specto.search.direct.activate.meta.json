@@ -1,0 +1,33 @@
+{
+ "name"         : "Specto Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.video.specto",
+ "priority"     : 900,
+ "id"           : "provider.midraal.specto.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.specto/?action=movieSearch&query={title}",
+    "steps"     : [
+     ".*{title}.*{year}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.specto/?action=tvSearch&query={clearname}",
+    "steps"     : [
+     "{clearname}",
+     "Season {season}",
+     "{season}x{episode:02d}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

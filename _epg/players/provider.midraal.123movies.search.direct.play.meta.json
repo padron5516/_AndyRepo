@@ -1,0 +1,32 @@
+{
+ "name"         : "123Movies Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.md123movies",
+ "priority"     : 900,
+ "id"           : "provider.midraal.123movies.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.md123movies/?mode=8&url=url&query={title_escaped}",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.md123movies/?mode=8&url=url&query={clearname_escaped}",
+    "steps"     : [
+     "($$.*$$)+{clearname} -.*Season {season}($$.*$$)+",
+     "($$.*$$)+Episode {episode}:($$.*$$)+"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

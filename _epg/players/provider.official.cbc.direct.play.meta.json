@@ -1,0 +1,68 @@
+{
+ "name"         : "CBC Direct Play (Official)",
+ "plugin"       : "plugin.video.cbc",
+ "priority"     : 500,
+ "id"           : "provider.official.cbc.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     "Movies",
+     ".*{title}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     ".*{clearname}.*",
+     "Season {season}",
+     ".*Episode {episode}$$.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*$${episode}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*{clearname}.*{title}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*Season {season}",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.cbc/",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*Season {season}",
+     ".*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

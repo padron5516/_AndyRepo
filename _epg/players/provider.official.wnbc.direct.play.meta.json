@@ -1,0 +1,23 @@
+{
+ "name"         : "WNBC Programs Direct Play (Official)",
+ "plugin"       : "plugin.video.wnbc",
+ "priority"     : 500,
+ "id"           : "provider.official.wnbc.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.wnbc/",
+    "steps"     : [
+     "{clearname}.*",
+     "(?:full +episode|season {season}$$).*",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

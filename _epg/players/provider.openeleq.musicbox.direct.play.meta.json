@@ -1,0 +1,29 @@
+{
+ "name"         : "Music Box Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.audio.musicbox",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.musicbox.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.musicbox/?url=&mode=39&name=%5BB%5D{artist}%5B%2FB%5D+-+{track}&iconimage=&fanart&album={album}&track_name={track}&type=song&artist={artist}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music_video"  : [
+  [
+   {
+    "link"      : "plugin://plugin.audio.musicbox/?url=&mode=37&name=%5BB%5D{artist}%5B%2FB%5D+-+{track}&iconimage=&fanart&album={album}&track_name={track}&type=song&artist={artist}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

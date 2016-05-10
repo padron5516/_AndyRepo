@@ -1,0 +1,21 @@
+{
+ "name"         : "ITV Browse Name Play (Midraal)",
+ "plugin"       : "plugin.video.itv",
+ "priority"     : 800,
+ "id"           : "provider.midraal.itv.browse.name.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itv/",
+    "steps"     : [
+     "{name}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ]
+}

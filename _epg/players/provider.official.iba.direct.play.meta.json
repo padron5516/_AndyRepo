@@ -1,0 +1,27 @@
+{
+ "name"         : "[COLOR FF418106]IBA[/COLOR] Direct Play (Official)",
+ "plugin"       : "plugin.video.IBA",
+ "priority"     : 500,
+ "id"           : "provider.official.IBA.direct.play",
+ "filters"      : {
+  "network"     : "הערוץ הראשון"
+  },
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "language"  : "he",
+    "link"      : "plugin://plugin.video.IBA/",
+    "steps"     : [
+     "{showname}",
+     ".*עונה {season}",
+     "(?:{showname}|פרקים מלאים)",
+     ".*פרק {episode}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

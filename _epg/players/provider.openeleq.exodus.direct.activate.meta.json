@@ -1,0 +1,27 @@
+{
+ "name"         : "Exodus Direct Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.exodus",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.exodus.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=play&title={title}&year={year}&imdb={imdb}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=play&title={name}&year={year}&imdb={imdb}&tvdb={id}&season={season}&episode={episode}&tvshowtitle={showname}&premiered={firstaired}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

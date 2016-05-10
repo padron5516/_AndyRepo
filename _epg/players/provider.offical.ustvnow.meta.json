@@ -1,0 +1,23 @@
+{
+ "name": "USTVnow (official)",
+ "plugin": "plugin.video.ustvnow",
+ "priority": 900,
+ "id": "provider.official.ustvnow",
+ "filters": {},
+ "postprocess": "",
+ "movies": [],
+ "tvshows": [],
+ "live": [
+  [
+   {
+    "link": "plugin://plugin.video.ustvnow",
+    "steps": [
+      "LIVE TV",
+      "{name}$$+-.*"
+      ],
+      "action": "PLAY"
+    }
+  ]
+ ],
+ "live"         : []
+}

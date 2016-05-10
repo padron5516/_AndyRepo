@@ -1,0 +1,31 @@
+{
+ "name"         : "CorbettReport.com Search Activate (Official)",
+ "plugin"       : "plugin.video.corbettreport",
+ "priority"     : 1000,
+ "id"           : "provider.official.corbettreport.search.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.corbettreport/?mode=4&url=http%3a%2f%2fwww.corbettreport.com%2fcategory%2fvideos%2f",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.corbettreport/?mode=4&url=http%3a%2f%2fwww.corbettreport.com%2fcategory%2fvideos%2f",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

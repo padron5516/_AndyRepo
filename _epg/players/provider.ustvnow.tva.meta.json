@@ -1,0 +1,17 @@
+{
+    "name": "USTVnow.tva (Andy)",
+    "plugin": "plugin.video.ustvnow.tva",
+    "id": "provider.ustvnow.tva",
+    "live": [
+        [
+            {
+                "link": "plugin://plugin.video.ustvnow.tva",
+				"steps": [
+					"LIVE TV",
+                    "{name}$$+-.*"
+                ],
+				"action": "PLAY"
+            }
+        ]
+    ]
+}

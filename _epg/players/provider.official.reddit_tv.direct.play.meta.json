@@ -1,0 +1,49 @@
+{
+ "name"         : "Reddit.com Direct Play (Official)",
+ "plugin"       : "plugin.video.reddit_tv",
+ "priority"     : 500,
+ "id"           : "provider.official.reddit_tv.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.reddit_tv/?mode=searchVideos&url=all",
+    "steps"     : [
+     "@keyboard: {title}",
+     "{title}$$.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.reddit_tv/?mode=searchVideos&url=all",
+    "steps"     : [
+     "@keyboard: {clearname} Season {season} Episode {episode}",
+     "{clearname}$$.*$${season}$$.*$${episode}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.reddit_tv/?mode=searchVideos&url=all",
+    "steps"     : [
+     "@keyboard: {clearname} Season {season}",
+     "{clearname}$$.*$${season}$$.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.reddit_tv/?mode=searchVideos&url=all",
+    "steps"     : [
+     "@keyboard: {clearname}",
+     "{clearname}$$.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

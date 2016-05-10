@@ -1,0 +1,33 @@
+{
+ "name"         : "Netflix Direct Play (Official)",
+ "plugin"       : "plugin.video.flix2kodi",
+ "priority"     : 500,
+ "id"           : "provider.official.flix2kodi.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.flix2kodi/?mode=search&thumb&type=movie&url={title}",
+    "steps"     : [
+     "{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.flix2kodi/?mode=search&thumb&type=show&url={clearname}",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*Season {season}",
+     "{episode}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

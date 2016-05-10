@@ -1,0 +1,27 @@
+{
+ "name"         : "Library Play (Official)",
+ "plugin"       : "",
+ "priority"     : 100,
+ "id"           : "provider.official.library.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "movies",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "tvshows",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

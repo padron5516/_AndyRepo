@@ -1,0 +1,35 @@
+{
+ "name"         : "[COLOR FFD15FEE]Quasar[/COLOR] Helix Search Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.pulsar",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.quasar.helix.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.pulsar/movies/search",
+    "steps"     : [
+     "@keyboard: {title}",
+     "{title}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.pulsar/shows/search",
+    "steps"     : [
+     "@keyboard: {clearname}",
+     ".*{clearname}.*",
+     ".*Season {season}",
+     ".*{season}x{episode:02d}.*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

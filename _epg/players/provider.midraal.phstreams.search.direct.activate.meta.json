@@ -1,0 +1,72 @@
+{
+ "name"         : "Phoenix Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.video.phstreams",
+ "priority"     : 900,
+ "id"           : "provider.midraal.phstreams.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.phstreams/?action=addSearch&url={title}",
+    "steps"     : [
+     ".*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.phstreams/?action=addSearch&url={clearname}",
+    "steps"     : [
+     ".*{clearname}",
+     ".*$${season}.*",
+     ".*S{season:02d}E{episode:02d}"
+     ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.phstreams/?action=addSearch&url={clearname}",
+    "steps"     : [
+     ".*{clearname}",
+     ".*",
+     ".*{episode:02d}"
+    ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.phstreams/?action=addSearch&url={clearname}",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*{season}$$.*",
+     ".*{episode:02d}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.phstreams",
+    "steps"     : [
+     "Phoenix TV",
+     "@any",
+     ".*{basename}$$*{extension}($$*.$$*)?{delay}"
+     ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.phstreams",
+    "steps"     : [
+     "Phoenix TV",
+     "@any",
+     ".*{basename|replace(*, star)}"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ]
+}

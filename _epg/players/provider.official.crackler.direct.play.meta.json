@@ -1,0 +1,43 @@
+{
+ "name"         : "Crackler Direct Play (Official)",
+ "plugin"       : "plugin.video.crackler",
+ "priority"     : 500,
+ "id"           : "provider.official.crackler.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.crackler/",
+    "steps"     : [
+     "Movies",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.crackler/",
+    "steps"     : [
+     "TV",
+     "{clearname}.*",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.crackler/",
+    "steps"     : [
+     "TV",
+     "{clearname}.*",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

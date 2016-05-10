@@ -1,0 +1,22 @@
+{
+ "name": "CBSN (Official)",
+ "plugin": "plugin.video.cbsn",
+ "priority": 900,
+ "id": "provider.official.cbsn",
+ "filters": {"channel":"CBSN"},
+ "postprocess": "",
+ "movies": [],
+ "tvshows": [],
+ "live": [
+  [
+   {
+    "link": "plugin://plugin.video.cbsn",
+    "steps": [
+    "LIVE"
+    ],
+    "action": "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,41 @@
+{
+ "name"         : "UMP IMDb Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.program.ump",
+ "priority"     : 900,
+ "id"           : "provider.midraal.ump.imdb.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.program.ump",
+    "steps"     : [
+     "video",
+     "imdb",
+     "Search Movies",
+     "@keyboard: {title}",
+     "{title}"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.program.ump",
+    "steps"     : [
+     "video",
+     "imdb",
+     "Search Series",
+     "@keyboard: {clearname}",
+     "{clearname}",
+     ".*{season}",
+     "{episode}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

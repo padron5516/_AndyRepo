@@ -1,0 +1,17 @@
+{
+    "name": "USTVnow",
+    "plugin": "plugin.video.ustvnow",
+    "id": "provider.ustvnow",
+    "live": [
+        [
+            {
+                "link": "plugin://plugin.video.ustvnow",
+				"steps": [
+					"LIVE TV",
+                    "{name}$$+-.*"
+                ],
+				"action": "PLAY"
+            }
+        ]
+    ]
+}

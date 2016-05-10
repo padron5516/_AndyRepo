@@ -1,0 +1,27 @@
+{
+ "name"         : "SALTS Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.salts",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.salts.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?title={title}&video_type=Movie&trakt_id={trakt}&mode=get_sources&dialog=True&year={year}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?ep_airdate={firstaired}&trakt_id={trakt}&episode={episode}&mode=get_sources&dialog=True&title={clearname}&ep_title={title}&season={season}&year={year}&video_type=Episode",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

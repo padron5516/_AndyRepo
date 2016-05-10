@@ -1,0 +1,21 @@
+{
+ "name"         : "All Wrestling Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.video.all_wrestling",
+ "priority"     : 900,
+ "id"           : "provider.midraal.all_wrestling.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.all_wrestling/?mode=1&url=http://www.allwrestling.net/?s={title_escaped+}",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [],
+ "live"         : []
+}

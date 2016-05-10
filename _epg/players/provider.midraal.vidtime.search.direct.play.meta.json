@@ -1,0 +1,36 @@
+{
+ "name"         : "VidTime Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.VidTime",
+ "priority"     : 900,
+ "id"           : "provider.midraal.vidtime.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.VidTime/",
+    "steps"     : [
+     ".*SEARCH.*",
+     "keyboard:{title}",
+     "$$B$${title}$$/B$$"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.VidTime/",
+    "steps"     : [
+     ".*SEARCH.*",
+     "keyboard:{clearname}",
+     "($$.*$$)+{clearname}$$($$.*$$)TV SERIES.*",
+     ".*{clearname} S{season:02d}E{episode:02d}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Syfy Channel",
+    "plugin": "plugin.video.syfy",
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.syfy",
+                "steps": [
+                    "{clearname}.*",
+                   "{season}x{episode}"                 
+                ]
+            }
+        ]
+    ]
+}

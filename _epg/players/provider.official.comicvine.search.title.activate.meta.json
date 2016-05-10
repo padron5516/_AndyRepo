@@ -1,0 +1,25 @@
+{
+ "name"         : "Comic Vine Search Title Activate (Official)",
+ "plugin"       : "plugin.video.comicvine",
+ "priority"     : 1000,
+ "id"           : "provider.official.comicvine.search.title.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.comicvine/?mode=2&name={title}&url=http%3a%2f%2fapi.comicvine.com%2fsearch%2f%3fapi_key%3dc64ac7ddc90513cc15539f1d606e8670b1ef0ae4%26resources%3dvideo%26query%3d{title}%26format%3djson",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.comicvine/?mode=2&name={title}&url=http%3a%2f%2fapi.comicvine.com%2fsearch%2f%3fapi_key%3dc64ac7ddc90513cc15539f1d606e8670b1ef0ae4%26resources%3dvideo%26query%3d{title}%26format%3djson",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

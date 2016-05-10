@@ -1,0 +1,21 @@
+{
+ "name"         : "Watch 1080p Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.watch1080",
+ "priority"     : 900,
+ "id"           : "provider.midraal.watch1080p.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.watch1080/?mode=1&url=http://watch1080p.com/search/{title_escaped}",
+    "steps"     : [
+     ".*{title}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [],
+ "live"         : []
+}

@@ -1,0 +1,27 @@
+{
+ "name"         : "1Channel Search Name Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.1channel",
+ "priority"     : 1000,
+ "id"           : "provider.openeleq.1channel.search.name.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.1channel/?section=movie&mode=Search&query={name}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.1channel/?section=tv&mode=Search&query={clearname}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

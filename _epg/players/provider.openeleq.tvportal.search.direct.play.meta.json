@@ -1,0 +1,22 @@
+{
+ "name"         : "TVPortal (OpenELEQ)",
+ "plugin"       : "script.tvportal",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.tvportal.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.program.super.favourites/?folder=HOME_LIVE_TV/",
+    "steps"     : [
+    ".*{basename|ws(_)}.*{extension|ws(_)}.*",
+    ".*{basename}.*{extension}.*"
+    ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}

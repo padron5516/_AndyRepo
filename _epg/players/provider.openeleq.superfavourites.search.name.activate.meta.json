@@ -1,0 +1,27 @@
+{
+ "name"         : "Super Favourites Search Name Activate (OpenELEQ)",
+ "plugin"       : "plugin.program.super.favourites",
+ "priority"     : 400,
+ "id"           : "provider.openeleq.superfavourites.search.name.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.program.super.favourites/?mode=0&keyword={name}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.program.super.favourites/?mode=0&keyword={clearname}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

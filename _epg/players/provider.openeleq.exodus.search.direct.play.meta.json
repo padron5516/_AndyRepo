@@ -1,0 +1,33 @@
+{
+ "name"         : "Exodus Search Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.exodus",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.exodus.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=movieSearch&query={title}",
+    "steps"     : [
+     ".*{title}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.exodus/?action=tvSearch&query={clearname}",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*$${season}",
+     "($$.*$$)+{season}x{episode:02d}$$.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

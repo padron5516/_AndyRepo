@@ -1,0 +1,31 @@
+{
+ "name"         : "Bayrisches Fernsehen Search Direct Activate (Official)",
+ "plugin"       : "plugin.video.br3",
+ "priority"     : 1000,
+ "id"           : "provider.official.br3.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.br3/?mode=getcontent_search&amp;url=http://www.br.de/mediathek/video/video/index.html?query={name}",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.br3/?mode=getcontent_search&amp;url=http://www.br.de/mediathek/video/video/index.html?query={clearname}",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

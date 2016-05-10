@@ -1,0 +1,35 @@
+{
+ "name"         : "What the Furk Search Direct Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.whatthefurk",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.whatthefurk.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.whatthefurk/?iconimage=special%3a%2f%2fhome%2faddons%2fplugin.video.whatthefurk%2fart%2fsearch.png&imdb=blank&mode=1500&name=Search%20Movies&parms&rootname=blank&start=1&url=imdb&videotype=moviemenu",
+    "steps"     : [
+     "@keyboard: {title}",
+     ".*{title}..{year}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.whatthefurk/?iconimage=special%3a%2f%2fhome%2faddons%2fplugin.video.whatthefurk%2fart%2fsearch.png&imdb=blank&mode=1500&name=Search%20TV%20Shows&parms&rootname=blank&start=1&url=imdb&videotype",
+    "steps"     : [
+     "@keyboard: {clearname}",
+     ".*{clearname}..{year}.*",
+     "Season.{season}.*",
+     "S{season:02d}E{episode:02d}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

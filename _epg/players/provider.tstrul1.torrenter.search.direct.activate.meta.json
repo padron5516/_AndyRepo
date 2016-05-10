@@ -1,0 +1,25 @@
+{
+ "name"         : "Torrenter Search Activate (tstrul1)",
+ "plugin"       : "plugin.video.torrenter",
+ "priority"     : 900,
+ "id"           : "provider.tstrul1.torrenter.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.torrenter/?action=search&url={title}",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.torrenter/?action=search&url={name}",
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

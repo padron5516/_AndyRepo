@@ -1,0 +1,31 @@
+{
+ "name"         : "ARD Mediathek Search Play (Official)",
+ "plugin"       : "plugin.video.ardmediathek_de",
+ "priority"     : 1000,
+ "id"           : "provider.official.ardmediathek_de.search.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ardmediathek_de/?mode=listVideos&url=http://www.ardmediathek.de/tv/suche?searchText={title}",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ardmediathek_de/?mode=listVideos&url=http://www.ardmediathek.de/tv/suche?searchText={clearname}",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,31 @@
+{
+ "name"         : "4Players Search Name Activate (Official)",
+ "plugin"       : "plugin.video.4players",
+ "priority"     : 1000,
+ "id"           : "provider.official.4players.search.name.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.4players/search/{name}/",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.4players/search/{clearname}/",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

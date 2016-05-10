@@ -1,0 +1,24 @@
+{
+ "name"         : "UMP TVDb Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.program.ump",
+ "priority"     : 900,
+ "id"           : "provider.midraal.ump.tvdb.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.program.ump",
+    "steps"     : [
+     "@keyboard: {clearname}",
+     "{clearname}",
+     "Season {season}",
+     "{season}x{episode}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

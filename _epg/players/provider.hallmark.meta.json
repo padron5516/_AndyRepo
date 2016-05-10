@@ -1,0 +1,14 @@
+{
+    "name": "Hallmark",
+    "plugin": "plugin.video.hallmark",
+    "movies": [
+        [
+            {
+                "link": "plugin://plugin.video.hallmark/?mode=GM&url=http%3a%2f%2fwww.hallmarkchanneleverywhere.com%2fMovies%3fNodeID%3d28",
+                "steps": [
+                    "{title}"
+                ]
+            }
+        ]
+    ]
+}

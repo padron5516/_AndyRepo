@@ -1,0 +1,33 @@
+{
+ "name"         : "[COLOR FFD15FEE]Quasar[/COLOR] Search Name Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.quasar",
+ "priority"     : 1000,
+ "id"           : "provider.openeleq.quasar.search.name.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.quasar/movies/search",
+    "steps"     : [
+     "@keyboard: {name}",
+     ".*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.quasar/shows/search",
+    "steps"     : [
+     "@keyboard: {clearname}",
+     ".*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

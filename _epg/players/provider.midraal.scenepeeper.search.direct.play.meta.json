@@ -1,0 +1,23 @@
+{
+ "name"         : "Scene Peeper Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.mdscenepeeper",
+ "priority"     : 900,
+ "id"           : "provider.midraal.scenepeeper.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.mdscenepeeper",
+    "steps"     : [
+     ".*SEARCH.*",
+     "keyboard:{title}",
+     ".*{title}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [],
+ "live"         : []
+}

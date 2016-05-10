@@ -1,0 +1,15 @@
+{
+    "name": "ABC Family",
+    "plugin": "plugin.video.abcfamily",
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.abcfamily",
+                "steps": [
+                    "{clearname}.",
+                    ".{title}.*"
+                ]
+            }
+        ]
+    ]
+}

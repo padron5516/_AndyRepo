@@ -1,0 +1,22 @@
+{
+ "name"         : "WCBS Programs Direct Play (Official)",
+ "plugin"       : "plugin.video.wcbs",
+ "priority"     : 500,
+ "id"           : "provider.official.wcbs.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.wcbs/",
+    "steps"     : [
+     "{clearname}.*",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

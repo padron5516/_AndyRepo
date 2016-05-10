@@ -1,0 +1,31 @@
+{
+ "name"         : "iTunes Trailers Search Name Activate (Official)",
+ "plugin"       : "plugin.video.itunes_trailers",
+ "priority"     : 1000,
+ "id"           : "provider.official.itunes_trailers.search.name.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itunes_trailers/",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.itunes_trailers/",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

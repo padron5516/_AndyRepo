@@ -1,0 +1,40 @@
+{
+ "name"         : "UMP Ann Search Direct Activate (Midraal)",
+ "plugin"       : "plugin.program.ump",
+ "priority"     : 900,
+ "id"           : "provider.midraal.ump.ann.search.direct.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.program.ump",
+    "steps"     : [
+     "video",
+     "ann",
+     "Search",
+     "@keyboard: {title}",
+     ".*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.program.ump",
+    "steps"     : [
+     "video",
+     "ann",
+     "Search",
+     "@keyboard: {clearname}",
+     ".*{clearname}$$.*",
+     "{episode}$$.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

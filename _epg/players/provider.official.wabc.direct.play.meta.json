@@ -1,0 +1,22 @@
+{
+ "name"         : "WABC Programs Direct Play (Official)",
+ "plugin"       : "plugin.video.wabc",
+ "priority"     : 500,
+ "id"           : "provider.official.wabc.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.wabc/",
+    "steps"     : [
+     "(?:{clearname}|{clearname|replace(',’)})",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

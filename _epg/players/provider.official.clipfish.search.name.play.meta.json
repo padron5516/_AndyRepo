@@ -1,0 +1,31 @@
+{
+ "name"         : "Clipfish Name Play (Official)",
+ "plugin"       : "plugin.video.clipfish.de",
+ "priority"     : 1000,
+ "id"           : "provider.official.clipfish.search.name.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.clipfish.de/kodion/search/query/?q={name}",
+    "steps"     : [
+     ".*{name}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.clipfish.de/kodion/search/query/?q={clearname}",
+    "steps"     : [
+     ".*{clearname}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

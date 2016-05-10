@@ -1,0 +1,27 @@
+{
+    "name": "Netflix",
+    "plugin": "plugin.video.flix2kodi",
+    "priority": 500,
+    "movies": [
+        [
+            {
+                "link": "plugin://plugin.video.flix2kodi/?mode=search&thumb&type=movie&url={title}",
+                "steps": [
+                    "{title}.*"
+                ]
+            }
+        ]
+    ],
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.flix2kodi/?mode=search&thumb&type=show&url={clearname}",
+                "steps": [
+                    ".*{clearname}.*",
+                    ".*Season {season}",
+                    "{episode}"
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,32 @@
+{
+ "name"         : "M4U Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.mdm4u",
+ "priority"     : 900,
+ "id"           : "provider.midraal.m4u.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.mdm4u/?url=http://m4ufree.info/tag/{title_-}&mode=11",
+    "steps"     : [
+     ".*{title}.*({year}).*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.mdm4u/?url=http://m4ufree.info/tagtvs/{clearname_-}&mode=11",
+    "steps"     : [
+     ".*{clearname}.*",
+     ".*S{season:02d}-E{episode:02d}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

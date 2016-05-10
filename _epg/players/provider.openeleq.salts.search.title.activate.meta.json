@@ -1,0 +1,27 @@
+{
+ "name"         : "SALTS Search Title Activate (OpenELEQ)",
+ "plugin"       : "plugin.video.salts",
+ "priority"     : 1000,
+ "id"           : "provider.openeleq.salts.search.title.activate",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=Movies&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.salts/?mode=search_results&section=TV&query={title}",
+    "steps"     : [],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "live"         : []
+}

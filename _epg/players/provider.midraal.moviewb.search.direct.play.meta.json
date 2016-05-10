@@ -1,0 +1,32 @@
+{
+ "name"         : "MovieWB Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.mdmoviewb",
+ "priority"     : 900,
+ "id"           : "provider.midraal.moviewb.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.mdmoviewb/?url=http://moviewb.net/search-movies/{title_+}.html&mode=1",
+    "steps"     : [
+     ".*{title}.*{year}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.mdmoviewb/?url=http://moviewb.net/search-movies/{clearname_+}.html&mode=1",
+    "steps"     : [
+     ".*{clearname}.*Season {season}.*",
+     ".*Episode$$.*$${episode}$$.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

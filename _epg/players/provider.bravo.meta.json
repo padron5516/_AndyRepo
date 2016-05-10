@@ -1,0 +1,15 @@
+{
+    "name": "Bravo Channel",
+    "plugin": "plugin.video.bravo",
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.bravo",
+                "steps": [
+                    "{clearname}.*",
+                   "{season}x{episode}"                 
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Crackler",
+    "plugin": "plugin.video.crackler",
+    "movies": [
+        [
+            {
+                "link": "plugin://plugin.video.crackler",
+                "steps": [
+                    "Movies",
+                    ".*{title}.*"
+                ]
+            }
+        ]
+    ],
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.crackler",
+                "steps": [
+                    "TV",
+                    "{clearname}.*",
+                    "{season}x{episode}"
+                ]
+            },
+            {
+                "link": "plugin://plugin.video.crackler",
+                "steps": [
+                    "TV",
+                    "{clearname}.*",
+                    ".*{title}.*"
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,21 @@
+{
+ "name"         : "Cartoons8 Search Direct Play (Midraal)",
+ "plugin"       : "plugin.video.cartoons8",
+ "priority"     : 900,
+ "id"           : "provider.midraal.cartoons8.search.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.cartoons8/?mode=9&url=http://cartoons8.co/search/page/1?s={clearname_+}",
+    "steps"     : [
+     ".*{clearname}.*{year}.*",
+     "(?:.*$${season}$${episode}|.*$${episode})"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}

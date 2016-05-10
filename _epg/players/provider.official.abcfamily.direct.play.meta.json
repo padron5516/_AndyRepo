@@ -1,0 +1,22 @@
+{
+ "name"         : "ABC Family Direct Play (Official)",
+ "plugin"       : "plugin.video.abcfamily",
+ "priority"     : 500,
+ "id"           : "provider.official.abcfamily.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.abcfamily/",
+    "steps"     : [
+     "{clearname}.",
+     ".{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

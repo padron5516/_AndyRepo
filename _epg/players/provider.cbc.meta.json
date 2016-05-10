@@ -1,0 +1,57 @@
+{
+    "name": "CBC",
+    "plugin": "plugin.video.cbc",
+    "movies": [
+        [
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    "Movies",
+                    ".*{title}"
+                ]
+            }
+        ]
+    ],
+    "tvshows": [
+        [
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    ".*{clearname}.*",
+                    "Season {season}",
+                    ".*Episode {episode}$$.*"
+                ]
+            },
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    ".*{clearname}.*",
+                    ".*$${episode}"
+                ]
+            },
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    ".*{clearname}.*",
+                    ".*{clearname}.*{title}"
+                ]
+            },
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    ".*{clearname}.*",
+                    ".*Season {season}",
+                    ".*{title}.*"
+                ]
+            },
+            {
+                "link": "plugin://plugin.video.cbc",
+                "steps": [
+                    ".*{clearname}.*",
+                    ".*Season {season}",
+                    ".*"
+                ]
+            }
+        ]
+    ]
+}

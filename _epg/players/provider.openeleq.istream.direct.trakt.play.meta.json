@@ -1,0 +1,27 @@
+{
+ "name"         : "iSTREAM Direct Trakt Play (OpenELEQ)",
+ "plugin"       : "script.icechannel",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.istream.direct.trakt.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://script.icechannel/?episode&fanart&favorite=false&imdb_id={imdb}&img=&indexer=movies&indexer_id=trakt&istream_path=&mode=file_hosts&name={title}&season&section&title={title}%5bCOLOR%20royalblue%5d%20({year})%5b%2fCOLOR%5d&trailer&type=movies&url&urls&year={year}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://script.icechannel/?episode=16&fanart=&favorite=false&imdb_id={imdb}&img=&indexer=tv_shows&indexer_id=trakt&istream_path=&mode=file_hosts&name={clearname}&season={season}&section&title={clearname}%5bCOLOR%20royalblue%5d%20(S{season:02d}E{episode:02d})%5b%2fCOLOR%5d&trailer&type=tv_episodes&url=%2fepisode%2f{slug}_s{season}_e{episode}.html&urls&year=0",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}

@@ -1,0 +1,54 @@
+{
+ "name"         : "USTV VoD Direct Play (Official)",
+ "plugin"       : "plugin.video.ustvvod",
+ "priority"     : 500,
+ "id"           : "provider.official.ustvvod.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ustvvod/",
+    "steps"     : [
+     "{network_clean}",
+     "(?:{showname}|clearname)",
+     "(?:.*Season {season}|Full Episodes)",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ustvvod/",
+    "steps"     : [
+     "{network_clean}",
+     "(?:{showname}|clearname)",
+     "(?:.*Season {season}|Full Episodes)",
+     "S{season:02d}E{episode:02d} .*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ustvvod/",
+    "steps"     : [
+     "Favorite Shows",
+     "(?:{showname}|clearname)",
+     "(?:.*Season {season}|Full Episodes)",
+     "{season}x{episode}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ustvvod/",
+    "steps"     : [
+     "Favorite Shows",
+     "(?:{showname}|clearname)",
+     "(?:.*Season {season}|Full Episodes)",
+     "S{season:02d}E{episode:02d} .*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "live"         : []
+}
