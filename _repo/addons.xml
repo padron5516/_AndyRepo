@@ -253,9 +253,9 @@
 
 <addon
   id="Andy.skin.confluence"
-  version="2.8.7"
+  version="2.8.8"
   name="Confluence (16 Mod)"
-  provider-name="Jezz_X, Team Kodi">
+  provider-name="Andy, Jezz_X, Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
   </requires>
@@ -1382,7 +1382,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 </extension>
 </addon>
 
-<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.2" provider-name="SiLVO">
+<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.3" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -1393,10 +1393,16 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard</datadir>
 			<hashes>true</hashes>
 		</dir>
-		<dir minversion="15.9.0">
+		<dir minversion="16.0.0">
 			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml</info>
 			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis</datadir>
+			<hashes>true</hashes>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton</datadir>
 			<hashes>true</hashes>
 		</dir>
 	</extension>
@@ -1684,7 +1690,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="repository.dextertv" name="dexter repo" version="1.3" provider-name="dexter">
+<addon id="repository.dextertv" name="dexter repo" version="2.0" provider-name="dexter">
 	<extension point="xbmc.addon.repository" name="dexter Addon Repository">
 		<info compressed="false">https://raw.githubusercontent.com/xoptimus/dexter/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/xoptimus/dexter/master/addons.xml.md5</checksum>
@@ -1714,20 +1720,6 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
-<addon id="repository.dnarepo" name="[COLOR lightblue]dna[/COLOR] [COLOR lightwhite]Repository[/COLOR]" version="0.0.4" provider-name="dna">
-	<extension point="xbmc.addon.repository" name="dna Repository">
-		<info compressed="false">http://raw.github.com/macblizzard/dnarepo/master/addons.xml</info>
-		<checksum>http://raw.github.com/macblizzard/dnarepo/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/macblizzard/dnarepo/master</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>dna Repository</summary>
-		<description>Download and install add-ons from dna repository.</description>
-		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.dnaREPO-v2" name="[COLOR lightblue]dna[/COLOR][COLOR lightwhite]REPO-v2[/COLOR]" version="2.0.0" provider-name="Team DNA">
 	<extension point="xbmc.addon.repository" name="dnaREPO-v2">
 		<info compressed="false">https://raw.githubusercontent.com/macblizzard/dnaREPO-v2/master/addons.xml</info>
@@ -1738,6 +1730,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<summary>dnaREPO-v2</summary>
 		<description>Download and install add-ons from dna repository.</description>
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.docshadrach" name="Doc Shadrach's Add-ons" version="1.0" provider-name="Doc Shadrach">
+	<extension point="xbmc.addon.repository" name="Doc Shadrach's Add-ons Repo 1.0">
+		<info compressed="false">http://github.com/XBMCSpot/docshadrach.repository/raw/master/addons.xml</info>
+		<checksum>http://github.com/XBMCSpot/docshadrach.repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://github.com/XBMCSpot/docshadrach.repository/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Instala add-ons desde el repositorio de Doc Shadrach</summary>
+		<description>Visita el spot B75OYRJ de la app Spotbros para enterarte de las novedades.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2178,19 +2183,6 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
     </extension>
 </addon>
 
-<addon id="repository.Lwsrepo" name="Lwsrepo" version="2.0" provider-name="LwS">
-	<extension point="xbmc.addon.repository" name="LwS-Repo">
-		<info compressed="false">https://archive.org/download/LwSRepo/Plugins/addons.xml</info>
-		<checksum>https://archive.org/download/LwSRepo/Plugins/addons.xml.md5</checksum>
-		<datadir zip="true">https://archive.org/download/LwSRepo/Plugins/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>LwS Build Repo</summary>
-		<description>LwS Build Repo</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.mdrepo" name="Mucky Ducks Repo" version="1.0.2" provider-name="Mucky Duck">
 	<extension point="xbmc.addon.repository" name="Mucky Ducks Repo">
 		<info compressed="false">https://raw.githubusercontent.com/mucky-duck/mdrepo/master/addons.xml</info>
@@ -2259,19 +2251,6 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install Add-ons from Mr-Smiths-Repo</summary>
 		<description lang="en">Download and install add-ons Mr-Smiths-Repo.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.nanaddons" name=" Community Portal Addon Repository" version="1.1" provider-name="noobsandnerds.com">
-	<extension point="xbmc.addon.repository" name=" Community Portal Addon Repository">
-		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/CP/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/noobsandnerds/CP/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/CP/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Home of The Community Portal</summary>
-		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
 		<platform>all</platform>
 	</extension>
 </addon>
