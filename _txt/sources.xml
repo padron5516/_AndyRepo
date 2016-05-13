@@ -4,24 +4,7 @@
     </programs>
     <video>
         <default pathversion="1"></default>
-        <source>
-            <name>Tv</name>
-            <path pathversion="1">smb://SERVER/TV/</path>
-            <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>TV IPTV (Local)</name>
-            <path pathversion="1">special://profile/addon_data/Andy.plugin.program.Guide/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://kodilover.net16.net/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
+
         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
@@ -46,9 +29,11 @@
             <thumbnail pathversion="1">DefaultVideoPlaylists.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
+
     </video>
     <music>
         <default pathversion="1"></default>
+
         <source>
             <name>Rotten Tomatoes Podcast</name>
             <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
@@ -180,7 +165,7 @@
         </source>
         <source>
             <name>z._Ak47</name>
-            <path pathversion="1">http://repo.run/a47b</path>
+            <path pathversion="1">http://repo.run/a47b/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -239,6 +224,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._i4atv</name>
+            <path pathversion="1">http://i4atv.esy.es/underground/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._iwillfolo</name>
             <path pathversion="1">http://iwillfolo.com/iwf/</path>
             <allowsharing>true</allowsharing>
@@ -269,6 +259,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._Matsbuilds</name>
+            <path pathversion="1">http://matsbuilds.co.uk/repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._Mega-Tron</name>
             <path pathversion="1">http://transform.mega-tron.tv/</path>
             <allowsharing>true</allowsharing>
@@ -291,6 +286,11 @@
         <source>
             <name>z._Muckys KodiMediaPortal</name>
             <path pathversion="1">http://muckys.kodimediaportal.ml/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Mwiz</name>
+            <path pathversion="1">http://mwiz.co.uk/repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

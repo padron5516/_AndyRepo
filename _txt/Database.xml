@@ -5,27 +5,6 @@
     <video>
         <default pathversion="1"></default>
         <source>
-            <name>_Downloads (HDD)</name>
-            <path pathversion="1">X:\DOWNLOADS\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>_Movies (HDD)</name>
-            <path pathversion="1">D:\HD\</path>
-            <path pathversion="1">E:\VIDEOS\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>_Music Videos (HDD)</name>
-            <path pathversion="1">E:\MUSIC_VIDEOS\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>_Tv (HDD)</name>
-            <path pathversion="1">E:\TV\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
             <name>Downloads</name>
             <path pathversion="1">smb://SERVER/DOWNLOADS/</path>
             <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
@@ -51,14 +30,8 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>TV IPTV (Local)</name>
+            <name>TV IPTV (Andy.plugin.program.Guide)</name>
             <path pathversion="1">special://profile/addon_data/Andy.plugin.program.Guide/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://kodilover.net16.net/</path>
             <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
@@ -90,16 +63,6 @@
     <music>
         <default pathversion="1"></default>
         <source>
-            <name>_Music (Mixed) (HDD)</name>
-            <path pathversion="1">E:\Special_Songs\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>_Music (HDD)</name>
-            <path pathversion="1">E:\Music\</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
             <name>Music (Mixed)</name>
             <path pathversion="1">smb://SERVER/Special_Songs/</path>
             <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
@@ -109,18 +72,6 @@
             <name>Music</name>
             <path pathversion="1">smb://SERVER/Music/</path>
             <thumbnail pathversion="1">DefaultNetwork.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>TV IPTV (Local)</name>
-            <path pathversion="1">special://profile/addon_data/Andy.pvr.iptvsimple/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>TV IPTV (www)</name>
-            <path pathversion="1">http://prozone.getxbmc.com/playlists/</path>
-            <thumbnail pathversion="1">DefaultAddonPVRClient.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -254,7 +205,7 @@
         </source>
         <source>
             <name>z._Ak47</name>
-            <path pathversion="1">http://repo.run/a47b</path>
+            <path pathversion="1">http://repo.run/a47b/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -313,6 +264,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._i4atv</name>
+            <path pathversion="1">http://i4atv.esy.es/underground/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._iwillfolo</name>
             <path pathversion="1">http://iwillfolo.com/iwf/</path>
             <allowsharing>true</allowsharing>
@@ -343,6 +299,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._Matsbuilds</name>
+            <path pathversion="1">http://matsbuilds.co.uk/repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._Mega-Tron</name>
             <path pathversion="1">http://transform.mega-tron.tv/</path>
             <allowsharing>true</allowsharing>
@@ -365,6 +326,11 @@
         <source>
             <name>z._Muckys KodiMediaPortal</name>
             <path pathversion="1">http://muckys.kodimediaportal.ml/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Mwiz</name>
+            <path pathversion="1">http://mwiz.co.uk/repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

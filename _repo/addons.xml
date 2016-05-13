@@ -64,6 +64,24 @@
 
 </addon>
 
+<addon id="Andy.plugin.video.iptv" name=" [COLOR yellow]Andy[/COLOR] IPTV" version="11.0.0" provider-name="dara, couch potato">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">IPTV Stalker</summary>
+		<description lang="en">Use IPTV Stalker + VOD add-on for PAPIAO servers, based on original code by esxbr.  This is cloned for testing purposes.</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://iptvtalk.org/</forum>
+	</extension>
+</addon>
+
 <addon
   id="Andy.pvr.iptvsimple"
   version="2.12.10"
@@ -722,7 +740,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.dnatv" name="[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO Beta[/COLOR][/I][/B]" version="3.5.1" provider-name="Team DNA">
+<addon id="plugin.video.dnatv" name="[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO Beta[/COLOR][/I][/B]" version="3.5.3" provider-name="Team DNA">
     <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" version="2.0.0" />
@@ -755,6 +773,37 @@
         <description></description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.FSSport"
+       name="FS Sport"
+       version="1.0.2"
+       provider-name="Shaney Repos">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"> FS Sports</summary>
+    <description lang="en">[COLOR red]FREE[/COLOR] Live HD Sports [COLOR red]developed by FS Sports[/COLOR] credits to Shaney Repos for dev help Follow me on twitter - [COLOR lime]@FireSticksTV[/COLOR] </description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.iptvsubs" name="Iptvsubs" version="1.0" provider-name="MikkM">
@@ -978,7 +1027,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.38" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.41" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -1039,7 +1088,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.stalker" name="IPTV Stalker Papiao" version="10.0.0" provider-name="dara">
+<addon id="plugin.video.stalker" name="IPTV Stalker PLUS" version="11.0.0" provider-name="dara, couch potato">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -1049,13 +1098,11 @@ http://www.hometheater.co.il</description>
 	<extension point="xbmc.service" library="server.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">IPTV Stalker Papiao</summary>
-		<description lang="en">IPTV Stalker for Papiao servers, based on original code by esxbr </description>
+		<summary lang="en">IPTV Stalker PLUS</summary>
+		<description lang="en">IPTV Stalker + VOD add-on for PAPIAO servers, based on original code by esxbr</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
 		<forum>http://iptvtalk.org/</forum>
-
-
 	</extension>
 </addon>
 
@@ -1128,7 +1175,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.VidTime"
        name="VidTime"
-       version="1.2.7"
+       version="1.2.8"
        provider-name="VinManJSV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1163,6 +1210,37 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
+<addon id="plugin.video.xo1000sports"
+       name="Xo1000sports"
+       version="1.0"
+       provider-name="xo1000sports">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Sports</summary>
+    <description lang="en">Live Sports Tv</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.xtream-codes" name="Xtream-Codes IPTV" version="2.0" provider-name="MikkM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1184,7 +1262,7 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.7.8"
+       version="4.8.1"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1210,119 +1288,6 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
     <platform>all</platform>
 
 
-  </extension>
-</addon>
-
-<addon
-  id="pvr.stalker.nfps"
-  version="0.8.4"
-  name="Stalker Client NFPS"
-  provider-name="dvbken">
-  <requires>
-    <c-pluff version="0.1"/>
-    <import addon="xbmc.pvr" version="1.9.6"/>
-  </requires>
-  <extension
-    point="xbmc.pvrclient"
-    library_linux="pvr.stalker.nfps.so"
-    library_osx="pvr.stalker.nfps.dylib"
-    library_freebsd="pvr.stalker.nfps.so"
-    library_windx="pvr.stalker.nfps.dll"
-    library_android="libpvr.stalker.nfps.so" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="cs_CZ">PVR klient pro připojení Kodi k Stalker Middleware</summary>
-    <summary lang="de_DE">PVR Client um Kodi mit Stalker Middleware zu verbinden</summary>
-    <summary lang="en_GB">PVR Client to connect Kodi to Stalker Middleware</summary>
-    <summary lang="en_NZ">PVR Client to connect Kodi to Stalker Middleware</summary>
-    <summary lang="en_US">PVR Client to connect Kodi to Stalker Middleware</summary>
-    <summary lang="fr_CA">Client de numériscope pour connecter Kodi à l'intergiciel Stalker</summary>
-    <summary lang="fr_FR">Client d'enregistrement vidéo pour connecter Kodi à l'intergiciel Stalker</summary>
-    <summary lang="hu_HU">PVR Kliens ami összeköti a KODI-t a Stalker Illesztővel</summary>
-    <summary lang="it_IT">Client PVR per connettere Kodi a Stalker Middleware</summary>
-    <summary lang="lt_LT">PVR klientas Kodi sujungimui su Stalker Middleware</summary>
-    <summary lang="ms_MY">Klien PVR untuk sambungkan Kodi dengan Stalker Middleware</summary>
-    <summary lang="nl_NL">PVR-cliënt verbindt Kodi met Stalker Middleware</summary>
-    <summary lang="pl_PL">Klient TV dla platformy Stalker Middleware</summary>
-    <summary lang="pt_BR">Cliente PVR para conectar Kodi para o Middleware Stalker</summary>
-    <summary lang="pt_PT">Cliente PVR para ligar o Kodi ao Middleware Stalker</summary>
-    <summary lang="ru_RU">Клиент PVR для подключения Stalker Middleware к Kodi</summary>
-    <summary lang="sl_SI">Odjemalec PVC, s katerim se Kodi poveže s Stalker Middleware</summary>
-    <summary lang="zh_CN">Kodi 连接 Stalker Middleware 的 PVR 客户端</summary>
-    <description lang="cs_CZ">PVR klient pro připojení Kodi k Stalker Middleware</description>
-    <description lang="de_DE">PVR Client um Kodi mit Stalker Middleware zu verbinden</description>
-    <description lang="en_GB">PVR Client to connect Kodi to Stalker Middleware</description>
-    <description lang="en_NZ">PVR Client to connect Kodi to Stalker Middleware</description>
-    <description lang="en_US">PVR Client to connect Kodi to Stalker Middleware</description>
-    <description lang="fr_CA">Client de numériscope pour connecter Kodi à l'intergiciel Stalker</description>
-    <description lang="fr_FR">Client d'enregistrement vidéo pour connecter Kodi à l'intergiciel Stalker</description>
-    <description lang="hu_HU">PVR Kliens ami összeköti a KODI-t a Stalker Illesztővel</description>
-    <description lang="it_IT">Client PVR per connettere Kodi a Stalker Middleware</description>
-    <description lang="lt_LT">PVR klientas Kodi sujungimui su Stalker Middleware</description>
-    <description lang="ms_MY">Klien PVR untuk sambungkan Kodi dengan Stalker Middleware</description>
-    <description lang="nl_NL">PVR-cliënt verbindt Kodi met Stalker Middleware</description>
-    <description lang="pl_PL">Klient TV dla platformy Stalker Middleware</description>
-    <description lang="pt_BR">Cliente PVR para conectar Kodi para o Middleware Stalker</description>
-    <description lang="pt_PT">Cliente PVR para ligar o Kodi ao Middleware Stalker</description>
-    <description lang="ru_RU">Клиент PVR для подключения Stalker Middleware к Kodi</description>
-    <description lang="sl_SI">Odjemalec PVC, s katerim se Kodi poveže s Stalker Middleware</description>
-    <description lang="zh_CN">Kodi 连接 Stalker Middleware 的 PVR 客户端</description>
-    <disclaimer lang="af_ZA">Hierdie is onstabiele sagteware! Die outeurs is op geen manier verantwoordelik vir gefaalde opnames, inkorrekte tydhouers, gemorsde ure, of enige ander ongewensde effekte.</disclaimer>
-    <disclaimer lang="be_BY">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="bg_BG">Тази програма е нестабилна! Авторите не носят отговорност за неуспешно записване, некоректни броячи, пропиляно време и други нежелани ефекти.</disclaimer>
-    <disclaimer lang="ca_ES">Això és programari inestable! Els autors no són de cap manera responsables dels enregistraments que han fallat, temporitzadors incorrectes, hores perdudes, o qualssevol altres efectes no desitjats..</disclaimer>
-    <disclaimer lang="cs_CZ">Tento software není stabilní. Autoři nejsou žádným způsobem zodpovědní za selhání při nahrávání, neplatné časovače, ztracený čas, či jakékoliv jiné nežádoucí události...</disclaimer>
-    <disclaimer lang="cy_GB">Mae hwn yn feddalwedd ansad! Nid yw'r awduron yn gyfrifol mewn unrhyw ffordd am fethu recordio, amseru gwallus, oriau wedi eu gwastraffu nac effeithiau anymunol eraill.</disclaimer>
-    <disclaimer lang="da_DK">Dette er ustabil software! Ophavsmændene er på ingen måde ansvarlige for mislykkede optagelser, ukorrekte timere, spildte timer, eller andre uønskede konsekvenser..</disclaimer>
-    <disclaimer lang="de_DE">Dies ist instabile Software! Die Autoren sind in keiner Weise verantwortlich für fehlgeschlagene Aufnahmen, falsche Timer, verschwendete Zeit oder andere ungewünschte Effekte.</disclaimer>
-    <disclaimer lang="el_GR">Ασταθές πρόγραμμα! Οι δημιουργοί δεν είναι σε καμία περίπτωση υπεύθυνοι για αποτυχημένες εγγραφές, λανθασμένους χρονοδιακόπτες, χαμένες ώρες, ή κάθε είδους ανεπιθύμητα αποτελέσματα..</disclaimer>
-    <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="es_AR">¡Este software es inestable! Los autores no se responsabilizan por grabaciones fallidas, temporizadores incorrectos, horas perdidas, o cualquier otro efecto no deseado..</disclaimer>
-    <disclaimer lang="es_ES">¡Este es un software inestable! Los autores no son de ninguna manera responsables de las grabaciones fallidas o incorrectas, las temporizadores perdidas, ni otros efectos no deseables..</disclaimer>
-    <disclaimer lang="es_MX">¡Esto es software inestable! Los autores no son de ninguna manera responsables por grabaciones fallidas, temporizadores incorrectos, horas perdidas o cualquier otro efecto no deseado...</disclaimer>
-    <disclaimer lang="et_EE">See on ebastabiilne tarkvara! Autorid ei ole kuidagi moodi vastutavad nurjunud salvestiste, ebaõige aegrelee, raisatud tundide ega muude soovimatute asjade eest.</disclaimer>
-    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelmisto! Tekijät eivät ole millään muotoa vastuussa epäonnistuneista tallennuksista, virheellisistä ajastuksia, haaskatusta ajasta, verenpaineen noususta tai mistään muusta epäsuotuisasta vaikutuksesta.</disclaimer>
-    <disclaimer lang="fr_CA">Ce logiciel est instable! Les auteurs ne sont aucunement responsables des enregistrements défaillants, des minuteries erronées, des heures perdues ou tout autre effet indésirable.</disclaimer>
-    <disclaimer lang="fr_FR">Logiciel en cours d'élaboration ! Les auteurs ne sont en aucun cas responsables de l'échec des enregistrements, minuteries défectueuses, temps perdu ou autres effets indésirables..</disclaimer>
-    <disclaimer lang="gl_ES">Software non estable, os autores non se fan responsábeis dos erros na gravacións, temporizadores incorrectos, e outros efectos non desexados.</disclaimer>
-    <disclaimer lang="he_IL">זוהי איננה הרחבה יציבה! המפתחים אינם אחראים על כשלון בניגון, זמנים שגויים במדריך השידורים, שעות מבוזבזות או כל תופעה לא רצויה אחרת.</disclaimer>
-    <disclaimer lang="hr_HR">Ovo je nestabilan softver! Autori nisu ni na koji način odgovorni za neuspjelo snimanje, netočna vremena snimanja, izgubljene sate, ili bilo koje druge nepoželjne učinke...</disclaimer>
-    <disclaimer lang="hu_HU">Ez nem stabil szoftver! A készítők nem vállalnak felelősséget, a hibás felvételért, rossz időzítésért, elvesztegetett időért...</disclaimer>
-    <disclaimer lang="hy_AM">Սա անկայուն ծրագրային ապահովում է: Հեղինակները պատասխանատու չեն վատ ձայնագրումների, սխալ ժամանակացույցերի, կորած ժամանակի կամ այլ ոչ ցանկալի երևույթների համար:</disclaimer>
-    <disclaimer lang="id_ID">Ini merupakan software yang tidak stabil! Penulis tidak bertanggung jawab untuk rekaman gagal, timer salah, waktu terbuang, atau efek tak diinginkan lainnya...</disclaimer>
-    <disclaimer lang="is_IS">Þetta er óstöðugur hugbúnaður! Höfundarnir eru á engan hátt ábyrgir fyrir misheppnuðum upptökum, röngum upptökutímum, klukkustundum sem að fóru í súginn eða nokkrum öðrum óæskilegum áhrifum.</disclaimer>
-    <disclaimer lang="it_IT">Questo software è instabile! Gli autori non sono in alcun modo responsabile per le fallite registrazioni, timer non corretti, ore perse o qualsiasi altro effetto non desiderato...</disclaimer>
-    <disclaimer lang="ja_JP">これは不安定なソフトウェアです！本プログラムの作者は、録画の失敗、正確に作動しなかったタイマー、無駄にした時間、その他あらゆる好ましくない結果について責任を負わないものとします。</disclaimer>
-    <disclaimer lang="ko_KR">이 소프트웨어는 불안정합니다! 제작자는 녹화 실패, 부정확한 타이머, 시간 낭비 및 기타 예상하지 못한 결과에 대해 책임지지 않습니다..</disclaimer>
-    <disclaimer lang="lt_LT">Tai yra nestabili programinė įranga! Autorius jokiu būdu neatsakingas už nepavykusius įrašus, neteisingus laikmačius, iššvaistytas valandas, ar nutikus kitiems nepageidaujamiems poveikiams ...[COLOR=red](Kodi.lt rekomenduoja/siūlo testuojant šį priedą persijungti į Anglų [orinali] kalbą)[/COLOR]</disclaimer>
-    <disclaimer lang="lv_LV">Šī ir nestabila programmatūra! Autori nav atbildīgi par nesanākušiem ierakstiem, nepareiziem taimeriem, iztērētām stundām vai jebkādiem citiem nevēlamiem efektiem..</disclaimer>
-    <disclaimer lang="mk_MK">Ова е нестабилен софтвер! Авторите на ниту еден начин не одговараат за неуспешни снимки, неточни тајмери, потрошени часови, или било кои други несакани ефекти.</disclaimer>
-    <disclaimer lang="mn_MN">Тус програм нь гүйцэд хийгдэж дуусаагүй! Зохиогч нь алдаатай бичлэг, цагийн буруу хөтлөлт, алдагдсан цаг хугацаа эсвэл бусад ямар нэгэн хүсээгүй үр дүнд хариуцлага хүлээхгүй.</disclaimer>
-    <disclaimer lang="ms_MY">Ini merupakan perisian tidak stabil! Pengarang tidak bertanggungjawab atas kegagalan rakaman, pemasa tidak betul, masa yang dibazirkan, atau apa jua kesan yang tidak dikehendaki..</disclaimer>
-    <disclaimer lang="nb_NO">Dette er ustabil programvare! Skaperen har ikke på noen måte ansvar for feilede opptak, feile timere, bortkastede timer, eller andre uønskede effekter..</disclaimer>
-    <disclaimer lang="nl_NL">Dit is instabiele software! De makers zijn op geen enkele wijze verantwoordelijk voor foutieve opnames, incorrecte timers, verloren uren, of andere ongewenste bijverschijnselen.</disclaimer>
-    <disclaimer lang="pl_PL">Oprogramowanie nadal jest w fazie rozwoju i jest niestabilne! Autorzy w żaden sposób nie są odpowiedzialni za nieudane nagrania, błędy w harmonogramie nagrań, zmarnowany czas ani jakiekolwiek inne niepożądane efekty.</disclaimer>
-    <disclaimer lang="pt_BR">Este é um software instável! Os autores não são responsáveis por falhas nas gravações, agendamentos incorretos, horas dispendidas, ou quaisquer outros efeitos indesejáveis</disclaimer>
-    <disclaimer lang="pt_PT">Este software é instável! Os autores não se responsabilizam por falhas nas gravações, temporizadores incorrectos, horas perdidas ou outro qualquer efeito não desejado...</disclaimer>
-    <disclaimer lang="ro_RO">Acesta nu este o aplicație definitivă! Autorii nu sunt în nici un fel responsabili pentru înregistrări eșuate, cronometre incorecte, ore pierdute, sau orice alte efecte nedorite...</disclaimer>
-    <disclaimer lang="ru_RU">Это тестовая программа! Авторы не несут ответственности за неудачные записи, неверные таймеры, потраченное время и прочие нежелательные эффекты..</disclaimer>
-    <disclaimer lang="si_LK">මෙය අස්ථිර මෘදුකාංගයකි! මෙහි සිදුවන පටිගත කිරීම් අසාර්ථක වීම්, සාවද්‍ය මුහුර්තක, නාස්ති වූ කාලයන්, හෝ වෙනත් යමිකිසි නුසුදුසු බලපෑම් සඳහා කතෘ වග කියනු නොලැබේ.</disclaimer>
-    <disclaimer lang="sk_SK">Tento softvér nie je stabilný! Autori nenesú žiadnu zodpovednosť za chybné nahrávky vysielania, nesprávne časovače alebo iné neželané udalosti spôsobené týmto softvérom..</disclaimer>
-    <disclaimer lang="sl_SI">To je nestabilna programska oprema! Avtorji niso odgovorni za neuspela snemanja, nepravilne časovnike, zapravljen čas in katerikoli drug neželen učinek...</disclaimer>
-    <disclaimer lang="sq_AL">Ky program nuk është ende stabël! Autorët e këtij programi nuk janë në as një menyr përgjegjës për rregistrime të gabuara, timer të pasaktë, kohë të humbur ose efekte të tilla të padëshirueshme.</disclaimer>
-    <disclaimer lang="sr_RS@latin">Овај софтвер је нестабилан! Аутори ни на који начин нису одговорни за неуспела снимања, неисправна заказана снимања, изгубљене сате или друге нежељене ефекте.</disclaimer>
-    <disclaimer lang="sv_SE">Detta är ostabil mjukvara! Upphovsmännen är inte ansvariga för misslyckade inspelningar, inkorrekta timers, bortslösade timmar, eller några andra oönskade effekter..</disclaimer>
-    <disclaimer lang="szl">To je niystabilny softwer! Autōry niy sōm ôdpedzialne za niypodarzōne graniy, niynŏleżne godziny EPG, stracōne godziny i inksze niychciane efekty.</disclaimer>
-    <disclaimer lang="te_IN">ఇది అస్థిర సాఫ్ట్వేర్! విఫలమైన రికార్డింగ్లు, తప్పు టైమర్లు, వృధా గంటల, లేదా ఏ ఇతర అవాంఛనీయ ప్రభావాలకు ఏ విధంగా రచయితలు భాద్యుతులు కారు.</disclaimer>
-    <disclaimer lang="tg_TJ">Ин нармафзори ноустувор аст! Муаллифон барои вайрониҳои сабт, вақтсанҷҳои нодуруст, соатҳои бефоида ва дигар таъсирҳои номатлуб ҷавобгар намебошанд.</disclaimer>
-    <disclaimer lang="tr_TR">Bu stabil olmayan program! Yapımcılar hatalı kayıtlardan, bozuk sürelerden, harcanan vakitten veya herhangi bir olumsuz etkiden dolayı sorumlu tutulamaz.</disclaimer>
-    <disclaimer lang="uk_UA">Це нестабільна програма! Автори не несуть відповідальності за попсуті записи, неправильні таймери, втрачений час та інші небажані ефекти.</disclaimer>
-    <disclaimer lang="vi_VN">Đây là phần mềm không ổn định! Các tác giả không chịu trách nhiệm đối với bản ghi chương trình thất bại, hẹn giờ không chính xác, giờ lãng phí, hoặc bất kỳ tác dụng không mong muốn khác..</disclaimer>
-    <disclaimer lang="zh_CN">这是不稳定版的软件！作者不对录像失败、错误定时造成时间浪费或其它不良影响负责。</disclaimer>
-    <disclaimer lang="zh_TW">這是測試版軟體！其原創作者並無法對於以下情況負責，包含：錄影失敗，不正確的定時設定，多餘時數，或任何產生的其它不良影響...</disclaimer>
-    <platform>all</platform>
   </extension>
 </addon>
 
@@ -1720,6 +1685,20 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.dnarepo" name="[COLOR lightblue]dna[/COLOR] [COLOR lightwhite]Repository[/COLOR]" version="0.0.4" provider-name="dna">
+	<extension point="xbmc.addon.repository" name="dna Repository">
+		<info compressed="false">http://raw.github.com/macblizzard/dnarepo/master/addons.xml</info>
+		<checksum>http://raw.github.com/macblizzard/dnarepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/macblizzard/dnarepo/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>dna Repository</summary>
+		<description>Download and install add-ons from dna repository.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.dnaREPO-v2" name="[COLOR lightblue]dna[/COLOR][COLOR lightwhite]REPO-v2[/COLOR]" version="2.0.0" provider-name="Team DNA">
 	<extension point="xbmc.addon.repository" name="dnaREPO-v2">
 		<info compressed="false">https://raw.githubusercontent.com/macblizzard/dnaREPO-v2/master/addons.xml</info>
@@ -1973,6 +1952,19 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	</extension>
 </addon>
 
+<addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" version="1.3" provider-name="XBMC CatchupTV AU">
+  <extension point="xbmc.addon.repository" name="XBMC CatchupTV AU Add-on Repository">
+    <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml</info>
+    <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install CatchupTV AU Add-ons</summary>
+    <description>Download and install add-ons from the CatchupTV AU repository.[CR][CR]By using this repository you will be able to download and use the latest version of the Catch-UP TV plugins and other Australian based content.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.HalowTV" name="  [COLOR lime][B]HALOW [/COLOR][COLOR white]Repository[/B][/COLOR]" version="3.0.0" provider-name="HalowRepo">
 	<extension point="xbmc.addon.repository" name="  [COLOR lime][B]Halow[/COLOR][COLOR white]Repository[/B][/COLOR]">
         <info compressed="false">https://raw.githubusercontent.com/HalowTV/HalowTV/master/zips/addons.xml</info>
@@ -1982,6 +1974,28 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
 		<description>Download and install addons from Halow Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.hdrepo.com"
+		name="hdrepo Add-ons"
+		version="0.0.0.1"
+		provider-name="Team HDRepo">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository"
+		name="HDrepo Add-on Repository">
+		<info compressed="true">https://raw.github.com/trungk43/xbmc-plugins/master/addons.xml</info>
+		<checksum>https://raw.github.com/trungk43/xbmc-plugins/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/trungk43/xbmc-plugins/master</datadir>
+		<hashes>true</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">4share and Fshare</summary>
+		<description lang="en"></description>
+		<disclaimer lang="en"></disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2183,6 +2197,24 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
     </extension>
 </addon>
 
+<addon id="repository.MatsBuilds" name="Mats Add-ons repository" version="1.0" provider-name="Mats Builds">
+	<extension point="xbmc.addon.repository" name="Mats Builds Repository">
+	<dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</dir>
+		<info compressed="false">http://www.matsbuilds.co.uk/plugins/addon.xml</info>
+		<checksum>http://www.matsbuilds.co.uk/plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://www.matsbuilds.co.uk/plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Add-ons from Mats Builds</summary>
+		<description>Download and install Add-ons from Mats Builds repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.mdrepo" name="Mucky Ducks Repo" version="1.0.2" provider-name="Mucky Duck">
 	<extension point="xbmc.addon.repository" name="Mucky Ducks Repo">
 		<info compressed="false">https://raw.githubusercontent.com/mucky-duck/mdrepo/master/addons.xml</info>
@@ -2208,6 +2240,22 @@ For more info and instructions on how to use this add-on please visit the WLIPTV
 		<description></description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.merlin" name="Merlin Repository" version="1.0.1" provider-name="Merlin By Ryan">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+		<extension point="xbmc.addon.repository" name="Merlin Repository">
+			<info compressed="false">http://mwiz.co.uk/merlinrepo/addons.xml</info>
+			<checksum>http://mwiz.co.uk/merlinrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://mwiz.co.uk/merlinrepo/addons/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>Host Of Add-Ons And Repositories</summary>
+			<description>Primary Function To Provide Updates To Merlin Builds! Any Other Add-Ons Or Repositories Within Are Provided At My Choice And Discretion, Will Provide Add-Ons And Repositories That Are Publicly Available, Permission Not Required To Do So! Hope You Find This Repository Useful, Enjoy!</description>
+			<platform>all</platform>
+		</extension>
 </addon>
 
 <addon id="repository.meta" name="MetaTeam Repository" version="1.0.0" provider-name="MetaTeam">
@@ -2514,6 +2562,19 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	</extension>
 </addon>
 
+<addon id="repository.shaneyrepos" name="Shaney Repos" version="1.0.1" provider-name="Shaney Repos">
+	<extension point="xbmc.addon.repository" name="shaneyrepos">
+		<info compressed="false">http://offshoregit.com/shaney/Plugins/addons.xml</info>
+		<checksum>http://offshoregit.com/shaney/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://offshoregit.com/shaney/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Shaney Repos</summary>
+		<description>Add-ons Made By Shaney Repos - Visit www.FB.COM/ShaneyRepos for more information.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.shani" name="Shanis Addon Repository" version="2.8" provider-name="Shani">
 	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
     <dir>
@@ -2544,6 +2605,33 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 		<summary>SmoothStreams Addons</summary>
 		<description>This repository contains addons for various wowza servers.</description>
                 <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.sportsaccess" name="Sportsaccess XBMC Addons" version="1.0.0" provider-name="sportsaccess">
+	<extension point="xbmc.addon.repository" name="Sportsaccess Addon Repository">
+		<info>http://repo.sportsaccess.se/Plugins/addons.xml</info>
+		<checksum>http://repo.sportsaccess.se/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.sportsaccess.se/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Install Sportsaccess Addons</summary>
+		<description lang="en">Download and install addon by Sportsaccess</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.SportsDevil" name="SportsDevil repository" version="1.0.1" provider-name="Al101">
+	<extension point="xbmc.addon.repository" name="SportsDevil add-on repository">
+		<info compressed="false">http://raw.github.com/al101/repository.SportsDevil/master/addons.xml</info>
+		<checksum>http://raw.github.com/al101/repository.SportsDevil/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/al101/repository.SportsDevil/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Unofficial SportsDevil add-on</summary>
+		<description>SportsDevil created by MaxMustermann maintained by [COLOR blue]XBMCHUB.COM[/COLOR] community (enen92, jorges4lu2, alex35...)</description>
+		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2659,6 +2747,19 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
     </extension>
 </addon>
 
+<addon id="repository.TheYidXXX" name="TheYid's [COLOR red]Adult[/COLOR] repo" version="1.4" provider-name="[COLOR blue][B]tcz009[/B][/COLOR] [B][I]TheYid's [COLOR red]Adult[/COLOR] REPO[/B][/I]">
+	<extension point="xbmc.addon.repository" name="TheYid's [COLOR red]XXX[/COLOR] Repository">
+		<info compressed="false">https://bitbucket.org/tcz009/theyidxxx/raw/master/addons.xml</info>
+		<checksum>https://bitbucket.org/tcz009/theyidxxx/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://bitbucket.org/tcz009/theyidxxx/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Adult [COLOR red]XXX[/COLOR] Addons</summary>
+		<description>Download and install [COLOR red]XXX Adult[/COLOR] addons from TheYid.... All 720p/1080p adult movies  [COLOR red][B][I]Real-Debrid or Alldebird PREMIUM NEEDED FOR ALL ADDONS[/B][/I][/COLOR]...For OFFICIAL Support Visit XBMCHUB.COM</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.tknorris.beta" name="tknorris Beta Testing Repository" version="1.0.5" provider-name="tknorris">
     <extension point="xbmc.addon.repository" name="tknorris beta testing repository">
 	    <dir>
@@ -2761,6 +2862,19 @@ Addons Included
 		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.tva.common" name="TVADDONS.ag Libraries Repository" version="1.0.1" provider-name="tvaddons.ag">
+    <extension point="xbmc.addon.repository" name="TVADDONS.ag Libraries Repository">
+        <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+        <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Faster Updating of Common Libraries for Kodi</summary>
+        <description>This repository contains intermediate builds of libraries commonly used by TVAddons Kodi addons, Brought to you by TVADDONS.ag</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
     <addon id="repository.ufo-repo" name="[COLOR lightgreen]UFO[/COLOR]" version="0.1.4" provider-name="krAZ">        <requires>
@@ -2907,29 +3021,17 @@ Addons Included
 
 <addon id="repository.xbmc.org"
 		name="Kodi Add-on repository"
-		version="2.2.33"
+		version="2.4.9"
 		provider-name="XBMC Foundation">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
   </requires>
 	<extension point="xbmc.addon.repository"
 		name="Official XBMC.org Add-on Repository">
-		<dir minversion="13.0.0">
-			<info compressed="true">http://mirrors.kodi.tv/addons/gotham/addons.xml</info>
-			<checksum>http://mirrors.kodi.tv/addons/gotham/addons.xml.md5</checksum>
-			<datadir zip="true">http://mirrors.kodi.tv/addons/gotham</datadir>
-			<hashes>true</hashes>
-		</dir>
-		<dir minversion="14.0.0">
-			<info compressed="true">http://mirrors.kodi.tv/addons/helix/addons.xml</info>
-			<checksum>http://mirrors.kodi.tv/addons/helix/addons.xml.md5</checksum>
-			<datadir zip="true">http://mirrors.kodi.tv/addons/helix</datadir>
-			<hashes>true</hashes>
-		</dir>
-		<dir minversion="15.0.0">
-			<info compressed="true">http://mirrors.kodi.tv/addons/isengard/addons.xml</info>
-			<checksum>http://mirrors.kodi.tv/addons/isengard/addons.xml.md5</checksum>
-			<datadir zip="true">http://mirrors.kodi.tv/addons/isengard</datadir>
+		<dir minversion="15.9.0">
+			<info>http://mirrors.kodi.tv/addons/jarvis/addons.xml.gz</info>
+			<checksum>http://mirrors.kodi.tv/addons/jarvis/addons.xml.gz.md5</checksum>
+			<datadir zip="true">http://mirrors.kodi.tv/addons/jarvis</datadir>
 			<hashes>true</hashes>
 		</dir>
 	</extension>
@@ -2954,7 +3056,7 @@ Addons Included
 		<summary lang="es_MX">Installar Add-ons de Kodi.tv</summary>
 		<summary lang="et_EE">Paigalda lisasid lehelt Kodi.tv</summary>
 		<summary lang="eu_ES">Instalatu Kodi.tv-eko gehigarriak</summary>
-		<summary lang="fa_IR">نصب افزونه ها از سایت Kodi.tv</summary>
+		<summary lang="fa_IR">‫نصف افزونه‌ها از Kodi.tv</summary>
 		<summary lang="fi_FI">Asenna lisäosia Kodi.tv -sivustolta</summary>
 		<summary lang="fr_CA">Installer des addiciels depuis Kodi.tv</summary>
 		<summary lang="fr_FR">Installer des extensions depuis Kodi.tv</summary>
@@ -2971,18 +3073,19 @@ Addons Included
 		<summary lang="lv_LV">Instalēt pielikumus no Kodi.tv</summary>
 		<summary lang="mk_MK">Инсталирај Додатоци од Kodi.tv</summary>
 		<summary lang="ms_MY">Pasang tambahan daripada Kodi.tv</summary>
+		<summary lang="mt_MT">Installa Add-ons minn Kodi.tv</summary>
 		<summary lang="my_MM">Kodi.tv မှ Add-on များကိုသွင်းမည်</summary>
 		<summary lang="nb_NO">Installer utvidelser fra Kodi.tv</summary>
 		<summary lang="nl_NL">Add-ons van Kodi.tv installeren</summary>
 		<summary lang="pl_PL">Instaluj dodatki z Kodi.tv</summary>
 		<summary lang="pt_BR">Instale Add-ons do Kodi.tv</summary>
-		<summary lang="pt_PT">Instalar Add-ons a partir de Kodi.tv</summary>
+		<summary lang="pt_PT">Instalar add-ons a partir de Kodi.tv</summary>
 		<summary lang="ro_RO">Instalați suplimente de la Kodi.tv</summary>
 		<summary lang="ru_RU">Установить дополнения с сайта Kodi.tv</summary>
 		<summary lang="sk_SK">Inštalovať rozšírenia z Kodi.tv</summary>
 		<summary lang="sl_SI">Namestite dodatke s Kodi.tv</summary>
-		<summary lang="sr_RS">Инсталирај додатке са Kodi.tv</summary>
-		<summary lang="sr_RS@latin">Instaliraj dodatne programe sa Kodi-tv</summary>
+		<summary lang="sr_RS">Инсталирај додатне програме са Kodi.tv</summary>
+		<summary lang="sr_RS@latin">Instaliraj dodatne programe sa Kodi.tv</summary>
 		<summary lang="sv_SE">Installera tillägg från Kodi.tv</summary>
 		<summary lang="tg_TJ">Насб кардани барномаҳои иловагӣ аз Kodi.tv</summary>
 		<summary lang="th_TH">ติดตั้งส่วนเสริมจาก Kodi.tv</summary>
@@ -3010,34 +3113,35 @@ Addons Included
 		<description lang="es_MX">Descarga e instala add-ons del repositorio oficial Kodi.tv.[CR] Al usar el repositorio oficial, tendrá la ventaja de los servicios de espejos, y así tener descargas más rápidas.[CR] Todos los add-ons en este repositorio se han probado de manera básica, si encuentra alguno que no funciona o roto, favor de reportarlo al Equipo de Kodi para poder tomar las medidas necesarias.</description>
 		<description lang="et_EE">Lae alla ja installi lisasid ametlikust Kodi.tv hoidlast.[CR]  Ametliku hoidla kasutamise eeliseks on võimalus kasutada meie ulatuslikku failide peegelteenust laadides faile sulle kõige lähemast serverist.[CR]  Kõik lisad selles hoidlas on läbinud elementaarse testimise. Siiski, kui sa leiad vigase või mittetöötava lisa, siis palun teavita sellest Kodi meeskonda, et me saaksime vajaliku abi osutada.</description>
 		<description lang="eu_ES">Gehigarriak Kodi.tv biltegi ofizialetik deskargatu eta instalatu.[CR]  &#10;Biltegi ofiziala erabiliaz zutaz gertu dagoen gune batetik deskargatu&#10;ditzakezu gure fitxategi-ispilu multzoaren abantailaz aprobetxatuaz.[CR]  &#10;Biltegi honetako gehigarri guztiek proba basikoak gainditu dituzte baina hondaturiko edo funtzionatzen ez duen gehigarri baten bat aurki ezkero honen berri Kodi taldeari eman beharrezko ekintzak burutu ditzagun.</description>
-		<description lang="fa_IR">افزودنی ها را از منبع رسمی افزونه ها در Kodi.tv دانلود و نصب کنید. [CR] با استفاده از منبع رسمی شما قادر خواهید بود از خدمات گسترده سرویس دانلود جایگزین ما بهره ببرید که امکان دانلود از مناطق نزدیکتر را در اختیار شما قرار می دهد. [CR] همه افزونه های این منبع آزمایش های اولیه را پشت سر گذاشته اند. در صورت یافتن افزونه معیوب یا غیر قابل استفاده لطفا آن را به تیم کودی گزارش کنید تا اقدامات لازم را انجام دهیم.</description>
+		<description lang="fa_IR">افزودنی‫ ها را از منبع رسمی افزونه ها در Kodi.tv ‫دانلود و نصب کنید. [CR]‫ با ا‫ستفاده از منبع‫‫‫‫ ‫رسمی شما قادر خواهید‫ بود از خدمات گسترده سرویس دانلود جایگزین ما بهره ببرید که امکان دانلود از مناطق نزدیکتر را در اختیار شما قرار می دهد. [CR]‫ ‫همه افزونه های این منبع آزمایش های اولیه را پشت سر گذاشته اند. در صورت یافتن افزونه معیوب یا غیر قابل استفاده لطفا آن را به تیم کودی گزارش‫ کنید تا اقدامات لازم ‫را انجام د‫هیم‫.</description>
 		<description lang="fi_FI">Lataa ja asenna lisäosia virallisesta Kodi.tv -lisäosasäilöstä.[CR]  Käyttämällä virallista säilöä sinun on mahdollista käyttää hyväksesi meidän kattavaa tiedostojen peilauspalveluamme saavuttaaksesi korkeat latausnopeudet sinun lähialueeltasi.[CR]  Kaikki tämän säilön lisäosat on testattu toimiviksi, jos löydät rikkinäisen tai "ei toimivan" lisäosan, ilmoita siitä Team-Kodi:lle, jotta voimme korjata asian.</description>
 		<description lang="fr_CA">Télécharger et installer des addiciels depuis le dépôt officiel de Kodi.tv.[CR] En utilisant le dépôt officiel vous pourrez bénéficier de notre service étendu de miroirs de fichiers favorisant des téléchargements plus rapides depuis une région proche de vous.[CR] Tous les addiciels de ce dépôt ont subi des tests de base. Si vous trouvez un addiciel non fonctionnel ou brisé, veuillez le rapporter à l'équipe-Kodi afin que nous puissions agir.</description>
-		<description lang="fr_FR">Télécharger et installer des extensions à partir du dépôt officiel Kodi.tv.[CR] En utilisant le dépôt officiel, vous bénéficierez de notre service de serveurs miroirs vous permettant de télécharger rapidement depuis une région proche de chez vous.[CR] Toutes les extensions de ce dépôt ont été testées sommairement, si vous trouvez une extension corrompue ou inutilisable, veuillez en informer l'Équipe Kodi afin que nous puissions prendre les mesures nécessaires.</description>
-		<description lang="gl_ES">Descargar e instalar Engadidos dende o repositorio oficial de Kodi.tv.[CR] Empregando o repositorio oficial, vostede poderá gozar das vantaxes do seu extenso servizo de replicación de ficheiros que lle permite unhas descargas máis rápidas dende unha rexión preto a vostede.[CR] Tódolos Engadidos deste repositorio pasaron por comprobacións básicas. Se atopa algún Engadido roto ou non funcional, por favor reporteo ó equipo de Kodi para que poidan actuar en consecuencia.</description>
+		<description lang="fr_FR">Télécharger et installer des extensions à partir du dépôt officiel Kodi.tv.[CR]En utilisant le dépôt officiel, vous bénéficierez de notre service de serveurs miroirs permettant de télécharger rapidement depuis une région proche de chez vous.[CR]Toutes les extensions de ce dépôt ont été testées sommairement, si vous trouvez une extension endommagée ou non fonctionnelle, merci d'en informer l'Équipe Kodi afin que nous puissions prendre les mesures nécessaires.</description>
+		<description lang="gl_ES">Descargar e instalar Engadidos dende o repositorio oficial de Kodi.tv.[CR] Empregando o repositorio oficial, vostede poderá gozar das vantaxes do seu extenso servizo de replicación de ficheiros que lle permite unhas descargas máis rápidas dende unha rexión preto a vostede.[CR] Tódolos Engadidos deste repositorio pasaron por comprobacións básicas. Se atopa algún Engadido roto ou non funcional, por favor repórteo ó equipo de Kodi para que poidan actuar en consecuencia.</description>
 		<description lang="he_IL">הורדה והתקנת הרחבות ממאגר הרחבות Kodi.tv הרשמי.[CR] שימוש במאגר הרשמי מאפשר לנצל את שירות שיקוף הקבצים של Kodi.tv העוזר להוריד מהר יותר מהשרת הקרוב ביותר.[CR] כל ההרחבות במאגר זה עברו בדיקה בסיסית. יש לדווח לצוות הפיתוח של Kodi על כל הרחבה שנמצאה כלא תקינה או שלא עובדת ע"מ שתתבצע הפעולה המתאימה.</description>
 		<description lang="hr_HR">Preuzmite i instalirajte dodatke sa službenog Kodi.tv repozitorija dodataka.[CR] Korištenjem službenog repozitorija bit ćete u mogućnosti iskoristiti prednosti usluge našeg brzog zrcalnog poslužitelja datoteka, da bi mogli brže preuzimati iz regije koje je bliže vašoj lokaciji.[CR] Svi dodaci na ovom repozitoriju prošli su osnovno testiranje, u slučaju da primijetite neispravan dodatak, molimo vas da to prijavite Kodi timu koji će zatim poduzeti potrebne korake.</description>
-		<description lang="hu_HU">Kiegészítők letöltése és telepítése a hivatalos Kodi.tv tárolóhelyről.[CR] A hivatalos tárolóhely használatával kihasználhatod szerteágazó tükör-kiszolgáló hálózatunkat, ami segít a gyorsabb letöltésben egy hozzád közelebb eső körzet használatával.[CR]  Minden kiegészítő ezen a tárolóhelyen átment egy alaptesztelésen. Ha mégis hibás vagy nem működő kiegészítőt találsz, kérünk jelezd az Kodi csapatnak, hogy megtegyük a szükséges lépéseket.</description>
+		<description lang="hu_HU">Kiegészítők letöltése és telepítése a hivatalos Kodi.tv tárolóhelyről.[CR] A hivatalos tárolóhely használatával kihasználhatja a szerteágazó tükörkiszolgáló hálózatunkat, ami segít a gyorsabb letöltésben egy közeli kiszolgáló használatával.[CR] Minden kiegészítő ezen a tárolóhelyen átment egy alaptesztelésen. Ha mégis hibás vagy nem működő kiegészítő talál, kérjük jelezze a Kodi csapatnak, hogy megtegyük a szükséges lépéseket.</description>
 		<description lang="id_ID">Unduh dan pasang pengaya dari repositori pengaya resmi Kodi.tv. [CR] Dengan menggunakan repositori resmi anda akan mendapat keuntungan dari miror berkas kami yang luas dimana dapat membantu anda untuk lebih cepat mengunduh dari daerah yang dekat dengan anda. [CR] Semua pengaya pada repository telah melalui uji coba standar, jika anda menemukan pengaya yang rusak atau tidak bekerja tolong laporkan kepada tim Kodi agar kami bisa menindak lanjutinya.</description>
 		<description lang="is_IS">Sækja og setja inn viðbætur frá hinu viðurkennda Kodi.tv viðbóta safni.[CR] Með því að nota þetta safn getur þú nýtt þér möguleikann á fullkmonni speglunar þjónustu sem hjálpar við að sækja viðbætur hraðar frá landsvæði nálægt þér.[CR] Allar viðbætur í þessu safni hafa gengið undir grunn prófanir, ef þú finnur viðbætur sem eru bilaðar eða virka ekki vinsamlegast látið Kodi teymið vita svo við getum gert eitthvað í málinu.</description>
-		<description lang="it_IT">Scarica ed installa gli add-on dalla libreria ufficiale di Kodi.tv[CR]  Usando la libreria ufficiale avrai il vantaggio di ottenere download più veloci con mirror più vicini alla tua località.[CR]  Tutti gli add-on in questa libreria sono stati sottoposti a test di base, se ne trovi uno non funzionante o corrotto, per favore riporta il problema al team di Kodi così potremmo prendere provvedimenti.</description>
+		<description lang="it_IT">Scarica e installa gli add-on dalla libreria ufficiale di Kodi.tv.[CR]  Usando la libreria ufficiale avrai il vantaggio di ottenere download più veloci con mirror più vicini alla tua località.[CR]  Tutti gli add-on in questa libreria sono stati sottoposti a test di base, se ne trovi uno non funzionante o corrotto, per favore riporta il problema al team di Kodi così potremmo prendere provvedimenti.</description>
 		<description lang="ja_JP">オフィシャルの Kodi.tv リポジトリからアドオンをダウンロードします。[CR]  オフィシャルリポジトリを使うことで、お住まいのエリアに近いミラーサーバーから高速にアドオンをダウンロードすることが可能です。[CR]  このリポジトリ上のアドオンは全て、簡単な動作テストを受けてはいますが、もしアドオンがおかしかったりうまく動作しなかったりした場合は、Kodi チームに連絡をお願いします。</description>
 		<description lang="ko_KR">공식 Kodi.tv 애드온 저장소에서 애드온을 다운로드하여 설치합니다.[CR] 공식 저장소를 사용하면 파일 미러링 서비스를 통해 사용자와 가까운 곳에서 빠르게 다운로드할 수 있습니다.[CR] 저장소의 모든 애드온은 기본 테스트를 거치지만 작동이 되지 않거나 손상된 애드온을 발견하면 필요한 조치를 취할 수 있게 Team-Kodi로 알려주시기 바랍니다.</description>
 		<description lang="lt_LT">Atsisiųskite ir įdiegite priedus iš oficialios Kodi.tv saugyklos.[CR]Naudojantis oficialia saugykla, galėsite pasinaudoti pranašumu mūsų didele failų veidrodinę paslauga.[CR]Taip pat siekiame padėti jums greičiau parsisiųsti priedą iš Jūsų regiono.[CR]Visiems šioje saugykloje saugomiems priedams buvo atliktas testavimas, jei Jūs radote netaisyklingą ir nedarbinį priedą.[CR]Prašome pranešti apie tai Kodi komandai, kad mes galėtume imtis būtinų veiksmų </description>
 		<description lang="lv_LV">Lejupielādējiet un instalējiet pielikumus no oficiālā Kodi.tv pielikumu repozitorija[CR] Izmantojot oficiālo repozitoriju, varēsiet izmantot mūsu plašo spoguļu pakalpojumu, lai iegūtu ātrākas lejupielādes no reģiona, kas vistuvāk.[CR] Visi pielikumi šajā repozitorijā ir izgājuši pamata testēšanu, bet, ja atrodat saplīsušu vai nestrādājošu pielikumu, lūdzu, ziņojiet par to Team-Kodi, lai varam izpildīt nepieciešamās labošanas darbības.</description>
 		<description lang="mk_MK">Превземи и инсталирај Додатоци од официјалниот Kodi.tv склад.[CR] Со користење на официјалниот склад ќе бидете во можност да ги користите предностите на нашата богата датотека со услуги која ви помага да добиете побрзи превземања од регионот блиску до вас.[CR]  Сите Додатоци во овој склад се основно тестирани, ако најдете неисправни или додатоци кои не работат пријавете го тоа на тимот на Kodi така што ќе можеме да превземеме било каква акција што е потребна.</description>
 		<description lang="ms_MY">Muat turun dan pasang tambahan PVR melalui repositori rasmi Kodi.tv[CR]  Dengan menggunakan Repositori rasmi anda dapat perkhidmatan cermin fail yang luas supaya dapat memuat turun lebih pantas menerusi kawasan berhampiran anda.[CR]  Semua tambahan di dalam repositori ini telah lulus pengujian asas, jika anda temui tambahan yang rosak atau tidak berfungsi sila laporkannya kepada Team-Kodi supaya kami boleh membuat tindakan yang sewajarnya.</description>
-		<description lang="nb_NO">Last ned og installer utvidelser fra den offisielle Kodi.tv pakkebrønnen.[CR] Når du benytter den offisielle pakkebrønnen kan du dra nytte av vår omfattende arkivtjeneste slik at du får raskere nedlasting fra en server nær deg.[CR] Alle tillegg i denne brønnen har gått gjennom grunnleggende testing, men hvis du finner et tillegg som ikke fungerer, vennligst rapporter det til Team-Kodi så vi får sett på det.</description>
+		<description lang="mt_MT">Niżżel u nstalla add-ons mir-repożitorju uffiċjali ta Kodi.tv.[CR] Permezz ta' dan ir-ripożitorju uffiċjali tista' tieħu vantaġġ mis-servizz ta' file mirrors estensiv li jgħinek tniżżel l-add-ons iktar malajr minn postijiet li huma ġeografikament qrib tiegħek.[CR] L-Add-ons kollha f'dan ir-repożitorju għaddew minn testijiet bażiċi, f'każ li tinzerta xi add-on miksura jew mhux taħdem jekk jpgħġbok irrportha lil Team-Kodi biex inkunu nistgħu nieħdu l-azzjoni li jkun hemm bżonn.</description>
+		<description lang="nb_NO">Last ned og installer utvidelser fra den offisielle Kodi.tv pakkebrønnen.[CR] Når du benytter den offisielle pakkebrønnen kan du dra nytte av vår omfattende arkivtjeneste slik at du får raskere nedlasting fra en tjener nær deg.[CR] Alle utvidelser i denne brønnen har gått gjennom grunnleggende testing, men hvis du finner en utvidelse som ikke fungerer, vennligst rapporter det til Team-Kodi så vi får sett på det.</description>
 		<description lang="nl_NL">Download en installeer add-ons uit de officiële Kodi.tv add-on depot.[CR] Wanneer u de officiële depot gebruikt beschikt u over onze uitgebreide mirrorservice, waardoor u snel kan downloaden van locaties in uw buurt.[CR] Alle add-ons in dit depot ondergingen standaardtests; indien u een defecte of niet-werkende add-on vindt, meld dit dan aan Team-Kodi zodat zij actie kunnen ondernemen.</description>
 		<description lang="pl_PL">Pobieraj i instaluj dodatki z oficjalnego repozytorium Kodi.tv.[CR] Używając oficjalnego repozytorium korzystasz z serwerów lustrzanych, rozsianych po całym świecie. Wybierany jest ten, który znajduje się najbliżej ciebie, zapewniając dużą prędkość połączenia.[CR]Wszystkie dodatki znajdujące się w tym repozytorium są testowane, ale mogą okazać się niesprawne. Zgłoś wówczas błąd, aby zespół Kodi mógł podjąć odpowiednie działanie.</description>
 		<description lang="pt_BR">Transfira e instale add-ons a partir do repositório oficial do Kodi.tv.[CR]|Ao utilizar o repositório oficial, você será capaz de tirar proveito do nosso serviço de espelhamento de arquivos, auxiliando em downloads mais rápidos a partir de uma região perto de você.[CR]|Todos os add-ons neste repositório passam por testes básicos, se você encontrar algum quebrado ou que não esteja funcionando, por favor reporte para a equipe do Kodi, para que possamos tomar as ações necessárias.</description>
-		<description lang="pt_PT">Transferir e instalar os add-ons do repositório de add-ons Oficiais de Kodi.tv.[CR]Ao utilizar o Repositório oficial, irá beneficiar do nosso serviço de servidores de ficheiro para o ajudar a ter transferências mais rápidas a partir da região mais perto de si.[CR]Todos os Add-ons neste repositório foram alvo de testes básicos. Se encontrar um danificado ou que não funciona, por favor, informe a Equipa do Kodi, para que a situação seja resolva.</description>
+		<description lang="pt_PT">Descarregar e instalar os add-ons do repositório oficial Kodi.tv.[CR]Ao utilizar o repositório oficial, irá beneficiar do nosso serviço de servidores de ficheiro para o ajudar a ter descargas mais rápidas a partir da região mais perto de si.[CR]Todos os add-ons neste repositório foram alvo de testes básicos. Se encontrar um add-on danificado não funcional, informe a equipa do Kodi para que a situação seja resolva.</description>
 		<description lang="ro_RO">Descărcați și instalați suplimente din depozitul de suplimente Kodi.tv oficial.[CR]  Folosind depozitul (repository) oficial puteți beneficia de serviciul nostru de găzduire distribuită pentru a vă ajuta să descărcați mai repede dintr-o regiune mai apropiată de dumneavoastră.[CR]  Toate suplimentele din acest depozit au trecut testele de bază, în caz că găsiți un supliment defect vă rugăm să îl raportați echipei Kodi pentru a lua măsurile necesare.</description>
 		<description lang="ru_RU">Загружайте и устанавливайте обновления из официального репозитория Kodi.tv[CR]Используя официальный репозиторий, вы сможете воспользоваться преимуществами распределенного хранилища для быстрой загрузки файлов с ближайшего к вам сервера.[CR]Все дополнения в данном репозитории прошли тестирование. Если вы обнаружили нерабочее дополнение, сообщите об этом разработчикам Kodi.</description>
 		<description lang="sk_SK">Stiahnuť a nainštalovať rozšírenia z oficiálneho zdroja rozšírení Kodi.tv.[CR] Použitím oficiálneho zdroja získavate možnosť využiť rozsiahly systém zrkadiel, ktorý Vám umožní rýchlejšie sťahovanie z Vám blízkeho regiónu.[CR] Všetky rozšírenia v tomto zdroji boli podrobené základnému testovaniu. Ak nájdete poškodené alebo nefunkčné rozšírenie, oznámte to prosím týmu Kodi aby mohol podľa potreby zakročiť.</description>
 		<description lang="sl_SI">Prenos in namestitev dodatkov iz uradnega skladišča Kodi.tv.[CR] Z uporabo uradnega skladišča, boste lahko izkoristili hitrejšo povezavo, ki bo izbrana glede na vašo lokacijo.[CR] Vsi dodatki tega skladišča so bili osnovno stestirani, če pa boste našli pokvarjen ali nedelujoč dodatek, to sporočite ekipi Kodi, da bomo lahko odpravili napake.</description>
-		<description lang="sr_RS">Преузмите и инсталирајте додатке из Званичног Kodi.tv спремишта додатака.[CR] Коришћењем званичног Спремишта моћићете да искористите предности нашег сервиса копија фајлова који ће вам помоћи приликом бржег преузимања из региона ближег вашој локацији.[CR] Сви додаци у овом спремишту прошли су основно тестирање, у случају да пронађете неисправан додатак молимо вас да то пријавите Kodi тиму који ће затим предузети неопходне мере.</description>
-		<description lang="sr_RS@latin">Preuzmi i instaliraj dodatne programe iz Zvaničnog Kodi.tv spremišta za dodatne programe.[CR] Korišćenjem zvaničnog Spremišta moći ćete da iskoristite prednosti našeg servisa kopija fajlova koji će vam pomoći prilikom bržeg preuzimanja iz regiona bližeg vašoj lokaciji.[CR] Svi dodatni programi u ovom spremištu prošli su osnovno testiranje, u slučaju da pronađete neispravan dodatni program molimo vas da to prijavite Kodi timu koji će zatim preduzeti neophodne mere.</description>
+		<description lang="sr_RS">Преузми и инсталирај додатне програме из Званичног Kodi.tv спремишта за додатне програме.[CR] Коришћењем званичног Спремишта моћи ћете да искористите предности нашег сервиса копија датотека који ће вам помоћи приликом бржег преузимања из региона ближег вашој локацији.[CR] Сви додатни програми у овом спремишту прошли су основно тестирање, у случају да пронађете неисправан додатни програм молимо вас да то пријавите Kodi тиму који ће затим предузети неопходне мере.</description>
+		<description lang="sr_RS@latin">Preuzmi i instaliraj dodatne programe iz Zvaničnog Kodi.tv spremišta za dodatne programe.[CR] Korišćenjem zvaničnog Spremišta moći ćete da iskoristite prednosti našeg servisa kopija datoteka koji će vam pomoći prilikom bržeg preuzimanja iz regiona bližeg vašoj lokaciji.[CR] Svi dodatni programi u ovom spremištu prošli su osnovno testiranje, u slučaju da pronađete neispravan dodatni program molimo vas da to prijavite Kodi timu koji će zatim preduzeti neophodne mere.</description>
 		<description lang="sv_SE">Ladda ner och installera tillägg från det officiella Kodi.tv tilläggsförrådet.[CR]Genom att använda det officiella förrådet kommer du att få fördelen att kunna använda vår omfattande spegeltjänst som kommer att hjälpa dig till snabbare nedladdningar från en plats nära dig.[CR]Alla tillägg i detta förråd har genomgått grundläggande tester. Hittar du ett trasigt eller icke fungerande tillägg, vänligen meddela detta till Team-Kodi så att vi kan vidta nödvändiga åtgärder.</description>
 		<description lang="tg_TJ">Барномаҳои иловагиро аз анбори нармафзори Kodi.tv боргирӣ кунед ва насб намоед.[CR]  Аз истифодаи анбори нармафзори расмии мо ба шумо имконият пайдо мешавад, ки тавонед шароити мусофидро аз хидмати оинаи файлии васеъ ба даст оред ва нармафзори лозимиро аз сервери минтакаи ба шумо наздиктар бо суръати баланд боргирӣ кунед.[CR]  Ҳамаи барномаҳо аз анбори нармафзори мо дар ҳолати санҷишӣ мебошанд, бинобар ин агар ягон барномаи иловагии нуқсондор ё вайроншударо ёбед, лутфан дар бораи он барнома ва нуқсон пайдошуда ба гурӯҳи кории Kodi гузориш диҳед, то ин ки мо тавонем ҳамаи камбудиҳои барномаҳои моро ҳал кунем.</description>
 		<description lang="th_TH">ดาวน์โหลดและติดตั้งส่วนเสริม จากแหล่งข้อมูลโปรแกรมของ Kodi.tv อย่างเป็นทางการ.[CR]  โดยการใช้งานแหล่งข้อมูลโปรแกรมอย่างเป็นทางการ คุณสามารถใช้ประโยชน์จากบริการแฟ้มมิเรอร์ที่กว้างขวางของเรา ที่จะช่วยให้การดาวน์โหลดของคุณเร็วขึ้นจากภูมิภาคที่ใกล้ที่สุด.[CR]  ส่วนเสริม ทั้งหมดในแหล่งเก็บข้อมูลนี้ อยู่ภายใต้การทดสอบขั้นพื้นฐานแล้ว ถ้าคุณพบส่วนเสริมที่เสียหายหรือไม่ทำงาน กรุณาแจ้งทีมงาน Kodi เพื่อให้เราสามารถดำเนินการใด ๆ ที่จำเป็น.</description>
@@ -3066,10 +3170,10 @@ Addons Included
 		<disclaimer lang="es_MX">El equipo de Kodi no hizo todos los add-ons en este repositorio y no es responsable de su contenido</disclaimer>
 		<disclaimer lang="et_EE">Kodi meeskond ei teinud kõiki lisasid selles hoidlas ja ei vastuta ka nende sisu eest.</disclaimer>
 		<disclaimer lang="eu_ES">Kodi taldeak ez ditu biltegi honetako gehigarri guztiak sortu eta ez da beren edukien erantzule.</disclaimer>
-		<disclaimer lang="fa_IR">همه افزونه های این منبع محصول کار تیم کودی نیستند و این تیم مسئولیتی در قبال محتوای آنها ندارد.</disclaimer>
+		<disclaimer lang="fa_IR">همه افزونه های این منبع محصول کار تیم کودی نیستند و این تیم مسئولیتی در قبال محتوای‫ آنها ندارد.</disclaimer>
 		<disclaimer lang="fi_FI">Team-Kodi ei ole tehnyt kaikkia tässä säilössä olevia lisäosia, eikä siten ole vastuullinen kyseisten lisäosien sisällöstä</disclaimer>
 		<disclaimer lang="fr_CA">L'équipe-Kodi n'a pas créé tous les addiciels de ce dépôt et n'est pas responsable de leur contenu</disclaimer>
-		<disclaimer lang="fr_FR">L'Équipe-Kodi n'a pas créé toutes les extensions de ce dépôt et n'est pas responsable de leur contenu</disclaimer>
+		<disclaimer lang="fr_FR">L'Équipe Kodi n'a pas créé toutes les extensions de ce dépôt et n'est pas responsable de leur contenu.</disclaimer>
 		<disclaimer lang="gl_ES">O equipo de Kodi non creou todos os Engadidos deste repositorio e non é responsábel do seu contido</disclaimer>
 		<disclaimer lang="he_IL">צוות הפיתוח של Kodi לא יצר את כל ההרחבות שבמאגר זה ואיננו אחראי על תוכנן</disclaimer>
 		<disclaimer lang="hr_HR">Kodi tim nije autor svih dodataka u ovom repozitoriju te kao takvi ne odgovaraju za njihov sadržaj</disclaimer>
@@ -3078,11 +3182,12 @@ Addons Included
 		<disclaimer lang="is_IS">Kodi teymið gerir ekki allar þessar viðbætur og er ekki ábyrgt fyrir innihaldi þeirra.</disclaimer>
 		<disclaimer lang="it_IT">Il team di Kodi non ha creato tutti gli add-on di questa libreria e non è responsabile per il loro contenuto</disclaimer>
 		<disclaimer lang="ja_JP">Kodi チームが、このリポジトリ上の全アドオンを作ったわけではありません。また、その内容についても責任は負いかねます。</disclaimer>
-		<disclaimer lang="ko_KR">Team-Kodi가 이 저장소의 모든 애드온을 제작한 것은 아니며, 애드온 컨텐츠에 대한 책임이 없습니다.</disclaimer>
+		<disclaimer lang="ko_KR">Team-Kodi가 이 저장소의 모든 애드온을 제작한 것은 아니며, 애드온 콘텐츠에 대한 책임이 없습니다.</disclaimer>
 		<disclaimer lang="lt_LT">Kodi komanda netestavo priedų šioje saugykloje ir neatsako arba nėra atsakinga už jų turinį</disclaimer>
 		<disclaimer lang="lv_LV">Kodi komanda nav izveidojusi visus šīs krātuves pielikumus un nav atbildīga par to saturu</disclaimer>
 		<disclaimer lang="mk_MK">Kodi тимот ги нема направено сите овие додатоци и не е одговорен за нивната содржина</disclaimer>
 		<disclaimer lang="ms_MY">Team-Kodi tidak menghasilkan semua tambahan di dalam repositori ini dan tidak bertanggungjawab keatas kandungannya</disclaimer>
+		<disclaimer lang="mt_MT">Team-Kodi m'għamilx l-add-ons kollha li hawn f'dan ir-repożitorju u mhumiex responsabbli għall-kontenut tagħhom</disclaimer>
 		<disclaimer lang="nb_NO">Team-Kodi har ikke utviklet alle utvidelsene i denne pakkebrønnen og er ikke ansvarlig for deres innhold</disclaimer>
 		<disclaimer lang="nl_NL">Team-Kodi heeft niet alle add-ons in deze depot geschreven en is niet verantwoordelijk voor hun inhoud.</disclaimer>
 		<disclaimer lang="pl_PL">Zespół Kodi nie tworzy wszystkich dodatków i nie bierze odpowiedzialności za ich zawartość</disclaimer>
@@ -3092,7 +3197,7 @@ Addons Included
 		<disclaimer lang="ru_RU">Разработчики Kodi не являются авторами всех дополнений в данном репозитории и не несут ответственность за их содержимое.</disclaimer>
 		<disclaimer lang="sk_SK">Team-Kodi nevytvoril všetky rozšírenia v tomto zdroji nie je zodpovedný za ich obsah</disclaimer>
 		<disclaimer lang="sl_SI">Ekipa Kodi ni naredila vseh dodatkov v tem skladišču in ne odgovarja za njihovo vsebino</disclaimer>
-		<disclaimer lang="sr_RS">Тим Kodi није направио све додатке у овом спремишту и није одговоран за њихов садржај</disclaimer>
+		<disclaimer lang="sr_RS">Тим-Kodi није направио све додатне програме у овом спремишту и није одговоран за њихов садржај</disclaimer>
 		<disclaimer lang="sr_RS@latin">Tim-Kodi nije napravio sve dodatne programe u ovom spremištu i nije odgovoran za njihov sadržaj</disclaimer>
 		<disclaimer lang="sv_SE">Team-Kodi har inte gjort alla tillägg och är inte ansvariga för innehållet i dessa.</disclaimer>
 		<disclaimer lang="tg_TJ">Гурӯҳи кории Kodi дар ин анбори нармафзор соҳиби ҳамаи барномаҳои иловагӣ намебошад ва барои мӯҳтавояшон ҷавобгар намебшад</disclaimer>
