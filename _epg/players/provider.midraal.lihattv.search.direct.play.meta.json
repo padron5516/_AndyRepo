@@ -5,8 +5,20 @@
  "id"           : "provider.midraal.lihattv.search.direct.play",
  "filters"      : {},
  "postprocess"  : "",
- "movies"       : [],
+ "movies"       : [
+   [
+   {
+    "link"      : "plugin://plugin.video.lihattv/?channelThumb=special://fhome/addons/plugin.video.lihattv/icon.png&mode=channel&type=Category&url=http%3a%2f%2flihattv.us%2f%3fch%3dmovies%26g%3d%2a%26c%3d%2a",
+    "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }   
+  ]  
+ ],
  "tvshows"      : [],
+ "music"        : [],
+ "music_video"  : [],
  "live"         : [
   [
    {

@@ -10,8 +10,10 @@
  "music"        : [
   [
    {
-    "link"      : "plugin://plugin.audio.musicbox/?url=&mode=39&name=%5BB%5D{artist}%5B%2FB%5D+-+{track}&iconimage=&fanart&album={album}&track_name={track}&type=song&artist={artist}",
-    "steps"     : [],
+    "link"      : "plugin://plugin.audio.musicbox/?album={album}&artist={artist}&fanart&iconimage=&mode=28&name={album}&type=album&url=",
+    "steps"     : [
+     ".*{track}.*"
+     ],
     "action"    : "PLAY"
    }
   ]

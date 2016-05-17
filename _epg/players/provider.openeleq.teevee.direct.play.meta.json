@@ -1,0 +1,21 @@
+{
+ "name"         : "TeeVee Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.teevee",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.teevee.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.teevee/?play=True&episode={episode}&title={clearname}+{season:02d}x{episode:02d}&url=http%3A%2F%2Ftvonline.tw%2F{clearname_-}-{year}%2Fseason-{season}-episode-{episode}%2F&season={season:02d}&iwatch=None&type=ep",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "music"        : [],
+ "music_video"  : [],
+ "live"         : []
+}

@@ -1,0 +1,37 @@
+{
+ "name"         : "Castaway Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.castaway",
+ "priority"     : 500,
+ "id"           : "provider.openeleq.castaway.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [],
+ "music_video"  : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.castaway/?mode=open_live_tv&site=ibrod",
+    "steps"     : [
+     ".*{basename}.*"
+     ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.castaway/?mode=open_live_tv&site=tvone1",
+    "steps"     : [
+     ".*{basename}.*"
+     ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.castaway/?mode=open_live_tv&site=ustvnow",
+    "steps"     : [
+     ".*{basename}.*"
+     ],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ]
+}

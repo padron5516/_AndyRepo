@@ -1,0 +1,23 @@
+{
+ "name"         : "Stalker Plus Direct Play (OpenELEQ)",
+ "plugin"       : "plugin.video.stalker",
+ "priority"     : 900,
+ "id"           : "provider.openeleq.stalker.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "music"        : [],
+ "music_video"  : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.stalker/?genre_id=%2a&genre_name=All&mode=channels&portal=%7b%22name%22%3a%20%22Alpha%22%2c%20%22parental%22%3a%20%22false%22%2c%20%22url%22%3a%20%22http%3a%2f%2fportal3.iptvprivateserver.tv%22%2c%20%22ppassword%22%3a%20%220000%22%2c%20%22vodpages%22%3a%20%2210%22%2c%20%22mac%22%3a%20%2200%3a1A%3a78%3a44%3a55%3a66%22%2c%20%22serial%22%3a%20%7b%22send_serial%22%3a%20true%2c%20%22custom%22%3a%20false%7d%2c%20%22password%22%3a%20%222367899811%22%2c%20%22login%22%3a%20%222367899811%22%7d",
+    "steps"     : [
+     ".*{basename}.*{extension|number_to_text()|text_to_number()}"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}

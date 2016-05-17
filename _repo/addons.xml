@@ -64,24 +64,6 @@
 
 </addon>
 
-<addon id="Andy.plugin.video.iptv" name="[COLOR yellow]Andy[/COLOR] IPTV" version="11.0.0" provider-name="dara, couch potato">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV Stalker</summary>
-		<description lang="en">Use IPTV Stalker + VOD add-on for PAPIAO servers, based on original code by esxbr.  This is cloned for testing purposes.</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>http://iptvtalk.org/</forum>
-	</extension>
-</addon>
-
 <addon
   id="Andy.pvr.iptvsimple"
   version="2.12.10"
@@ -575,24 +557,6 @@
         <platform>all</platform>
         <website>http://tvaddons.ag/</website>
 		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
-	</extension>
-</addon>
-
-<addon id="plugin.video.stalker" name="IPTV Stalker PLUS" version="11.0.0" provider-name="dara, couch potato">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV Stalker PLUS</summary>
-		<description lang="en">IPTV Stalker + VOD add-on for PAPIAO servers, based on original code by esxbr</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>http://iptvtalk.org/</forum>
 	</extension>
 </addon>
 

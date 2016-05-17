@@ -37,7 +37,15 @@
     "link"      : "plugin://plugin.video.cosmix/",
     "steps"     : [
      ".*tv.*",
-     ".*{name}.*"
+     ".*{basename}.*{extension}|{extension|number_to_text()}.*"
+     ],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "link"      : "plugin://plugin.video.cosmix/",
+    "steps"     : [
+     ".*tv.*",
+     ".*{basename}.*{extension|text_to_number()}.*"
      ],
     "action"    : "ACTIVATE"
    }
