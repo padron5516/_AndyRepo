@@ -272,6 +272,28 @@
     </extension>
 </addon>
 
+<addon id="Andy.script.epg.tools" name="[COLOR yellow]Andy[/COLOR] EPG Tools" version="1.0" provider-name="Andy,spoyser, DixieDean">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Tools for use with EPG</summary>
+    <description lang="en">Tools for use with EPG</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <source></source>
+    <email></email>
+  </extension>
+</addon>
+
 <addon
   id="Andy.skin.confluence"
   version="2.8.8"
@@ -2627,18 +2649,22 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.module.requests" name="requests" version="2.9.1" provider-name="kennethreitz, beenje">
+<addon id="script.module.requests"
+       name="requests"
+       version="2.9.1"
+       provider-name="kennethreitz, beenje">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module"
+             library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary>Python HTTP for Humans</summary>
     <description>Packed for KODI from https://github.com/kennethreitz/requests</description>
     <platform>all</platform>
-    <language/>
+    <language></language>
     <license>Apache2</license>
-    <forum/>
+    <forum></forum>
     <website>http://python-requests.org</website>
     <source>https://github.com/beenje/script.module.requests</source>
     <email>beenje AT gmail.com</email>
