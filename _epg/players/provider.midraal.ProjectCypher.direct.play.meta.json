@@ -1,0 +1,68 @@
+{
+ "name"         : "Project Cypher Direct Play (Midraal)",
+ "plugin"       : "plugin.video.ProjectCypher",
+ "priority"     : 900,
+ "id"           : "provider.midraal.ProjectCypher.direct.play",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [],
+ "tvshows"      : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*IPTV.*",
+     ".*{basename}$$*({extension}|{extension|number_to_text()}).*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*IPTV.*",
+     ".*{basename}$$*{extension|text_to_number()}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ],
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*IPTV.*",
+     ".*",
+     ".*{basename}$$*({extension}|{extension|number_to_text()}).*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*IPTV.*",
+     ".*",
+     ".*{basename}$$*{extension|text_to_number()}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ],
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*Sky.*",
+     ".*{basename}$$*({extension}|{extension|number_to_text()}).*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*Sky.*",
+     ".*{basename}$$*{extension|text_to_number()}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]  
+ ]
+}
