@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.10" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.11" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.elementtree" version="1.2.7"/> <!-- ? -->
+		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
+
 	<extension point="xbmc.python.script" library="addon.py">
-            <provides>executable</provides>
+            <provides>executable video</provides>
     </extension>
+
     <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.metadata.scraper.tvshows" library="addon.py"/>  <!-- ? -->
 	<extension point="xbmc.addon.metadata">
+
 
 		<summary lang="en">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG.    Iptvsubs and DexterTV credentials will be automatically added to addons.ini</summary>
 		<summary lang="en_US">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG.  Iptvsubs and DexterTV credentials will be automatically added to addons.ini</summary>
@@ -563,6 +568,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.ruyaiptv"
+	name="IPTV Subs"
+	version="2.0"
+	provider-name="Iptv Subs Beta">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Iptv Subs</summary>
+    <description lang="en">Get access to exclusive HD channels for your favourite sports, movies and shows.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <!--suppress ALL -->
 <addon id="plugin.video.salts" version="2.0.41" name="Stream All The Sources" provider-name="tknorris">
     <requires>
@@ -583,7 +606,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.1" provider-name="MetalKettle">
+<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.3" provider-name="MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -592,7 +615,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en"></summary>
-    <description lang="en">This is version 2.0.0 renamed.</description>
+    <description lang="en">This is version 2.0.0 renamed.  Enter your user and pass.</description>
     <platform>all</platform>
   </extension>
 </addon>
