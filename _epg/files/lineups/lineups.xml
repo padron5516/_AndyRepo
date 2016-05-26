@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lineups>
-<lineup name="Default Line-up" url="default/Default Line-up.zip" icon="default/icon.png" fanart="default/fanart.jpg" description="The default channel line-up"/>
-<lineup name="Full Line-up" url="full/Full Line-up.zip" icon="full/icon.png" fanart="full/fanart.jpg" description="The default channel line-up for On-Tapp TV"/>
-<lineup name="UK Freeview" url="ukfreeview/UK Freeview.zip" icon="ukfreeview/icon.png" fanart="ukfreeview/fanart.jpg" description="The UK Freeview channels available in On-Tapp.TV"/>
-</lineups>
