@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.15" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.16" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
@@ -22,7 +22,7 @@
 		<description lang="en">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
 		<description lang="en_US">TV Guide for use with 3rd party channel addons.  This is catered to a North American audience.</description>
 
-		<disclaimer lang="en">Based upon FTV Guide as a base.  EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. A good custom addons2.ini is in your best interests.</disclaimer>
+		<disclaimer lang="en">Based upon FTV Guide as a base.  EPGs Subject to change. Kudos to the original authors. You may need to clear the cache if you experience problems. Rerun Addvredentials after PVR changes.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GPLv2</license>
