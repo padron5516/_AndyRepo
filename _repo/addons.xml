@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.16" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.17" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
