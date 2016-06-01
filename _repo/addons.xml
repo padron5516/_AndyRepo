@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.17" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.18" provider-name="rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
         <!--<import addon="script.module.elementtree" version="1.2.7"/>--> <!-- ? -->
-		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.elementtree" version="1.2.7"/>
 	</requires>
-
 	<extension point="xbmc.python.script" library="addon.py">
             <provides>executable video</provides>
     </extension>
-
     <extension point="xbmc.service" library="service.py" start="login"/>
-    <!--<extension point="xbmc.metadata.scraper.tvshows" library="addon.py"/>-->  <!-- ? -->
 	<extension point="xbmc.addon.metadata">
 
 		<summary lang="en">TV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG.    Iptvsubs and DexterTV credentials will be automatically added to addons.ini</summary>
@@ -502,7 +500,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.meta" name="Meta" version="1.1.4" provider-name="MetaTeam">
+<addon id="plugin.video.meta" name="Meta" version="1.1.5" provider-name="MetaTeam">
   <requires>
     <import addon="xbmc.python" version="2.20.0"/>
     <import addon="script.module.requests"/>
@@ -519,7 +517,7 @@
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31002]</label>
+        <label>$ADDON[plugin.video.meta 30602]</label>
         <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -527,7 +525,7 @@
   <extension point="kodi.context.item" library="context_tvshow.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31022]</label>
+        <label>$ADDON[plugin.video.meta 30622]</label>
         <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -546,9 +544,9 @@
 </addon>
 
 <addon id="plugin.video.ruyaiptv"
-	name="IPTV Subs"
-	version="2.0"
-	provider-name="Iptv Subs Beta">
+	name="IPTV Subs Beta"
+	version="2.7"
+	provider-name="Warlock">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -558,7 +556,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Iptv Subs</summary>
-    <description lang="en">Get access to exclusive HD channels for your favourite sports, movies and shows.</description>
+    <description lang="en">Get access to exclusive HD channels for your favourite sports, movies and tv shows.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1109,16 +1107,34 @@
 	</extension>
 </addon>
 
-<addon id="repository.iptvsubs" name="IPTVSubs add-ons" version="1.0.0" provider-name="psycon">
+<addon id="repository.epg.ninja" name="epg.ninja add-ons" version="1.0.0" provider-name="psycon">
 	<extension point="xbmc.addon.repository" name="epg.ninja Add-on Repository">
-		<info compressed="false">http://iptvsubs.is/repo/addons.xml</info>
-		<checksum>http://iptvsubs.is/repo/addons.xml.md5</checksum>
-                <datadir zip="true">http://iptvsubs.is/repo</datadir>
+		<info compressed="false">http://epg.ninja/repo/addons.xml</info>
+		<checksum>http://epg.ninja/repo/addons.xml.md5</checksum>
+                <datadir zip="true">http://epg.ninja/repo</datadir>
                 </extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install Add-ons from iptvsubs.is</summary>
-		<description>Download and install add-ons from iptvsubs.is addon repository.[CR][CR]By using this Repository you will be able to take advantage of our cutting edge features.</description>
+		<summary>Install Add-ons from epg.ninja</summary>
+		<description>Download and install add-ons from epg.ninja addon repository.[CR][CR]By using this Repository you will be able to take advantage of our cutting edge features.</description>
 		<disclaimer>psycon</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
+	<extension point="xbmc.addon.repository" name="Exodus repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
+		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus repository</summary>
+		<description lang="en">Exodus repository</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1721,6 +1737,20 @@ Addons Inside - Videpphile, Filmikz, Freeroms Downloader</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>Team eXpat Addon</summary>
 		<description>Build Addon Installer</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.teammaniac" name="[COLOR yellow][B]Team[/COLOR] [COLOR red]ManiaC[/B] Repository[/COLOR]" version="1.0.2" provider-name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR]">
+	<extension point="xbmc.addon.repository" name="Demonstration Add-on Repository">
+		<info compressed="false">http://raw.github.com/AMObox/teammaniac/master/addons.xml</info>
+		<checksum>http://raw.github.com/AMObox/teammaniac/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/AMObox/teammaniac/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Team Maniac Addons</summary>
+		<description>Team Maniac Installer</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
@@ -2761,7 +2791,7 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.6" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.7" provider-name="Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>

@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="http://tvschedule.zap2it.com/" source-info-name="zap2it.com" generator-info-name="zap2xml" generator-info-url="zap2xml@gmail.com">
+<!--<tv date="20160412" generator-name="XMLTV" generator-url="http://www.birtles.org.uk/xmltv">-->
+<!--<tv generator-info-name="WebGrab+Plus" generator-info-url="http://www.webgrabplus.com">-->
+<!--
+EPG for Canada USTVNow USA UK and the respective countries sports 
+Subject to change at any moment to suit my needs.
+Channels can be sorted by re-arranging the first refernce to the channel.  Therefore, i have 2 references for each channel.
+I am not responsible how or for what purpose you use this guide.   My appologies to Github if it causes excessive bandwidth.  This is non-commercial and a POC.
+Clear or erase Thumbnails cache occasionally to take advantage of updated logos
+-->
+
+	<channel id="I17396.labs.zap2it.com">
+		<display-name>Global Maritimes</display-name>
+		<display-name>198 Global Maritimes</display-name>
+		<display-name>198</display-name>
+		<icon src="http://images.zap2it.com/station_logo/Global Maritimes.gif" />
+	</channel>
+
+	<channel id="I10130.labs.zap2it.com">
+		<display-name>Global Toronto</display-name>
+		<display-name>211 Global Toronto</display-name>
+		<display-name>211</display-name>
+		<icon src="http://images.zap2it.com/station_logo/Global Toronto.gif" />
+	</channel>
+	
+	<channel id="I10050.labs.zap2it.com">
+		<display-name>Global Vancouver</display-name>
+		<display-name>252 CHAN</display-name>
+		<display-name>252</display-name>
+		<icon src="http://images.zap2it.com/station_logo/chan.gif" />
+	</channel>
+	
+	<channel id="I10108.labs.zap2it.com">
+		<display-name>CTV Toronto</display-name>
+		<display-name>212 CTV Toronto</display-name>
+		<display-name>212</display-name>
+		<icon src="http://images.zap2it.com/station_logo/CTV Toronto.gif" />
+	</channel>
+	
+	<channel id="I15990.labs.zap2it.com">
+		<display-name>CTV Regina</display-name>
+		<display-name>235 CTV Regina</display-name>
+		<display-name>235</display-name>
+		<icon src="http://images.zap2it.com/station_logo/CTV Regina.gif" />
+	</channel>
+	
+	<channel id="I15942.labs.zap2it.com">
+		<display-name>CTV Edmonton</display-name>
+		<display-name>239 CTV Edmonton</display-name>
+		<display-name>239</display-name>
+		<icon src="http://images.zap2it.com/station_logo/CTV Edmonton.gif" />
+	</channel>	
+
+    <channel id="I17594.labs.zap2it.com">
+        <display-name>CTV Vancouver</display-name>
+        <display-name>CIVT</display-name>
+        <display-name>250 CIVT</display-name>
+        <display-name>250</display-name>
+    </channel>
+
+	<channel id="I10091.labs.zap2it.com">
+		<display-name>CBC</display-name>
+		<display-name>210 CBC</display-name>
+		<display-name>210</display-name>
+		<icon src="http://images.zap2it.com/station_logo/CBC.gif" />
+	</channel>
+
+<!-- 8 -->
+
+	<channel id="I70809.labs.zap2it.com">
+		<display-name>ABC HD</display-name>	
+		<display-name>WCVBSAT</display-name>
+		<display-name>281 WCVBSAT</display-name>
+		<display-name>281</display-name>
+	</channel>
+	
+	<channel id="I11325.labs.zap2it.com">
+		<display-name>CBS HD</display-name>	
+		<display-name>WBZ</display-name>
+		<display-name>282 WBZ</display-name>
+		<display-name>282</display-name>
+	</channel>
+	
+	<channel id="I11502.labs.zap2it.com">
+		<display-name>NBC HD</display-name>	
+		<display-name>WHDH</display-name>
+		<display-name>280 WHDH</display-name>
+		<display-name>280</display-name>
+	</channel>
+	
+	<channel id="I11456.labs.zap2it.com">
+		<display-name>FOX HD</display-name>	
+		<display-name>WFXT</display-name>
+		<display-name>283 WFXT</display-name>
+		<display-name>283</display-name>
+	</channel>
+	
+	
+	<channel id="I10626.labs.zap2it.com">
+		<display-name>ABC West</display-name>	
+		<display-name>KOMO</display-name>
+		<display-name>288 KOMO</display-name>
+		<display-name>288</display-name>
+	</channel>
+	
+	<channel id="I88515.labs.zap2it.com">
+		<display-name>CBS West</display-name>	
+		<display-name>KIRO7SD</display-name>
+		<display-name>289 KIRO7SD</display-name>
+		<display-name>289</display-name>
+	</channel>
+	
+	<channel id="I10518.labs.zap2it.com">
+		<display-name>NBC West</display-name>	
+		<display-name>KING</display-name>
+		<display-name>287 KING</display-name>
+		<display-name>287</display-name>
+	</channel>
+	
+	<channel id="I93825.labs.zap2it.com">
+		<display-name>FOX West</display-name>	
+		<display-name>KCPQCSD</display-name>
+		<display-name>290 KCPQCSD</display-name>
+		<display-name>290</display-name>
+	</channel>
+
+
+<!-- 8 -->
+	
+	<!--  USTVNow -->
+	<channel id="I11534.labs.zap2it.com">
+		<display-name>ABC</display-name>
+		<display-name>2 ABC</display-name>
+		<display-name>2</display-name>
+		<icon src="http://images.zap2it.com/station_logo/abc_affiliate.gif" />
+	</channel>
+	<channel id="I11523.labs.zap2it.com">
+		<display-name>CBS</display-name>
+		<display-name>6 CBS</display-name>
+		<display-name>6</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cbs_affiliate.gif" />
+	</channel>
+	<channel id="I11458.labs.zap2it.com">
+		<display-name>NBC</display-name>
+		<display-name>8 NBC</display-name>
+		<display-name>8</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nbc_affiliate.gif" />		
+	</channel>
+	<channel id="I11782.labs.zap2it.com">
+		<display-name>FOX</display-name>
+		<display-name>12 FOX</display-name>
+		<display-name>12</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fox_affiliate.gif" />		
+	</channel>
+	
+
+    <!--
+	<channel id="I11259.labs.zap2it.com">
+		<display-name>ABC HD</display-name>
+		<display-name>5735 WABC</display-name>
+		<display-name>5735</display-name>
+		<icon src="http://images.zap2it.com/station_logo/abc_affiliate.gif" />
+	</channel>
+	<channel id="I11331.labs.zap2it.com">
+		<display-name>CBS HD</display-name>
+		<display-name>5733 WCBS</display-name>
+		<display-name>5733</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cbs_affiliate.gif" />
+	</channel>
+	<channel id="I11705.labs.zap2it.com">
+		<display-name>NBC HD</display-name>
+		<display-name>5731 WNBC</display-name>
+		<display-name>5731</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nbc_affiliate.gif" />
+	</channel>
+	<channel id="I11746.labs.zap2it.com">
+		<display-name>FOX HD</display-name>
+		<display-name>5737 WNYW</display-name>
+		<display-name>5737</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fox_affiliate.gif" />
+	</channel>
+	-->
+	
+    <!--
+	<channel id="I11780.labs.zap2it.com">
+		<display-name>ABC Miami</display-name>
+		<display-name>KABC</display-name>
+		<display-name>10 WPLG</display-name>
+		<display-name>10</display-name>
+	</channel> 
+	-->
+	
+	<!--
+	<channel id="I11349.labs.zap2it.com">
+		<display-name>CBS Miami</display-name>
+		<display-name>KCBS</display-name>
+		<display-name>4 WFOR</display-name>
+		<display-name>4</display-name>
+	</channel> 
+	-->
+	<!--	
+	<channel id="I11916.labs.zap2it.com">
+		<display-name>NBC Miami</display-name>
+		<display-name>KNBC</display-name>
+		<display-name>6 WTVJ</display-name>
+		<display-name>6</display-name>
+	</channel> 
+	-->
+	<!--		
+	<channel id="I11857.labs.zap2it.com">
+		<display-name>FOX Miami</display-name>
+		<display-name>KTTV</display-name>
+		<display-name>7 WSVN</display-name>
+		<display-name>7</display-name>
+	</channel> 
+	-->
+	
+	<channel id="I10125.labs.zap2it.com">
+		<display-name>City TV Toronto</display-name>
+		<display-name>214 CITY</display-name>
+		<display-name>214</display-name>
+		<icon src="http://images.zap2it.com/station_logo/city.gif" />
+	</channel>
+
+    <channel id="I10136.labs.zap2it.com">
+        <display-name>City TV Vancouver</display-name>
+        <display-name>CKVU</display-name>
+        <display-name>253 CKVU</display-name>
+        <display-name>253</display-name>
+    </channel>
+
+    <channel id="I43430.labs.zap2it.com">
+        <display-name>CW</display-name>
+    </channel>
+
+    <!--
+	<channel id="I11663.labs.zap2it.com">
+		<display-name>CW</display-name>
+		<display-name>13 CW</display-name>
+		<display-name>13</display-name>
+		<icon src="https://en.wikipedia.org/wiki/The_CW#/media/File:The_CW.svg" />
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="I11663.labs.zap2it.com">
+		<title lang="en">CW assorted programming.</title>
+		<desc lang="en">CW assorted programming.  This was USTVNow but they removed the channel from the guide source.  WIP.  WPIX KTLA and WGN are all CW affiliates.</desc>
+	</programme>
+    -->
+    
+	<channel id="I58402.labs.zap2it.com">
+		<display-name>MY9</display-name>
+		<display-name>7 MY9</display-name>
+		<display-name>7</display-name>
+		<icon src="https://en.wikipedia.org/wiki/WWOR-TV#/media/File:WWOR_NewJersey.png" />		
+	</channel>
+
+
+<!-- 8 -->
+
+	<channel id="I11207.labs.zap2it.com">
+		<display-name>USA Network</display-name>
+		<display-name>105 USA</display-name>
+		<display-name>105</display-name>
+		<icon src="http://images.zap2it.com/station_logo/usa.gif" />
+	</channel>
+	
+	<channel id="I10149.labs.zap2it.com">
+		<display-name>Comedy Central</display-name>
+		<display-name>107 Comedy</display-name>
+		<display-name>107</display-name>
+		<icon src="http://images.zap2it.com/station_logo/comedy.gif" />
+	</channel>	
+
+	<channel id="I64831.labs.zap2it.com">
+		<display-name>AMC HD</display-name>
+		<display-name>1281 AMCCHD</display-name>
+		<display-name>1281</display-name>
+		<icon src="http://images.zap2it.com/station_logo/amcchd.gif" />
+	</channel>
+	<!-- DirectTV -->
+	<!--
+	<channel id="I59337.labs.zap2it.com">
+		<display-name>AMC HD</display-name>
+		<display-name>254 AMC HD</display-name>
+		<display-name>254</display-name>
+	</channel>
+    -->
+
+	<channel id="I10021.labs.zap2it.com">
+		<display-name>AMC</display-name>
+		<display-name>131 AMC</display-name>
+		<display-name>131</display-name>
+		<icon src="http://images.zap2it.com/station_logo/amc.gif" />
+	</channel>
+
+	<channel id="I14321.labs.zap2it.com">
+		<display-name>FX</display-name>
+		<display-name>136 FX</display-name>
+		<display-name>136</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fx.gif" />
+	</channel>
+	
+	<channel id="I17927.labs.zap2it.com">
+		<display-name>FXX</display-name>
+		<display-name>125 FXX</display-name>
+		<display-name>125</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fxx.gif" />
+	</channel>	
+
+	<channel id="I19548.labs.zap2it.com">
+		<display-name>HBO HD</display-name>
+		<display-name>300 HBO HD</display-name>
+		<display-name>300</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hbohd.gif" />
+	</channel>
+	
+	<channel id="I21868.labs.zap2it.com">
+		<display-name>Showtime HD</display-name>
+		<display-name>318 ShowtimeHD</display-name>
+		<display-name>318</display-name>
+		<icon src="http://images.zap2it.com/station_logo/showhd.gif" />
+	</channel>
+	
+<!-- 8 -->
+
+	<channel id="I18822.labs.zap2it.com">
+		<display-name>Viceland</display-name>
+		<display-name>121 VICE</display-name>
+		<display-name>121</display-name>
+		<icon src="https://en.wikipedia.org/wiki/Viceland#/media/File:Viceland_Logo.png" />		
+	</channel>	
+
+	<channel id="I10035.labs.zap2it.com">
+		<display-name>A&amp;E</display-name>
+		<display-name>118 A&amp;E</display-name>
+		<display-name>118</display-name>
+		<icon src="http://images.zap2it.com/station_logo/aetv.gif" />
+	</channel>
+
+	<channel id="I14873.labs.zap2it.com">
+		<display-name>IFC</display-name>
+		<display-name>133 IFC</display-name>
+		<display-name>133</display-name>
+		<icon src="http://images.zap2it.com/station_logo/ifc.gif" />
+	</channel>
+	
+	<channel id="I11097.labs.zap2it.com">
+		<display-name>Syfy</display-name>
+		<display-name>122 Syfy</display-name>
+		<display-name>122</display-name>
+		<icon src="http://images.zap2it.com/station_logo/syfy.gif" />
+	</channel>
+
+	<channel id="I11163.labs.zap2it.com">
+		<display-name>Spike</display-name>
+		<display-name>241 Spike</display-name>
+		<display-name>241</display-name>
+		<icon src="http://images.zap2it.com/station_logo/spiketv.gif" />
+	</channel>
+	
+	<channel id="I73067.labs.zap2it.com">
+		<display-name>Bounce</display-name>
+		<icon src="http://images.zap2it.com/station_logo/bounce.gif" />
+	</channel>	
+	
+	<channel id="I53711.labs.zap2it.com">
+		<display-name>SHOWCASE</display-name>
+		<display-name>838 SHOWCASE</display-name>
+		<display-name>838</display-name>
+		<icon src="http://images.zap2it.com/station_logo/SHOWCASE.gif" />
+	</channel>
+
+	<channel id="I26769.labs.zap2it.com">
+		<display-name>ACTION</display-name>
+		<display-name>334 ACTIONC</display-name>
+		<display-name>334</display-name>
+		<icon src="http://images.zap2it.com/station_logo/actionc.gif" />
+	</channel>
+
+
+
+<!-- 8 -->
+	<channel id="I16123.labs.zap2it.com">
+		<display-name>TV Land</display-name>
+		<display-name>106 TV Land</display-name>
+		<display-name>106</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tvland.gif" />
+	</channel>
+		    
+  	<channel id="I10989.labs.zap2it.com">
+		<display-name>E!</display-name>
+		<display-name>114 E!</display-name>
+		<display-name>114</display-name>
+		<icon src="http://images.zap2it.com/station_logo/e.gif" />
+	</channel>				
+		
+	<channel id="I10057.labs.zap2it.com">
+		<display-name>Bravo</display-name>
+		<display-name>129 Bravo</display-name>
+		<display-name>129</display-name>
+		<icon src="http://images.zap2it.com/station_logo/bravo.gif" />
+	</channel>
+	
+	<channel id="I11867.labs.zap2it.com">
+		<display-name>TBS</display-name>
+		<display-name>139 TBS</display-name>
+		<display-name>139</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tbs.gif" />
+	</channel>	
+	
+	<channel id="I18332.labs.zap2it.com">
+		<display-name>BBC America</display-name>
+		<display-name>135 BBCA</display-name>
+		<display-name>135</display-name>
+		<icon src="http://images.zap2it.com/station_logo/bbca.gif" />
+	</channel>	
+
+	<channel id="I10986.labs.zap2it.com">
+		<display-name>MTV</display-name>
+		<display-name>160 MTV</display-name>
+		<display-name>160</display-name>
+		<icon src="http://images.zap2it.com/station_logo/mtv.gif" />
+	</channel>
+	
+	<channel id="I11218.labs.zap2it.com">
+		<display-name>VH1</display-name>
+		<display-name>162 VH1</display-name>
+		<display-name>162</display-name>
+		<icon src="http://images.zap2it.com/station_logo/vh1.gif" />
+	</channel>
+	
+	<channel id="I10051.labs.zap2it.com">
+		<display-name>BET</display-name>
+		<display-name>124 BET</display-name>
+		<display-name>124</display-name>
+		<icon src="http://images.zap2it.com/station_logo/bet.gif" />
+	</channel>	
+	
+
+<!-- 8 -->
+
+    <channel id="I11474.labs.zap2it.com">
+        <display-name>WGN</display-name>
+        <display-name>295 WGN</display-name>
+        <display-name>295</display-name>
+    </channel>
+ 
+	<channel id="I91096.labs.zap2it.com">
+		<display-name>WGN America</display-name>
+		<display-name>239 WGNA</display-name>
+		<display-name>239</display-name>
+		<icon src="http://images.zap2it.com/station_logo/wgna.gif" />
+	</channel>
+<!--
+	<channel id="I11779.labs.zap2it.com">
+		<display-name>WPIX</display-name>
+		<display-name>234 WPIX</display-name>
+		<display-name>234</display-name>
+		<icon src="http://images.zap2it.com/station_logo/wpix.gif" />
+	</channel>
+	-->
+	 
+    <channel id="I11779.labs.zap2it.com">
+        <display-name>WPIX</display-name>
+        <display-name>297 WPIX</display-name>
+        <display-name>297</display-name>
+    </channel>	
+	
+	<channel id="I10724.labs.zap2it.com">
+		<display-name>KTLA</display-name>
+		<display-name>233 KTLA</display-name>
+		<display-name>233</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cw_affiliate.gif" />
+	</channel>
+	
+	<channel id="I11786.labs.zap2it.com">
+		<display-name>PBS</display-name>
+		<display-name>11 PBS</display-name>
+		<display-name>11</display-name>
+		<icon src="https://en.wikipedia.org/wiki/PBS#/media/File:PBS_Logo.svg" />		
+	</channel>
+
+	<channel id="I16108.labs.zap2it.com">
+		<display-name>Sundance</display-name>
+		<display-name>358 Sundance</display-name>
+		<display-name>358</display-name>
+		<icon src="http://images.zap2it.com/station_logo/sundanc.gif" />
+	</channel>
+    <!--
+	<channel id="I71280.labs.zap2it.com">
+		<display-name>SundanceHD</display-name>
+		<display-name>126 SundanceHD</display-name>
+		<display-name>126</display-name>
+	</channel>	
+    -->
+    <!--	
+	<channel id="I16108.labs.zap2it.com">
+		<display-name>Sundance</display-name>
+		<display-name>557 Sundance</display-name>
+		<display-name>557</display-name>
+	</channel>	
+    -->
+
+	<channel id="I10112.labs.zap2it.com">
+		<display-name>CHCH</display-name>
+		<display-name>218 CHCH</display-name>
+		<display-name>218</display-name>
+		<icon src="http://images.zap2it.com/station_logo/chch.gif" />
+	</channel>
+
+    <channel id="I67190.labs.zap2it.com">
+        <display-name>MovieTime</display-name>
+        <display-name>MTIMEHD</display-name>
+        <display-name>1285 MTIMEHD</display-name>
+        <display-name>1285</display-name>
+    </channel>	
+	
+	
+<!-- 8 -->	
+	<channel id="I12574.labs.zap2it.com">
+		<display-name>Food Network</display-name>
+		<display-name>110 Food</display-name>
+		<display-name>110</display-name>
+		<icon src="http://images.zap2it.com/station_logo/food.gif" />
+	</channel>
+	
+	<channel id="I18544.labs.zap2it.com">
+		<display-name>DIY</display-name>
+		<display-name>111 DIY</display-name>
+		<display-name>111</display-name>
+		<icon src="http://images.zap2it.com/station_logo/diy.gif" />
+	</channel>
+	
+	<channel id="I14902.labs.zap2it.com">
+		<display-name>HGTV</display-name>
+		<display-name>112 HGTV</display-name>
+		<display-name>112</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hgtv.gif" />
+	</channel>
+
+	<channel id="I10153.labs.zap2it.com">
+		<display-name>truTV</display-name>
+		<display-name>148 truTV</display-name>
+		<display-name>148</display-name>
+		<icon src="http://images.zap2it.com/station_logo/trutv.gif" />
+	</channel>
+
+	<channel id="I12852.labs.zap2it.com">
+		<display-name>TCM</display-name>
+		<display-name>132 TCM</display-name>
+		<display-name>132</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tcm.gif" />
+	</channel>
+
+	<channel id="I11164.labs.zap2it.com">
+		<display-name>TNT</display-name>
+		<display-name>138 TNT</display-name>
+		<display-name>138</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tnt.gif" />
+	</channel>
+
+	<channel id="I14909.labs.zap2it.com">
+		<display-name>GSN</display-name>
+		<display-name>116 GSN</display-name>
+		<display-name>116</display-name>
+		<icon src="http://images.zap2it.com/station_logo/gsn.gif" />
+	</channel>
+
+  	<channel id="I11180.labs.zap2it.com">
+		<display-name>Travel</display-name>
+		<display-name>196 Travel</display-name>
+		<display-name>196</display-name>
+		<icon src="http://images.zap2it.com/station_logo/trav.gif" />
+	</channel>  
+  
+		
+
+<!-- 8 -->			
+	<channel id="I14771.labs.zap2it.com">
+		<display-name>History</display-name>
+		<display-name>120 History</display-name>
+		<display-name>120</display-name>
+		<icon src="http://images.zap2it.com/station_logo/history.gif" />
+	</channel>
+
+	<channel id="I65619.labs.zap2it.com">
+		<display-name>History Canada</display-name>
+		<display-name>1605 History Canada</display-name>
+		<display-name>1605</display-name>
+		<icon src="http://images.zap2it.com/station_logo/History Canada.gif" />
+	</channel>	
+	
+	<channel id="I16331.labs.zap2it.com">
+		<display-name>Animal Planet</display-name>
+		<display-name>184 Animal Pl</display-name>
+		<display-name>184</display-name>
+		<icon src="http://images.zap2it.com/station_logo/apl.gif" />
+	</channel>
+	
+	<channel id="I24959.labs.zap2it.com">
+		<display-name>National Geographic</display-name>
+		<display-name>186 NatGeo</display-name>
+		<display-name>186</display-name>
+		<icon src="http://images.zap2it.com/station_logo/ngc.gif" />
+	</channel>
+	
+	<channel id="I66804.labs.zap2it.com">
+		<display-name>Nat Geo Wild</display-name>
+		<display-name>190 NGeoWild</display-name>
+		<display-name>190</display-name>
+		<icon src="http://images.zap2it.com/station_logo/ngwild.gif" />
+	</channel>
+
+	<channel id="I11150.labs.zap2it.com">
+		<display-name>Discovery</display-name>
+		<display-name>182 Discovery</display-name>
+		<display-name>182</display-name>
+		<icon src="http://images.zap2it.com/station_logo/dsc.gif" />
+	</channel>
+	
+	<channel id="I16616.labs.zap2it.com">
+		<display-name>Discovery Science</display-name>
+		<display-name>193 Science</display-name>
+		<display-name>193</display-name>
+		<icon src="http://images.zap2it.com/station_logo/science.gif" />
+	</channel>
+
+	<channel id="I16615.labs.zap2it.com">
+		<display-name>Discovery Investigation</display-name>
+		<display-name>192 ID</display-name>
+		<display-name>192</display-name>
+	</channel>
+
+
+	
+<!-- 8 -->					
+	
+	<channel id="I10918.labs.zap2it.com">
+		<display-name>Lifetime</display-name>
+		<display-name>108 Lifetime</display-name>
+		<display-name>108</display-name>
+		<icon src="http://images.zap2it.com/station_logo/life.gif" />
+	</channel>
+	
+ 	<channel id="I18480.labs.zap2it.com">
+		<display-name>LMN</display-name>
+		<display-name>109 LMN</display-name>
+		<display-name>109</display-name>
+	</channel> 	
+	
+	<channel id="I11221.labs.zap2it.com">
+		<display-name>Hallmark</display-name>
+		<display-name>185 Hallmark</display-name>
+		<display-name>185</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hall.gif" />
+	</channel>
+	
+	<channel id="I70387.labs.zap2it.com">
+		<display-name>OWN</display-name>
+		<display-name>189 OWN</display-name>
+		<display-name>189</display-name>
+		<icon src="http://images.zap2it.com/station_logo/own.gif" />
+	</channel>
+		
+	<channel id="I16409.labs.zap2it.com">
+		<display-name>WE TV</display-name>
+		<display-name>128 WE TV</display-name>
+		<display-name>128</display-name>
+		<icon src="http://images.zap2it.com/station_logo/we.gif" />
+	</channel>	
+	
+	<channel id="I15181.labs.zap2it.com">
+		<display-name>SLICE</display-name>
+		<display-name>601 SLICE</display-name>
+		<display-name>601</display-name>
+		<icon src="http://images.zap2it.com/station_logo/slice.gif" />
+	</channel>
+	
+	<channel id="I15024.labs.zap2it.com">
+		<display-name>W</display-name>
+		<display-name>602 W</display-name>
+		<display-name>602</display-name>
+		<icon src="http://images.zap2it.com/station_logo/w.gif" />
+	</channel>
+	
+	<channel id="I66793.labs.zap2it.com">
+		<display-name>W Movies</display-name>
+		<display-name>333 WMOVIES</display-name>
+		<display-name>333</display-name>
+		<icon src="http://images.zap2it.com/station_logo/wmovies.gif" />
+	</channel>
+
+	
+<!-- 8 -->		
+	<channel id="I10142.labs.zap2it.com">
+		<display-name>CNN</display-name>
+		<display-name>200 CNN</display-name>
+		<display-name>200</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cnn.gif" />
+	</channel>
+	
+	<channel id="I10145.labs.zap2it.com">
+		<display-name>HLN</display-name>
+		<display-name>202 HLN</display-name>
+		<display-name>202</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hln.gif" />
+	</channel>
+	
+	<channel id="I16374.labs.zap2it.com">
+		<display-name>Fox News</display-name>
+		<display-name>205 Fox News</display-name>
+		<display-name>205</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fnc.gif" />
+	</channel>
+	
+	<channel id="I16300.labs.zap2it.com">
+		<display-name>MSNBC</display-name>
+		<display-name>209 MSNBC</display-name>
+		<display-name>209</display-name>
+		<icon src="http://images.zap2it.com/station_logo/msnbc.gif" />
+	</channel>
+	
+	<channel id="I517.93.microsoft.com">
+		<display-name>Sky News</display-name>
+		<display-name>517 Sky News</display-name>
+		<display-name>517</display-name>
+	</channel>
+		
+	<channel id="I570.526214.microsoft.com">
+		<display-name>BBC News</display-name>
+		<display-name>570 BBC News</display-name>
+		<display-name>570</display-name>
+	</channel>		
+		
+	<channel id="I18168.labs.zap2it.com">
+		<display-name>CP24</display-name>
+		<display-name>503 CP24</display-name>
+		<display-name>503</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cp24.gif" />
+	</channel>
+	
+	<channel id="I10094.labs.zap2it.com">
+		<display-name>CBC News</display-name>
+		<display-name>502 CBC News</display-name>
+		<display-name>502</display-name>
+		<icon src="http://images.zap2it.com/station_logo/CBC News.gif" />
+	</channel>
+    <!--
+	<channel id="I514.751042.microsoft.com">
+		<display-name>Al Jazeera</display-name>
+		<display-name>AL JAZEERA</display-name>
+		<display-name>514 AL JAZEERA</display-name>
+		<display-name>514</display-name>
+		<display-name>AL JAZEERA International</display-name>
+	</channel>
+    -->	
+    
+	
+<!-- 8 -->	
+	<channel id="I12131.labs.zap2it.com">
+		<display-name>Cartoon Network</display-name>
+		<display-name>176 Cartoon</display-name>
+		<display-name>176</display-name>
+		<icon src="http://images.zap2it.com/station_logo/toon.gif" />
+	</channel>
+	<channel id="I10171.labs.zap2it.com">
+		<display-name>Disney</display-name>
+		<display-name>172 Disney</display-name>
+		<display-name>172</display-name>
+		<icon src="http://images.zap2it.com/station_logo/disn.gif" />
+	</channel>
+	<channel id="I74796.labs.zap2it.com">
+		<display-name>Disney Jr</display-name>
+		<display-name>168 Disney Jr</display-name>
+		<display-name>168</display-name>
+		<icon src="http://images.zap2it.com/station_logo/djch.gif" />
+	</channel>
+    <channel id="I18279.labs.zap2it.com">
+		<display-name>Disney XD</display-name>
+		<display-name>174 Disney XD</display-name>
+		<display-name>174</display-name>
+	</channel>
+	<channel id="I11006.labs.zap2it.com">
+		<display-name>Nickelodeon</display-name>
+		<display-name>170 Nick</display-name>
+		<display-name>170</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nik.gif" />
+	</channel>
+	<channel id="I21883.labs.zap2it.com">
+		<display-name>Boomerang</display-name>
+		<display-name>175 Boomerang</display-name>
+		<display-name>175</display-name>
+		<icon src="http://images.zap2it.com/station_logo/boom.gif" />
+	</channel>
+   
+	<channel id="I12045.labs.zap2it.com">
+		<display-name>YTV</display-name>
+		<display-name>551 YTV</display-name>
+		<display-name>551</display-name>
+	</channel>    
+     
+	<channel id="I11158.labs.zap2it.com">
+		<display-name>TLC</display-name>
+		<display-name>183 TLC</display-name>
+		<display-name>183</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tlc.gif" />
+	</channel> 
+
+
+
+   
+    
+<!-- 8 -->	
+
+	<channel id="I10240.labs.zap2it.com">
+		<display-name>HBO</display-name>
+		<display-name>300 HBO</display-name>
+		<display-name>300</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hbo.gif" />
+	</channel>
+
+	<channel id="I19566.labs.zap2it.com">
+		<display-name>HBO West</display-name>
+		<display-name>303 HBO HD</display-name>
+		<display-name>303</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hbohdp.gif" />
+	</channel>
+		
+    <!--
+	<channel id="I59368.labs.zap2it.com">
+		<display-name>HBO2</display-name>
+		<display-name>HBO 2</display-name>
+		<display-name>301 HBO 2 HD</display-name>
+		<display-name>301</display-name>
+	</channel> 
+	-->	
+	
+    <!--
+	<channel id="I10242.labs.zap2it.com">
+		<display-name>HBO2 West</display-name>
+		<display-name>304 HBO 2</display-name>
+		<display-name>304</display-name>
+	</channel> 
+	-->
+				
+	<channel id="I10243.labs.zap2it.com">
+		<display-name>HBO Signature</display-name>
+		<display-name>302 HBO Sig</display-name>
+		<display-name>302</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hbosig.gif" />
+	</channel>
+
+	<channel id="I18429.labs.zap2it.com">
+		<display-name>HBO Comedy</display-name>
+		<display-name>307 HBOComedy</display-name>
+		<display-name>307</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hboc.gif" />
+	</channel>
+	
+	<channel id="I18431.labs.zap2it.com">
+		<display-name>HBO Zone</display-name>
+		<display-name>308 HBOZone</display-name>
+		<display-name>308</display-name>
+		<icon src="http://images.zap2it.com/station_logo/hboz.gif" />
+	</channel>
+	
+	<!--
+	<channel id="I16585.labs.zap2it.com">
+		<display-name>HBO Family</display-name>
+		<display-name>305 HBOFamily</display-name>
+		<display-name>305</display-name>
+	</channel> 
+	-->
+		
+	<channel id="I18433.labs.zap2it.com">
+		<display-name>ActionMax</display-name>
+		<display-name>313 ActionMAX</display-name>
+		<display-name>313</display-name>
+		<icon src="http://images.zap2it.com/station_logo/acmax.gif" />
+	</channel>
+	
+	<channel id="I25620.labs.zap2it.com">
+		<display-name>5 StarMax</display-name>
+		<display-name>314 5MAX</display-name>
+		<display-name>314</display-name>
+		<icon src="http://images.zap2it.com/station_logo/5max.gif" />
+	</channel>
+	
+	<channel id="I10121.labs.zap2it.com">
+		<display-name>MoreMax</display-name>
+		<display-name>312 MoreMax</display-name>
+		<display-name>312</display-name>
+		<icon src="http://images.zap2it.com/station_logo/momax.gif" />
+	</channel>
+	
+<!-- 8 -->		
+	
+
+	<channel id="I11115.labs.zap2it.com">
+		<display-name>Showtime</display-name>
+		<display-name>318 Showtime</display-name>
+		<display-name>318</display-name>
+		<icon src="http://images.zap2it.com/station_logo/show.gif" />
+	</channel>
+	
+	<channel id="I22532.labs.zap2it.com">
+		<display-name>Showtime West</display-name>
+		<display-name>319 ShowtimeHD</display-name>
+		<display-name>319</display-name>
+		<icon src="http://images.zap2it.com/station_logo/showhdp.gif" />
+	</channel>
+	
+	<channel id="I16153.labs.zap2it.com">
+		<display-name>Showtime Showcase</display-name>
+		<display-name>321 Showcase</display-name>
+		<display-name>321</display-name>
+		<icon src="http://images.zap2it.com/station_logo/shocse.gif" />
+	</channel>
+	
+	<channel id="I11116.labs.zap2it.com">
+		<display-name>Showtime 2</display-name>
+		<display-name>320 SHO 2</display-name>
+		<display-name>320</display-name>
+		<icon src="http://images.zap2it.com/station_logo/sho2.gif" />
+	</channel>
+	
+	<channel id="I18086.labs.zap2it.com">
+		<display-name>Showtime Extreme</display-name>
+		<display-name>322 ShoExtreme</display-name>
+		<display-name>322</display-name>
+		<icon src="http://images.zap2it.com/station_logo/showx.gif" />
+	</channel>
+	
+	<channel id="I20622.labs.zap2it.com">
+		<display-name>Showtime Beyond</display-name>
+		<display-name>323 ShoBeyond</display-name>
+		<display-name>323</display-name>
+		<icon src="http://images.zap2it.com/station_logo/showb.gif" />
+	</channel>
+		
+	<channel id="I10120.labs.zap2it.com">
+		<display-name>Cinemax</display-name>
+		<display-name>310 Cinemax</display-name>
+		<display-name>310</display-name>
+		<icon src="http://images.zap2it.com/station_logo/max.gif" />
+	</channel>
+	
+	<channel id="I35975.labs.zap2it.com">
+		<display-name>Cinemax West</display-name>
+		<display-name>311 Cinemax HD</display-name>
+		<display-name>311</display-name>
+		<icon src="http://images.zap2it.com/station_logo/maxhdp.gif" />
+	</channel>	
+	
+<!-- 8 -->		
+
+	<channel id="I12719.labs.zap2it.com">
+		<display-name>Starz</display-name>
+		<display-name>350 Starz</display-name>
+		<display-name>350</display-name>
+		<icon src="http://images.zap2it.com/station_logo/starz.gif" />
+	</channel>
+	
+	<channel id="I34949.labs.zap2it.com">
+		<display-name>Starz West</display-name>
+		<display-name>351 Starz HD</display-name>
+		<display-name>351</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stzhdp.gif" />
+	</channel>
+	
+	<channel id="I16311.labs.zap2it.com">
+		<display-name>Starz Edge</display-name>
+		<display-name>352 StrzEdge</display-name>
+		<display-name>352</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stze.gif" />
+	</channel>
+	
+	<channel id="I19634.labs.zap2it.com">
+		<display-name>Starz Cinema</display-name>
+		<display-name>353 StrzCinm</display-name>
+		<display-name>353</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stzci.gif" />
+	</channel>
+	
+	<channel id="I16833.labs.zap2it.com">
+		<display-name>Starz In Black</display-name>
+		<display-name>355 StrzBlck</display-name>
+		<display-name>355</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stzib.gif" />
+	</channel>
+	
+	<channel id="I11160.labs.zap2it.com">
+		<display-name>The Movie Channel</display-name>
+		<display-name>327 TMC</display-name>
+		<display-name>327</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tmc.gif" />
+	</channel>
+	
+	<channel id="I10178.labs.zap2it.com">
+		<display-name>Encore</display-name>
+		<display-name>340 STZENC</display-name>
+		<display-name>340</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stzenc.gif" />
+	</channel>
+	
+	<channel id="I14871.labs.zap2it.com">
+		<display-name>Encore Action</display-name>
+		<display-name>343 STZENAC</display-name>
+		<display-name>343</display-name>
+		<icon src="http://images.zap2it.com/station_logo/stzenac.gif" />
+	</channel>	
+	
+<!-- 8 -->	
+
+
+	<channel id="I314.750600.microsoft.com">
+		<display-name>Sky Movies Premiere</display-name>
+		<display-name>314 Sky Movies Premiere</display-name>
+		<display-name>314</display-name>
+	</channel>
+
+	<channel id="I303.756489.microsoft.com">
+		<display-name>Sky Movies Showcase</display-name>
+		<display-name>303 Sky Movies Showcase</display-name>
+		<display-name>303</display-name>
+		<display-name>Sky Movies Oscars</display-name>
+	</channel>
+
+	<channel id="I331.91.microsoft.com">
+		<display-name>Sky Movies Comedy</display-name>
+		<display-name>331 Sky Movies Comedy</display-name>
+		<display-name>331</display-name>
+	</channel>	
+
+	<channel id="I335.750602.microsoft.com">
+		<display-name>Sky Movies Drama</display-name>
+		<display-name>335 Sky Movies Drama</display-name>
+		<display-name>335</display-name>
+	</channel>
+		
+	<channel id="I307.755087.microsoft.com">
+		<display-name>Sky Movies Crime</display-name>
+		<display-name>307 Sky Movies Crime</display-name>
+		<display-name>307</display-name>
+	</channel>
+	
+	<channel id="I332.92.microsoft.com">
+		<display-name>Sky Movies Action</display-name>
+		<display-name>332 Sky Movies Action</display-name>
+		<display-name>332</display-name>
+		<display-name>Sky Movies Action/Thriller</display-name>
+	</channel>	
+	
+	<channel id="I336.727786.microsoft.com">
+		<display-name>Sky Movies Scifi</display-name>
+		<display-name>336 Sky Movies Scifi</display-name>
+		<display-name>336</display-name>
+		<display-name>Sky Movies Sci-Fi/Horror</display-name>
+	</channel>
+	
+	<channel id="I337.727785.microsoft.com">
+		<display-name>Sky Movies Greats</display-name>
+		<display-name>337 Sky Movies Greats</display-name>
+		<display-name>337</display-name>
+	</channel>	
+	
+	
+<!-- 8 -->	
+
+
+	<channel id="I339.727787.microsoft.com">
+		<display-name>Sky Movies Select</display-name>
+		<display-name>339 Sky Movies Select</display-name>
+		<display-name>339</display-name>
+	</channel>
+	
+	<channel id="I340.727784.microsoft.com">
+		<display-name>Sky Movies Disney</display-name>
+		<display-name>340 Sky Movies Disney</display-name>
+		<display-name>340</display-name>
+	</channel>	
+
+	<channel id="I333.727783.microsoft.com">
+		<display-name>Sky Movies Family</display-name>
+		<display-name>333 Sky Movies Family</display-name>
+		<display-name>333</display-name>
+	</channel>
+
+	<channel id="I108.759410.microsoft.com">
+		<display-name>Sky Atlantic</display-name>
+		<display-name>108 Sky Atlantic</display-name>
+		<display-name>108</display-name>
+	</channel>
+	
+	<channel id="I221.750973.microsoft.com">
+		<display-name>Sky Arts</display-name>
+		<display-name>221 Sky Arts</display-name>
+		<display-name>221</display-name>
+	</channel>
+
+	<channel id="I170.255.microsoft.com">
+		<display-name>Sky1</display-name>
+		<display-name>Sky One</display-name>
+		<display-name>170 Sky One</display-name>
+		<display-name>170</display-name>
+	</channel>
+	
+	<channel id="I121.752184.microsoft.com">
+		<display-name>Sky2</display-name>
+		<display-name>Sky Two</display-name>
+		<display-name>121 Sky Two</display-name>
+		<display-name>121</display-name>
+	</channel>	
+	
+	<channel id="I188.26232.microsoft.com">
+		<display-name>FOX UK</display-name>
+		<display-name>188 FOX UK</display-name>
+		<display-name>188</display-name>
+	</channel>	
+
+
+<!-- 8 -->	
+
+
+	<channel id="I101.2080.microsoft.com">
+		<display-name>BBC1</display-name>
+		<display-name>BBC One</display-name>
+		<display-name>101 BBC One</display-name>
+		<display-name>101</display-name>
+	</channel>
+
+	<channel id="I989.79.microsoft.com">
+		<display-name>BBC2</display-name>
+		<display-name>BBC Two</display-name>
+		<display-name>989 BBC Two</display-name>
+		<display-name>989</display-name>
+	</channel>
+
+
+    <channel id="BBC Three">
+        <display-name lang="en">BBC3</display-name>
+        <display-name lang="en">BBC Three</display-name>
+        <url>http://www.radiotimes.com</url>
+    </channel>
+    <!--
+	<channel id="I115.766031.microsoft.com">
+		<display-name>BBC Three</display-name>
+		<display-name>115 BBC Three HD</display-name>
+		<display-name>115</display-name>
+		<display-name>BBC Three HD</display-name>
+	</channel>	
+    -->
+	<channel id="I211.711188.microsoft.com">
+		<display-name>BBC4</display-name>
+		<display-name>BBC Four</display-name>
+		<display-name>211 BBC Four</display-name>
+		<display-name>211</display-name>
+	</channel>
+
+<!--
+  <channel id="UK_RT_231">
+    <display-name lang="en">RTE ONE</display-name>
+  </channel>
+  <channel id="UK_RT_1870">
+    <display-name lang="en">RTE TWO</display-name>
+  </channel>
+  -->
+  
+    <channel id="RTE1">
+        <display-name lang="en">RTE1</display-name>
+        <display-name lang="en">RTE ONE</display-name>
+        <url>http://www.radiotimes.com.xmltv</url>
+    </channel>
+    
+    <channel id="RTE2">
+        <display-name lang="en">RTE2</display-name>
+        <display-name lang="en">RTE TWO</display-name>
+        <url>http://www.radiotimes.com.xmltv</url>
+    </channel>
+
+	
+	<channel id="I179.768079.microsoft.com">
+		<display-name>ITVBe</display-name>
+		<display-name>179 ITVBe</display-name>
+		<display-name>179</display-name>
+	</channel>
+	
+	
+	<channel id="I123.767452.microsoft.com">
+		<display-name>ITV Encore</display-name>
+		<display-name>123 ITV Encore</display-name>
+		<display-name>123</display-name>
+	</channel>
+
+<!-- 8 -->		
+	
+	
+	<channel id="I103.380936.microsoft.com">
+		<display-name>ITV1</display-name>
+		<display-name>103 ITV1</display-name>
+		<display-name>103</display-name>
+		<display-name>ITV1 London</display-name>
+	</channel>
+	<channel id="I207.649186.microsoft.com">
+		<display-name>ITV2</display-name>
+		<display-name>207 ITV2</display-name>
+		<display-name>207</display-name>
+	</channel>
+	<channel id="I208.753400.microsoft.com">
+		<display-name>ITV3</display-name>
+		<display-name>208 ITV3</display-name>
+		<display-name>208</display-name>
+	</channel>
+	<channel id="I228.754788.microsoft.com">
+		<display-name>ITV4</display-name>
+		<display-name>228 ITV4</display-name>
+		<display-name>228</display-name>
+	</channel>		
+		
+	<channel id="I131.759373.microsoft.com">
+		<display-name>ITV1+1</display-name>
+		<display-name>131 ITV1+1</display-name>
+		<display-name>131</display-name>
+	</channel>	
+	<channel id="I180.755797.microsoft.com">
+		<display-name>ITV2+1</display-name>
+		<display-name>180 ITV2+1</display-name>
+		<display-name>180</display-name>
+	</channel>
+    <channel id="ITV3+1">
+        <display-name lang="en">ITV3+1</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+	<channel id="I206.759389.microsoft.com">
+		<display-name>ITV4+1</display-name>
+		<display-name>206 ITV4+1</display-name>
+		<display-name>206</display-name>
+	</channel>
+
+<!-- 8 -->	
+
+	<channel id="I104.90.microsoft.com">
+		<display-name>Channel 4</display-name>
+		<display-name>104 Channel 4</display-name>
+		<display-name>104</display-name>
+	</channel>	
+	
+	<channel id="I138.754789.microsoft.com">
+		<display-name>More4</display-name>
+		<display-name>138 More 4</display-name>
+		<display-name>138</display-name>
+		<display-name>More4</display-name>
+	</channel>
+	
+	<channel id="I315.631286.microsoft.com">
+		<display-name>Film4</display-name>
+		<display-name>315 Film4</display-name>
+		<display-name>315</display-name>
+	</channel>		
+	
+	<channel id="I202.750978.microsoft.com">
+		<display-name>E4</display-name>
+		<display-name>202 E4</display-name>
+		<display-name>202</display-name>
+	</channel>	
+	<!--
+    <channel id="Channel 5">
+        <display-name lang="en">Channel 5</display-name>
+        <url>http://www.radiotimes.com</url>
+    </channel>
+	-->
+	<channel id="I105.450410.microsoft.com">
+		<display-name>Channel 5</display-name>
+		<display-name>Five</display-name>
+		<display-name>105 Five</display-name>
+		<display-name>105</display-name>
+		<display-name>five</display-name>
+	</channel>	
+	
+	<channel id="I176.755776.microsoft.com">
+		<display-name>5Star</display-name>
+		<display-name>176 5Star</display-name>
+		<display-name>176</display-name>
+	</channel>	
+	
+	<channel id="I174.755775.microsoft.com">
+		<display-name>5USA</display-name>
+		<display-name>174 5USA</display-name>
+		<display-name>174</display-name>
+	</channel>
+	
+	<channel id="I144.757155.microsoft.com">
+		<display-name>DMAX</display-name>
+		<display-name>144 DMAX</display-name>
+		<display-name>144</display-name>
+	</channel>	
+			
+	
+	<!-- 8 -->	
+	
+	<channel id="I229.509198.microsoft.com">
+		<display-name>Alibi</display-name>
+		<display-name>229 Alibi</display-name>
+		<display-name>229</display-name>
+	</channel>
+	
+	<channel id="I327.755618.microsoft.com">
+		<display-name>Movies24</display-name>
+		<display-name>327 Movies 24</display-name>
+		<display-name>327</display-name>
+	</channel>
+	
+    <channel id="I154.758051.microsoft.com">
+		<display-name>Quest</display-name>
+		<display-name>154 Quest</display-name>
+		<display-name>154</display-name>
+	</channel>
+	
+	<channel id="I213.629469.microsoft.com">
+		<display-name>Dave</display-name>
+		<display-name>213 Dave</display-name>
+		<display-name>213</display-name>
+	</channel>	
+	
+	<channel id="I148.756526.microsoft.com">
+		<display-name>CBS Action</display-name>
+		<display-name>148 CBS Action</display-name>
+		<display-name>148</display-name>
+	</channel>
+	
+	<channel id="I149.756863.microsoft.com">
+		<display-name>CBS Drama</display-name>
+		<display-name>149 CBS Drama</display-name>
+		<display-name>149</display-name>
+	</channel>
+	
+	<channel id="I146.751821.microsoft.com">
+		<display-name>CBS Reality</display-name>
+		<display-name>146 CBS Reality</display-name>
+		<display-name>146</display-name>
+	</channel>
+	
+	<channel id="I147.756973.microsoft.com">
+		<display-name>CBS Reality +1</display-name>
+		<display-name>147 CBS Reality +1</display-name>
+		<display-name>147</display-name>
+	</channel>	
+		
+	<!-- 8 -->	
+	
+	<channel id="I110.81523.microsoft.com">
+		<display-name>Gold</display-name>
+		<display-name>110 Gold</display-name>
+		<display-name>110</display-name>
+	</channel>
+
+	<channel id="I537.751795.microsoft.com">
+		<display-name>Yesterday</display-name>
+		<display-name>537 Yesterday</display-name>
+		<display-name>537</display-name>
+	</channel>
+	
+	<channel id="I152.754816.microsoft.com">
+		<display-name>Pick</display-name>
+		<display-name>152 Pick</display-name>
+		<display-name>152</display-name>
+	</channel>	
+	
+	<channel id="I534.26240.microsoft.com">
+		<display-name>Eden</display-name>
+		<display-name>534 Eden</display-name>
+		<display-name>534</display-name>
+	</channel>	
+	
+	<channel id="I523.750622.microsoft.com">
+		<display-name>Disc Turbo</display-name>
+		<display-name>523 Disc Turbo</display-name>
+		<display-name>523</display-name>
+		<display-name>Discovery Turbo</display-name>
+	</channel>
+
+	<channel id="I624.751557.microsoft.com">
+		<display-name>CBeebies</display-name>
+		<display-name>624 CBeebies</display-name>
+		<display-name>624</display-name>
+	</channel>
+	
+	<channel id="I633.751559.microsoft.com">
+		<display-name>CBBC</display-name>
+		<display-name>633 CBBC</display-name>
+		<display-name>633</display-name>
+	</channel>
+
+	<channel id="I245.753872.microsoft.com">
+		<display-name>Really</display-name>
+		<display-name>245 Really</display-name>
+		<display-name>245</display-name>
+	</channel>
+
+		
+	<!-- 8 -->	
+	
+
+	<channel id="I248.758743.microsoft.com">
+		<display-name>Food Network UK</display-name>
+		<display-name>248 Food Network UK</display-name>
+		<display-name>248</display-name>
+	</channel>
+
+	<channel id="I220.479.microsoft.com">
+		<display-name>MTV UK</display-name>
+		<display-name>220 MTV UK</display-name>
+		<display-name>220</display-name>
+	</channel>
+
+	<channel id="I356.232973.microsoft.com">
+		<display-name>VH1 UK</display-name>
+		<display-name>356 VH1 UK</display-name>
+		<display-name>356</display-name>
+	</channel>	
+
+	<channel id="I201.318488.microsoft.com">
+		<display-name>Syfy UK</display-name>
+		<display-name>201 Syfy UK</display-name>
+		<display-name>201</display-name>
+		<display-name>SCI FI</display-name>
+	</channel>
+
+    <channel id="AMC from BT">
+        <display-name lang="en">AMC UK</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+
+	<channel id="I205.750989.microsoft.com">
+		<display-name>Comedy Central UK</display-name>
+		<display-name>205 Comedy Central UK</display-name>
+		<display-name>205</display-name>
+	</channel>
+
+	<channel id="I128.752967.microsoft.com">
+		<display-name>Comedy Central Extra</display-name>
+		<display-name>128 Comedy Central Extra</display-name>
+		<display-name>128</display-name>
+	</channel>
+
+	<channel id="I634.157644.microsoft.com">
+		<display-name>Cartoon Network UK</display-name>
+		<display-name>634 Cartoon Network UK</display-name>
+		<display-name>634</display-name>
+		<display-name>Cartoon Network</display-name>
+	</channel>
+
+
+<!-- 8 -->
+
+	<channel id="I401.756532.microsoft.com">
+		<display-name>Sky Sports 1 HD</display-name>
+		<display-name>401 Sky Sports 1 HD</display-name>
+		<display-name>401</display-name>
+	</channel>
+	
+	<channel id="I402.756533.microsoft.com">
+		<display-name>Sky Sports 2 HD</display-name>
+		<display-name>402 Sky Sports 2 HD</display-name>
+		<display-name>402</display-name>
+	</channel>
+	
+	<channel id="I403.757365.microsoft.com">
+		<display-name>Sky Sports 3 HD</display-name>
+		<display-name>403 Sky Sports 3 HD</display-name>
+		<display-name>403</display-name>
+	</channel>
+	
+	<channel id="I404.759234.microsoft.com">
+		<display-name>Sky Sports 4 HD</display-name>
+		<display-name>404 Sky Sports 4 HD</display-name>
+		<display-name>404</display-name>
+	</channel>
+	
+	
+	<channel id="I409.503.microsoft.com">
+		<display-name>Sky Sports 1</display-name>
+		<display-name>409 Sky Sports 1</display-name>
+		<display-name>409</display-name>
+	</channel>
+
+	<channel id="I418.223160.microsoft.com">
+		<display-name>Sky Sports 2</display-name>
+		<display-name>418 Sky Sports 2</display-name>
+		<display-name>418</display-name>
+	</channel>
+	
+	<channel id="I434.397065.microsoft.com">
+		<display-name>Sky Sports 3</display-name>
+		<display-name>434 Sky Sports 3</display-name>
+		<display-name>434</display-name>
+	</channel>
+	
+    <channel id="Sky Sports 4">
+        <display-name lang="en">Sky Sports 4</display-name>
+        <url>http://www.radiotimes.com</url>
+    </channel>	
+	
+<!-- 8 -->	
+	
+	
+    <channel id="Sky Sports 5 HD">
+        <display-name lang="en">Sky Sports 5 HD</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+  	
+    <channel id="Sky Sports 5">
+        <display-name lang="en">Sky Sports 5</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>	
+
+	<!--
+	<channel id="I405.759235.microsoft.com">
+		<display-name>Sky Sports News HD</display-name>
+		<display-name>405 Sky Sports News HD</display-name>
+		<display-name>405</display-name>
+	</channel>
+    -->
+
+	<channel id="I440.759963.microsoft.com">
+		<display-name>Sky Sports F1</display-name>
+		<display-name>440 Sky Sports F1</display-name>
+		<display-name>440</display-name>
+	</channel>		
+
+    <channel id="Astro SuperSport">
+        <display-name lang="en">Astro SuperSport 1</display-name>
+        <url>http://www.astro.com.my</url>
+    </channel>
+    
+    <channel id="Astro SuperSport 2">
+        <display-name lang="en">Astro SuperSport 2</display-name>
+        <url>http://www.astro.com.my</url>
+    </channel>
+  
+    <channel id="Astro SuperSport 3">
+        <display-name lang="en">Astro SuperSport 3</display-name>
+        <url>http://www.astro.com.my</url>
+    </channel>
+  
+	<channel id="I412.750611.microsoft.com">
+		<display-name>Eurosport</display-name>
+		<display-name>412 Eurosport</display-name>
+		<display-name>412</display-name>
+		<display-name>British Eurosport</display-name>
+	</channel>	
+	
+	<channel id="I443.750823.microsoft.com">
+		<display-name>Eurosport 2</display-name>
+		<display-name>443 Eurosport 2</display-name>
+		<display-name>443</display-name>
+	</channel>
+
+
+<!-- 8 -->	
+
+
+	<channel id="I413.763999.microsoft.com">
+		<display-name>BT Sport 1 HD</display-name>
+		<display-name>413 BT Sport 1 HD</display-name>
+		<display-name>413</display-name>
+	</channel>
+	
+	<channel id="I414.764003.microsoft.com">
+		<display-name>BT Sport 2 HD</display-name>
+		<display-name>414 BT Sport 2 HD</display-name>
+		<display-name>414</display-name>
+	</channel>
+
+	<channel id="I426.763997.microsoft.com">
+		<display-name>BT Sport 1</display-name>
+		<display-name>426 BT Sport 1</display-name>
+		<display-name>426</display-name>
+	</channel>
+	
+	<channel id="I427.764001.microsoft.com">
+		<display-name>BT Sport 2</display-name>
+		<display-name>427 BT Sport 2</display-name>
+		<display-name>427</display-name>
+	</channel>
+	
+	<channel id="I82547.labs.zap2it.com">
+		<display-name>Fox Sports 1 HD</display-name>
+		<display-name>150 FS1HD</display-name>
+		<display-name>150</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fs1hd.gif" />
+	</channel>
+	
+	<channel id="I59305.labs.zap2it.com">
+		<display-name>Fox Sports 2 HD</display-name>
+		<display-name>149 FS2HD</display-name>
+		<display-name>149</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fs2hd.gif" />
+	</channel>
+	
+	<channel id="I82541.labs.zap2it.com">
+		<display-name>Fox Sports 1</display-name>
+		<display-name>150 FS1</display-name>
+		<display-name>150</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fs1.gif" />
+	</channel>
+	
+	<channel id="I33178.labs.zap2it.com">
+		<display-name>Fox Sports 2</display-name>
+		<display-name>149 FS2</display-name>
+		<display-name>149</display-name>
+		<icon src="http://images.zap2it.com/station_logo/fs2.gif" />
+	</channel>
+
+
+	<!-- 8 -->	
+
+	<channel id="I34710.labs.zap2it.com">
+		<display-name>NFL Network</display-name>
+		<display-name>154 NFL</display-name>
+		<display-name>154</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nflnet.gif" />
+	</channel>
+	
+	<channel id="I32281.labs.zap2it.com">
+		<display-name>NBA TV</display-name>
+		<display-name>156 NBATV</display-name>
+		<display-name>156</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nbatv.gif" />
+	</channel>
+	
+	<channel id="I62079.labs.zap2it.com">
+		<display-name>MLB Network</display-name>
+		<display-name>152 MLB</display-name>
+		<display-name>152</display-name>
+		<icon src="http://images.zap2it.com/station_logo/mlbn.gif" />
+	</channel>
+	
+	<channel id="I58570.labs.zap2it.com">
+		<display-name>NHL Network</display-name>
+		<display-name>157 NHLNET</display-name>
+		<display-name>157</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nhlnet.gif" />
+	</channel>
+	
+	<channel id="I14899.labs.zap2it.com">
+		<display-name>Golf Channel</display-name>
+		<display-name>401 Golf</display-name>
+		<display-name>401</display-name>
+		<icon src="http://images.zap2it.com/station_logo/golf.gif" />
+	</channel>
+
+	<channel id="I16365.labs.zap2it.com">
+		<display-name>CBS Sports</display-name>
+		<display-name>158 CBS Sports</display-name>
+		<display-name>158</display-name>
+		<icon src="http://images.zap2it.com/station_logo/cbssn.gif" />
+	</channel>
+
+	<channel id="I15952.labs.zap2it.com">
+		<display-name>NBCSN</display-name>
+		<display-name>159 NBCSN</display-name>
+		<display-name>159</display-name>
+		<icon src="http://images.zap2it.com/station_logo/nbcsn.gif" />
+	</channel>
+
+	<channel id="I76942.labs.zap2it.com">
+		<display-name>BEINS1</display-name>
+		<display-name>392 BEINS1</display-name>
+		<display-name>392</display-name>
+	</channel>
+
+
+	<!-- 8 -->	
+
+	<channel id="I10179.labs.zap2it.com">
+		<display-name>ESPN</display-name>
+		<display-name>140 ESPN</display-name>
+		<display-name>140</display-name>
+		<icon src="http://images.zap2it.com/station_logo/espn.gif" />
+	</channel>
+	
+	<channel id="I12444.labs.zap2it.com">
+		<display-name>ESPN2</display-name>
+		<display-name>143 ESPN 2</display-name>
+		<display-name>143</display-name>
+		<icon src="http://images.zap2it.com/station_logo/espn2.gif" />
+	</channel>
+
+	<channel id="I45654.labs.zap2it.com">
+		<display-name>ESPNU</display-name>
+		<display-name>141 ESPNU</display-name>
+		<display-name>141</display-name>
+		<icon src="http://images.zap2it.com/station_logo/espnu.gif" />
+	</channel>
+	
+	<channel id="I16485.labs.zap2it.com">
+		<display-name>ESPNews</display-name>
+		<display-name>142 ESPNews</display-name>
+		<display-name>142</display-name>
+		<icon src="http://images.zap2it.com/station_logo/espnews.gif" />
+	</channel>
+
+	<channel id="I91306.labs.zap2it.com">
+		<display-name>WWE Network</display-name>
+		<display-name>1446 WWEHD</display-name>
+		<display-name>1446</display-name>
+		<icon src="http://images.zap2it.com/station_logo/wwehd.gif" />
+	</channel>
+    
+	<channel id="I81448.labs.zap2it.com">
+		<display-name>UFC Network</display-name>
+		<display-name>388 FIGHTSD</display-name>
+		<display-name>388</display-name>
+	</channel> 
+		
+    <channel id="BoxNation">
+        <display-name lang="en">BoxNation</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+
+	<channel id="I57735.labs.zap2it.com">
+		<display-name>Sportsnet World</display-name>
+		<display-name>420 SNWL</display-name>
+		<display-name>420</display-name>
+		<icon src="http://images.zap2it.com/station_logo/snwl.gif" />
+	</channel>
+
+
+<!-- 8 -->	
+	
+	<channel id="I18799.labs.zap2it.com">
+		<display-name>Sportsnet Ontario</display-name>
+		<display-name>405 SNO</display-name>
+		<display-name>405</display-name>
+		<icon src="http://images.zap2it.com/station_logo/sno.gif" />
+	</channel>
+	
+	<channel id="I68858.labs.zap2it.com">
+		<display-name>Sportsnet One</display-name>
+		<display-name>409 SN1</display-name>
+		<display-name>409</display-name>
+		<icon src="http://images.zap2it.com/station_logo/sn1.gif" />
+	</channel>
+	
+	<channel id="I20203.labs.zap2it.com">
+		<display-name>Sportsnet 360</display-name>
+		<display-name>410 SN360</display-name>
+		<display-name>410</display-name>
+		<icon src="http://images.zap2it.com/station_logo/sn360.gif" />
+	</channel>
+
+	<channel id="I11182.labs.zap2it.com">
+		<display-name>TSN1</display-name>
+		<display-name>TSN 1</display-name>
+		<display-name>400 TSN1</display-name>
+		<display-name>400</display-name>
+	</channel>
+	
+	<channel id="I18990.labs.zap2it.com">
+		<display-name>TSN2</display-name>
+		<display-name>TSN 2</display-name>
+		<display-name>401 TSN2</display-name>
+		<display-name>401</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tsn2.gif" />
+	</channel>
+	
+	<channel id="I90118.labs.zap2it.com">
+		<display-name>TSN3</display-name>
+		<display-name>TSN 3</display-name>
+		<display-name>402 TSN3</display-name>
+		<display-name>402</display-name>
+	</channel>
+	
+	<channel id="I90122.labs.zap2it.com">
+		<display-name>TSN4</display-name>
+		<display-name>TSN 4</display-name>
+		<display-name>403 TSN4</display-name>
+		<display-name>403</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tsn4.gif" />
+	</channel>
+	
+	<channel id="I90124.labs.zap2it.com">
+		<display-name>TSN5</display-name>
+		<display-name>TSN 5</display-name>
+		<display-name>404 TSN5</display-name>
+		<display-name>404</display-name>
+		<icon src="http://images.zap2it.com/station_logo/tsn5.gif" />
+	</channel>
+
+
+<!-- 8 -->	
+	
+
+	<channel id="I79566.labs.zap2it.com">
+		<display-name>VIVID</display-name>
+		<display-name>492 VIVIDTV</display-name>
+		<display-name>492</display-name>
+	</channel>
+	
+	<channel id="I65224.labs.zap2it.com">
+		<display-name>HUSTLER</display-name>
+		<display-name>497 HUSLRHD</display-name>
+		<display-name>497</display-name>
+	</channel>
+	
+	<channel id="I76898.labs.zap2it.com">
+		<display-name>PLAYBOY</display-name>
+	</channel>
+
+    <!--
+    <channel id="SkySpBoxOffHD">
+        <display-name lang="en">PPV1</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+    -->	
+    <!--
+    <channel id="SkySpBoxOff">
+        <display-name lang="en">SkySpBoxOff</display-name>
+        <url>http://www.tv.sky.com</url>
+    </channel>
+    -->	
+	
+	<channel id="I44076.labs.zap2it.com">
+		<display-name>PPV</display-name>
+		<display-name>541 HDPPV</display-name>
+		<display-name>541</display-name>
+	</channel>
+
+  	<channel id="Sports">
+		<display-name>Sports</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="Sports">
+		<title lang="en">Direct link to Sports channels.</title>
+		<desc lang="en">Direct link to Sports channels. This needs SuperFavourites installed.</desc>
+	</programme>	
+
+  	<channel id="UK">
+		<display-name>UK</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="UK">
+		<title lang="en">Direct link to UK channels.</title>
+		<desc lang="en">Direct link to UK channels. This needs SuperFavourites installed.</desc>
+	</programme>	  
+
+	 
+  	<channel id="USA">
+		<display-name>USA</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="USA">
+		<title lang="en">Direct link to USA channels.</title>
+		<desc lang="en">Direct link to USA channels. This needs SuperFavourites installed.</desc>
+	</programme>	  
+
+  	<channel id="Canada">
+		<display-name>Canada</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="Canada">
+		<title lang="en">Direct link to Canada channels</title>
+		<desc lang="en">Direct link to Canada channels. This needs SuperFavourites installed.</desc>
+	</programme>
+
+<!--
+  	<channel id="iBrod">
+		<display-name>iBrod</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="iBrod">
+		<title lang="en">Direct link to iBrod channels.</title>
+		<desc lang="en">Direct link to iBrod channels. This needs SuperFavourites installed.</desc>
+	</programme>	  
+ 
+  	<channel id="Shadownet">
+		<display-name>Shadownet</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="Shadownet">
+		<title lang="en">Direct link to Shadownet channels.</title>
+		<desc lang="en">Direct link to Shadownet channels. This needs SuperFavourites installed.</desc>
+	</programme>	  
+-->
+
+<!--	
+ 	<channel id="Addon2">
+		<display-name>Addon2</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="Addon2">
+		<title lang="en">Direct link to addon channels</title>
+		<desc lang="en">Direct link to addon channels. This needs SuperFavourites installed.</desc>
+	</programme>	
+-->		
+	<channel id="Addon">
+		<display-name>Addon</display-name>
+	</channel>
+    <programme start="20160129123000 -0500" stop="20170129130000 -0500" channel="Addon">
+		<title lang="en">Direct link to addon channels</title>
+		<desc lang="en">Direct link to addon channels. This needs SuperFavourites installed.
+		
+Guide Changes:
+This will automatically add IPTVsubs and Dexter TV passwords to addon.ini.
+		</desc>
+	</programme>
+
+
+<!--
+
+  <channel id="I89611.labs.zap2it.com">
+    <display-name>MLB1</display-name>
+  </channel>
+  <channel id="I26198.labs.zap2it.com">
+    <display-name>MLB2</display-name>
+  </channel>
+  <channel id="I26199.labs.zap2it.com">
+    <display-name>MLB3</display-name>
+  </channel>
+  <channel id="I26200.labs.zap2it.com">
+    <display-name>MLB4</display-name>
+  </channel>
+  <channel id="I26201.labs.zap2it.com">
+    <display-name>MLB5</display-name>
+  </channel>
+  <channel id="I26202.labs.zap2it.com">
+    <display-name>MLB6</display-name>
+  </channel>
+  <channel id="I26203.labs.zap2it.com">
+    <display-name>MLB7</display-name>
+  </channel>
+  <channel id="I26204.labs.zap2it.com">
+    <display-name>MLB8</display-name>
+  </channel>
+  <channel id="I29093.labs.zap2it.com">
+    <display-name>MLB9</display-name>
+  </channel>
+  <channel id="I31250.labs.zap2it.com">
+    <display-name>MLB10</display-name>
+  </channel>
+  <channel id="I53701.labs.zap2it.com">
+    <display-name>MLB11</display-name>
+  </channel>
+  <channel id="I53704.labs.zap2it.com">
+    <display-name>MLB12</display-name>
+  </channel>
+-->
+
+
+
+  <!--  _______________________________________________________________________________________ -->
+  <!--  ______________________________ End of Channel Sort ____________________________________ -->
+  <!--  _______________________________________________________________________________________ -->
+  
+ 
+	
+</tv>
