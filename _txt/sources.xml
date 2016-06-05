@@ -2,10 +2,10 @@
     <programs>
         <default pathversion="1"></default>
     </programs>
+    
     <video>
         <default pathversion="1"></default>
-
-        <source>
+         <source>
             <name>Video Addons</name>
             <path pathversion="1">library://video/addons.xml/</path>
             <thumbnail pathversion="1">DefaultVideoPlugins.png</thumbnail>
@@ -29,16 +29,15 @@
             <thumbnail pathversion="1">DefaultVideoPlaylists.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
-
-    </video>
-    <music>
-        <default pathversion="1"></default>
-
         <source>
-            <name>Rotten Tomatoes Podcast</name>
-            <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
+            <name>X</name>
+            <path pathversion="1">D:\X\</path>
             <allowsharing>true</allowsharing>
         </source>
+    </video>
+    
+    <music>
+        <default pathversion="1"></default>
         <source>
             <name>Music Library</name>
             <path pathversion="1">musicdb://</path>
@@ -52,12 +51,69 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>UPnP Media Servers (Auto-Discover)</name>
+            <name>Music UPnP Media Servers (Auto-Discover)</name>
             <path pathversion="1">upnp://</path>
             <thumbnail pathversion="1">Settings.network.upnp.png</thumbnail>
             <allowsharing>true</allowsharing>
         </source>
+
+        <source>
+            <name>Podcast Rotten Tomatoes</name>
+            <path pathversion="1">rss://feeds.feedburner.com/RTPodcast/</path>
+            <allowsharing>true</allowsharing>
+        </source>        
+
+        <source>
+            <name>Podcast SModcast (Kevin Smith)</name>
+            <path pathversion="1">rss://feeds.feedburner.com/SModcasts/</path>
+            <allowsharing>true</allowsharing>
+        </source>  
+
+        <source>
+            <name>Podcast HollywoodBabbleOn (Kevin Smith)</name>
+            <path pathversion="1">rss://feeds.feedburner.com/HollywoodBabbleOnPod/</path>
+            <allowsharing>true</allowsharing>
+        </source> 
+
+        <source>
+            <name>Podcast FatManOnBatman (Kevin Smith)</name>
+            <path pathversion="1">rss://feeds.feedburner.com/FatManOnBatman/</path>
+            <allowsharing>true</allowsharing>
+        </source> 
+        
+        <source>
+            <name>Podcast WTF (Marc Maron)</name>
+            <path pathversion="1">rss://wtfpod.libsyn.com/rss/</path>
+            <allowsharing>true</allowsharing>
+        </source>         
+        
+        <source>
+            <name>Podcast The Dollop with Dave Anthony and Gareth Reynolds</name>
+            <path pathversion="1">rss://thedollop.libsyn.com/rss/</path>
+            <allowsharing>true</allowsharing>
+        </source> 
+        
+        <source>
+            <name>Podcast The Movie Crypt</name>
+            <path pathversion="1">rss://geeknation.com/podcast-feed/the-movie-crypt-with-green-lynch/</path>
+            <allowsharing>true</allowsharing>
+        </source>         
+        
+        <source>
+            <name>Podcast Opie and Jimmy</name>
+            <path pathversion="1">rss://opieandanthonypodcast.libsyn.com/rss/</path>
+            <allowsharing>true</allowsharing>
+        </source> 
+                  
+        <source>
+            <name>Podcast Doug Loves Movies</name>
+            <path pathversion="1">rss://feeds.feedburner.com/DougLovesMovies/</path>
+            <allowsharing>true</allowsharing>
+        </source>             
+
     </music>
+
+    <!-- RSS feeds -->    
     <pictures>
         <default pathversion="1"></default>
         <source>
@@ -116,6 +172,8 @@
             <allowsharing>true</allowsharing>
         </source>
     </pictures>
+    
+    <!-- Kodi Repos -->
     <files>
         <default pathversion="1"></default>
         <source>
@@ -225,7 +283,7 @@
         </source>
         <source>
             <name>z._i4atv</name>
-            <path pathversion="1">http://i4atv.esy.es/underground/</path>
+            <path pathversion="1">http://i4atv.cu.ma/i4a-repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -314,6 +372,11 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
+            <name>z._StalkerTV</name>
+            <path pathversion="1">http://101kodi.comlu.com/stalkertv/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
             <name>z._streamlive.to</name>
             <path pathversion="1">http://repo.streamlive.to/</path>
             <allowsharing>true</allowsharing>
@@ -326,6 +389,11 @@
         <source>
             <name>z._TaffyMC</name>
             <path pathversion="1">http://add.taffymc.com/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>z._Tecbox</name>
+            <path pathversion="1">http://tecbox.tv/repo/install/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

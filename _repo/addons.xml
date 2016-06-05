@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.21.18" provider-name="rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.22.1" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -11,6 +11,7 @@
 	<extension point="xbmc.python.script" library="addon.py">
             <provides>executable video</provides>
     </extension>
+
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
 
@@ -581,7 +582,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.3" provider-name="MetalKettle">
+<addon id="plugin.video.uktvnow" name="UKTV Now" version="2.0.4" provider-name="MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -590,7 +591,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en"></summary>
-    <description lang="en">This is version 2.0.0 renamed.  Enter your user and pass.</description>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -609,6 +610,27 @@
         <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
         <website>http://watch.ustvnow.com/</website>
     </extension>
+</addon>
+
+<addon id="plugin.video.VidTime"
+       name="VidTime"
+       version="1.2.9"
+       provider-name="VinManJSV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.9.0"/>
+	<import addon="script.module.urlresolver" version="2.10.11"/>
+	<import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+			library="starter.py">
+			<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Play TV and Movies </summary>
+    <description lang="en">A simple TV and Movie addon that gives a great quality stream.</description>
+	<platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.youtube" name="YouTube" version="5.2.1" provider-name="bromix">

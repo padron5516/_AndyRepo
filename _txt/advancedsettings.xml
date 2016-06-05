@@ -9,9 +9,129 @@
 
 <advancedsettings>
 
+<!-- SQL -->
+<!-- http://kodi.wiki/view/MySQL/Setting_up_MySQL#tab=Windows -->
+<!-- Firewall powershell command -->
+<!-- New-NetFirewallRule DisplayName "Allow inbound TCP Port 3306 for MySQL" Direction inbound LocalPort 3306 Protocol TCP Action Allow -->
+<!-- Setup users in MySQL for Kodi clients commands -->
+<!-- Open the "MySQL Command Line Client" from the MySQL start menu  -->
+<!-- CREATE USER 'kodi' IDENTIFIED BY 'kodi'; -->
+<!-- GRANT ALL ON *.* TO 'kodi'; -->
+<!--
+<photodatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>kodi</user>
+    <pass>kodi</pass>
+</photodatabase> 
+-->
+<!--
+<musicdatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>kodi</user>
+    <pass>kodi</pass>
+</musicdatabase> 
+-->
+<!--
+<videodatabase>
+    <type>mysql</type>
+    <host>192.168.1.2</host>
+    <port>3306</port>
+    <user>kodi</user>
+    <pass>kodi</pass>
+</videodatabase>
+-->
+<pathsubstitution>
+	<!--substitute>
+        <from>special://masterprofile/Thumbnails/</from>
+		<to>smb://192.168.1.2/userdata/Thumbnails</to>
+	</substitute-->
+
+	<!-- Sources -->
+	<!-- The sources.xml file contains a list of all the sources your media will be collected from, including both local and network-based media. This will also allow you to sync everything that is just in Files view and not in the video library.  -->
+    <!--
+    <substitute>
+       <from>special://profile/sources.xml</from>
+       <to>smb://192.168.1.2/kodi/userdata/sources.xml</to>
+    </substitute>
+    <substitute>
+       <from>special://profile/mediasources.xml</from>
+       <to>smb://192.168.1.2/kodi/userdata/mediasources.xml</to>
+    </substitute>
+    -->
+	<!-- RSS -->
+	<!-- This file tells Kodi what RSS feed to show on the home screen, if enabled.  -->
+	<!-- 
+    <substitute>
+       <from>special://profile/RssFeeds.xml</from>
+       <to>smb://192.168.1.2/kodi/userdata/RssFeeds.xml</to>
+    </substitute>	
+    -->
+	<!-- Passwords -->
+	<!-- If your network shares use passwords (at least for SMB) then you will need to manually copy the passwords.xml file over to each Kodi device. This file keeps track of those passwords.  -->
+    <!--
+    <substitute>
+       <from>special://profile/passwords.xml</from>
+       <to>smb://192.168.1.2/kodi/userdata/passwords.xml</to>
+    </substitute>
+    -->
+	<!-- Playlists -->	 
+	<!-- The Playlist folder in Kodi contains music, video and mixed playlists. If you have imported from pre-existing media libraries then you can use your old playlist folder to save time on recreating the various playlists. If your playlists include local file paths, you will need to edit them to use network shares instead.  -->
+    <!-- 
+    <substitute>
+       <from>special://profile/playlists/</from>
+       <to>smb://192.168.1.2/kodi/userdata/playlists/</to>
+    </substitute>	
+    -->
+	<!-- Keymaps -->
+	<!-- Useful if you want the controls on all your Kodi devices to be the same. Might not be a good idea if you use different types of remotes on different devices, as you'll likely want to have individual configurations for them.  -->
+    <!-- 
+    <substitute>
+       <from>special://profile/keymaps/</from>
+       <to>smb://192.168.1.2/kodi/userdata/keymaps/</to>
+    </substitute>
+    -->
+	<!-- Favourites -->
+	<!-- This will sync your favorites selections between all Kodi devices. If the favorite depends on a file path that is specific to one device then this might not work for the other devices. -->
+    <!-- 
+    <substitute>
+       <from>special://profile/favourites.xml</from>
+       <to>smb://192.168.1.2/kodi/userdata/favourites.xml</to>
+    </substitute>
+    -->
+	<!-- Thumbs   DONT USE -->
+	<!-- 
+	<substitute>
+        <from>special://masterprofile/Thumbnails/</from>
+		<to>smb://192.168.1.2/userdata/Thumbnails</to>
+	</substitute>	
+	-->
+</pathsubstitution>
+<!-- SQL END -->
+
+
+
+<!--<enablenetworkmanager>1</enablenetworkmanager>-->
+<playlisttimeout>20</playlisttimeout>
+<packagefoldersize>200</packagefoldersize>                                <!-- The amount in megabytes of packages saved from previous add-on installs. -->
+<splash>false</splash>
+<playcountminimumpercent>95</playcountminimumpercent>
+<!--<loglevel hide="false">1</loglevel>-->                                <!-- Comment: Disables logging -->
+<!--<alwaysontop>yes</alwaysontop>-->
+<skiploopfilter>0</skiploopfilter>                                        <!-- (8) The amount of the loop filter to skip on h264 decoding. This can help the performance of slower machines when decoding h264 content. Values, in decreasing CPU usage (and decreasing quality) For RPi or similar use 16 or higher (low CPU usage) -->
+                                                                          <!--  -16 None-->
+                                                                          <!--  0 Skip only empty frames (default)-->
+                                                                          <!--  8 Skip non-reference frames (default on ATV)-->
+                                                                          <!--  16 Skip bi-dir frames-->
+                                                                          <!--  32 Skip all non-key frames-->
+                                                                          <!--  48 Skip all frames -->
+
 <network>
-                                                                           <!-- "o" while playing movie to see cache.  http://kodi.wiki/view/HOW-TO:Modify_the_video_cache  https://www.flightpedia.org/convert/20-megabytes-to-bytes.html -->
         <cachemembuffersize>157286400</cachemembuffersize>                 <!-- Kodi will not buffer ahead more than this. For the bytes set here, Kodi will consume 3x the amount of RAM. When set to 0 the cache will be written to disk instead of RAM -->
+    <!-- "o" while playing movie to see cache.  http://kodi.wiki/view/HOW-TO:Modify_the_video_cache  https://www.flightpedia.org/convert/20-megabytes-to-bytes.html -->                                                                           
     <!--<cachemembuffersize>39321600</cachemembuffersize> -->              <!-- 1 gig machine     (120MB  of free RAM) for cache. -->
     <!--<cachemembuffersize>78643200</cachemembuffersize> -->              <!-- 2 gig machine     (240MB  of free RAM) for cache. -->
     <!--<cachemembuffersize>104857600</cachemembuffersize> -->             <!-- Safe              (300MB  of free RAM) for cache. -->
@@ -33,7 +153,7 @@
                                                                            <!-- Cache - 209715200 - Using 200MB of RAM  (600MB  of free RAM) for cache. -->
                                                                            <!-- Cache - 262144000 - Using 250MB of RAM  (750MB  of free RAM) for cache. -->
                                                                            <!-- Cache - 314572800 - Using 300MB of RAM  (900MB  of free RAM) for cache. -->                                                                           
-                                                                           <!-- Cache - 367001600 - Using 350MB of RAM  (1050MB of free RAM) for cache. A good HTPC setting -->
+                                                                           <!-- Cache - 367001600 - Using 350MB of RAM  (1050MB of free RAM) for cache. -->
                                                                            <!-- Cache - 419430400 - Using 400MB of RAM  (1200MB of free RAM) for cache. -->
                                                                            <!-- Cache - 471859200 - Using 450MB of RAM  (1350MB of free RAM) for cache. -->
                                                                            <!-- Cache - 524288000 - Using 500MB of RAM  (1500MB of free RAM) for cache. -->                                                                           
@@ -43,7 +163,7 @@
                                                                            <!-- Cache - 943718400 - Using 900MB of RAM  (2700MB of free RAM) for cache. -->                                                                             
                                                                            <!-- Cache - 1048576000 -Using 1000MB of RAM (3000MB of free RAM) for cache. -->  
                                                                                                                                                       
-    <readbufferfactor>10</readbufferfactor>                                <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
+    <readbufferfactor>20</readbufferfactor>                                <!-- readbufferfactor determines the max readrate in terms of readbufferfactor * avg bitrate of a video file. Default 1 -->
                                                                            <!-- This can help on bad connections to keep the cache filled. It will also greatly speed up buffering. Default value 1.0. Increase the fill-rate of the cache
                                                                            By default (value: 1), Kodi will only fill the cache a little above what is needed to play it back. It does this as to not max out your network and possibly max out some hardware.
                                                                            For most users and hardware, this setting shouldn't cause any issues, but be aware of it if you have unusual CPU spikes in your HTPC.
@@ -55,15 +175,14 @@
                                                                           <!-- 1) Default - Buffer all filesystems (including local) -->
                                                                           <!-- 2) Only buffer true internet filesystems (streams) (http, etc.) -->
                                                                           <!-- 3) No buffer -->
-    <!--<curlclienttimeout>10</curlclienttimeout>-->                      <!-- CAN SLOW CHANNEL CHANGE - Timeout in seconds for libcurl (http/ftp) connections -->
-    <!--<curllowspeedtime>10</curllowspeedtime>-->                        <!-- CAN SLOW CHANNEL CHANGE - Time in seconds for libcurl to consider a connection lowspeed -->
+    <curlclienttimeout>10</curlclienttimeout>                             <!-- CAN SLOW CHANNEL CHANGE - Timeout in seconds for libcurl (http/ftp) connections -->
+    <curllowspeedtime>10</curllowspeedtime>                               <!-- CAN SLOW CHANNEL CHANGE - Time in seconds for libcurl to consider a connection lowspeed -->
     <!--<curlretries>2</curlretries>--> 					              <!-- Number of times the http client retries. Default 2, minimum 0, maximum 10 -->
     <!--<autodetectpingtime>30</autodetectpingtime>-->                    <!-- Length in seconds between pinging the network to detect new devices -->
     <!--<disableipv6>true</disableipv6>-->				                  <!-- Disables ipv6. Default false -->
     <!--<httpproxyusername></httpproxyusername>-->                        <!-- username for Basic Proxy Authentication -->
     <!--<httpproxypassword></httpproxypassword>-->                        <!-- password for Basic Proxy Authentication -->
 </network>
-
 
 <pvr>
     <minvideocachelevel>65</minvideocachelevel>                             <!-- 5 - Cache up to this level in the video buffer buffer before resuming playback if the buffers run dry. -->
@@ -76,29 +195,32 @@
     <!--<numericchannelswitchtimeout>1000</numericchannelswitchtimeout>-->  <!-- Time in ms before the numeric dialog auto closes when confirmchannelswitch is disabled. -->
 </pvr>
 
-<!--<skiploopfilter>8</skiploopfilter>-->                                 <!-- The amount of the loop filter to skip on h264 decoding. This can help the performance of slower machines when decoding h264 content. Values, in decreasing CPU usage (and decreasing quality)-->
-                                                                          <!--  -16 None-->
-                                                                          <!--  0 Skip only empty frames (default)-->
-                                                                          <!--  8 Skip non-reference frames (default on ATV)-->
-                                                                          <!--  16 Skip bi-dir frames-->
-                                                                          <!--  32 Skip all non-key frames-->
-                                                                          <!--  48 Skip all frames -->
-<!--<enablenetworkmanager>1</enablenetworkmanager>-->
-<playlisttimeout>10</playlisttimeout>
-<packagefoldersize>200</packagefoldersize>                                <!-- The amount in megabytes of packages saved from previous add-on installs. -->
-<splash>false</splash>
-<!--<loglevel hide="false">1</loglevel>-->
-<!--<alwaysontop>yes</alwaysontop>-->
-
-
 <sorttokens>
   <token>the</token>
 </sorttokens>
 
 <samba>
-   <clienttimeout>10</clienttimeout>                                        <!-- timeout (in seconds) -->
+   <clienttimeout>15</clienttimeout>                                        <!-- timeout (in seconds) -->
    <statfiles>false</statfiles>                                             <!-- Set to false to disable smb stat() on files to speed up listings of large directories (over slow links) -->
 </samba>
+
+<videoscreen>
+   <!--<fakefullscreen default="true">true</fakefullscreen>-->
+   <!--<monitor default="true">Default</monitor>-->
+   <!--<resolution default="true">16</resolution>-->
+   <!--<screen>2</screen>-->
+</videoscreen>
+
+<epg>
+  <!--<lingertime>1440</lingertime>-->                                        <!-- keep X minutes of past epg data (default: 24h) -->
+  <!--<updatecheckinterval>300</updatecheckinterval>-->                       <!-- check if tables need to be updated every X minutes -->
+  <!--<cleanupinterval>900</cleanupinterval>-->                               <!-- remove old entries from the EPG every X minutes -->
+  <!--<activetagcheckinterval>60</activetagcheckinterval>-->                  <!-- check for updated active tags every X minute -->
+  <!--<retryinterruptedupdateinterval>30</retryinterruptedupdateinterval>-->  <!-- retry an interrupted epg update after X seconds -->
+  <!--<updateemptytagsinterval>60</updateemptytagsinterval>-->                <!-- override user selectable EPG update interval (minutes) for empty EPG tags -->
+  <!--<displayupdatepopup>true</displayupdatepopup>-->                        <!-- display a progress popup while updating EPG data from clients -->
+  <!--<displayincrementalupdatepopup>false</displayincrementalupdatepopup>--> <!-- also display a progress popup while doing incremental EPG updates -->
+</epg>
 
 <videoextensions>
   <add>.ex1|.ex2</add>
@@ -110,83 +232,41 @@
   <!--<remove>.ex3|.ex4</remove>-->
 </musicextensions>
 
-<!--
-<hosts>
-  <entry name="HOSTNAME">IPADDRESS</entry>
-</hosts>
--->
-
-<videoscreen>
-   <!--<fakefullscreen default="true">true</fakefullscreen>-->
-   <!--<monitor default="true">Default</monitor>-->
-   <!--<resolution default="true">16</resolution>-->
-   <!--<screen>2</screen>-->
-</videoscreen>
-
-<gui>
-   <nofliptimeout>0</nofliptimeout>
-   <algorithmdirtyregions>3</algorithmdirtyregions> 
-</gui>
-
-<filelists>
-   <allowfiledeletion>true</allowfiledeletion>
-</filelists>
-
-<videoscanner>
-   <ignoreerrors>true</ignoreerrors>                                     <!-- Set to true to silently ignore errors while scanning videos. This prevents the error dialogue box, so you don't have to keep hitting "yes" to keep scanning.-->
-</videoscanner>
-
-<input>
-   <enablemouse>true</enablemouse>
-   <!--<remoteaskeyboard>true</remoteaskeyboard>-->
-</input>
-
-<pathsubstitution>
-	<!--<substitute>
-    <from>special://masterprofile/Thumbnails/</from>
-		<to>smb://SERVER/userdata/Thumbnails</to>
-	</substitute>-->
-</pathsubstitution>	
-
-<!--
-<videodatabase>
-    <type>mysql</type>
-    <host>192.168.1.2</host>
-    <port>3306</port>
-    <user>administrator</user>
-    <pass>lol</pass>
-</videodatabase> 
--->
-<!--
-<musicdatabase>
-    <type>mysql</type>
-    <host>192.168.1.2</host>
-    <port>3306</port>
-    <user>administrator</user>
-    <pass>lol</pass>
-</musicdatabase> 
--->
-<!--
-<photodatabase>
-    <type>mysql</type>
-    <host>192.168.1.2</host>
-    <port>3306</port>
-    <user>administrator</user>
-    <pass>lol</pass>
-</photodatabase> 
--->
+<videolibrary>
+    <actorthumbs>false</actorthumbs>
+    <recentlyaddeditems>35</recentlyaddeditems>                         <!-- number of recently added items. Defaults to 25 -->
+    <!--<importwatchedstate>true</importwatchedstate>-->                <!-- import previously exported playdate and playcount from .nfo files. Defaults to false -->
+    <!--<importresumepoint>true</importresumepoint>-->                  <!-- import previously exported resume point from .nfo files. Defaults to false -->  
+    <!--<allitemsonbottom>false</allitemsonbottom>-->                   <!-- sorts the "*All" items at the bottom of the list when in Ascending order -->
+    <!--<backgroundupdate>false</backgroundupdate>-->                   <!-- set to "true" to hide the video scanner dialog from the GUI -->                                                                       <!-- NOTE: To get this working properly, you have to do a 'Clean Library' in settings the first time after you enable the setting. -->
+    <!--<cleanonupdate>false</cleanonupdate>-->                         <!-- default set to false to prevent Kodi from removing items from the database while updating.  -->
+    <!--<usefasthash>true</usefasthash>-->                              <!-- defaults to true. Set to false in order to skip hashing based on the folders modification time. -->
+    <!--<hideallitems>false</hideallitems>-->                           <!-- removes the "*All" items from the video library -->  <!-- This will be replaced in v15 with a GUI option. -->
+    <!--<hideemptyseries>false</hideemptyseries>-->                     <!-- set to "true" to hide empty series in the video library and prevent empty series from being removed during a library cleanup. -->
+    <!--<itemseparator>/ </itemseparator>-->                            <!-- separator used for multiple artists/genres in tags. Note, this is *space* *slash* *space* -->
+    <!--<exportautothumbs>false</exportautothumbs>-->                   <!-- export auto-generated thumbs. Defaults to false -->
+    <!--<dateadded>1</dateadded>-->                                     <!-- 0 results in using the current datetime when adding a video -->
+                                                                        <!-- 1 (default) results in prefering to use the files mtime (if it's valid) and only using the file's ctime if the mtime isn't valid -->
+                                                                        <!-- 2 results in using the newer datetime of the file's mtime and ctime -->
+    <!--<mymovies>-->                                                   <!-- Options specific to MyMovies XML file parsing -->
+    <!--<categoriestogenres>false</categoriestogenres>-->               <!-- Add MyMovies Custom Categories to Genres (boolean, default is false) -->
+    <!--</mymovies>-->                                                                   
+</videolibrary>
 
 <video>
-  <cleanstrings>
-   <regexp>[ _\,\.\(\)\[\]\-](ac3|dts|custom|dc|divx|divx5|dsr|dsrip|dutch|dvd|dvdrip|dvdscr|dvdscreener|screener|dvdivx|cam|fragment|fs|hdtv|hdrip|hdtvrip|internal|limited|multisubs|ntsc|ogg|ogm|pal|pdtv|proper|repack|rerip|retail|cd[1-9]|r3|r5|bd5|se|svcd|swedish|german|read.nfo|nfofix|unrated|ws|telesync|ts|telecine|tc|brrip|bdrip|480p|480i|576p|576i|720p|720i|1080p|1080i|hrhd|hrhdtv|hddvd|bluray|x264|h264|xvid|xvidvd|xxx|www.www|\[.*\])([ _\,\.\(\)\[\]\-]|$)</regexp>
-   <regexp>(\[.*\])</regexp>
-  </cleanstrings>
   <!--<defaultplayer>dvdplayer</defaultplayer>-->                      <!-- Set the default video player: dvdplayer or extplayer. -->
+	<timeseekforward>15</timeseekforward>                              <!-- Comment: Skip back time 15 s -->
+	<timeseekbackward>-15</timeseekbackward>                           <!-- Comment: Skip forward time 15 s -->
+	<subsdelayrange>240</subsdelayrange>                               <!-- Comment: Subtitle offset adjustment range -->
+  <!--<timeseekforwardbig>600</timeseekforwardbig>-->                  <!-- Time to seek forward in seconds when doing a long seek.  Defaults to 600 (10 minutes). -->
+  <!--<timeseekbackwardbig>-600</timeseekbackwardbig>-->               <!-- Time to seek forward in seconds when doing a long seek.  Defaults to -600 (10 minutes). --> 
+  <!--<cleanstrings>
+     <regexp>[ _\,\.\(\)\[\]\-](ac3|dts|custom|dc|divx|divx5|dsr|dsrip|dutch|dvd|dvdrip|dvdscr|dvdscreener|screener|dvdivx|cam|fragment|fs|hdtv|hdrip|hdtvrip|internal|limited|multisubs|ntsc|ogg|ogm|pal|pdtv|proper|repack|rerip|retail|cd[1-9]|r3|r5|bd5|se|svcd|swedish|german|read.nfo|nfofix|unrated|ws|telesync|ts|telecine|tc|brrip|bdrip|480p|480i|576p|576i|720p|720i|1080p|1080i|hrhd|hrhdtv|hddvd|bluray|x264|h264|xvid|xvidvd|xxx|www.www|\[.*\])([ _\,\.\(\)\[\]\-]|$)</regexp>
+     <regexp>(\[.*\])</regexp>
+  </cleanstrings>-->
   <!--<subsdelayrange>10</subsdelayrange>-->                           <!-- Delay range for subtitles, in seconds. -->
   <!--<audiodelayrange>10</audiodelayrange>-->                         <!-- Delay range for audio/video sync, in seconds. -->
   <!--<usetimeseeking>true</usetimeseeking>-->                         <!-- Whether to use time based or percentage based seeking. -->
-  <!--<timeseekforwardbig>600</timeseekforwardbig>-->                  <!-- Time to seek forward in seconds when doing a long seek.  Defaults to 600 (10 minutes). -->
-  <!--<timeseekbackwardbig>-600</timeseekbackwardbig>-->               <!-- Time to seek forward in seconds when doing a long seek.  Defaults to -600 (10 minutes). -->
   <!--<percentseekforward>2</percentseekforward>-->                    <!-- Amount to seek forward as a percentage, when doing a short seek.  Defaults to 2. -->
   <!--<percentseekbackward>-2</percentseekbackward>-->                 <!-- Amount to seek backward as a percentage, when doing a short seek.  Defaults to -2. -->
   <!--<percentseekforwardbig>10</percentseekforwardbig>-->             <!-- Amount to seek forward as a percentage, when doing a long seek.  Defaults to 10. -->
@@ -241,51 +321,41 @@
   <!--</excludefromlisting>-->
 </audio>
 
-<epg>
-  <!--<lingertime>1440</lingertime>-->                                        <!-- keep X minutes of past epg data (default: 24h) -->
-  <!--<updatecheckinterval>300</updatecheckinterval>-->                       <!-- check if tables need to be updated every X minutes -->
-  <!--<cleanupinterval>900</cleanupinterval>-->                               <!-- remove old entries from the EPG every X minutes -->
-  <!--<activetagcheckinterval>60</activetagcheckinterval>-->                  <!-- check for updated active tags every X minute -->
-  <!--<retryinterruptedupdateinterval>30</retryinterruptedupdateinterval>-->  <!-- retry an interrupted epg update after X seconds -->
-  <!--<updateemptytagsinterval>60</updateemptytagsinterval>-->                <!-- override user selectable EPG update interval (minutes) for empty EPG tags -->
-  <!--<displayupdatepopup>true</displayupdatepopup>-->                        <!-- display a progress popup while updating EPG data from clients -->
-  <!--<displayincrementalupdatepopup>false</displayincrementalupdatepopup>--> <!-- also display a progress popup while doing incremental EPG updates -->
-</epg>
-
-<videolibrary>
-    <actorthumbs>false</actorthumbs>
-    <recentlyaddeditems>35</recentlyaddeditems>                         <!-- number of recently added items. Defaults to 25 -->
-    <!--<allitemsonbottom>false</allitemsonbottom>-->                   <!-- sorts the "*All" items at the bottom of the list when in Ascending order -->
-    <!--<backgroundupdate>false</backgroundupdate>-->                   <!-- set to "true" to hide the video scanner dialog from the GUI -->
-                                                                        <!-- NOTE: To get this working properly, you have to do a 'Clean Library' in settings the first time after you enable the setting. -->
-    <!--<cleanonupdate>false</cleanonupdate>-->                         <!-- default set to false to prevent Kodi from removing items from the database while updating.  -->
-    <!--<usefasthash>true</usefasthash>-->                              <!-- defaults to true. Set to false in order to skip hashing based on the folders modification time. -->
-    <!--<hideallitems>false</hideallitems>-->                           <!-- removes the "*All" items from the video library -->  <!-- This will be replaced in v15 with a GUI option. -->
-    <!--<hideemptyseries>false</hideemptyseries>-->                     <!-- set to "true" to hide empty series in the video library and prevent empty series from being removed during a library cleanup. -->
-    <!--<itemseparator>/ </itemseparator>-->                            <!-- separator used for multiple artists/genres in tags. Note, this is *space* *slash* *space* -->
-    <!--<exportautothumbs>false</exportautothumbs>-->                   <!-- export auto-generated thumbs. Defaults to false -->
-    <!--<importwatchedstate>false</importwatchedstate>-->               <!-- import previously exported playdate and playcount from .nfo files. Defaults to false -->
-    <!--<importresumepoint>false</importresumepoint>-->                 <!-- import previously exported resume point from .nfo files. Defaults to false -->  
-    <!--<dateadded>1</dateadded>-->                                     <!-- 0 results in using the current datetime when adding a video -->
-                                                                        <!-- 1 (default) results in prefering to use the files mtime (if it's valid) and only using the file's ctime if the mtime isn't valid -->
-                                                                        <!-- 2 results in using the newer datetime of the file's mtime and ctime -->
-    <!--<mymovies>-->                                                   <!-- Options specific to MyMovies XML file parsing -->
-      <!--<categoriestogenres>false</categoriestogenres>-->             <!-- Add MyMovies Custom Categories to Genres (boolean, default is false) -->
-    <!--</mymovies>-->                                                                   
-</videolibrary>
-
-
 <musiclibrary>
+    <recentlyaddeditems>35</recentlyaddeditems>                              <!-- number of recently added items. Defaults to 25 -->
     <!--<hideallitems>true</hideallitems>-->                                 <!-- removes the "*All" items from the music library -->  <!-- This will be replaced in v15 with a GUI option. -->
     <!--<allitemsonbottom>true</allitemsonbottom>-->                         <!-- sorts the "*All" items at the bottom of the list when in Ascending order -->
     <!--<backgroundupdate>true</backgroundupdate>-->                         <!-- set to hide the music scanner dialog from the gui -->
-    <recentlyaddeditems>35</recentlyaddeditems>                              <!-- number of recently added items. Defaults to 25 -->
     <!--<albumssortbyartistthenyear>true</albumssortbyartistthenyear>-->     <!-- at an albums listing, when you sort by artist, secondary sort will be year. -->
     <!--<albumformat>%B - %Y</albumformat>-->                                <!-- album label template, default is "%B" -->
     <!--<albumformatright>%A</albumformatright>-->                           <!-- album label template for right column, default is "%A" -->
     <!--<prioritiseapetags>true</prioritiseapetags>-->                       <!-- prioritise APEv2 tags over ID3v1/2 tags, default is false. -->
     <!--<itemseparator>/ </itemseparator>-->                                 <!-- separator used for multiple artists/genres in tags. Note, this is *space* *slash* *space* -->
 </musiclibrary>
+
+<gui>
+   <nofliptimeout>0</nofliptimeout>
+   <algorithmdirtyregions>3</algorithmdirtyregions> 
+</gui>
+
+<filelists>
+   <allowfiledeletion>true</allowfiledeletion>
+</filelists>
+
+<videoscanner>
+   <ignoreerrors>true</ignoreerrors>                                     <!-- Set to true to silently ignore errors while scanning videos. This prevents the error dialogue box, so you don't have to keep hitting "yes" to keep scanning.-->
+</videoscanner>
+
+<input>
+   <enablemouse>true</enablemouse>
+   <!--<remoteaskeyboard>true</remoteaskeyboard>-->
+</input>
+
+<!--
+<hosts>
+  <entry name="HOSTNAME">IPADDRESS</entry>
+</hosts>
+-->
 
 <!--
 http://iptvtalk.org/archive/index.php/t-3320.html
