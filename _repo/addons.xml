@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.22.2" provider-name="Andy,rayw1986, bluezed">
+<addon id="Andy.plugin.program.Guide" name="[COLOR yellow]Andy[/COLOR] TV Guide" version="2.0.22.4" provider-name="Andy,rayw1986, bluezed">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
         <!--<import addon="script.module.elementtree" version="1.2.7"/>--> <!-- ? -->
+        <import addon="script.module.elementtree" version="1.2.7"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
             <provides>executable video</provides>
@@ -2549,7 +2550,7 @@ Addons Included
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.35"
+     version="0.1.40"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -2812,7 +2813,7 @@ Addons Included
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.7" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.13" provider-name="Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
